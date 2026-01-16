@@ -1,0 +1,180 @@
+{
+  "route_osananajimi": [
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ 幼なじみルート：「帰れない家」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "park_evening"
+    },
+    {
+      "type": "bgm",
+      "file": "gm_sadness.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "部活初日の帰り道。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "osananajimi_worried",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "ねえ、ちょっと寄り道していい？"
+    },
+    {
+      "type": "monologue",
+      "text": "いつもの公園。いつものブランコ。"
+    },
+    {
+      "type": "monologue",
+      "text": "ただ、彼女が座ると、鎖がギシギシと悲鳴を上げた。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……あはは。壊れそう"
+    },
+    {
+      "type": "monologue",
+      "text": "笑ってる。でも、目が笑ってない。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "どうした"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "お母さんに、なんて言おう"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "昨日の夜、帰ったらさ。お母さん、私の顔見て固まったの"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は空を見上げた。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": ""誰？"って"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "自分の娘に、"誰？"だよ"
+    },
+    {
+      "type": "monologue",
+      "text": "ブランコが揺れる。鎖が軋む。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "今朝は早く出てきちゃった。顔、合わせられなくて"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "今日は"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……帰りたくない"
+    },
+    {
+      "type": "monologue",
+      "text": "小さく、そう言った。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "ねえ。私、どうしたらいいの"
+    },
+    {
+      "type": "monologue",
+      "text": "その目が、俺を見る。"
+    },
+    {
+      "type": "monologue",
+      "text": "昔と同じ目。泣きそうなのを我慢してる、あの目。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "——俺も一緒に行く"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "え"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前んち。説明する。俺から"
+    },
+    {
+      "type": "monologue",
+      "text": "何を説明するんだ。筋肉が生えましたって？ 悪魔のせいですって？"
+    },
+    {
+      "type": "monologue",
+      "text": "でも、放っておけなかった。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "osananajimi_smile",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……バカ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "知ってる"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "ほんとバカ"
+    },
+    {
+      "type": "monologue",
+      "text": "少しだけ、笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【幼なじみルート 1話 完】 ────"
+    },
+    {
+      "type": "end"
+    }
+  ]
+}

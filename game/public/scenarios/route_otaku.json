@@ -1,0 +1,1431 @@
+{
+  "route_otaku": [
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ オタクルート：「被験体」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "science_room"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "放課後。理科準備室。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_curious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "来てくれましたね。待ってました"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は白衣を羽織っていた。——サイズが全く合っていない。袖から腕がはみ出している。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "これを見てください"
+    },
+    {
+      "type": "monologue",
+      "text": "机の上に、薬瓶が並んでいた。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "それ——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私たちに配られた薬です。5人分、回収しました"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "どうやって"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "交渉です。みんな、空き瓶は捨てるつもりでしたから"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は瓶を一つ持ち上げた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "気づきましたか？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何に"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "ラベルの番号"
+    },
+    {
+      "type": "monologue",
+      "text": "見ると、小さく数字が印刷されていた。『03』『07』『12』『15』『21』"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "連番じゃない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……つまり？"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_analyzing",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私たちの前に、他の"被験体"がいた可能性があります"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、異様に光っていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "01と02は、どこにいるんでしょう"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "04から06は？ 08から11は？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前、何を——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "調べたいんです"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "真実を。この薬が何なのか。あの悪魔が何なのか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "危険だぞ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "知ってます"
+    },
+    {
+      "type": "monologue",
+      "text": "即答だった。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "それでも、知りたい。——手伝ってくれますか？"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── オタクルート 2話：「実験記録」 ────"
+    },
+    {
+      "type": "monologue",
+      "text": "翌日。理科準備室。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は徹夜明けだった。机の上には、大量の資料。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_neutral",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "来ましたね。報告があります"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "寝てないのか"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "眠っている場合ではありません"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女はノートを開いた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "薬の成分分析を試みました"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "結果は"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……分析できませんでした"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "は？"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "機械が、認識しないんです。成分を"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は眼鏡を外した。目の下に、濃い隈。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "ガスクロマトグラフィー、質量分析、赤外分光——全部ダメでした"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "つまり——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "この薬は、科学では説明できない"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙が落ちた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "でも、諦めません"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "番号の欠番——01、02、04から06、08から11——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "彼らを探します"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "どうやって"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "ネットです。同じ症状の人がいるはず"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女はパソコンを開いた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "『急激な筋肉増強』『原因不明』『一夜にして』——"
+    },
+    {
+      "type": "monologue",
+      "text": "検索結果が並ぶ。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_analyzing",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "——いました"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "え"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "匿名掲示板に、似た症状の書き込みが。3年前"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、異様な光を帯びた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "追跡します。協力してください"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── オタクルート 3話：「欠番の真実」 ────"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_truth.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "一週間後。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の調査は、予想以上の成果を上げていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "見つけました。02番"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "本当か"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "3年前に症状が出た人。今は——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は言葉を切った。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "今は？"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_despair.mp3"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……亡くなっています"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "事故死、と記録にはあります"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は資料を見せた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "でも、不自然です"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何が"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": ""筋肉が暴走して、自分の体を破壊した""
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "公式には事故死。でも、検死記録には——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は震えていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "骨が、内側から砕けていた"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "他の欠番も調べました。01、04、05——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "全員、死んでいます"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "つまり、私たちは——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "やめろ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "やめられません"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "知らなければ、対策が立てられない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "怖いですか？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……お前こそ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は少し笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "怖いです。すごく"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "なら——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "でも、知らない方がもっと怖い"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は資料を握りしめた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私は——科学者ですから"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "感情ではなく、データで判断します"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "じゃあ、今、怖いのは何だ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は答えなかった。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも、俺にはわかった。——一人で抱え込んでいる恐怖が、彼女を蝕んでいる。"
+    },
+    {
+      "type": "bg",
+      "image": "otaku_room_night"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_isolation.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "その夜。俺は彼女の家に呼び出された。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_neutral",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "来てくれたんですね"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の部屋は、資料で埋め尽くされていた。壁一面に、写真と記事が貼られている。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……すごいな"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "狂気の沙汰でしょう？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "言ってない"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "顔に書いてあります"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は椅子に座った。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……今日、親に言われました"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何を"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "『いい加減にしなさい。そんな体になって、研究なんてしてる場合じゃない』"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "『普通の女の子に戻りなさい』"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "普通って、なんでしょうね"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私、小さい頃から"変わってる"って言われてました"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "虫を観察するのが好きで、解剖が好きで、実験が好きで"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "気持ち悪いって、言われました"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、揺れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "でも、やめられなかった。知りたいことがあるから"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "知ることは、私にとって——生きることなんです"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "わかりますか？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……わかる"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "嘘でしょう"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "本当だ"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は彼女の隣に座った。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺はお前みたいに頭良くない。研究もわからない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前が、知りたいと思う気持ちは、わかる"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺だって知りたい。この体が何なのか。あいつが何なのか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "だから、一緒に調べてる"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目に、涙が浮かんだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……ずるいです"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何が"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "そんなこと言われたら——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は顔を伏せた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "一人で、抱え込めなくなるじゃないですか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "抱え込むな。最初から"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺がいる"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……はい"
+    },
+    {
+      "type": "monologue",
+      "text": "小さく、頷いた。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── オタクルート 4話：「悪魔との対峙」 ────"
+    },
+    {
+      "type": "bg",
+      "image": "science_room"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "数日後。彼女は、ついに行動を起こした。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_analyzing",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "悪魔を呼び出します"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "は？"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "直接、聞きます。この薬が何なのか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "待て、危険だ——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "待てません"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "欠番の人たち——全員、3年以内に死んでいます"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私たちに、どれだけ時間が残っているかわからない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "だから、直接聞くんです"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は薬瓶を取り出した。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "これを餌に"
+    },
+    {
+      "type": "bg",
+      "image": "rooftop_night"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_devil.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "夜。学校の屋上。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は瓶を掲げた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "出てきてください。……悪魔さん"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。そして——"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "呼んだ？"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔が、現れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "珍しいね。呼び出されるなんて"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "質問があります"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "どうぞ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "この薬の欠番——01、02、04から11——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "ああ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "彼らは、どうなりましたか"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、にこりと笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "死んだよ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "失敗作だったからね"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "失敗作……？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "筋肉が暴走して、体が持たなかった"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "では、私たちは——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "君たちは成功作。今のところは"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "今のところ——？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "安定期はあと2年くらいかな"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は宙を舞った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "それを過ぎると——まあ、どうなるかはわからない"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、君なら調べられるんじゃない？ 科学者として"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "頑張ってね"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔が消えた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_neutral",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、膝から崩れ落ちた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "2年……"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "おい——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "2年で、私たちは——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は震えていた。"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、何も言えなかった。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── オタクルート 5話：「悪魔の取引」 ────"
+    },
+    {
+      "type": "bg",
+      "image": "protagonist_room_night"
+    },
+    {
+      "type": "monologue",
+      "text": "その夜。俺の部屋に、悪魔が現れた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "面白い子だね、彼女"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "科学で僕を理解しようとするなんて"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、無駄だよ。僕は科学の外にいる"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "用件は何だ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "いつもの。一人を選ぶ時間"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は指を立てた。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "七人の筋肉美女。君は誰を選ぶ？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……オタクを"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "ほう"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は興味深そうに見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "あの子を選ぶんだ。2年後には死ぬかもしれないのに"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼女が研究を続ければ、答えが見つかるかもしれない"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、見つからないかもしれない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "それでも"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "他の六人は、解毒剤を渡す。安全になる"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、彼女だけは——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "わかってる"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、少し黙った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "君、面白いね"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "科学者を選ぶなんて。答えのない問いに挑む子を"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "答えはある。彼女が見つける"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は指を鳴らした。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "じゃあ、そういうことで"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼女の研究、楽しみにしてるよ"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── オタクルート 6話：「仮説と証明」 ────"
+    },
+    {
+      "type": "bg",
+      "image": "science_room"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_romance.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "翌日。理科準備室。彼女を呼び出した。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_neutral",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "話があるんですね。私もです"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "先に言わせてくれ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……どうぞ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "昨日、悪魔が来た"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺は、お前を選んだ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "他の六人には、解毒剤が渡される"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……え"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも、お前は——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "待ってください"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を遮った。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私を選んだ……？ なぜですか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "なぜって——"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私は、2年後には死ぬかもしれない。解毒剤もない"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "合理的に考えて、最悪の選択です"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "なのに、なぜ——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "合理的じゃないからだ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……え？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺の気持ちは、科学で説明できない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前が好きだ。それだけだ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、大きく見開かれた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "そ、それは——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "データでも、分析でもない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ただの、俺の気持ちだ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目に、涙が浮かんだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "非科学的です"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ああ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "根拠がありません"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ないな"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "再現性もありません"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "多分ない"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、眼鏡を外した。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……それでも、信じていいですか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "信じてくれ"
+    },
+    {
+      "type": "monologue",
+      "text": "涙がこぼれた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "ずるいです"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何が"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私は——科学でしか、ものを見られないのに"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "あなたは——科学の外から、私を見てくれる"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "嬉しいです。すごく"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を見た。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_curious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "私も——あなたが、好きです"
+    },
+    {
+      "type": "monologue",
+      "text": "小さな声。でも、はっきりと。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "これは——仮説ではなく、証明されたことです"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……ああ"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、彼女を抱きしめた。"
+    },
+    {
+      "type": "monologue",
+      "text": "筋肉質の、硬い体。でも、温かい。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……あと2年、かもしれませんが"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "関係ない"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "研究は続けます。答えを見つけるまで"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺も手伝う"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……ありがとうございます"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、俺の胸に顔を埋めた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "一緒に——見つけましょう"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ああ"
+    },
+    {
+      "type": "monologue",
+      "text": "窓の外で、夕日が落ちていく。"
+    },
+    {
+      "type": "monologue",
+      "text": "理科準備室に、二人の影が重なった。"
+    },
+    {
+      "type": "monologue",
+      "text": "——この研究に、終わりはない。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも、二人でなら——きっと、答えは見つかる。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【オタクルート 完】 ────"
+    },
+    {
+      "type": "end"
+    }
+  ]
+}

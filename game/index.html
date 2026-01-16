@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>悪魔との契約</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <!-- タイトル画面 -->
+    <div id="title-screen" class="screen active">
+      <div class="menu">
+        <button id="btn-episodes">エピソード選択</button>
+        <button id="btn-characters">キャラクター図鑑</button>
+        <button id="btn-config">設定</button>
+      </div>
+    </div>
+
+    <!-- エピソード選択画面 -->
+    <div id="episodes-screen" class="screen">
+      <h2>エピソード選択</h2>
+      <p class="screen-description">閲覧するエピソードを選択してください</p>
+      <div id="episode-list" class="episode-grid"></div>
+      <button id="btn-episodes-back" class="back-button">戻る</button>
+    </div>
+
+    <!-- キャラクター図鑑画面 -->
+    <div id="characters-screen" class="screen">
+      <h2>キャラクター図鑑</h2>
+      <div id="character-filters">
+        <button class="filter-btn active" data-filter="all">全員</button>
+        <button class="filter-btn" data-filter="classmate">同級生</button>
+        <button class="filter-btn" data-filter="special">特殊枠</button>
+        <button class="filter-btn" data-filter="other">その他</button>
+      </div>
+      <div id="character-grid" class="character-grid"></div>
+      <button id="btn-characters-back" class="back-button">戻る</button>
+    </div>
+
+    <!-- キャラクター詳細画面 -->
+    <div id="character-detail-screen" class="screen">
+      <div class="detail-container">
+        <div class="detail-header">
+          <div id="detail-portrait" class="detail-portrait"></div>
+          <div class="detail-info">
+            <h2 id="detail-name">キャラクター名</h2>
+            <div id="detail-meta" class="detail-meta"></div>
+          </div>
+        </div>
+        <div class="detail-body">
+          <div class="detail-section">
+            <h3>説明</h3>
+            <p id="detail-description"></p>
+          </div>
+          <div class="detail-section">
+            <h3>登場エピソード</h3>
+            <div id="detail-episodes" class="detail-episodes"></div>
+          </div>
+        </div>
+        <div class="detail-actions">
+          <button id="btn-detail-back">戻る</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ゲーム画面 -->
+    <div id="game-screen" class="screen">
+      <!-- 背景 -->
+      <div id="background"></div>
+
+      <!-- キャラクター表示エリア -->
+      <div id="characters">
+        <div id="char-left" class="character"></div>
+        <div id="char-center" class="character"></div>
+        <div id="char-right" class="character"></div>
+      </div>
+
+      <!-- ステータスバー -->
+      <div id="status-bar">
+        <div class="stat-item">
+          <span id="stat-episode" class="stat-value" style="color: #f0c060;">プロローグ</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">段階</span>
+          <span id="stat-stage" class="stat-value">通常</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">ヒロイン</span>
+          <span id="stat-heroine" class="stat-value">---</span>
+        </div>
+      </div>
+
+      <!-- ステータス変動ポップアップ -->
+      <div id="stat-popup" class="hidden"></div>
+
+      <!-- テキストウィンドウ -->
+      <div id="text-window">
+        <div id="speaker-name"></div>
+        <div id="message-text"></div>
+        <div id="click-indicator">▼</div>
+      </div>
+
+      <!-- UI ボタン -->
+      <div id="game-ui">
+        <button id="btn-auto">AUTO</button>
+        <button id="btn-skip">SKIP</button>
+        <button id="btn-log">LOG</button>
+        <button id="btn-game-menu">MENU</button>
+      </div>
+    </div>
+
+    <!-- バックログ画面 -->
+    <div id="log-screen" class="screen">
+      <h2>バックログ</h2>
+      <div id="log-content"></div>
+      <button id="btn-log-back">戻る</button>
+    </div>
+
+    <!-- 設定画面 -->
+    <div id="config-screen" class="screen">
+      <h2>設定</h2>
+      <div class="config-item">
+        <label>BGM音量</label>
+        <input type="range" id="bgm-volume" min="0" max="100" value="80" />
+      </div>
+      <div class="config-item">
+        <label>SE音量</label>
+        <input type="range" id="se-volume" min="0" max="100" value="80" />
+      </div>
+      <div class="config-item">
+        <label>テキスト速度</label>
+        <input type="range" id="text-speed" min="1" max="10" value="5" />
+      </div>
+      <div class="config-item">
+        <label>AUTO速度</label>
+        <input type="range" id="auto-speed" min="1" max="10" value="5" />
+      </div>
+      <button id="btn-config-back">戻る</button>
+    </div>
+
+    <!-- ゲームメニュー（オーバーレイ） -->
+    <div id="game-menu-overlay" class="hidden">
+      <div class="game-menu">
+        <h3>メニュー</h3>
+        <button id="btn-resume">ゲームに戻る</button>
+        <button id="btn-to-episodes">エピソード選択へ</button>
+        <button id="btn-to-title">タイトルへ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- オーディオ要素 -->
+  <audio id="bgm" loop></audio>
+  <audio id="se"></audio>
+
+  <script src="main.js"></script>
+</body>
+</html>

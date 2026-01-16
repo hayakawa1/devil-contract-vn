@@ -1,0 +1,707 @@
+/* 悪魔との契約 - ビジュアルノベルスタイル */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#game-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 画面共通 */
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen.active {
+  display: flex;
+}
+
+/* タイトル画面 */
+#title-screen {
+  background: url('public/assets/title.png') center center / cover no-repeat;
+  position: relative;
+  justify-content: flex-end;
+  padding-bottom: 8%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.menu button,
+.back-button {
+  padding: 0.9rem 3rem;
+  font-size: 1.1rem;
+  background: rgba(30, 20, 10, 0.8);
+  border: 2px solid #9b59b6;
+  color: #d9a6ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 220px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+.menu button:hover,
+.back-button:hover {
+  background: rgba(155, 89, 182, 0.3);
+  box-shadow: 0 0 20px rgba(155, 89, 182, 0.5);
+  color: #e9c6ff;
+}
+
+/* エピソード選択画面 */
+#episodes-screen,
+#characters-screen {
+  background: url('public/assets/menu_bg.png') center center / cover no-repeat;
+  padding: 2rem;
+  position: relative;
+}
+
+#episodes-screen::before,
+#characters-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 20, 0.7);
+  z-index: 0;
+}
+
+#episodes-screen > *,
+#characters-screen > * {
+  position: relative;
+  z-index: 1;
+}
+
+#episodes-screen h2,
+#characters-screen h2,
+#log-screen h2,
+#config-screen h2 {
+  font-size: 2rem;
+  color: #9b59b6;
+  margin-bottom: 0.5rem;
+}
+
+.screen-description {
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.episode-card {
+  background: rgba(30, 30, 50, 0.8);
+  border: 1px solid #333;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.episode-card:hover {
+  border-color: #9b59b6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(155, 89, 182, 0.2);
+}
+
+.episode-card .ep-title {
+  color: #9b59b6;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.episode-card .ep-subtitle {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.episode-card .ep-description {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.episode-card .ep-stage {
+  display: inline-block;
+  background: rgba(155, 89, 182, 0.2);
+  color: #9b59b6;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+/* キャラクター図鑑 */
+#character-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background: rgba(50, 50, 70, 0.5);
+  border: 1px solid #444;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: rgba(155, 89, 182, 0.2);
+  border-color: #9b59b6;
+  color: #9b59b6;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 55vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.character-card {
+  background: rgba(30, 30, 50, 0.8);
+  border: 1px solid #333;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.character-card:hover {
+  border-color: #9b59b6;
+  transform: translateY(-2px);
+}
+
+.character-card .char-portrait {
+  width: 100px;
+  height: 100px;
+  background: #222;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  background-size: 200%;
+  background-position: center 15%;
+  border: 2px solid #9b59b6;
+}
+
+.character-card .char-name {
+  color: #9b59b6;
+  font-size: 0.9rem;
+}
+
+.character-card .char-role {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+/* キャラクター詳細 */
+#character-detail-screen {
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.detail-container {
+  max-width: 800px;
+  width: 90%;
+  background: rgba(20, 20, 40, 0.9);
+  border: 1px solid #333;
+  padding: 2rem;
+}
+
+.detail-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.detail-portrait {
+  width: 150px;
+  height: 150px;
+  background: #222;
+  border-radius: 50%;
+  background-size: 200%;
+  background-position: center 15%;
+  border: 3px solid #9b59b6;
+}
+
+.detail-info h2 {
+  color: #9b59b6;
+  margin-bottom: 0.5rem;
+}
+
+.detail-meta {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-section h3 {
+  color: #9b59b6;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.detail-section p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.detail-episodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.detail-episodes .ep-tag {
+  background: rgba(155, 89, 182, 0.2);
+  color: #9b59b6;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.detail-episodes .ep-tag:hover {
+  background: rgba(155, 89, 182, 0.4);
+}
+
+.detail-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ゲーム画面 */
+#game-screen {
+  background: #000;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#characters {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.character {
+  width: 40%;
+  height: 90%;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease, filter 0.3s ease, left 0.4s ease, right 0.4s ease;
+}
+
+#char-left {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+}
+
+#char-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+#char-right {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
+
+#char-center.visible {
+  transform: translateX(-50%);
+}
+
+.character.visible {
+  opacity: 1;
+}
+
+.character.dimmed {
+  filter: brightness(0.6);
+}
+
+/* キャラクター登場アニメーション */
+.character.entering {
+  animation: char-enter 0.4s ease-out;
+}
+
+@keyframes char-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#char-center.entering {
+  animation: char-enter-center 0.4s ease-out;
+}
+
+@keyframes char-enter-center {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* ステータスバー */
+#status-bar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.stat-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.stat-label {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.stat-value {
+  color: #9b59b6;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* ステータス変更アニメーション */
+#status-bar.status-changed {
+  animation: status-flash 0.5s ease;
+}
+
+@keyframes status-flash {
+  0% { background: rgba(0, 0, 0, 0.7); }
+  50% { background: rgba(155, 89, 182, 0.5); box-shadow: 0 0 20px rgba(155, 89, 182, 0.5); }
+  100% { background: rgba(0, 0, 0, 0.7); }
+}
+
+/* ステータスポップアップ */
+#stat-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #9b59b6;
+  padding: 2rem 3rem;
+  z-index: 100;
+  text-align: center;
+  animation: popup-appear 0.3s ease;
+}
+
+#stat-popup.hidden {
+  display: none;
+}
+
+@keyframes popup-appear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* テキストウィンドウ */
+#text-window {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 180px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 20%);
+  padding: 2rem;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#speaker-name {
+  color: #9b59b6;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(155, 89, 182, 0.5);
+  min-height: 1.5rem;
+}
+
+#message-text {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  min-height: 80px;
+}
+
+#click-indicator {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  color: #9b59b6;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ゲームUI */
+#game-ui {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+#game-ui button {
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #444;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+}
+
+#game-ui button:hover,
+#game-ui button.active {
+  border-color: #9b59b6;
+  color: #9b59b6;
+}
+
+/* バックログ */
+#log-screen {
+  background: rgba(10, 10, 20, 0.95);
+  padding: 2rem;
+}
+
+#log-content {
+  max-width: 800px;
+  width: 100%;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 1rem;
+  background: rgba(20, 20, 40, 0.5);
+  border: 1px solid #333;
+}
+
+.log-entry {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #222;
+}
+
+.log-entry .log-speaker {
+  color: #9b59b6;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.log-entry .log-text {
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* 設定画面 */
+#config-screen {
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+  padding: 2rem;
+}
+
+.config-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.config-item label {
+  min-width: 120px;
+  color: #888;
+}
+
+.config-item input[type="range"] {
+  flex: 1;
+  accent-color: #9b59b6;
+}
+
+/* ゲームメニューオーバーレイ */
+#game-menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+#game-menu-overlay.hidden {
+  display: none;
+}
+
+.game-menu {
+  background: rgba(20, 20, 40, 0.95);
+  border: 1px solid #9b59b6;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-menu h3 {
+  color: #9b59b6;
+  margin-bottom: 1.5rem;
+}
+
+.game-menu button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 2rem;
+  margin-bottom: 0.5rem;
+  background: rgba(155, 89, 182, 0.1);
+  border: 1px solid #444;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-menu button:hover {
+  background: rgba(155, 89, 182, 0.3);
+  border-color: #9b59b6;
+  color: #9b59b6;
+}
+
+/* hidden class */
+.hidden {
+  display: none !important;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9b59b6;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .episode-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .character-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #text-window {
+    min-height: 150px;
+    padding: 1rem;
+  }
+
+  #message-text {
+    font-size: 0.95rem;
+  }
+}

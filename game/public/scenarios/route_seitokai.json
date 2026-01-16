@@ -1,0 +1,1596 @@
+{
+  "route_seitokai": [
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ 生徒会ルート：「校則第17条」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "student_council_room"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "翌日。生徒会室に呼び出された。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_serious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "来ていただけましたね"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は書類の山に囲まれていた。"
+    },
+    {
+      "type": "monologue",
+      "text": "スーツのような制服——のはずが、肩と腕がパンパンだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "なんの用だ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "これです"
+    },
+    {
+      "type": "monologue",
+      "text": "差し出されたのは、一枚の紙。"
+    },
+    {
+      "type": "monologue",
+      "text": "『校則第17条：部活動における服装規定』"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "筋肉同好会を正式に発足させるには、活動届が必要です"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "出せばいいだろ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "問題があります"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は立ち上がった。制服の袖が、ぴちぴちと音を立てる。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私たちの制服は、規定に違反しています"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "は？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": ""著しく体型を逸脱した改造"。これに該当します"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "改造してないだろ。体が変わったんだ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "校則に"体型が変わった場合"の規定はありません"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は窓の外を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "明日、教頭との面談があります"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私が説明します。あなたは黙っていてください"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "一人で行く気か"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "これは生徒会の仕事です"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "違う"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_flustered",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……なにがです"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前の問題だろ。一人で抱えるな"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、少し揺れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……あなたに、何がわかるんですか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "わからない。だから一緒に行く"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……勝手にしてください"
+    },
+    {
+      "type": "monologue",
+      "text": "そっぽを向いた。でも、耳が赤かった。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 生徒会ルート 2話：「完璧であること」 ────"
+    },
+    {
+      "type": "bg",
+      "image": "hallway"
+    },
+    {
+      "type": "monologue",
+      "text": "翌日。教頭室の前。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_neutral",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は廊下に立っていた。いつもの凛とした姿勢。でも、手が震えている。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "緊張してるのか"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "していません"
+    },
+    {
+      "type": "monologue",
+      "text": "嘘だ。俺でもわかる。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "入りなさい"
+    },
+    {
+      "type": "monologue",
+      "text": "ドアが開いた。"
+    },
+    {
+      "type": "bg",
+      "image": "principal_office"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "さて、君たちの"部活動"についてだが"
+    },
+    {
+      "type": "monologue",
+      "text": "机の上に、書類が積まれている。——苦情の手紙だ。保護者からの。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": ""異様な体型の生徒がいる"。"うちの子が怖がっている"。"教育上問題がある""
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_serious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "生徒会長である君が、このような状態とは"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "待ってください"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "君は黙っていなさい"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "いえ。私から説明します"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は一歩前に出た。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "これは病気でも、改造でもありません。原因不明の——"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "原因不明？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "はい。医学的に——"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "ふむ"
+    },
+    {
+      "type": "monologue",
+      "text": "教頭は眼鏡を外した。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "では、治る見込みは"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "君は来年、推薦で大学に行く予定だったね"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……はい"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "このまま"原因不明"では、推薦は難しい"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "そんな——"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "見た目の問題ではない。"異常事態"を抱えた生徒を、責任を持って推薦できない"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_flustered",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の顔から、血の気が引いた。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "一週間、猶予を与える。何らかの"説明"を用意しなさい"
+    },
+    {
+      "type": "bg",
+      "image": "hallway"
+    },
+    {
+      "type": "monologue",
+      "text": "廊下。"
+    },
+    {
+      "type": "monologue",
+      "text": "無言で歩いている。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "おい"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "聞いてるか"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "聞いています"
+    },
+    {
+      "type": "monologue",
+      "text": "立ち止まった。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……私は、どうすれば"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "どうすればって——"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "完璧でなければならないのに"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は壁に手をついた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "成績は常に学年一位。生徒会の運営も完璧。進路も、将来も、全て計画通りに——"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "なのに、この体。この、筋肉"
+    },
+    {
+      "type": "monologue",
+      "text": "腕を見下ろす。ぱんぱんに膨れた制服の袖。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私の努力を、全部無意味にする"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "無意味じゃない"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "では何が残るのですか！"
+    },
+    {
+      "type": "monologue",
+      "text": "叫んだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "推薦がなくなれば、私には——私には——"
+    },
+    {
+      "type": "monologue",
+      "text": "涙が、こぼれた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……っ"
+    },
+    {
+      "type": "monologue",
+      "text": "慌てて顔を背ける。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "見ないでください"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "お願いです。見ないで"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、何も言えなかった。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 生徒会ルート 3話：「夜の生徒会室」 ────"
+    },
+    {
+      "type": "bg",
+      "image": "school_night"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_isolation.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "その夜。"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は学校に忍び込んだ。"
+    },
+    {
+      "type": "monologue",
+      "text": "生徒会室の明かりが、まだついていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "やっぱりいた"
+    },
+    {
+      "type": "monologue",
+      "text": "ノックする。返事はない。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "入るぞ"
+    },
+    {
+      "type": "monologue",
+      "text": "ドアを開けた。"
+    },
+    {
+      "type": "bg",
+      "image": "student_council_room_night"
+    },
+    {
+      "type": "monologue",
+      "text": "書類の山。その中に、彼女がいた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_flustered",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……なぜ、ここに"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "明かりが見えた"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "校則違反ですよ。夜間の校内侵入は"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前もだろ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目は、赤かった。泣いていたのか。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "まだ書類やってるのか"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "これが終われば、少しは——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何も変わらない"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "書類を片付けても、体は元に戻らない"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "わかっています"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "なら——"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "わかっているんです！"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は書類を叩きつけた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "でも、他に何をすればいいのですか"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私は、動いていないと——何かをしていないと——"
+    },
+    {
+      "type": "monologue",
+      "text": "声が震える。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "怖いんです"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……怖い？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "止まるのが"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は椅子に崩れ落ちた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "小学生の頃から、ずっと。完璧でいなければと"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "父は、私に多くを望みました。母も。親戚も"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": ""できる子"だから。"何でもできる子"だから"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "でも——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、自分の腕を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "この体は、私の努力ではどうにもならない"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "生まれて初めてです。どうしようもないことが"
+    },
+    {
+      "type": "monologue",
+      "text": "涙が、また流れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私は——私は——"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、彼女の隣に座った。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "完璧じゃなくていい"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "え"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前は十分やってる。十分すぎるくらい"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "少し休め"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "でも——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺がいる"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何の役にも立たないけど。隣にはいる"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、俺を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……あなたは"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "なんだ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "なぜ、そこまで"
+    },
+    {
+      "type": "monologue",
+      "text": "なぜだろう。俺にもわからない。でも——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "放っておけない。それだけだ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、少し笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "変な人"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "よく言われる"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。でも、重くない沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……少しだけ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ん？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "少しだけ、ここにいてください"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ああ"
+    },
+    {
+      "type": "monologue",
+      "text": "窓の外で、月が出ていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 生徒会ルート 4話：「理事長の提案」 ────"
+    },
+    {
+      "type": "bg",
+      "image": "hallway"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "一週間後。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "特別に、理事長がお会いになる"
+    },
+    {
+      "type": "monologue",
+      "text": "理事長室に通された。"
+    },
+    {
+      "type": "bg",
+      "image": "director_office"
+    },
+    {
+      "type": "monologue",
+      "text": "豪華な部屋だった。壁には絵画。床には絨毯。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "ほう、これは"
+    },
+    {
+      "type": "monologue",
+      "text": "老人が、彼女を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "噂には聞いていたが、なかなか見事だ"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_serious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "筋肉か。若い女性には珍しい"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "君は優秀な生徒会長だそうだね"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "恐れ入ります"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "成績も優秀。生徒からの信頼もある"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "だが——"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": ""異形"の生徒会長は、学校のイメージに関わる"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "来月、学校説明会がある。新入生の保護者が大勢来る"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "まさか——"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "君には、しばらく"休養"してもらおうと思っている"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "休養、ですか"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "病気療養という形で。卒業まで"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "そんな——！"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "君たち"筋肉同好会"は、表向き活動を自粛。見えない場所で、ひっそりと"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "悪い話ではないだろう？ 推薦も、このまま進める"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "つまり——"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "君がいなかったことにすれば、全て丸く収まる"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙が落ちた。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ふざけるな"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "ん？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "こいつは何年もこの学校のために働いてきた。それを"いなかったこと"にしろって？"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "若いな"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "大人の世界では、よくあることだ"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "さて、返事は"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、俺を見た。そして——"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "お断りします"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "……なんだと"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私は、"いなかったこと"にはなりません"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "君、自分の立場がわかっているのか"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "わかっています"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は立ち上がった。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私は生徒会長です。この学校の生徒を守るのが仕事です"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": ""見えない場所に隠れろ"と言われて、はいと答える生徒会長がいると思いますか"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私たちは、何も悪いことをしていません"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、真っ直ぐに理事長を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "だから、隠れません"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "……ふむ"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "面白い"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "え"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "若いな。実に若い"
+    },
+    {
+      "type": "monologue",
+      "text": "理事長は笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "いいだろう。では、堂々としていなさい"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……え？"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "私は試したかっただけだ。君がどんな人間か"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "は——？"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "隠れろと言われて隠れる程度なら、推薦する価値もない"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "君は、筋が通っている。それでいい"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "帰りなさい。推薦は問題ない"
+    },
+    {
+      "type": "bg",
+      "image": "hallway"
+    },
+    {
+      "type": "monologue",
+      "text": "廊下。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、壁にもたれていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "大丈夫か"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_flustered",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……足が、震えています"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "そりゃそうだ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "生まれて初めて、目上の人に逆らいました"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "かっこよかったぞ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……っ"
+    },
+    {
+      "type": "monologue",
+      "text": "顔が赤くなる。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "からかわないでください"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "本当だ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、自分の手を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私——変われたのでしょうか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "さあ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "さあって——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも、さっきのお前は、かっこよかった"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "完璧じゃなくても、震えてても、それでも立ってた"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺は、そっちの方が好きだ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "——っ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は顔を背けた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……帰りましょう"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ああ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……今日は"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ん？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "一緒に、帰ってもらえますか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……ああ"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 生徒会ルート 5話：「悪魔の取引」 ────"
+    },
+    {
+      "type": "bg",
+      "image": "protagonist_room_night"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_devil.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "ある夜。俺の部屋に、あいつが現れた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "やあ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "順調そうだね。生徒会長との仲"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何の用だ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "約束の時間だよ"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は宙に浮かんだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "一人を選ぶ時間。君の願いの、最終形態"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "七人の筋肉美女。君は誰を選ぶ？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……生徒会長を"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "ほう"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔はにやりと笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "では——"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は指を鳴らした。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼女以外の六人には、"解毒剤"を渡そう"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "解毒剤？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "飲めば元の体に戻れる。飲まなければ、そのまま"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "選択は本人次第。強制はしない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "あいつらは——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "さて、どうするかな"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は窓の外を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼女たちにも、それぞれの人生がある。君が選ばなかった、という事実と向き合う人生が"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "ま、それは君の知ったことじゃないか"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は消えた。残されたのは、静寂だけだった。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 生徒会ルート 6話：「答え合わせ」 ────"
+    },
+    {
+      "type": "bg",
+      "image": "student_council_room"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_romance.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "数日後。放課後。生徒会室で、彼女と二人。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_serious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "聞きました"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何を"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "あなたが私を選んだこと"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "他の人たちは、元に戻れるんですね"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "選べる。戻るか、戻らないか"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は窓の外を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "なぜ、私を"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私は完璧主義で、融通が利かなくて、人に頼るのが下手で"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "知ってる"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "そんな私を、なぜ"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は立ち上がった。彼女の前に立つ。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "完璧じゃなくていいって言っただろ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "震える手で、それでも立ち向かうお前を見た"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "泣きながら、それでも諦めないお前を見た"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺は、そのお前が好きだ"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_flustered",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、潤んだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私は——この体は——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "関係ない"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "でも——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "筋肉があろうがなかろうが、お前はお前だ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……っ"
+    },
+    {
+      "type": "monologue",
+      "text": "涙がこぼれた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "ずるい"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "は？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "そんなこと言われたら——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を見上げた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "断れないじゃないですか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "断らなくていい"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私も——"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私も、あなたが"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、俺の胸に顔を埋めた。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……好きです"
+    },
+    {
+      "type": "monologue",
+      "text": "小さな声。でも、はっきり聞こえた。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……ああ"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、彼女の背中に手を回した。"
+    },
+    {
+      "type": "monologue",
+      "text": "筋肉質の、硬い背中。でも、震えている。"
+    },
+    {
+      "type": "monologue",
+      "text": "——俺と同じだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "これからも、よろしく"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……はい"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "これからも、一緒に"
+    },
+    {
+      "type": "monologue",
+      "text": "窓の外で、夕日が落ちていく。"
+    },
+    {
+      "type": "monologue",
+      "text": "生徒会室に、二人の影が重なった。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【生徒会ルート 完】 ────"
+    },
+    {
+      "type": "end"
+    }
+  ]
+}

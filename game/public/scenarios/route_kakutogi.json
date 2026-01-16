@@ -1,0 +1,1509 @@
+{
+  "route_kakutogi": [
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ 格闘技部ルート：「勝ちすぎた代償」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "dojo_night"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "夜9時。学校に呼び出された。"
+    },
+    {
+      "type": "monologue",
+      "text": "体育館の道場。彼女は一人で、サンドバッグを打っていた。"
+    },
+    {
+      "type": "monologue",
+      "text": "——いや、サンドバッグだったもの、か。すでに原形をとどめていない。床も、ひび割れている。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_serious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "来たか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "呼んだのはお前だろ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "打つのをやめない。ドスン、ドスン、と重い音が響く。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "今日、練習試合があった"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "相手は、県大会3位の選手だった"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "——結果は"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "一撃で、終わった"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は拳を見た。傷一つない。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "相手は、担架で運ばれた"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "なあ"
+    },
+    {
+      "type": "monologue",
+      "text": "打つのをやめた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私は、強くなりたかった"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "誰にも負けない。勝ち続ける。それが目標だった"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は笑った。苦しそうに、笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "願い、叶ったな"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "——"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_sad",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "なのに——なんでこんな……"
+    },
+    {
+      "type": "monologue",
+      "text": "声が震えた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "もう誰も、私と組んでくれない。スパーリングも、断られる"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "先生も、試合に出すなって。『階級を逸脱している』『危険だ』って"
+    },
+    {
+      "type": "monologue",
+      "text": "道場の静寂。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "勝つために強くなったのに……勝負すらさせてもらえない"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、何も言えなかった。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "なあ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女が振り返る。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "お前は——私から、逃げないでいてくれるか"
+    },
+    {
+      "type": "monologue",
+      "text": "月明かりの中、その目は——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "逃げない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前の強さから、逃げたりしない"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_smile",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "——バカだな、お前"
+    },
+    {
+      "type": "monologue",
+      "text": "ぽん、と肩を叩かれた。軽くのつもりだろうが、結構重い。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……ありがとう"
+    },
+    {
+      "type": "monologue",
+      "text": "小さく、そう聞こえた。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【格闘技部ルート 1話 完】 ────"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ 格闘技部ルート 2話：「出場禁止」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "staff_room"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_despair.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "翌日。職員室。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_serious",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、顧問の前に立っていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "悪いが、県大会への出場は認められない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "——なぜですか"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "昨日の件で、相手選手の保護者から抗議が来ている"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "『人間離れした体格』『ドーピング検査を要求する』"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私はドーピングなど——"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "わかっている。だが、検査しても説明がつかないだろう"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "しばらく、公式戦は控えてくれ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……いつまでですか"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "わからない。状況が落ち着くまで"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、拳を握りしめた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……わかりました"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "bg",
+      "image": "dojo"
+    },
+    {
+      "type": "monologue",
+      "text": "放課後。道場。"
+    },
+    {
+      "type": "monologue",
+      "text": "俺が行くと、彼女は一人で稽古していた。——というより、壁を殴っていた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_angry",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "おい——"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "来たのか"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "出場禁止だと"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "ドーピング疑惑だと"
+    },
+    {
+      "type": "monologue",
+      "text": "壁に、ひびが入る。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私は——ただ強くなりたかっただけなのに"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "なのに——なんで——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "やめろ"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は彼女の腕を掴んだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "離せ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "手が血だらけだ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の拳は、傷だらけだった。それでも、傷はみるみる塞がっていく。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_sad",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……気持ち悪いだろ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何が"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "この体。人間じゃない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "人間じゃないから、人間の大会に出られない"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は笑った。自嘲するように。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "当然だよな"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "当然じゃない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前は人間だ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "こんな体で——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "体がどうなろうが、お前はお前だ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "お前は——なんでそう言える"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "言えるから言ってる"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_smile",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……バカだな"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "かもな"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、少しだけ笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【格闘技部ルート 2話 完】 ────"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ 格闘技部ルート 3話：「武道家の矜持」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "dojo_night"
+    },
+    {
+      "type": "bgm",
+      "file": "gm_sadness.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "数日後。夜。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女から連絡が来た。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "『道場に来てくれ。一人で考えたくない』"
+    },
+    {
+      "type": "monologue",
+      "text": "夜の道場。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_serious",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、正座していた。目を閉じて、じっと。"
+    },
+    {
+      "type": "monologue",
+      "text": "静かに、隣に座った。"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "なあ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ん"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私はなぜ、強くなりたかったと思う？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……わからない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "父親だ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "父は、道場を持っていた。小さい頃から、私を鍛えてくれた"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は目を開けた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "『強くなれ』『誰にも負けるな』——それが、父の口癖だった"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_sad",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "父は——5年前に死んだ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "——"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "病気だった。最後まで、強がっていた"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の声が、震えた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "最後に言われたんだ。『強くなれ』って"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "だから、強くなった。父の期待に、応えたかった"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は拳を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "でも——こんな強さを、父は望んでいたのか"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "人を傷つける強さ。誰とも戦えない強さ"
+    },
+    {
+      "type": "monologue",
+      "text": "涙が、頬を伝った。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私は——間違えたのか"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、彼女の隣に座り直した。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺には、お前の親父さんの気持ちはわからない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前が強くなりたいと思った気持ちは、間違いじゃない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "誰かに勝つためじゃなくて、自分に負けないため"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "それが、強さだろ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、俺を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "お前——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ん？"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "なんで、そういうこと言えるんだ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……さあ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "さあって——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は笑った。泣きながら。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "お前は——本当にバカだな"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "よく言われる"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、俺の肩に頭を預けた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "少しだけ——こうさせてくれ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……ああ"
+    },
+    {
+      "type": "monologue",
+      "text": "月明かりが、道場に差し込んでいた。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【格闘技部ルート 3話 完】 ────"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ 格闘技部ルート 4話：「最後の試合」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "dojo"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "一週間後。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、決断した。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_serious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "地下格闘技の試合に、出る"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "は——？"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "公式戦に出られないなら、非公式で"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "待て、危険だ——"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "危険なのは、相手の方だ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私は——戦いたいんだ。どこでもいいから"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも——"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "来てくれ。見届けてほしい"
+    },
+    {
+      "type": "monologue",
+      "text": "その目は、真剣だった。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……わかった"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "bg",
+      "image": "abandoned_factory"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_fight.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "夜。廃工場。"
+    },
+    {
+      "type": "monologue",
+      "text": "地下格闘技の会場。薄暗い照明。歓声。賭け金が飛び交う。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_serious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "来たな"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、リングの前に立っていた。"
+    },
+    {
+      "type": "monologue",
+      "text": "対戦相手は、巨漢の男だった。プロ格闘家崩れ。腕には刺青。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "女？ ふざけてんのか"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "まあいい。すぐ終わらせてやる"
+    },
+    {
+      "type": "monologue",
+      "text": "試合開始のゴングが鳴った。"
+    },
+    {
+      "type": "monologue",
+      "text": "10秒後。"
+    },
+    {
+      "type": "monologue",
+      "text": "男は、床に倒れていた。一撃。たった一撃で。"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_sad",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、拳を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "これが——私の強さか"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "誰も、相手にならない"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は笑った。空虚な笑みで。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "勝った。勝ったのに——"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "なんで、こんなに虚しいんだ"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、リングに上がった。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "帰るぞ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ここは、お前の居場所じゃない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "じゃあ、どこが——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺の隣だ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、揺れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "行くぞ"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は彼女の手を取った。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……ああ"
+    },
+    {
+      "type": "monologue",
+      "text": "その夜、俺たちは何も言わずに歩いた。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【格闘技部ルート 4話 完】 ────"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ 格闘技部ルート 5話：「悪魔の取引」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "protagonist_room_night"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_devil.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "その夜。"
+    },
+    {
+      "type": "monologue",
+      "text": "俺の部屋に、悪魔が現れた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "地下格闘技、面白かったね"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……見てたのか"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "もちろん。君たちは、僕の娯楽だから"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "さて、本題。一人を選ぶ時間だよ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "七人の筋肉美女。君は誰を選ぶ？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……格闘技部を"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "ほう"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は興味深そうに見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "あの子を選ぶんだ。戦う相手もいないのに"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "一生、孤独に強くなり続ける。それでいいの？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "いい"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、少し黙った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "他の六人には、解毒剤を渡す。元の体に戻れる"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、彼女だけは——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "わかってる"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "本当に？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ああ"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は指を鳴らした。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "じゃあ、そういうことで"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は消える前に、こう言った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼女、喜ぶかな。……戦えない強さを、受け入れられるかな"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【格闘技部ルート 5話 完】 ────"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "════ 格闘技部ルート 6話：「本当の強さ」 ════"
+    },
+    {
+      "type": "bg",
+      "image": "dojo_evening"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_romance.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "翌日。道場。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女を呼び出した。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_serious",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "話があるんだな。私もだ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "先に言わせてくれ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……ああ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "昨日、悪魔が来た"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺は、お前を選んだ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "他の六人には、解毒剤が渡される。元に戻れる"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_surprised",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……え"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも、お前は——"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "待て"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を遮った。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私を選んだ……？ なぜだ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "なぜって——"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私は——戦う相手もいない。大会にも出られない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "こんな体で、一生——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "関係ない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前が強くても弱くても、関係ない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺は、お前が好きだ"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_flustered",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "——っ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目が、大きく見開かれた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "お前——なに言って——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "戦う相手がいないなら、俺が相手になる"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "は——？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "勝てないだろうけど。毎日、ボコボコにされるだろうけど"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "それでも、お前の隣にいる"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_crying",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……っ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の目に、涙が浮かんだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "バカか、お前は"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "バカだ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "死ぬぞ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "死なない。お前が手加減すればいい"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……っ"
+    },
+    {
+      "type": "monologue",
+      "text": "涙がこぼれた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "なんで——なんでそこまで——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "お前が好きだからだ。それだけだ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、拳を握りしめた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私は——ずっと一人だった"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "強くなればなるほど、周りから人がいなくなった"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "でも——お前は——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は俺を見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "お前だけは、逃げなかった"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "逃げないさ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、俺の胸に飛び込んできた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "——っ"
+    },
+    {
+      "type": "monologue",
+      "text": "強い衝撃。でも、痛くない。彼女が、加減してくれている。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "私も——お前が——"
+    },
+    {
+      "type": "monologue",
+      "text": "小さな声。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_smile",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "好きだ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……ああ"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は、彼女を抱きしめた。"
+    },
+    {
+      "type": "monologue",
+      "text": "筋肉質の、硬い体。でも、震えている。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……なあ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ん？"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "本当に、毎日スパーリングしてくれるのか"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ああ。約束する"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……バカだな"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "知ってる"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……でも——"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、俺を見上げた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "そういうバカが、欲しかった"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "ずっと"
+    },
+    {
+      "type": "monologue",
+      "text": "道場に、夕日が差し込んでいた。"
+    },
+    {
+      "type": "monologue",
+      "text": "二人の影が、重なった。"
+    },
+    {
+      "type": "monologue",
+      "text": "——彼女の本当の強さは、これから俺が見届ける。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 【格闘技部ルート 完】 ────"
+    },
+    {
+      "type": "end"
+    }
+  ]
+}

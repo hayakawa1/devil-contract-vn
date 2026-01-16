@@ -1,0 +1,251 @@
+{
+  "prologue": [
+    {
+      "type": "bg",
+      "image": "train"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_daily.mp3"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── プロローグ：悪魔との出会い ────"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── 数日前：運命の出会い ──"
+    },
+    {
+      "type": "monologue",
+      "text": "電車の中。いつもの通学路線。"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は吊り革につかまりながら、ぼんやりと外を見ていた。"
+    },
+    {
+      "type": "monologue",
+      "text": "次の駅で、扉が開く。"
+    },
+    {
+      "type": "monologue",
+      "text": "そして——彼女が乗り込んできた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "furyo_neutral",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "黒い制服。俺の学校とは違う。"
+    },
+    {
+      "type": "monologue",
+      "text": "切れ長の目。鋭い視線。"
+    },
+    {
+      "type": "monologue",
+      "text": "誰にも媚びない、凛とした佇まい。"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は無言で、俺の斜め前に立った。"
+    },
+    {
+      "type": "monologue",
+      "text": "ドキドキした。視線を外せなかった。"
+    },
+    {
+      "type": "monologue",
+      "text": "駅に着く。彼女は降りていく。"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "monologue",
+      "text": "俺は——追いかけられなかった。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……誰だ、あの子"
+    },
+    {
+      "type": "monologue",
+      "text": "それから、毎朝同じ電車に乗るようになった。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女を見るために。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも、話しかける勇気はなかった。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── 現在：悪魔との出会い ──"
+    },
+    {
+      "type": "bg",
+      "image": "street_evening"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_devil.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "放課後、いつもの帰り道。"
+    },
+    {
+      "type": "monologue",
+      "text": "俺はなんとなく、空を見上げていた。"
+    },
+    {
+      "type": "monologue",
+      "text": "また今日も、彼女に話しかけられなかった。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "退屈そうだね"
+    },
+    {
+      "type": "monologue",
+      "text": "声は、どこからともなく聞こえた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "akuma_neutral",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "振り返ると、そこには——猫のような、そうでないような、妙な生き物がいた。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "君、願い事はある？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……は？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "なんでも叶えてあげるよ。一つだけ"
+    },
+    {
+      "type": "monologue",
+      "text": "怪しい。怪しすぎる。"
+    },
+    {
+      "type": "monologue",
+      "text": "だけど、その目はどこか——本気だった。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "仮に、仮にだぞ。本当に叶うとして"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "うん"
+    },
+    {
+      "type": "monologue",
+      "text": "主人公の脳裏に、電車の中で見たあの子の姿が浮かぶ。"
+    },
+    {
+      "type": "monologue",
+      "text": "凛としていて、強くて——でも、どこか孤独そうで。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……筋肉ムキムキの彼女が欲しい"
+    },
+    {
+      "type": "monologue",
+      "text": "我ながらバカな願いだと思った。"
+    },
+    {
+      "type": "monologue",
+      "text": "半分は冷やかしだ。半分は——まあ、本音だ。"
+    },
+    {
+      "type": "monologue",
+      "text": "あの子みたいに強くて、でも俺と一緒にいてくれる——"
+    },
+    {
+      "type": "monologue",
+      "text": "そんな都合のいい彼女。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "わかった"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "monologue",
+      "text": "それだけ言って、そいつは消えた。"
+    },
+    {
+      "type": "monologue",
+      "text": "なんだったんだ、今の。"
+    },
+    {
+      "type": "bg",
+      "image": "black"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── その夜、悪魔は7人の元を訪れた ──"
+    },
+    {
+      "type": "monologue",
+      "text": "主人公に思いを寄せる5人。"
+    },
+    {
+      "type": "monologue",
+      "text": "そして、主人公が思いを寄せる2人。"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、すべてを知っていた。"
+    },
+    {
+      "type": "end"
+    }
+  ]
+}

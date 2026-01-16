@@ -1,0 +1,141 @@
+{
+  "episodes": [
+    {
+      "id": "prologue",
+      "title": "プロローグ",
+      "subtitle": "悪魔との出会い",
+      "description": "電車での一目惚れ、そして悪魔との契約",
+      "scenario": "prologue",
+      "featured_characters": ["akuma", "furyo"],
+      "stage": "stage0",
+      "status": "available"
+    },
+    {
+      "id": "ep01",
+      "title": "第1話：7人の契約",
+      "subtitle": "その夜、悪魔は7人を訪れた",
+      "description": "主人公に想いを寄せる7人、それぞれが悪魔と契約する",
+      "scenario": "episode_01",
+      "featured_characters": ["akuma", "osananajimi", "seitokai", "gyaru", "otaku", "kakutogi", "furyo", "imouto"],
+      "stage": "stage0",
+      "status": "available"
+    },
+    {
+      "id": "ep02",
+      "title": "第2話：変化の始まり",
+      "subtitle": "うっすら筋肉",
+      "description": "翌朝、全員の体に異変が",
+      "scenario": "episode_02",
+      "featured_characters": ["osananajimi", "seitokai", "gyaru"],
+      "stage": "stage1",
+      "status": "available"
+    },
+    {
+      "id": "ep03",
+      "title": "第3話：隠せない筋肉",
+      "subtitle": "制服がきつい",
+      "description": "日常生活に支障が出始める",
+      "scenario": "episode_03",
+      "featured_characters": ["otaku", "kakutogi", "imouto"],
+      "stage": "stage1",
+      "status": "available"
+    },
+    {
+      "id": "ep04",
+      "title": "第4話：主人公の理想",
+      "subtitle": "これが、俺の願い",
+      "description": "変化が進み、主人公の反応に変化が",
+      "scenario": "episode_04",
+      "featured_characters": ["osananajimi", "furyo"],
+      "stage": "stage2",
+      "status": "available"
+    },
+    {
+      "id": "ep05",
+      "title": "第5話：筋肉同好会",
+      "subtitle": "戻れないなら、一緒に",
+      "description": "7人が集まり、筋肉同好会を結成",
+      "scenario": "episode_05",
+      "featured_characters": ["osananajimi", "seitokai", "gyaru", "otaku", "kakutogi", "furyo", "imouto"],
+      "stage": "stage2",
+      "status": "available"
+    },
+    {
+      "id": "route_osananajimi",
+      "title": "幼なじみルート",
+      "subtitle": "家族より、あなた",
+      "description": "幼なじみの個別ルート",
+      "scenario": "route_osananajimi",
+      "featured_characters": ["osananajimi"],
+      "stage": "stage2",
+      "route": "osananajimi",
+      "status": "available"
+    },
+    {
+      "id": "route_seitokai",
+      "title": "生徒会長ルート",
+      "subtitle": "完璧の定義",
+      "description": "生徒会長の個別ルート",
+      "scenario": "route_seitokai",
+      "featured_characters": ["seitokai"],
+      "stage": "stage2",
+      "route": "seitokai",
+      "status": "available"
+    },
+    {
+      "id": "route_gyaru",
+      "title": "ギャルルート",
+      "subtitle": "いいね、100万",
+      "description": "ギャルの個別ルート",
+      "scenario": "route_gyaru",
+      "featured_characters": ["gyaru"],
+      "stage": "stage2",
+      "route": "gyaru",
+      "status": "available"
+    },
+    {
+      "id": "route_otaku",
+      "title": "オタクルート",
+      "subtitle": "真実の代償",
+      "description": "オタクの個別ルート",
+      "scenario": "route_otaku",
+      "featured_characters": ["otaku"],
+      "stage": "stage2",
+      "route": "otaku",
+      "status": "available"
+    },
+    {
+      "id": "route_kakutogi",
+      "title": "格闘技部ルート",
+      "subtitle": "孤高の頂",
+      "description": "格闘技部の個別ルート",
+      "scenario": "route_kakutogi",
+      "featured_characters": ["kakutogi"],
+      "stage": "stage2",
+      "route": "kakutogi",
+      "status": "available"
+    },
+    {
+      "id": "route_furyo",
+      "title": "不良ルート",
+      "subtitle": "居場所はここ",
+      "description": "不良の個別ルート",
+      "scenario": "route_furyo",
+      "featured_characters": ["furyo"],
+      "stage": "stage2",
+      "route": "furyo",
+      "status": "available"
+    },
+    {
+      "id": "route_imouto",
+      "title": "友達の妹ルート",
+      "subtitle": "お兄ちゃんより、先輩",
+      "description": "友達の妹の個別ルート",
+      "scenario": "route_imouto",
+      "featured_characters": ["imouto"],
+      "stage": "stage2",
+      "route": "imouto",
+      "status": "available"
+    }
+  ]
+}
