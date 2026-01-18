@@ -45,7 +45,19 @@ class TyranoParser {
 
       // 話者名: #キャラ名
       if (line.startsWith('#')) {
-        currentSpeaker = line.substring(1).trim();
+        const newSpeaker = line.substring(1).trim();
+        // 話者が変わったらキャラクターを自動表示
+        if (newSpeaker !== currentSpeaker && newSpeaker) {
+          const position = this.getSpeakerPosition(newSpeaker);
+          // キャラクター表示コマンドを追加
+          this.commands.push({
+            type: 'char',
+            position: position,
+            image: this.buildCharacterImage(newSpeaker, 'neutral'),
+            highlight: true
+          });
+        }
+        currentSpeaker = newSpeaker;
         continue;
       }
 
@@ -449,6 +461,20 @@ class TyranoParser {
       if (left > 700) return 'right';
       return 'center';
     }
+    return 'center';
+  }
+
+  /**
+   * 話者の位置を取得
+   * キャラクター名に基づいて表示位置を決定
+   */
+  getSpeakerPosition(speaker) {
+    // 悪魔は常に中央
+    if (speaker === 'akuma') {
+      return 'center';
+    }
+    
+    // その他のキャラクターは自動的に中央（既存のキャラクターを非表示にする処理は不要）
     return 'center';
   }
 }
@@ -1350,21 +1376,27 @@ class GameEngine {
     if (!image || typeof image !== 'string') return image;
 
     const parts = image.split('_');
-    if (parts.length !== 2) return image;
+    if (parts.length < 2) return image;
 
     const [characterId, exprOrStage] = parts;
     if (!characterId || !exprOrStage) return image;
 
-    if (exprOrStage === 'neutral' || /^stage[1-2]$/.test(exprOrStage)) return image;
+    // ステージ対応のキャラクターでない場合はそのまま返す
     if (!this.isStageableCharacter(characterId)) return image;
 
     const stagePrefix = this.getStageSpritePrefix();
     const expr = this.normalizeExpression(exprOrStage);
 
-    if (expr === 'neutral') {
+    // neutralまたはstageが含まれている場合はステージプレフィックスで置換
+    if (expr === 'neutral' || /^stage\d+$/.test(expr)) {
+      // 既にステージが指定されている場合はそのまま返す
+      if (/^stage\d+$/.test(expr)) {
+        return image;
+      }
       return `${characterId}_${stagePrefix}`;
     }
 
+    // それ以外は表情をステージに合わせて追加
     return `${characterId}_${stagePrefix}_${expr}`;
   }
 
