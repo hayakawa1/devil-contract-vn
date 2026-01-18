@@ -1,0 +1,1650 @@
+{
+  "episode_01": [
+    {
+      "type": "bg",
+      "image": "black"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_sadness.mp3"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "──── 第1話：契約の夜 ────"
+    },
+    {
+      "type": "monologue",
+      "text": "主人公が願いを告げたその夜。"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、7人の元を訪れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── Scene 1：幼なじみ「選ばれないのは辛い」 ──"
+    },
+    {
+      "type": "bg",
+      "image": "park_night"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_sadness.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "osananajimi",
+      "name": "幼なじみ"
+    },
+    {
+      "type": "monologue",
+      "text": "その夜、私は公園にいた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "osananajimi_neutral",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "ブランコに座って、一人。"
+    },
+    {
+      "type": "monologue",
+      "text": "今日も、想いを伝えられなかった。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……また、話せなかった"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_neutral",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "悩んでるね"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "っ——誰"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "osananajimi_surprised",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼のこと、好きなんでしょ"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "な、なんで——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "知ってるよ。ずっと見てたから"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、にこりと笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "あげる。これ"
+    },
+    {
+      "type": "monologue",
+      "text": "小さな瓶を差し出された。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……なに、これ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼、\"こういうの\"が好みなんだって"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "こういうのって——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "飲めばわかるよ。彼の理想に、近づける"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "ずっと隣にいたのに、選ばれないのは辛いよね"
+    },
+    {
+      "type": "monologue",
+      "text": "その言葉が、刺さった。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……本当に、あの子の好みになれるの"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "僕は嘘をつかないよ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、瓶を受け取った。"
+    },
+    {
+      "type": "char_exit",
+      "position": "left"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── Scene 2：生徒会「完璧じゃ足りない」 ──"
+    },
+    {
+      "type": "bg",
+      "image": "student_council_room"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "seitokai",
+      "name": "生徒会長"
+    },
+    {
+      "type": "monologue",
+      "text": "生徒会室。書類整理の最中。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_neutral",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……また、目で追ってしまった"
+    },
+    {
+      "type": "monologue",
+      "text": "窓の外。グラウンドを歩く、彼の姿。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "私らしくない"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_neutral",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "らしさって、何？"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "seitokai_surprised",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "——っ！ いつからそこに"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "完璧な生徒会長。それが\"らしさ\"？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、完璧じゃ足りないんでしょ。彼には"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "何が言いたいのですか"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼の好み、知ってる？"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、瓶を取り出した。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "これを飲めば、彼の理想になれる"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "そんな非科学的な——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "非科学的？ 君、恋愛が科学的だと思ってた？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "完璧でいたいんでしょ。彼の前でも"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……一つ、聞かせてください"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "なに？"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "副作用は"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "ないよ。ただ、戻れなくなるだけ"
+    },
+    {
+      "type": "text",
+      "speaker": "seitokai",
+      "text": "……戻る必要がありますか"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "さあ。君が決めることだよ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、瓶を受け取った。"
+    },
+    {
+      "type": "char_exit",
+      "position": "left"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── Scene 3：ギャル「埋もれてる私」 ──"
+    },
+    {
+      "type": "bg",
+      "image": "karaoke"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_daily.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "gyaru",
+      "name": "ギャル"
+    },
+    {
+      "type": "monologue",
+      "text": "カラオケボックス。一人。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "gyaru_neutral",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "スマホを見る。"
+    },
+    {
+      "type": "monologue",
+      "text": "今日の投稿、いいね83。いつもと同じ。"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "……あー、つまんな"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "埋もれてんなー、あたし"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_neutral",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "そう思う？"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "gyaru_surprised",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "うわっ、なにお前——てか、どっから入った"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "バズりたいんでしょ"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "……は？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "唯一になりたい。誰にも真似できない何かが欲しい"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "……なんで知ってんの"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "あげる"
+    },
+    {
+      "type": "monologue",
+      "text": "瓶を放り投げられた。"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "なにこれ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "飲めば、誰にも真似できなくなるよ"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "……怪しすぎでしょ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "怪しいね。でも、このまま埋もれて終わるのと、どっちがマシ？"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "あと、彼もこういうの好きだよ"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "——は？ 誰の話"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "知ってるくせに"
+    },
+    {
+      "type": "text",
+      "speaker": "gyaru",
+      "text": "……っ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "バズれるし、彼の好みにもなれる。一石二鳥じゃない？"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、瓶を握りしめた。"
+    },
+    {
+      "type": "char_exit",
+      "position": "left"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── Scene 4：オタク「被験者は私」 ──"
+    },
+    {
+      "type": "bg",
+      "image": "science_prep_room"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "otaku",
+      "name": "オタク"
+    },
+    {
+      "type": "monologue",
+      "text": "自室。実験ノートを広げて。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_neutral",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "論文を読み漁っていた。"
+    },
+    {
+      "type": "monologue",
+      "text": "理由は——自分でもよくわかっていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "彼の検索履歴……偶然見えてしまっただけですが"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_neutral",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "興味深いね"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "otaku_surprised",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "——！ セキュリティが"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "好きな人の好みを調べるなんて、普通だよ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "好き、とは言っていません"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "言ってないね"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、瓶を机に置いた。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "これ、研究対象として面白いと思うよ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……これは"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "人体の限界を超える薬。君の興味と、彼の好み。両方満たせる"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "そんな薬は存在しません"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "しないね、普通は"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……成分は"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "飲めばわかるよ"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "被験者なしに——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "君が被験者になればいい"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……サンプルは、これだけですか"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "欲しいなら、もっとあげるよ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、瓶を手に取った。"
+    },
+    {
+      "type": "monologue",
+      "text": "——科学者の目で、それを見た。"
+    },
+    {
+      "type": "text",
+      "speaker": "otaku",
+      "text": "……飲んでみましょう"
+    },
+    {
+      "type": "char_exit",
+      "position": "left"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── Scene 5：格闘技部「弱い体に戻る必要があるのか」 ──"
+    },
+    {
+      "type": "bg",
+      "image": "dojo"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_fight.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "kakutogi",
+      "name": "格闘技部"
+    },
+    {
+      "type": "monologue",
+      "text": "夜の体育館。道場。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_neutral",
+      "highlight": true
+    },
+    {
+      "type": "monologue",
+      "text": "一人、サンドバッグに拳を叩き込んでいた。"
+    },
+    {
+      "type": "monologue",
+      "text": "今日も、練習試合で負けた。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "まだ、足りない"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_neutral",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "頑張ってるね"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "kakutogi_surprised",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "——誰だ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "強くなりたいんでしょ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……当たり前だ。武道家なら"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、今のままじゃ勝てない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "拳を、ぎゅっと握る。"
+    },
+    {
+      "type": "monologue",
+      "text": "その通りだった。才能も、努力も、足りていない。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "これ、あげる"
+    },
+    {
+      "type": "monologue",
+      "text": "瓶を差し出された。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……何だ、これは"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "飲めば強くなる。誰にも負けなくなる"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "そんな薬があるわけ——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "あるよ。今、ここに"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……怪しすぎる"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "怪しいね。でも、このまま負け続けるのと、どっちがマシ？"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……副作用は"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "戻れなくなる。今の体には"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "戻る必要があるのか。弱い体に"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "さあ。それは君が決めることだよ"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔はにこりと笑った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "あと、彼——君が気にしてる人、こういうの好きみたいだよ"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "っ——別に、そんなつもりじゃ——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "嘘つかなくていいよ。ここには僕しかいない"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "強くなれる。彼と並べる自分になれる。悪くないでしょ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、瓶を見つめた。"
+    },
+    {
+      "type": "monologue",
+      "text": "そして——受け取った。"
+    },
+    {
+      "type": "text",
+      "speaker": "kakutogi",
+      "text": "……礼を言う"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "礼はいらないよ。対価は、もう払うことになるから"
+    },
+    {
+      "type": "monologue",
+      "text": "その言葉の意味は、まだわからなかった。"
+    },
+    {
+      "type": "char_exit",
+      "position": "left"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── Scene 6：不良「誰かに、気づいてほしかった」 ──"
+    },
+    {
+      "type": "bg",
+      "image": "train_interior"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_isolation.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "furyo",
+      "name": "不良"
+    },
+    {
+      "type": "monologue",
+      "text": "深夜の電車。最終便の一本前。"
+    },
+    {
+      "type": "monologue",
+      "text": "不良は、いつものように一人で座っていた。"
+    },
+    {
+      "type": "monologue",
+      "text": "黒い制服。他校の生徒。"
+    },
+    {
+      "type": "monologue",
+      "text": "誰も、彼女の隣に座ろうとしない。"
+    },
+    {
+      "type": "monologue",
+      "text": "それでいい。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "furyo_neutral",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "窓に映る自分の顔を見る。"
+    },
+    {
+      "type": "monologue",
+      "text": "鋭い目。誰にも心を開かない顔。"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……強いだけじゃ、ダメなんだよな"
+    },
+    {
+      "type": "monologue",
+      "text": "小さく、呟く。"
+    },
+    {
+      "type": "monologue",
+      "text": "誰も聞いていない——はずだった。"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_neutral",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "強いだけじゃ、何がダメなの？"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "furyo_surprised",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "——っ！"
+    },
+    {
+      "type": "monologue",
+      "text": "隣の席に、いつの間にか——猫のような、妙な生き物がいた。"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……何だ、お前"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "通りすがりだよ。でも、君の悩みは聞こえちゃった"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "聞くな"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも気になるんだ。強いのに、ダメって"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、じっと彼女を見つめる。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "誰かに認められたいんでしょ"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "っ——黙れ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "否定しないんだ"
+    },
+    {
+      "type": "monologue",
+      "text": "沈黙。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "ねえ、もっと強くなりたい？"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……強くなっても、意味ない"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "そうかな。本当に強くなれば——誰かが、気づいてくれるかもよ"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、瓶を取り出した。"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……なんだそれ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "強くなる薬。誰にも負けなくなる"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "怪しすぎる"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "怪しいね。でも——君が毎朝見てる人、こういうの好きらしいよ"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "——は？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "電車で、いつも君を見てる男子。気づいてないの？"
+    },
+    {
+      "type": "monologue",
+      "text": "不良の目が、わずかに揺れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……誰のことだ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "知ってるくせに"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔はにこりと笑う。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼、君に一目ぼれしてるんだ。でも話しかける勇気がない"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "この薬を飲めば、彼の理想に近づける。そして——彼が、君に話しかけてくるかもね"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……副作用は"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "戻れなくなる"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "戻る？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "今の体に。でも、戻りたい？ 孤独なままの体に"
+    },
+    {
+      "type": "monologue",
+      "text": "不良は、瓶を見つめた。"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……いらない"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "本当に？"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "強くなっても——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "誰も近づいてこない。それが怖いんだよね"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、彼は違うよ。彼は\"強い君\"を望んでる"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、瓶を彼女の手に押し付けた。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "これは、君のための薬じゃない。彼のための薬だ"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "飲むか飲まないかは、君次第。でも——"
+    },
+    {
+      "type": "monologue",
+      "text": "電車が駅に着く。"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔が降りる前に、最後にこう言った。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼、明日も君を見てるよ。いつもみたいに"
+    },
+    {
+      "type": "monologue",
+      "text": "ドアが閉まる。"
+    },
+    {
+      "type": "char_exit",
+      "position": "left"
+    },
+    {
+      "type": "monologue",
+      "text": "不良は、手の中の瓶を見つめた。"
+    },
+    {
+      "type": "text",
+      "speaker": "furyo",
+      "text": "……誰かに、気づいてほしかった"
+    },
+    {
+      "type": "monologue",
+      "text": "小さく、呟く。"
+    },
+    {
+      "type": "monologue",
+      "text": "そして——瓶を開けた。"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── Scene 7：友達の妹「妹じゃなくて、女性になれる」 ──"
+    },
+    {
+      "type": "bg",
+      "image": "protagonist_home"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "imouto",
+      "name": "友達の妹"
+    },
+    {
+      "type": "monologue",
+      "text": "親友の家。夜。"
+    },
+    {
+      "type": "monologue",
+      "text": "妹は、自分の部屋で勉強していた。"
+    },
+    {
+      "type": "monologue",
+      "text": "——というより、勉強のフリをしていた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "imouto_neutral",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "机の上には、教科書とノート。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも、頭の中には別のことしかない。"
+    },
+    {
+      "type": "monologue",
+      "text": "お兄ちゃんの友達。"
+    },
+    {
+      "type": "monologue",
+      "text": "主人公。"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……ダメだって、こんなの"
+    },
+    {
+      "type": "monologue",
+      "text": "自分に言い聞かせる。"
+    },
+    {
+      "type": "monologue",
+      "text": "兄の親友に恋するなんて。"
+    },
+    {
+      "type": "se",
+      "file": "knock.wav"
+    },
+    {
+      "type": "monologue",
+      "text": "ノックの音。"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "は、はい？"
+    },
+    {
+      "type": "monologue",
+      "text": "ドアが開く——と思ったら、誰もいない。"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……え？"
+    },
+    {
+      "type": "monologue",
+      "text": "部屋を見回すと、窓際に——猫のような、妙な生き物がいた。"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_neutral",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "きゃっ！ な、なに！？"
+    },
+    {
+      "type": "char",
+      "position": "left",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "imouto_surprised",
+      "highlight": false
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "静かにして。お兄ちゃんに聞こえちゃうよ"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "っ——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "君、彼のこと好きなんでしょ"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "だ、誰のこと——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "お兄ちゃんの親友。隠さなくていいよ"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……なんで、知ってるの"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "知ってるよ。君が彼に話しかけたいのに、お兄ちゃんがいると話せないこと"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "君が彼の部屋に行きたいのに、\"妹だから\"って遠慮してること"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……やめて"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "やめない。だって、君を助けに来たんだから"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、瓶を取り出した。"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……なに、それ"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼の理想になれる薬"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "理想……？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼ね、こういうタイプが好きなんだって。強くて、たくましい女の子"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……え"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "君、今のままじゃ\"妹\"扱いされるだけ。でも、これを飲めば——"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼が、君を\"女の子\"として見てくれるよ"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "でも、私——"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "小さくて、可愛くて、守られる側。それが嫌なんでしょ？"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "お兄ちゃんも、彼も、いつも君を\"子ども\"扱いする"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……そう、だけど"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "強くなれば、対等になれる。\"妹\"じゃなくて、\"女性\"になれる"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、瓶を彼女の机に置いた。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "飲むかどうかは、君が決めて"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……副作用は？"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "戻れなくなる"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "でも、戻りたい？ \"妹\"に"
+    },
+    {
+      "type": "monologue",
+      "text": "友達の妹は、瓶を見つめた。"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……私、変わりたい"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "じゃあ、飲めばいい"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……お兄ちゃんに、バレたらどうしよう"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "バレたって、いいじゃない。むしろ、バレた方が面白いよ"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "さあ、どうする？"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、瓶を手に取った。"
+    },
+    {
+      "type": "monologue",
+      "text": "そして——蓋を開けた。"
+    },
+    {
+      "type": "text",
+      "speaker": "imouto",
+      "text": "……ごめんね、お兄ちゃん"
+    },
+    {
+      "type": "monologue",
+      "text": "小さく謝って、薬を飲んだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "いい選択だよ"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、にこりと笑って——消えた。"
+    },
+    {
+      "type": "char_exit",
+      "position": "left"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── Scene 8：悪魔、一人 ──"
+    },
+    {
+      "type": "bg",
+      "image": "devil_space"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_devil.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "akuma",
+      "name": "悪魔"
+    },
+    {
+      "type": "monologue",
+      "text": "7人に薬を渡し終えた夜。"
+    },
+    {
+      "type": "monologue",
+      "text": "悪魔は、月を見上げた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "akuma_smirk",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "筋肉ムキムキの彼女、か"
+    },
+    {
+      "type": "monologue",
+      "text": "くすり、と笑う。"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "彼女が7人。大盤振る舞いだね"
+    },
+    {
+      "type": "text",
+      "speaker": "akuma",
+      "text": "さて——誰が最初に壊れるかな"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "end"
+    }
+  ]
+}

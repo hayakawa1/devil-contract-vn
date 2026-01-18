@@ -67,7 +67,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "imouto_shy",
+      "image": "imouto_neutral_flustered",
       "highlight": true
     },
     {
@@ -120,7 +120,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "imouto_flustered",
+      "image": "imouto_neutral_flustered",
       "highlight": true
     },
     {
@@ -251,7 +251,7 @@
     },
     {
       "type": "bgm",
-      "file": "gm_sadness.mp3"
+      "file": "bgm_sadness.mp3"
     },
     {
       "type": "monologue",
@@ -344,7 +344,7 @@
     },
     {
       "type": "bgm",
-      "file": "gm_sadness.mp3"
+      "file": "bgm_sadness.mp3"
     },
     {
       "type": "monologue",
@@ -361,7 +361,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "imouto_sad",
+      "image": "imouto_neutral_sad",
       "highlight": true
     },
     {
@@ -421,7 +421,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "imouto_crying",
+      "image": "imouto_neutral_crying",
       "highlight": true
     },
     {
@@ -609,7 +609,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "imouto_hopeful",
+      "image": "imouto_neutral_smile",
       "highlight": true
     },
     {
@@ -1050,7 +1050,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "imouto_surprised",
+      "image": "imouto_neutral_surprised",
       "highlight": true
     },
     {
@@ -1172,7 +1172,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "imouto_crying",
+      "image": "imouto_neutral_crying",
       "highlight": true
     },
     {
@@ -1265,7 +1265,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "imouto_smile",
+      "image": "imouto_neutral_smile",
       "highlight": true
     },
     {

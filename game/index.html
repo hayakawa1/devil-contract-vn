@@ -10,6 +10,10 @@
   <div id="game-container">
     <!-- タイトル画面 -->
     <div id="title-screen" class="screen active">
+      <!-- Blood drip decorations -->
+      <div class="blood-drip-1"></div>
+      <div class="blood-drip-2"></div>
+
       <div class="menu">
         <button id="btn-episodes">エピソード選択</button>
         <button id="btn-characters">キャラクター図鑑</button>
@@ -59,7 +63,7 @@
           </div>
         </div>
         <div class="detail-actions">
-          <button id="btn-detail-back">戻る</button>
+          <button id="btn-detail-back" class="back-button">戻る</button>
         </div>
       </div>
     </div>
@@ -91,16 +95,6 @@
         </div>
       </div>
 
-      <!-- ステータス変動ポップアップ -->
-      <div id="stat-popup" class="hidden"></div>
-
-      <!-- テキストウィンドウ -->
-      <div id="text-window">
-        <div id="speaker-name"></div>
-        <div id="message-text"></div>
-        <div id="click-indicator">▼</div>
-      </div>
-
       <!-- UI ボタン -->
       <div id="game-ui">
         <button id="btn-auto">AUTO</button>
@@ -108,13 +102,52 @@
         <button id="btn-log">LOG</button>
         <button id="btn-game-menu">MENU</button>
       </div>
+
+      <!-- ステータス変動ポップアップ -->
+      <div id="stat-popup" class="hidden"></div>
+
+      <!-- テキストウィンドウ（新デザイン） -->
+      <div id="text-window">
+        <div class="dialogue-frame">
+          <!-- Corner frames -->
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div>
+          <div class="corner corner-br"></div>
+
+          <!-- Speaker name plate -->
+          <div id="speaker-name">
+            <div class="name-plate">
+              <span></span>
+            </div>
+            <div class="name-underline"></div>
+          </div>
+
+          <!-- Message text -->
+          <div id="message-text"></div>
+
+          <!-- Click indicator -->
+          <div id="click-indicator">
+            <span class="hint">CLICK / ENTER</span>
+            <span class="arrow">▼</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 選択肢コンテナ -->
+      <div id="choices-container" class="hidden">
+        <div class="choices-wrapper">
+          <p id="choices-prompt" class="choices-prompt">Make your choice...</p>
+          <div id="choices-options"></div>
+        </div>
+      </div>
     </div>
 
     <!-- バックログ画面 -->
     <div id="log-screen" class="screen">
       <h2>バックログ</h2>
       <div id="log-content"></div>
-      <button id="btn-log-back">戻る</button>
+      <button id="btn-log-back" class="back-button">戻る</button>
     </div>
 
     <!-- 設定画面 -->
@@ -136,13 +169,13 @@
         <label>AUTO速度</label>
         <input type="range" id="auto-speed" min="1" max="10" value="5" />
       </div>
-      <button id="btn-config-back">戻る</button>
+      <button id="btn-config-back" class="back-button">戻る</button>
     </div>
 
     <!-- ゲームメニュー（オーバーレイ） -->
     <div id="game-menu-overlay" class="hidden">
       <div class="game-menu">
-        <h3>メニュー</h3>
+        <h3>MENU</h3>
         <button id="btn-resume">ゲームに戻る</button>
         <button id="btn-to-episodes">エピソード選択へ</button>
         <button id="btn-to-title">タイトルへ</button>

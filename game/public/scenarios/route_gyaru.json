@@ -20,7 +20,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "gyaru_excited",
+      "image": "gyaru_neutral_smile",
       "highlight": true
     },
     {
@@ -63,7 +63,7 @@
     {
       "type": "text",
       "speaker": "gyaru",
-      "text": ""加工じゃないの？"とか"どこのジム？"とか、めっちゃリプきてる"
+      "text": "「加工じゃないの？」とか「どこのジム？」とか、めっちゃリプきてる"
     },
     {
       "type": "text",
@@ -297,7 +297,7 @@
     },
     {
       "type": "bgm",
-      "file": "gm_sadness.mp3"
+      "file": "bgm_sadness.mp3"
     },
     {
       "type": "text",
@@ -696,7 +696,7 @@
     {
       "type": "text",
       "speaker": "gyaru",
-      "text": "これがあたしの"人気"の正体"
+      "text": "これがあたしの「人気」の正体"
     },
     {
       "type": "text",
@@ -810,7 +810,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "gyaru_excited",
+      "image": "gyaru_neutral_smile",
       "highlight": true
     },
     {
@@ -991,7 +991,7 @@
     {
       "type": "text",
       "speaker": "",
-      "text": "──── ギャルルート 6話：「本当の"いいね"」 ────"
+      "text": "──── ギャルルート 6話：『本当の「いいね」』 ────"
     },
     {
       "type": "bg",
@@ -1145,7 +1145,7 @@
     {
       "type": "text",
       "speaker": "gyaru",
-      "text": "たった一人の"いいね"で、足りるわけ——"
+      "text": "たった一人の「いいね」で、足りるわけ——"
     },
     {
       "type": "monologue",
@@ -1154,7 +1154,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "gyaru_excited",
+      "image": "gyaru_neutral_smile",
       "highlight": true
     },
     {
@@ -1236,7 +1236,7 @@
     {
       "type": "text",
       "speaker": "gyaru",
-      "text": "あんたの"いいね"が、あれば——"
+      "text": "あんたの「いいね」が、あれば——"
     },
     {
       "type": "monologue",

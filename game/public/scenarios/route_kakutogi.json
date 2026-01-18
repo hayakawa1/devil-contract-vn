@@ -28,7 +28,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_serious",
+      "image": "kakutogi_neutral",
       "highlight": true
     },
     {
@@ -125,7 +125,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_sad",
+      "image": "kakutogi_neutral_sad",
       "highlight": true
     },
     {
@@ -140,7 +140,7 @@
     {
       "type": "text",
       "speaker": "kakutogi",
-      "text": "もう誰も、私と組んでくれない。スパーリングも、断られる"
+      "text": "もう誰も、私と組んでくれない。組手も、断られる"
     },
     {
       "type": "text",
@@ -196,7 +196,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_smile",
+      "image": "kakutogi_neutral_smile",
       "highlight": true
     },
     {
@@ -242,7 +242,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_serious",
+      "image": "kakutogi_neutral",
       "highlight": true
     },
     {
@@ -331,7 +331,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_angry",
+      "image": "kakutogi_neutral_angry",
       "highlight": true
     },
     {
@@ -399,7 +399,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_sad",
+      "image": "kakutogi_neutral_sad",
       "highlight": true
     },
     {
@@ -473,7 +473,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_smile",
+      "image": "kakutogi_neutral_smile",
       "highlight": true
     },
     {
@@ -506,7 +506,7 @@
     },
     {
       "type": "bgm",
-      "file": "gm_sadness.mp3"
+      "file": "bgm_sadness.mp3"
     },
     {
       "type": "monologue",
@@ -528,7 +528,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_serious",
+      "image": "kakutogi_neutral",
       "highlight": true
     },
     {
@@ -585,7 +585,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_sad",
+      "image": "kakutogi_neutral_sad",
       "highlight": true
     },
     {
@@ -759,7 +759,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_serious",
+      "image": "kakutogi_neutral",
       "highlight": true
     },
     {
@@ -838,7 +838,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_serious",
+      "image": "kakutogi_neutral",
       "highlight": true
     },
     {
@@ -888,7 +888,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_sad",
+      "image": "kakutogi_neutral_sad",
       "highlight": true
     },
     {
@@ -1155,7 +1155,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_serious",
+      "image": "kakutogi_neutral",
       "highlight": true
     },
     {
@@ -1201,7 +1201,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_surprised",
+      "image": "kakutogi_neutral_surprised",
       "highlight": true
     },
     {
@@ -1266,7 +1266,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_flustered",
+      "image": "kakutogi_neutral_flustered",
       "highlight": true
     },
     {
@@ -1306,7 +1306,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_crying",
+      "image": "kakutogi_neutral_crying",
       "highlight": true
     },
     {
@@ -1415,7 +1415,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "kakutogi_smile",
+      "image": "kakutogi_neutral_smile",
       "highlight": true
     },
     {
@@ -1449,7 +1449,7 @@
     {
       "type": "text",
       "speaker": "kakutogi",
-      "text": "本当に、毎日スパーリングしてくれるのか"
+      "text": "本当に、毎日組手してくれるのか"
     },
     {
       "type": "text",

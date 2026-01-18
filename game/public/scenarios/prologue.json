@@ -16,7 +16,12 @@
     {
       "type": "text",
       "speaker": "",
-      "text": "── 数日前：運命の出会い ──"
+      "text": "── 数日前：電車の中 ──"
+    },
+    {
+      "type": "pov",
+      "character": "protagonist",
+      "name": "主人公"
     },
     {
       "type": "monologue",
@@ -28,11 +33,11 @@
     },
     {
       "type": "monologue",
-      "text": "次の駅で、扉が開く。"
+      "text": "なんとなく、視線を感じる。"
     },
     {
       "type": "monologue",
-      "text": "そして——彼女が乗り込んできた。"
+      "text": "振り返ると——黒い制服の女子がいた。"
     },
     {
       "type": "char",
@@ -42,7 +47,7 @@
     },
     {
       "type": "monologue",
-      "text": "黒い制服。俺の学校とは違う。"
+      "text": "俺の学校とは違う。"
     },
     {
       "type": "monologue",
@@ -59,11 +64,16 @@
     },
     {
       "type": "monologue",
-      "text": "彼女は無言で、俺の斜め前に立った。"
+      "text": "目が合った瞬間、彼女はすぐに顔を背けた。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "（……なんだ？）"
     },
     {
       "type": "monologue",
-      "text": "ドキドキした。視線を外せなかった。"
+      "text": "気のせいか。そう思った。"
     },
     {
       "type": "monologue",
@@ -75,24 +85,11 @@
     },
     {
       "type": "monologue",
-      "text": "俺は——追いかけられなかった。"
-    },
-    {
-      "type": "text",
-      "speaker": "protagonist",
-      "text": "……誰だ、あの子"
+      "text": "その背中を、なんとなく目で追った。"
     },
     {
       "type": "monologue",
-      "text": "それから、毎朝同じ電車に乗るようになった。"
-    },
-    {
-      "type": "monologue",
-      "text": "彼女を見るために。"
-    },
-    {
-      "type": "monologue",
-      "text": "でも、話しかける勇気はなかった。"
+      "text": "——それだけだった。"
     },
     {
       "type": "text",
@@ -116,8 +113,26 @@
       "text": "俺はなんとなく、空を見上げていた。"
     },
     {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "（モテるって言われるけど……）"
+    },
+    {
       "type": "monologue",
-      "text": "また今日も、彼女に話しかけられなかった。"
+      "text": "幼なじみ、生徒会、ギャル、オタク、格闘技部——"
+    },
+    {
+      "type": "monologue",
+      "text": "なんか、いろんな女子から好意を向けられてる気がする。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも、俺にはピンとくる相手がいない。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "（俺の理想って、なんだろうな）"
     },
     {
       "type": "text",
@@ -173,11 +188,19 @@
     },
     {
       "type": "monologue",
-      "text": "主人公の脳裏に、電車の中で見たあの子の姿が浮かぶ。"
+      "text": "俺は、ふと考えた。"
     },
     {
       "type": "monologue",
-      "text": "凛としていて、強くて——でも、どこか孤独そうで。"
+      "text": "理想の彼女。"
+    },
+    {
+      "type": "monologue",
+      "text": "強くて、頼りがいがあって——でも、俺のことを好きでいてくれる。"
+    },
+    {
+      "type": "monologue",
+      "text": "そんな都合のいい相手。"
     },
     {
       "type": "text",
@@ -191,14 +214,6 @@
     {
       "type": "monologue",
       "text": "半分は冷やかしだ。半分は——まあ、本音だ。"
-    },
-    {
-      "type": "monologue",
-      "text": "あの子みたいに強くて、でも俺と一緒にいてくれる——"
-    },
-    {
-      "type": "monologue",
-      "text": "そんな都合のいい彼女。"
     },
     {
       "type": "char",
@@ -234,11 +249,7 @@
     },
     {
       "type": "monologue",
-      "text": "主人公に思いを寄せる5人。"
-    },
-    {
-      "type": "monologue",
-      "text": "そして、主人公が思いを寄せる2人。"
+      "text": "主人公に思いを寄せる7人。"
     },
     {
       "type": "monologue",

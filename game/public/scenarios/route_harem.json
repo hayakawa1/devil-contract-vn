@@ -1,0 +1,24 @@
+{
+  "route_harem": [
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "???? ハーレムルート ????"
+    },
+    {
+      "type": "bg",
+      "image": "black"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_devil.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "（このルートはまだゲーム実装中です）"
+    },
+    {
+      "type": "end"
+    }
+  ]
+}

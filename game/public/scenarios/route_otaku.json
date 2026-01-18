@@ -20,7 +20,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "otaku_curious",
+      "image": "otaku_neutral",
       "highlight": true
     },
     {
@@ -97,13 +97,13 @@
     {
       "type": "char",
       "position": "center",
-      "image": "otaku_analyzing",
+      "image": "otaku_neutral",
       "highlight": true
     },
     {
       "type": "text",
       "speaker": "otaku",
-      "text": "私たちの前に、他の"被験体"がいた可能性があります"
+      "text": "私たちの前に、他の「被験体」がいた可能性があります"
     },
     {
       "type": "monologue",
@@ -284,7 +284,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "otaku_analyzing",
+      "image": "otaku_neutral",
       "highlight": true
     },
     {
@@ -383,7 +383,7 @@
     {
       "type": "text",
       "speaker": "otaku",
-      "text": ""筋肉が暴走して、自分の体を破壊した""
+      "text": "「筋肉が暴走して、自分の体を破壊した」"
     },
     {
       "type": "text",
@@ -586,7 +586,7 @@
     {
       "type": "text",
       "speaker": "otaku",
-      "text": "私、小さい頃から"変わってる"って言われてました"
+      "text": "私、小さい頃から「変わってる」って言われてました"
     },
     {
       "type": "text",
@@ -732,7 +732,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "otaku_analyzing",
+      "image": "otaku_neutral",
       "highlight": true
     },
     {
@@ -1334,7 +1334,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "otaku_curious",
+      "image": "otaku_neutral",
       "highlight": true
     },
     {

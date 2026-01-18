@@ -20,7 +20,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_serious",
+      "image": "seitokai_neutral",
       "highlight": true
     },
     {
@@ -86,7 +86,7 @@
     {
       "type": "text",
       "speaker": "seitokai",
-      "text": ""著しく体型を逸脱した改造"。これに該当します"
+      "text": "「著しく体型を逸脱した改造」。これに該当します"
     },
     {
       "type": "text",
@@ -96,7 +96,7 @@
     {
       "type": "text",
       "speaker": "seitokai",
-      "text": "校則に"体型が変わった場合"の規定はありません"
+      "text": "校則に「体型が変わった場合」の規定はありません"
     },
     {
       "type": "monologue",
@@ -135,7 +135,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_flustered",
+      "image": "seitokai_neutral_flustered",
       "highlight": true
     },
     {
@@ -232,7 +232,7 @@
     {
       "type": "text",
       "speaker": "",
-      "text": "さて、君たちの"部活動"についてだが"
+      "text": "さて、君たちの「部活動」についてだが"
     },
     {
       "type": "monologue",
@@ -241,12 +241,12 @@
     {
       "type": "text",
       "speaker": "",
-      "text": ""異様な体型の生徒がいる"。"うちの子が怖がっている"。"教育上問題がある""
+      "text": "「異様な体型の生徒がいる」。「うちの子が怖がっている」。「教育上問題がある」"
     },
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_serious",
+      "image": "seitokai_neutral",
       "highlight": true
     },
     {
@@ -325,7 +325,7 @@
     {
       "type": "text",
       "speaker": "",
-      "text": "このまま"原因不明"では、推薦は難しい"
+      "text": "このまま「原因不明」では、推薦は難しい"
     },
     {
       "type": "text",
@@ -335,12 +335,12 @@
     {
       "type": "text",
       "speaker": "",
-      "text": "見た目の問題ではない。"異常事態"を抱えた生徒を、責任を持って推薦できない"
+      "text": "見た目の問題ではない。「異常事態」を抱えた生徒を、責任を持って推薦できない"
     },
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_flustered",
+      "image": "seitokai_neutral_flustered",
       "highlight": true
     },
     {
@@ -350,7 +350,7 @@
     {
       "type": "text",
       "speaker": "",
-      "text": "一週間、猶予を与える。何らかの"説明"を用意しなさい"
+      "text": "一週間、猶予を与える。何らかの「説明」を用意しなさい"
     },
     {
       "type": "bg",
@@ -531,7 +531,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_flustered",
+      "image": "seitokai_neutral_flustered",
       "highlight": true
     },
     {
@@ -653,7 +653,7 @@
     {
       "type": "text",
       "speaker": "seitokai",
-      "text": ""できる子"だから。"何でもできる子"だから"
+      "text": "「できる子」だから。「何でもできる子」だから"
     },
     {
       "type": "text",
@@ -843,7 +843,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_serious",
+      "image": "seitokai_neutral",
       "highlight": true
     },
     {
@@ -879,7 +879,7 @@
     {
       "type": "text",
       "speaker": "",
-      "text": ""異形"の生徒会長は、学校のイメージに関わる"
+      "text": "「異形」の生徒会長は、学校のイメージに関わる"
     },
     {
       "type": "text",
@@ -894,7 +894,7 @@
     {
       "type": "text",
       "speaker": "",
-      "text": "君には、しばらく"休養"してもらおうと思っている"
+      "text": "君には、しばらく「休養」してもらおうと思っている"
     },
     {
       "type": "text",
@@ -914,7 +914,7 @@
     {
       "type": "text",
       "speaker": "",
-      "text": "君たち"筋肉同好会"は、表向き活動を自粛。見えない場所で、ひっそりと"
+      "text": "君たち「筋肉同好会」は、表向き活動を自粛。見えない場所で、ひっそりと"
     },
     {
       "type": "text",
@@ -948,7 +948,7 @@
     {
       "type": "text",
       "speaker": "protagonist",
-      "text": "こいつは何年もこの学校のために働いてきた。それを"いなかったこと"にしろって？"
+      "text": "こいつは何年もこの学校のために働いてきた。それを「いなかったこと」にしろって？"
     },
     {
       "type": "text",
@@ -982,7 +982,7 @@
     {
       "type": "text",
       "speaker": "seitokai",
-      "text": "私は、"いなかったこと"にはなりません"
+      "text": "私は、「いなかったこと」にはなりません"
     },
     {
       "type": "text",
@@ -1006,7 +1006,7 @@
     {
       "type": "text",
       "speaker": "seitokai",
-      "text": ""見えない場所に隠れろ"と言われて、はいと答える生徒会長がいると思いますか"
+      "text": "「見えない場所に隠れろ」と言われて、はいと答える生徒会長がいると思いますか"
     },
     {
       "type": "text",
@@ -1105,7 +1105,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_flustered",
+      "image": "seitokai_neutral_flustered",
       "highlight": true
     },
     {
@@ -1308,7 +1308,7 @@
     {
       "type": "text",
       "speaker": "akuma",
-      "text": "彼女以外の六人には、"解毒剤"を渡そう"
+      "text": "彼女以外の六人には、「解毒剤」を渡そう"
     },
     {
       "type": "text",
@@ -1377,7 +1377,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_serious",
+      "image": "seitokai_neutral",
       "highlight": true
     },
     {
@@ -1456,7 +1456,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "seitokai_flustered",
+      "image": "seitokai_neutral_flustered",
       "highlight": true
     },
     {

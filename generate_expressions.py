@@ -16,7 +16,29 @@ import glob
 COMFYUI_URL = "http://127.0.0.1:8188"
 OUTPUT_DIR = r"C:\ComfyUI1\output\akuma_characters_v2"
 COMFYUI_INPUT_DIR = r"C:\ComfyUI1\input"
-BASE_WORKFLOW_PATH = r"c:\Users\hayak\Dropbox\悪魔との契約\base_workflow.json"
+BASE_WORKFLOW_PATH = r"c:\Users\hayak\Dropbox\悪魔との契約\tools\base_workflow.json"
+
+# 筋肉レベル設定（C:\ComfyUI1の設定準拠）
+MUSCLE_CONFIG = {
+    "neutral": {
+        "musctonk": 0.0,
+        "bigpecs": 0.0,
+        "last": 0.0,
+        "muscle_prompt": "",
+    },
+    "stage1": {
+        "musctonk": 0.6,
+        "bigpecs": 0.1,
+        "last": 1.0,
+        "muscle_prompt": "(muscular:1.2), (abs:1.1), toned arms, fit body",
+    },
+    "stage2": {
+        "musctonk": 1.0,
+        "bigpecs": 0.2,
+        "last": 1.0,
+        "muscle_prompt": "(extremely muscular:1.5), (huge muscles:1.4), bodybuilder, massive biceps, huge abs",
+    },
+}
 
 # 表情定義
 EXPRESSIONS = {
@@ -52,71 +74,62 @@ EXPRESSIONS = {
     }
 }
 
-# キャラクター定義（表情を付ける対象）
+# キャラクター定義（表情を付ける対象）- 3段階
 CHARACTERS = {
     "protagonist": {
         "name": "主人公",
         "base_prompt": "score_9, score_8, 1boy, male high school student, black gakuran uniform, handsome face, black hair, standing pose, full body, white background, simple background, solo, looking at viewer, BREAK, solid white background, plain backdrop",
         "filename": "protagonist",
-        "stages": ["normal"]
+        "stages": ["neutral"]
     },
     "heroine1": {
         "name": "幼なじみ",
         "base_prompt": "score_9, score_8, 1girl, long brown hair, school uniform, sailor uniform with red ribbon, warm personality, full body, white background, simple background, solo, standing pose, looking at viewer, BREAK, solid white background, plain backdrop",
         "filename": "heroine1",
-        "stages": ["normal", "stage1", "stage2", "stage3", "stage4"]
+        "stages": ["neutral", "stage1", "stage2"]
     },
     "heroine2": {
         "name": "生徒会長",
         "base_prompt": "score_9, score_8, 1girl, long black hair, ponytail, red glasses, student council president, elegant uniform with armband, dignified posture, full body, white background, simple background, solo, standing pose, looking at viewer, BREAK, solid white background, plain backdrop",
         "filename": "heroine2",
-        "stages": ["normal", "stage1", "stage2", "stage3", "stage4"]
+        "stages": ["neutral", "stage1", "stage2"]
     },
     "heroine3": {
         "name": "ギャル",
         "base_prompt": "score_9, score_8, 1girl, gyaru, bleached brown hair with highlights, makeup, decorated school uniform, trendy accessories, full body, white background, simple background, solo, posing, looking at viewer, BREAK, solid white background, plain backdrop",
         "filename": "heroine3",
-        "stages": ["normal", "stage1", "stage2", "stage3", "stage4"]
+        "stages": ["neutral", "stage1", "stage2"]
     },
     "heroine4": {
         "name": "オタク",
         "base_prompt": "score_9, score_8, 1girl, nerdy girl, short black hair, large round glasses, lab coat over school uniform, holding notebook, intellectual, full body, white background, simple background, solo, standing pose, looking at viewer, BREAK, solid white background, plain backdrop",
         "filename": "heroine4",
-        "stages": ["normal", "stage1", "stage2", "stage3", "stage4"]
+        "stages": ["neutral", "stage1", "stage2"]
     },
     "heroine5": {
         "name": "格闘技部",
         "base_prompt": "score_9, score_8, 1girl, female martial artist, short black hair, athletic uniform, gi, confident fighting stance, full body, white background, simple background, solo, martial arts pose, looking at viewer, BREAK, solid white background, plain backdrop",
         "filename": "heroine5",
-        "stages": ["normal", "stage1", "stage2", "stage3", "stage4"]
+        "stages": ["neutral", "stage1", "stage2"]
     },
     "heroine6": {
         "name": "不良",
-        "base_prompt": "score_9, score_8, 1girl, delinquent girl, black school uniform, sharp eyes, lone wolf aura, edgy beauty, full body, white background, simple background, solo, standing pose, looking at viewer, BREAK, solid white background, plain backdrop",
+        "base_prompt": "score_9, score_8, 1girl, delinquent girl, black school uniform, sharp eyes, lone wolf aura, edgy beauty, high school student, no weapons, empty hands, school setting, full body, white background, simple background, solo, standing pose, looking at viewer, BREAK, solid white background, plain backdrop",
         "filename": "heroine6",
-        "stages": ["normal", "stage1", "stage2", "stage3", "stage4"]
+        "stages": ["neutral", "stage1", "stage2"]
     },
     "heroine7": {
         "name": "友達の妹",
         "base_prompt": "score_9, score_8, 1girl, younger high school girl, twin tails brown hair, cute school uniform, adorable, innocent charm, full body, white background, simple background, solo, standing pose, looking at viewer, BREAK, solid white background, plain backdrop",
         "filename": "heroine7",
-        "stages": ["normal", "stage1", "stage2", "stage3", "stage4"]
+        "stages": ["neutral", "stage1", "stage2"]
     },
     "devil": {
         "name": "悪魔",
         "base_prompt": "score_9, score_8, creature, mascot character, black cat with small demon horns, glowing red eyes, devil tail with arrow tip, black fur, small cute but sinister appearance, floating slightly, no human features, dark familiar, full body, white background, simple background, solo, BREAK, solid white background, plain backdrop",
         "filename": "devil",
-        "stages": ["normal"]
+        "stages": ["neutral"]
     }
-}
-
-# 筋肉強度（stage毎のlast.safetensors強度）
-MUSCLE_STRENGTH = {
-    "normal": 1.0,
-    "stage1": 1.3,
-    "stage2": 1.6,
-    "stage3": 2.0,
-    "stage4": 2.5,
 }
 
 
@@ -143,16 +156,24 @@ def file_exists(char_filename: str, stage: str, expression: str) -> bool:
 
 def create_expression_workflow(char_data: dict, stage: str, expression: str,
                                 expression_data: dict, reference_image: str, seed: int = None):
-    """表情バリエーション用のワークフローを生成"""
+    """表情バリエーション用のワークフローを生成（3段階筋肉システム）"""
     if seed is None:
         seed = random.randint(1, 2**62)
 
     workflow = load_base_workflow()
 
-    # プロンプトに表情を追加
+    # 筋肉設定を取得
+    config = MUSCLE_CONFIG.get(stage, MUSCLE_CONFIG["neutral"])
+
+    # プロンプトに表情と筋肉を追加
     base_prompt = char_data["base_prompt"]
     expression_prompt = expression_data["prompt_add"]
-    full_prompt = f"{base_prompt}, {expression_prompt}"
+    muscle_prompt = config["muscle_prompt"]
+
+    if muscle_prompt:
+        full_prompt = f"{base_prompt}, {expression_prompt}, {muscle_prompt}"
+    else:
+        full_prompt = f"{base_prompt}, {expression_prompt}"
 
     if "229" in workflow:
         workflow["229"]["inputs"]["text"] = full_prompt
@@ -161,22 +182,20 @@ def create_expression_workflow(char_data: dict, stage: str, expression: str,
     if "75" in workflow:
         workflow["75"]["inputs"]["seed"] = seed
 
-    # 筋肉強度設定
-    muscle_strength = MUSCLE_STRENGTH.get(stage, 1.0)
-
-    # MusctonkXL（normalは0、それ以外は0.6）
+    # MusctonkXL を設定
     if "202" in workflow:
-        if stage == "normal":
-            workflow["202"]["inputs"]["strength_model"] = 0.0
-            workflow["202"]["inputs"]["strength_clip"] = 0.0
-        else:
-            workflow["202"]["inputs"]["strength_model"] = 0.6
-            workflow["202"]["inputs"]["strength_clip"] = 0.6
+        workflow["202"]["inputs"]["strength_model"] = config["musctonk"]
+        workflow["202"]["inputs"]["strength_clip"] = config["musctonk"]
 
-    # last.safetensors
+    # BigPecsGirl を設定（ノード234）
+    if "234" in workflow:
+        workflow["234"]["inputs"]["strength_model"] = config["bigpecs"]
+        workflow["234"]["inputs"]["strength_clip"] = config["bigpecs"]
+
+    # last.safetensors を設定
     if "237" in workflow:
-        workflow["237"]["inputs"]["strength_model"] = muscle_strength
-        workflow["237"]["inputs"]["strength_clip"] = muscle_strength
+        workflow["237"]["inputs"]["strength_model"] = config["last"]
+        workflow["237"]["inputs"]["strength_clip"] = config["last"]
 
     # FaceDetailerの表情プロンプトを変更
     if "267" in workflow:

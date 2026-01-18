@@ -9,9 +9,9 @@
       "description": "モテる男子高校生。筋肉フェチだが、現実の女性には満足できていない。悪魔に「肉ムキムキの彼女が欲しい」と願ってしまう。",
       "sprites": {
         "neutral": "protagonist_neutral",
-        "surprised": "protagonist_surprised",
-        "guilty": "protagonist_guilty",
-        "excited": "protagonist_excited"
+        "surprised": "protagonist_neutral_surprised",
+        "guilty": "protagonist_neutral_sad",
+        "excited": "protagonist_neutral_smile"
       }
     },
     "osananajimi": {
@@ -24,12 +24,10 @@
       "route_theme": "居場所を求める",
       "sprites": {
         "neutral": "osananajimi_neutral",
-        "smile": "osananajimi_smile",
-        "worried": "osananajimi_worried",
+        "smile": "osananajimi_neutral_smile",
+        "worried": "osananajimi_neutral_sad",
         "stage1": "osananajimi_stage1",
-        "stage2": "osananajimi_stage2",
-        "stage3": "osananajimi_stage3",
-        "stage4": "osananajimi_stage4"
+        "stage2": "osananajimi_stage2"
       }
     },
     "seitokai": {
@@ -42,12 +40,10 @@
       "route_theme": "承認を求める",
       "sprites": {
         "neutral": "seitokai_neutral",
-        "serious": "seitokai_serious",
-        "flustered": "seitokai_flustered",
+        "serious": "seitokai_neutral",
+        "flustered": "seitokai_neutral_flustered",
         "stage1": "seitokai_stage1",
-        "stage2": "seitokai_stage2",
-        "stage3": "seitokai_stage3",
-        "stage4": "seitokai_stage4"
+        "stage2": "seitokai_stage2"
       }
     },
     "gyaru": {
@@ -60,12 +56,10 @@
       "route_theme": "承認欲求",
       "sprites": {
         "neutral": "gyaru_neutral",
-        "excited": "gyaru_excited",
-        "posing": "gyaru_posing",
+        "excited": "gyaru_neutral_smile",
+        "posing": "gyaru_neutral_smile",
         "stage1": "gyaru_stage1",
-        "stage2": "gyaru_stage2",
-        "stage3": "gyaru_stage3",
-        "stage4": "gyaru_stage4"
+        "stage2": "gyaru_stage2"
       }
     },
     "otaku": {
@@ -78,12 +72,10 @@
       "route_theme": "真実を求める",
       "sprites": {
         "neutral": "otaku_neutral",
-        "curious": "otaku_curious",
-        "analyzing": "otaku_analyzing",
+        "curious": "otaku_neutral_surprised",
+        "analyzing": "otaku_neutral",
         "stage1": "otaku_stage1",
-        "stage2": "otaku_stage2",
-        "stage3": "otaku_stage3",
-        "stage4": "otaku_stage4"
+        "stage2": "otaku_stage2"
       }
     },
     "kakutogi": {
@@ -96,12 +88,10 @@
       "route_theme": "強さと孤独",
       "sprites": {
         "neutral": "kakutogi_neutral",
-        "fighting": "kakutogi_fighting",
-        "proud": "kakutogi_proud",
+        "fighting": "kakutogi_neutral_angry",
+        "proud": "kakutogi_neutral_smile",
         "stage1": "kakutogi_stage1",
-        "stage2": "kakutogi_stage2",
-        "stage3": "kakutogi_stage3",
-        "stage4": "kakutogi_stage4"
+        "stage2": "kakutogi_stage2"
       }
     },
     "furyo": {
@@ -110,16 +100,14 @@
       "name_display": "不良",
       "role": "クールビューティー",
       "type": "special",
-      "description": "他校の生徒。凛としていて孤独。主人公が電車で一目ぼれした相手。居場所を探している。",
+      "description": "他校の生徒。凛としていて孤独。電車で主人公に一目惚れした。居場所を探している。",
       "route_theme": "孤独と居場所",
       "sprites": {
         "neutral": "furyo_neutral",
-        "cold": "furyo_cold",
-        "vulnerable": "furyo_vulnerable",
+        "cold": "furyo_neutral",
+        "vulnerable": "furyo_neutral_sad",
         "stage1": "furyo_stage1",
-        "stage2": "furyo_stage2",
-        "stage3": "furyo_stage3",
-        "stage4": "furyo_stage4"
+        "stage2": "furyo_stage2"
       }
     },
     "imouto": {
@@ -132,12 +120,10 @@
       "route_theme": "依存と自立",
       "sprites": {
         "neutral": "imouto_neutral",
-        "shy": "imouto_shy",
-        "determined": "imouto_determined",
+        "shy": "imouto_neutral_flustered",
+        "determined": "imouto_neutral_angry",
         "stage1": "imouto_stage1",
-        "stage2": "imouto_stage2",
-        "stage3": "imouto_stage3",
-        "stage4": "imouto_stage4"
+        "stage2": "imouto_stage2"
       }
     },
     "akuma": {
@@ -149,36 +135,80 @@
       "description": "キューベー的存在。願いを「歪めて」叶える。毎章登場して主人公を煽る。",
       "sprites": {
         "neutral": "akuma_neutral",
-        "smirk": "akuma_smirk",
-        "pleased": "akuma_pleased"
+        "smirk": "akuma_neutral_smile",
+        "surprised": "akuma_neutral_surprised"
       }
+    },
+    "mother": {
+      "id": "mother",
+      "name": "幼なじみの母",
+      "name_display": "幼なじみの母",
+      "role": "保護者",
+      "type": "other",
+      "description": "幼なじみの母親。娘の変化に困惑している。",
+      "sprites": {}
+    },
+    "friend": {
+      "id": "friend",
+      "name": "親友",
+      "name_display": "親友",
+      "role": "主人公の親友",
+      "type": "other",
+      "description": "主人公の親友。妹のことを心配している兄。",
+      "sprites": {}
+    },
+    "mob": {
+      "id": "mob",
+      "name": "生徒",
+      "name_display": "生徒",
+      "role": "モブキャラクター",
+      "type": "other",
+      "description": "学校のモブ生徒。",
+      "sprites": {}
+    },
+    "kyoutou": {
+      "id": "kyoutou",
+      "name": "教頭",
+      "name_display": "教頭",
+      "role": "学校の教頭",
+      "type": "other",
+      "description": "学校の教頭。規律を重視する。",
+      "sprites": {}
+    },
+    "rijichou": {
+      "id": "rijichou",
+      "name": "理事長",
+      "name_display": "理事長",
+      "role": "学校の理事長",
+      "type": "other",
+      "description": "学校の理事長。生徒会長の味方。",
+      "sprites": {}
+    },
+    "komon": {
+      "id": "komon",
+      "name": "顧問",
+      "name_display": "顧問",
+      "role": "格闘技部顧問",
+      "type": "other",
+      "description": "格闘技部の顧問。生徒の安全を心配している。",
+      "sprites": {}
     }
   },
   "stages": {
-    "stage0": {
-      "id": "stage0",
+    "neutral": {
+      "id": "neutral",
       "name": "通常状態",
-      "description": "一般的な女子高生の体型"
+      "description": "一般的な女子高生の体型（筋肉なし）"
     },
     "stage1": {
       "id": "stage1",
-      "name": "うっすら筋肉",
-      "description": "腕、肩、太ももに筋肉の輪郭が見え始める"
+      "name": "かなりのムキムキ",
+      "description": "主人公にとっての理想体型"
     },
     "stage2": {
       "id": "stage2",
-      "name": "バランス型",
-      "description": "主人公にとっての完璧な理想体型"
-    },
-    "stage3": {
-      "id": "stage3",
-      "name": "人間離れ",
+      "name": "モンスターレベル",
       "description": "人間の限界を超えた筋肉量"
-    },
-    "stage4": {
-      "id": "stage4",
-      "name": "完全に人外",
-      "description": "もはや人間とは呼べない筋肉の塊"
     }
   }
 }

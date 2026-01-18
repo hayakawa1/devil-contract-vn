@@ -1,9 +1,593 @@
 {
   "route_osananajimi": [
     {
+      "type": "bg",
+      "image": "black"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_daily.mp3"
+    },
+    {
       "type": "text",
       "speaker": "",
-      "text": "════ 幼なじみルート：「帰れない家」 ════"
+      "text": "──── 幼なじみルート「帰れない家」 ────"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "テーマ：家族との関係 / アイデンティティ"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── 第1話：玄関が狭い ──"
+    },
+    {
+      "type": "bg",
+      "image": "school_gate"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_daily.mp3"
+    },
+    {
+      "type": "pov",
+      "character": "protagonist",
+      "name": "主人公"
+    },
+    {
+      "type": "monologue",
+      "text": "Day2地獄の朝。筋肉化。"
+    },
+    {
+      "type": "monologue",
+      "text": "幼なじみは、最初に俺の袖を引いた。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "osananajimi_stage1",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……ねえ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ん？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "今日、帰り……一緒に来て"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "家？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……うん。たぶん、やばい"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は笑ってる。いつもの調子を装ってる。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも、声が薄い。"
+    },
+    {
+      "type": "char_exit",
+      "position": "center"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── 第2話：帰宅 ──"
+    },
+    {
+      "type": "bg",
+      "image": "street_evening"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "monologue",
+      "text": "家の前まで来た。普通の家。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも幼なじみの足が止まる。"
+    },
+    {
+      "type": "char",
+      "position": "center",
+      "image": "osananajimi_stage1",
+      "highlight": true
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……ごめん"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "何が"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "たぶん、怒られるの、あたしだけじゃない"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "俺も？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "巻き込みたくないけど……来てほしい"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "来た"
+    },
+    {
+      "type": "monologue",
+      "text": "玄関の扉を開ける。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……は？"
+    },
+    {
+      "type": "monologue",
+      "text": "母親の声が、一段低い。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……誰？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……お母さん"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "誰？ って聞いてるの"
+    },
+    {
+      "type": "monologue",
+      "text": "幼なじみは、黙った。"
+    },
+    {
+      "type": "monologue",
+      "text": "筋肉があるせいじゃない。"
+    },
+    {
+      "type": "monologue",
+      "text": "\"娘\"と認識してもらえてない。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "まさか、冗談でしょ。うちの子、どこ"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……ここ"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……近寄らないで"
+    },
+    {
+      "type": "monologue",
+      "text": "言い方が、刺さる。"
+    },
+    {
+      "type": "choice",
+      "prompt": "どうする？",
+      "choices": [
+        {
+          "text": "正直に話す（真実ルート）",
+          "next": "honest"
+        },
+        {
+          "text": "嘘をつく（偽装ルート）",
+          "next": "lie"
+        }
+      ]
+    },
+    {
+      "type": "label",
+      "id": "honest"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……お母さん、落ち着いて"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "落ち着いて？知らない男が娘のフリして家に入ってきて？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "男じゃない……"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "じゃあ何？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……私"
+    },
+    {
+      "type": "monologue",
+      "text": "母親は震えた。怒りじゃない。"
+    },
+    {
+      "type": "monologue",
+      "text": "恐怖だ。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……病院"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "行く"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "警察——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "待って！"
+    },
+    {
+      "type": "monologue",
+      "text": "俺の声で、空気が止まる。"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "昨日から、学校全体で起きてる"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "原因不明の……体の変化"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……そんなの"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "信じられないのはわかる"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "でも、本人が一番怖い"
+    },
+    {
+      "type": "monologue",
+      "text": "幼なじみが、息を吸う。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……お母さん"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "私、声……わかる？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "小学校の時。熱出したとき、氷枕作ってくれた"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "そのとき……\"泣くな\"じゃなくて、\"泣いていい\"って言った"
+    },
+    {
+      "type": "monologue",
+      "text": "母の目が揺れる。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……あなた、本当に"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "うん"
+    },
+    {
+      "type": "monologue",
+      "text": "母は、崩れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……気持ち悪い、って思った"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "ごめん。ごめん……"
+    },
+    {
+      "type": "monologue",
+      "text": "抱きしめようとして、止まる。"
+    },
+    {
+      "type": "monologue",
+      "text": "筋肉があるからじゃない。"
+    },
+    {
+      "type": "monologue",
+      "text": "怖いからだ。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……いいよ。今、怖いの普通だよ"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女の方が大人みたいだった。"
+    },
+    {
+      "type": "set_flag",
+      "name": "honest_to_parents",
+      "value": true
+    },
+    {
+      "type": "affinity",
+      "character": "osananajimi",
+      "value": 10
+    },
+    {
+      "type": "bg",
+      "image": "protagonist_room_night"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_daily.mp3"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── 第3話：風呂場の鏡 ──"
+    },
+    {
+      "type": "monologue",
+      "text": "夜。幼なじみは、自分の部屋で鏡を見ていた。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……笑える"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "笑ってない"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "笑ってるよ。だってさ、あたしの体、別人じゃん"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……お前だろ"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……わかんないよ"
+    },
+    {
+      "type": "monologue",
+      "text": "鏡の中の筋肉は、彼女の思春期を踏み潰すみたいに張っている。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "ねえ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ん"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……触ってもいい？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "どこを"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……自分の腕"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女が、自分の腕をそっと撫でる。"
+    },
+    {
+      "type": "monologue",
+      "text": "強さが、怖さに変わる瞬間。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "これ、あたしの\"努力\"じゃない"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "なのに、強い"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "ずるいよね"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ずるくない"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "ずるいよ。ずるいって思わないと、あたし壊れる"
+    },
+    {
+      "type": "bg",
+      "image": "childhood_friend_home"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_ending.mp3"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── 数日後 ──"
+    },
+    {
+      "type": "monologue",
+      "text": "母と幼なじみが、向かい合って座っている。"
+    },
+    {
+      "type": "monologue",
+      "text": "母の手が、震えながら伸びる。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……触って、いい？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "幼なじみが頷く。"
+    },
+    {
+      "type": "monologue",
+      "text": "母の手が、娘の腕に触れる。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……あなた、重いね"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "筋肉だからね"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……馬鹿"
+    },
+    {
+      "type": "monologue",
+      "text": "母が、恐る恐る娘の腕に触れる。"
+    },
+    {
+      "type": "monologue",
+      "text": "触れた瞬間、泣き出す。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……ごめん"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……遅い"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "うん……遅い"
+    },
+    {
+      "type": "monologue",
+      "text": "幼なじみが笑う。泣きながら笑う。"
+    },
+    {
+      "type": "monologue",
+      "text": "\"元に戻る\"じゃない"
+    },
+    {
+      "type": "monologue",
+      "text": "\"今のまま\"で、戻った"
     },
     {
       "type": "bg",
@@ -11,167 +595,307 @@
     },
     {
       "type": "bgm",
-      "file": "gm_sadness.mp3"
-    },
-    {
-      "type": "monologue",
-      "text": "部活初日の帰り道。"
-    },
-    {
-      "type": "char",
-      "position": "center",
-      "image": "osananajimi_worried",
-      "highlight": true
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "ねえ、ちょっと寄り道していい？"
-    },
-    {
-      "type": "monologue",
-      "text": "いつもの公園。いつものブランコ。"
-    },
-    {
-      "type": "monologue",
-      "text": "ただ、彼女が座ると、鎖がギシギシと悲鳴を上げた。"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "……あはは。壊れそう"
-    },
-    {
-      "type": "monologue",
-      "text": "笑ってる。でも、目が笑ってない。"
-    },
-    {
-      "type": "text",
-      "speaker": "protagonist",
-      "text": "どうした"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "お母さんに、なんて言おう"
-    },
-    {
-      "type": "text",
-      "speaker": "protagonist",
-      "text": "……"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "昨日の夜、帰ったらさ。お母さん、私の顔見て固まったの"
-    },
-    {
-      "type": "monologue",
-      "text": "彼女は空を見上げた。"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": ""誰？"って"
-    },
-    {
-      "type": "text",
-      "speaker": "protagonist",
-      "text": "……"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "自分の娘に、"誰？"だよ"
-    },
-    {
-      "type": "monologue",
-      "text": "ブランコが揺れる。鎖が軋む。"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "今朝は早く出てきちゃった。顔、合わせられなくて"
-    },
-    {
-      "type": "text",
-      "speaker": "protagonist",
-      "text": "今日は"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "……帰りたくない"
-    },
-    {
-      "type": "monologue",
-      "text": "小さく、そう言った。"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "ねえ。私、どうしたらいいの"
-    },
-    {
-      "type": "monologue",
-      "text": "その目が、俺を見る。"
-    },
-    {
-      "type": "monologue",
-      "text": "昔と同じ目。泣きそうなのを我慢してる、あの目。"
-    },
-    {
-      "type": "text",
-      "speaker": "protagonist",
-      "text": "——俺も一緒に行く"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "え"
-    },
-    {
-      "type": "text",
-      "speaker": "protagonist",
-      "text": "お前んち。説明する。俺から"
-    },
-    {
-      "type": "monologue",
-      "text": "何を説明するんだ。筋肉が生えましたって？ 悪魔のせいですって？"
-    },
-    {
-      "type": "monologue",
-      "text": "でも、放っておけなかった。"
-    },
-    {
-      "type": "char",
-      "position": "center",
-      "image": "osananajimi_smile",
-      "highlight": true
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "……バカ"
-    },
-    {
-      "type": "text",
-      "speaker": "protagonist",
-      "text": "知ってる"
-    },
-    {
-      "type": "text",
-      "speaker": "osananajimi",
-      "text": "ほんとバカ"
-    },
-    {
-      "type": "monologue",
-      "text": "少しだけ、笑った。"
+      "file": "bgm_daily.mp3"
     },
     {
       "type": "text",
       "speaker": "",
-      "text": "──── 【幼なじみルート 1話 完】 ────"
+      "text": "── さらに数日後：公園 ──"
+    },
+    {
+      "type": "monologue",
+      "text": "いつもの公園。"
+    },
+    {
+      "type": "monologue",
+      "text": "幼なじみは、ブランコの隣に立っている。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……ブランコ、乗れなくなった"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "壊れるもんな"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "あはは。筋肉のせい"
+    },
+    {
+      "type": "monologue",
+      "text": "笑ってる。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも、今は目も笑ってる。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "ねえ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "ん"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……恋人、ってことにしよ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……ああ"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "「ってことに」じゃなくて？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……恋人になろう"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……うん"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女が笑う。"
+    },
+    {
+      "type": "monologue",
+      "text": "筋肉があっても。"
+    },
+    {
+      "type": "monologue",
+      "text": "母に怖がられても。"
+    },
+    {
+      "type": "monologue",
+      "text": "ブランコに乗れなくても。"
+    },
+    {
+      "type": "monologue",
+      "text": "彼女は、彼女のままだった。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── HAPPY END「新しい家族」 ──"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "label",
+      "id": "lie"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……お母さん、落ち着いて"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "落ち着けるわけないでしょ！"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "ここで正面突破すると、壊れる"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……双子です"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……は？"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "幼なじみの、双子の姉"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "うちの子に双子なんて——"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "……事情があって"
+    },
+    {
+      "type": "monologue",
+      "text": "幼なじみが、目を見開く。"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……う、うん"
+    },
+    {
+      "type": "monologue",
+      "text": "声が震える。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……冗談でしょ"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "冗談じゃないです"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "本人は今……体調が悪くて"
+    },
+    {
+      "type": "text",
+      "speaker": "protagonist",
+      "text": "だから、俺が代わりに来た"
+    },
+    {
+      "type": "monologue",
+      "text": "母親は、疑いながらも\"信じたい形\"を選ぶ。"
+    },
+    {
+      "type": "monologue",
+      "text": "信じたいのは娘じゃなく、\"安心できる物語\"だ。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……とにかく、上がって"
+    },
+    {
+      "type": "monologue",
+      "text": "通った。"
+    },
+    {
+      "type": "monologue",
+      "text": "でも——"
+    },
+    {
+      "type": "monologue",
+      "text": "この嘘は、後で必ず牙を剥く。"
+    },
+    {
+      "type": "set_flag",
+      "name": "honest_to_parents",
+      "value": false
+    },
+    {
+      "type": "affinity",
+      "character": "osananajimi",
+      "value": -5
+    },
+    {
+      "type": "bg",
+      "image": "childhood_friend_home"
+    },
+    {
+      "type": "bgm",
+      "file": "bgm_tension.mp3"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── 数日後：嘘の露見 ──"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "……ねえ"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "なに"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "あなた、本当に双子？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "戸籍、調べたの"
+    },
+    {
+      "type": "monologue",
+      "text": "空気が凍る。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "双子なんて、いない"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "あなた、誰？"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……"
+    },
+    {
+      "type": "monologue",
+      "text": "嘘が、壊れた。"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "出てって"
+    },
+    {
+      "type": "text",
+      "speaker": "osananajimi",
+      "text": "……え"
+    },
+    {
+      "type": "text",
+      "speaker": "mother",
+      "text": "出てけって言ってるの！"
+    },
+    {
+      "type": "monologue",
+      "text": "母の叫びが、彼女を追い出す。"
+    },
+    {
+      "type": "text",
+      "speaker": "",
+      "text": "── BAD END「家出」 ──"
     },
     {
       "type": "end"

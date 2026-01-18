@@ -112,7 +112,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_surprised",
+      "image": "furyo_neutral_surprised",
       "highlight": true
     },
     {
@@ -321,7 +321,7 @@
     },
     {
       "type": "bgm",
-      "file": "gm_sadness.mp3"
+      "file": "bgm_sadness.mp3"
     },
     {
       "type": "monologue",
@@ -340,7 +340,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_sad",
+      "image": "furyo_neutral_sad",
       "highlight": true
     },
     {
@@ -455,7 +455,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_flustered",
+      "image": "furyo_neutral_flustered",
       "highlight": true
     },
     {
@@ -511,7 +511,7 @@
     },
     {
       "type": "bgm",
-      "file": "gm_sadness.mp3"
+      "file": "bgm_sadness.mp3"
     },
     {
       "type": "monologue",
@@ -528,7 +528,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_sad",
+      "image": "furyo_neutral_sad",
       "highlight": true
     },
     {
@@ -600,7 +600,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_crying",
+      "image": "furyo_neutral_crying",
       "highlight": true
     },
     {
@@ -701,7 +701,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_surprised",
+      "image": "furyo_neutral_surprised",
       "highlight": true
     },
     {
@@ -730,7 +730,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_flustered",
+      "image": "furyo_neutral_flustered",
       "highlight": true
     },
     {
@@ -810,7 +810,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_hurt",
+      "image": "furyo_neutral_sad",
       "highlight": true
     },
     {
@@ -873,7 +873,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_crying",
+      "image": "furyo_neutral_crying",
       "highlight": true
     },
     {
@@ -1213,7 +1213,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_surprised",
+      "image": "furyo_neutral_surprised",
       "highlight": true
     },
     {
@@ -1292,7 +1292,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_crying",
+      "image": "furyo_neutral_crying",
       "highlight": true
     },
     {
@@ -1383,7 +1383,7 @@
     {
       "type": "char",
       "position": "center",
-      "image": "furyo_smile",
+      "image": "furyo_neutral_smile",
       "highlight": true
     },
     {
