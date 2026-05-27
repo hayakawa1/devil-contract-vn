@@ -517,6 +517,7 @@ class GameEngine {
     this.currentText = '';
     this.displayedText = '';
     this.typeInterval = null;
+    this.autoTimer = null;
 
     // ティラノスクリプトパーサー
     this.parser = new TyranoParser();
@@ -524,6 +525,7 @@ class GameEngine {
       ? import.meta.env.BASE_URL
       : '/';
     this.baseUrl = viteBaseUrl.endsWith('/') ? viteBaseUrl : `${viteBaseUrl}/`;
+    this.assetVersion = '20260527-standee-bg-refresh';
     this.currentLabels = {};
     this.callStack = []; // サブルーチン用コールスタック
     this.pendingChoices = []; // 選択肢収集用
@@ -584,6 +586,12 @@ class GameEngine {
   resolveUrl(path) {
     const normalized = (path || '').toString().replace(/^\/+/, '');
     return `${this.baseUrl}${normalized}`;
+  }
+
+  resolveAssetUrl(path) {
+    const url = this.resolveUrl(path);
+    const separator = url.includes('?') ? '&' : '?';
+    return `${url}${separator}v=${this.assetVersion}`;
   }
 
   async fetchJsonWithFallback(paths, label = 'json') {
@@ -871,7 +879,7 @@ class GameEngine {
       const card = document.createElement('div');
       card.className = 'character-card';
       card.innerHTML = `
-        <div class="char-portrait" style="background-image: url('${this.resolveUrl(`assets/characters/${id}_neutral.png`)}')"></div>
+        <div class="char-portrait" style="background-image: url('${this.resolveAssetUrl(`assets/characters/${this.getCharacterPortraitImage(id)}.png`)}')"></div>
         <div class="char-name">${char.name_display || char.name}</div>
         <div class="char-role">${char.role || ''}</div>
       `;
@@ -886,7 +894,7 @@ class GameEngine {
 
   showCharacterDetail(id, char) {
     const portrait = document.getElementById('detail-portrait');
-    portrait.style.backgroundImage = `url('${this.resolveUrl(`assets/characters/${id}_neutral.png`)}')`;
+    portrait.style.backgroundImage = `url('${this.resolveAssetUrl(`assets/characters/${this.getCharacterPortraitImage(id)}.png`)}')`;
     document.getElementById('detail-name').textContent = char.name_display || char.name;
     document.getElementById('detail-meta').innerHTML = `
       <div>役割: ${char.role || '不明'}</div>
@@ -1092,13 +1100,17 @@ class GameEngine {
         setTimeout(() => {
           this.currentIndex++;
           this.processCommand();
-        }, cmd.time || 1000);
+        }, this.isSkipMode ? 20 : (cmd.time || 1000));
         break;
 
       // ティラノスクリプト: クリック待ち
       case 'wait_click':
       case 'page_break':
-        // クリックを待つ（advanceTextでcurrentIndexがインクリメントされる）
+        if (this.isAutoMode) {
+          this.scheduleAutoAdvance(80);
+        } else if (this.isSkipMode) {
+          this.scheduleSkipAdvance();
+        }
         break;
 
       // ティラノスクリプト: 改行
@@ -1443,7 +1455,7 @@ class GameEngine {
     }
 
     // 実際の背景画像を使用
-    const bgPath = this.resolveUrl(`assets/backgrounds/${mappedImage}.png`);
+    const bgPath = this.resolveAssetUrl(`assets/backgrounds/${mappedImage}.png`);
     bg.style.backgroundImage = `url('${bgPath}')`;
     bg.style.backgroundSize = 'cover';
     bg.style.backgroundPosition = 'center';
@@ -1511,6 +1523,12 @@ class GameEngine {
   isStageableCharacter(characterId) {
     const sprites = this.characters.characters?.[characterId]?.sprites;
     return Boolean(sprites?.stage1 || sprites?.stage2);
+  }
+
+  getCharacterPortraitImage(characterId) {
+    return this.isStageableCharacter(characterId)
+      ? `${characterId}_neutral_default`
+      : `${characterId}_neutral`;
   }
 
   normalizeSpeakerKey(value) {
@@ -1688,9 +1706,9 @@ class GameEngine {
     if (expr === 'neutral' || /^stage\d+$/.test(expr)) {
       // 既にステージが指定されている場合はそのまま返す
       if (/^stage\d+$/.test(expr)) {
-        return `${characterId}_${expr}`;
+        return `${characterId}_${expr}_default`;
       }
-      return `${characterId}_${stagePrefix}`;
+      return `${characterId}_${stagePrefix}_default`;
     }
 
     // それ以外は表情をステージに合わせて追加
@@ -1739,7 +1757,7 @@ class GameEngine {
     // 新しいキャラクターが登場する場合はアニメーション
     const isNewChar = !elem.classList.contains('visible') || elem.dataset.character !== charName;
 
-    elem.style.backgroundImage = `url('${this.resolveUrl(`assets/characters/${resolvedImage}.png`)}')`;
+    elem.style.backgroundImage = `url('${this.resolveAssetUrl(`assets/characters/${resolvedImage}.png`)}')`;
     elem.dataset.character = charName;
     elem.classList.add('visible');
     this.lastCharacterPosition[charName] = position;
@@ -1967,10 +1985,18 @@ class GameEngine {
 
   startTyping() {
     const messageElem = document.getElementById('message-text');
-    const speed = 50 - (this.textSpeed * 4); // 10〜50ms
+    const speed = this.getTypingDelay();
 
     if (this.typeInterval) {
       clearInterval(this.typeInterval);
+    }
+
+    if (this.isSkipMode) {
+      this.displayedText = this.currentText;
+      messageElem.textContent = this.displayedText;
+      this.isTyping = false;
+      this.onTextComplete();
+      return;
     }
 
     let charIndex = 0;
@@ -1992,12 +2018,7 @@ class GameEngine {
     if (this.isAutoMode) {
       this.scheduleAutoAdvance();
     } else if (this.isSkipMode) {
-      setTimeout(() => {
-        if (this.isSkipMode) {
-          this.currentIndex++;
-          this.processCommand();
-        }
-      }, 30);
+      this.scheduleSkipAdvance();
     }
   }
 
@@ -2011,6 +2032,7 @@ class GameEngine {
       this.isTyping = false;
       this.onTextComplete();
     } else {
+      this.clearAutoAdvanceTimer();
       // 次のコマンドへ（非同期でUI更新を許可）
       this.currentIndex++;
       setTimeout(() => this.processCommand(), 0);
@@ -2199,11 +2221,13 @@ class GameEngine {
       clearInterval(this.typeInterval);
       this.typeInterval = null;
     }
+    this.clearAutoAdvanceTimer();
   }
 
   toggleAuto() {
     this.isAutoMode = !this.isAutoMode;
     this.isSkipMode = false;
+    this.clearAutoAdvanceTimer();
     document.getElementById('btn-auto').classList.toggle('active', this.isAutoMode);
     document.getElementById('btn-skip').classList.remove('active');
 
@@ -2213,9 +2237,25 @@ class GameEngine {
     }
   }
 
-  scheduleAutoAdvance() {
-    const delay = (11 - this.autoSpeed) * 500;
-    setTimeout(() => {
+  getTypingDelay() {
+    return 100 - (this.textSpeed * 9);
+  }
+
+  getAutoAdvanceDelay() {
+    return 3600 - (this.autoSpeed * 300);
+  }
+
+  clearAutoAdvanceTimer() {
+    if (this.autoTimer) {
+      clearTimeout(this.autoTimer);
+      this.autoTimer = null;
+    }
+  }
+
+  scheduleAutoAdvance(delay = this.getAutoAdvanceDelay()) {
+    this.clearAutoAdvanceTimer();
+    this.autoTimer = setTimeout(() => {
+      this.autoTimer = null;
       if (this.isAutoMode && !this.isTyping) {
         this.currentIndex++;
         this.processCommand();
@@ -2223,20 +2263,29 @@ class GameEngine {
     }, delay);
   }
 
+  scheduleSkipAdvance() {
+    this.clearAutoAdvanceTimer();
+    this.autoTimer = setTimeout(() => {
+      this.autoTimer = null;
+      if (this.isSkipMode && !this.isTyping) {
+        this.currentIndex++;
+        this.processCommand();
+      }
+    }, 20);
+  }
+
   toggleSkip() {
     this.isSkipMode = !this.isSkipMode;
     this.isAutoMode = false;
+    this.clearAutoAdvanceTimer();
     document.getElementById('btn-skip').classList.toggle('active', this.isSkipMode);
     document.getElementById('btn-auto').classList.remove('active');
 
     // スキップモード開始時、現在のテキストが表示済みなら少し待ってから次へ進む
     if (this.isSkipMode && !this.isTyping) {
-      setTimeout(() => {
-        if (this.isSkipMode && !this.isTyping) {
-          this.currentIndex++;
-          this.processCommand();
-        }
-      }, 30);
+      this.scheduleSkipAdvance();
+    } else if (this.isSkipMode && this.isTyping) {
+      this.advanceText();
     }
   }
 

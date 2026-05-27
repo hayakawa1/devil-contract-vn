@@ -23,11 +23,11 @@
       "description": "優しく、家庭的な正統派ヒロイン。主人公に片思いしている。家族にバレそう問題を抱える。",
       "route_theme": "居場所を求める",
       "sprites": {
-        "neutral": "osananajimi_neutral",
+        "neutral": "osananajimi_neutral_default",
         "smile": "osananajimi_neutral_smile",
         "worried": "osananajimi_neutral_sad",
-        "stage1": "osananajimi_stage1",
-        "stage2": "osananajimi_stage2"
+        "stage1": "osananajimi_stage1_default",
+        "stage2": "osananajimi_stage2_default"
       }
     },
     "seitokai": {
@@ -39,11 +39,11 @@
       "description": "真面目で完璧主義な生徒会長。規律を重んじる。校則・活動許可問題に悩む。主人公に片思いしている。",
       "route_theme": "承認を求める",
       "sprites": {
-        "neutral": "seitokai_neutral",
-        "serious": "seitokai_neutral",
+        "neutral": "seitokai_neutral_default",
+        "serious": "seitokai_neutral_default",
         "flustered": "seitokai_neutral_flustered",
-        "stage1": "seitokai_stage1",
-        "stage2": "seitokai_stage2"
+        "stage1": "seitokai_stage1_default",
+        "stage2": "seitokai_stage2_default"
       }
     },
     "gyaru": {
@@ -55,11 +55,11 @@
       "description": "派手で目立ちたがりのギャル。承認欲求が強い。SNS炎上・アンチ問題を抱える。主人公に片思いしている。",
       "route_theme": "承認欲求",
       "sprites": {
-        "neutral": "gyaru_neutral",
+        "neutral": "gyaru_neutral_default",
         "excited": "gyaru_neutral_smile",
         "posing": "gyaru_neutral_smile",
-        "stage1": "gyaru_stage1",
-        "stage2": "gyaru_stage2"
+        "stage1": "gyaru_stage1_default",
+        "stage2": "gyaru_stage2_default"
       }
     },
     "otaku": {
@@ -71,11 +71,11 @@
       "description": "好奇心旺盛なオタク系女子。薬の正体を追う研究者タイプ。主人公に片思いしている。",
       "route_theme": "真実を求める",
       "sprites": {
-        "neutral": "otaku_neutral",
+        "neutral": "otaku_neutral_default",
         "curious": "otaku_neutral_surprised",
-        "analyzing": "otaku_neutral",
-        "stage1": "otaku_stage1",
-        "stage2": "otaku_stage2"
+        "analyzing": "otaku_neutral_default",
+        "stage1": "otaku_stage1_default",
+        "stage2": "otaku_stage2_default"
       }
     },
     "kakutogi": {
@@ -87,11 +87,11 @@
       "description": "ストイックな格闘技部員。強さを求める求道者。競技での孤立問題を抱える。主人公に片思いしている。",
       "route_theme": "強さと孤独",
       "sprites": {
-        "neutral": "kakutogi_neutral",
+        "neutral": "kakutogi_neutral_default",
         "fighting": "kakutogi_neutral_angry",
         "proud": "kakutogi_neutral_smile",
-        "stage1": "kakutogi_stage1",
-        "stage2": "kakutogi_stage2"
+        "stage1": "kakutogi_stage1_default",
+        "stage2": "kakutogi_stage2_default"
       }
     },
     "furyo": {
@@ -103,11 +103,11 @@
       "description": "他校の生徒。凛としていて孤独。電車で主人公に一目惚れした。居場所を探している。",
       "route_theme": "孤独と居場所",
       "sprites": {
-        "neutral": "furyo_neutral",
-        "cold": "furyo_neutral",
+        "neutral": "furyo_neutral_default",
+        "cold": "furyo_neutral_default",
         "vulnerable": "furyo_neutral_sad",
-        "stage1": "furyo_stage1",
-        "stage2": "furyo_stage2"
+        "stage1": "furyo_stage1_default",
+        "stage2": "furyo_stage2_default"
       }
     },
     "imouto": {
@@ -119,11 +119,11 @@
       "description": "主人公の親友の妹。密かに主人公に憧れている。兄との関係問題を抱える。",
       "route_theme": "依存と自立",
       "sprites": {
-        "neutral": "imouto_neutral",
+        "neutral": "imouto_neutral_default",
         "shy": "imouto_neutral_flustered",
         "determined": "imouto_neutral_angry",
-        "stage1": "imouto_stage1",
-        "stage2": "imouto_stage2"
+        "stage1": "imouto_stage1_default",
+        "stage2": "imouto_stage2_default"
       }
     },
     "akuma": {
