@@ -6,54 +6,25 @@
 
 ## 📁 ディレクトリ構成
 
-```
 悪魔との契約/
-├── docs/                   # ドキュメント類
-│   ├── design/            # 設計資料
-│   │   ├── system_4stages.md       # 4段階変化システム仕様
-│   │   ├── bad_endings.md          # 全ルートBAD END集
-│   │   ├── special_events.md       # 特殊イベント集（コメディ）
-│   │   ├── シナリオ構造設計.md     # シナリオ全体構造
-│   │   └── ルート分岐設計.md       # 分岐・エンディング設計
-│   ├── prompts/           # AI生成用プロンプト
-│   │   ├── prompts_characters.md   # キャラクター画像生成用
-│   │   ├── prompts_backgrounds.md  # 背景画像生成用
-│   │   ├── prompts_music.md        # BGM生成用（Suno）
-│   │   └── prompts_se.md           # 効果音生成用（ElevenLabs）
-│   └── scenario/          # シナリオファイル
-│       ├── シナリオ.txt            # メインシナリオ（全ルート）
-│       ├── シナリオ.json           # JSON形式
-│       ├── シナリオ_plain.txt      # プレーンテキスト版
-│       ├── シナリオ_script.txt     # スクリプト版
-│       └── シナリオ_renpy.rpy      # Ren'Py形式
+├── game/                  # ゲーム本体
+│   ├── index.html         # エントリーポイント
+│   ├── main.js            # ゲームエンジン（独自実装）
+│   ├── style.css          # スタイルシート
+│   └── public/            # 公開アセット
+│       ├── assets/        # 画像・音声データ
+│       └── scenarios/     # シナリオデータ（.ks / .json）
+│           ├── prologue.ks           # プロローグ
+│           ├── episode*.ks           # 共通エピソード
+│           ├── route_*.ks            # 個別ルート
+│           └── full_game_scenario.json # シナリオ統合データ
 │
-├── assets/                 # ゲームアセット
-│   ├── bgm/               # BGMファイル（.mp3）
-│   ├── se/                # 効果音ファイル（.wav）
-│   └── images/            # 画像ファイル（.png）
-│       └── backgrounds/   # 背景画像
+├── tools/                 # 開発・分析ツール
+│   ├── analyze_working_workflow.py
+│   └── ...
 │
-├── tools/                 # 開発用ツール
-│   ├── convert_scenario.py           # シナリオ形式変換
-│   ├── generate_characters.py        # キャラクター画像生成
-│   ├── generate_characters_v2.py     # キャラクター画像生成 v2
-│   └── base_workflow.json            # ComfyUIワークフロー
-│
-├── game/                  # ゲーム本体（実装中）
-│   └── public/           # 公開アセット
-│
-├── ルート/                # 個別ルートファイル（開発中）
-│   ├── 幼なじみ/
-│   ├── 生徒会/
-│   ├── ギャル/
-│   ├── オタク/
-│   ├── 格闘技部/
-│   ├── 不良/
-│   ├── 友達の妹/
-│   └── ハーレム/
-│
-└── 共通/                  # 共通ファイル（開発中）
-```
+├── CLAUDE.md              # AIアシスタント用ガイド
+└── README.md              # 本ファイル
 
 ---
 
@@ -71,48 +42,39 @@
 
 ---
 
-## 📋 主要ドキュメント
+## 📁 シナリオ管理
 
-### プロジェクト管理
-- [SCENARIO_INTEGRATION_REPORT.md](SCENARIO_INTEGRATION_REPORT.md) - シナリオ整合性レポート（重要）
+現在、シナリオは **`game/public/scenarios/`** に集約されています。
 
-### 設計資料
-- [system_4stages.md](docs/design/system_4stages.md) - 変化システムの詳細仕様
-- [ルート分岐設計.md](docs/design/ルート分岐設計.md) - 全ルートの分岐・エンディング設計
-- [bad_endings.md](docs/design/bad_endings.md) - 各ルートのBAD END詳細
-- [special_events.md](docs/design/special_events.md) - コメディイベント集
+- **形式**: TyranoScript (`.ks`) および JSON (`.json`)
+- **構成**:
+  - `prologue.ks`: プロローグ（全ルート共通）
+  - `episode*.ks`: 共通ルートのエピソード
+  - `route_*.ks`: 各ヒロインの個別ルート + ハーレムルート
+  - `full_game_scenario.json`: 全シナリオを含む統合データ
 
-### シナリオ
+> [!NOTE]
+> 以前の `docs/scenario/` や `ルート/` ディレクトリ構造は廃止され、ゲームエンジンが直接読み込める形式に移行しました。
 
-プロジェクトには**2種類のシナリオ形式**が存在します：
+### シナリオ部分反映スクリプト
 
-#### 1. 小説形式（ストーリー参照用）
-**場所**: [docs/scenario/](docs/scenario/)
-- **用途**: ストーリー全体の把握、読み物として楽しむ
-- **特徴**: 心理描写が詳細、Episode構造（1-6）
-- **ファイル**:
-  - [シナリオ.txt](docs/scenario/シナリオ.txt) - 全7ルート + ハーレム完全版
-  - シナリオ.json, シナリオ_renpy.rpy など（変換版）
+不良ルートの冒頭修正を公開シナリオへ反映する場合:
 
-#### 2. スクリプト形式（ゲーム実装用）
-**場所**: [共通/](共通/) および [ルート/](ルート/)
-- **用途**: ゲームエンジンへの実装、演出の確認
-- **特徴**: BGM/SE/背景指定あり、Scene単位で詳細分割
-- **ファイル**:
-  - [共通/00_プロローグ.txt](共通/00_プロローグ.txt) - Day 1-3の共通ルート
-  - [共通/悪魔台詞集.txt](共通/悪魔台詞集.txt) - 全ルート共通テンプレート
-  - [ルート/幼なじみ/](ルート/幼なじみ/) など - 各ヒロインの個別ルート
+```bash
+node tools/merge_scenario.js
+```
 
-**使い分け**:
-- ストーリー執筆 → 小説形式（docs/scenario/）
-- ゲーム実装 → スクリプト形式（共通/ + ルート/）
-- 両方を手動で同期管理
+変更内容だけ確認したい場合:
 
-### AI生成プロンプト
-- [prompts_characters.md](docs/prompts/prompts_characters.md) - 9キャラ × 5段階
-- [prompts_backgrounds.md](docs/prompts/prompts_backgrounds.md) - 23背景（gym_corner追加）
-- [prompts_music.md](docs/prompts/prompts_music.md) - 13 BGM（bgm_training追加）
-- [prompts_se.md](docs/prompts/prompts_se.md) - 39効果音（同好会活動音3種追加）
+```bash
+node tools/merge_scenario.js --dry-run
+```
+
+別ファイルに使う場合:
+
+```bash
+node tools/merge_scenario.js path/to/source.ks game/public/scenarios/target.ks 501
+```
 
 ---
 
@@ -130,16 +92,22 @@
 
 ## 🚀 開発状況
 
-### ✅ 完成
-- 全7ルート + ハーレムルートのシナリオ
-- 4段階変化システム設計
-- BAD ENDシナリオ
-- コメディイベント集
-- AI生成用プロンプト一式
+### ✅ 実装済み
+- **ゲームエンジン**: Vanilla JSによる独自ノベルエンジン（TyranoScript互換パーサー搭載）
+- **シナリオ**:
+    - プロローグ (`prologue.ks`)
+    - 共通エピソード (`episode01-03.ks`)
+    - 全個別ルート (`route_*.ks`)
+    - ハーレムルート (`route_harem.ks`)
+- **システム**:
+    - 立ち絵・背景・BGM・SE再生
+    - 選択肢・分岐・フラグ管理
+    - バックログ・設定画面
 
-### 🔄 進行中
-- ゲーム実装
-- アセット生成
+### 🔄 今後の課題
+- 演出の強化（エフェクト、アニメーション）
+- UIのブラッシュアップ
+- セーブ/ロード機能の本格実装
 
 ---
 
@@ -183,7 +151,7 @@
 - **画像生成**: DALL-E 3 / ComfyUI
 - **BGM生成**: Suno
 - **効果音生成**: ElevenLabs Sound Effects
-- **ゲームエンジン**: （検討中: Ren'Py / Unity）
+- **ゲームエンジン**: Custom Web Engine (Vanilla JS + TyranoScript Parser)
 
 ---
 

@@ -1,79 +1,109 @@
-; common: 03_同好会結成.txt
+﻿; ■ 悪魔との契約 - 第3話：同好会結成
 *start
-; ■ 悪魔との契約 - Day 3：同好会結成
 
 ; ================================================================================
 *start_scene_1
 ; Scene 1: それぞれの決断
 ; ================================================================================
 
-[bg storage="science_prep_room.png"]
+[bg storage="science_prep_room.png" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
-（翌日。理科準備室。）
+（翌日。理科準備室。）[l][er]
 
-（また7人が集まった。）
+（また7人が集まった。）[l][er]
 
-#seitokai
-状況を整理します
+（不良少女だけは正式な生徒ではない。生徒会長の許可で、来客としてここにいる。）[l][er]
 
-#seitokai
-私たち7人が、同じ薬を飲んだ
+[chara_show name="seitokai" face="default" pos="center" time="1000"]
 
 #seitokai
-結果、筋肉が増えた
+状況を整理します[l][er]
 
 #seitokai
-戻る方法は——今のところ、ない
+私たち7人が、同じ薬を飲んだ[l][er]
+
+#seitokai
+結果、筋肉が増えた[l][er]
+
+#seitokai
+戻る方法は——今のところ、ない[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="otaku" face="default" pos="center" time="500"]
 
 #otaku
-悪魔は『戻れなくなる』と言いました
+悪魔は『戻れなくなる』と言いました[l][er]
 
 #otaku
-つまり、不可逆的変化です
+つまり、不可逆的変化です[l][er]
+
+[chara_hide name="otaku" time="500"]
+[chara_show name="gyaru" face="surprised" pos="center" time="500"]
 
 #gyaru
-マジで……一生このまま？
+マジで……一生このまま？[l][er]
+
+[chara_hide name="gyaru" time="500"]
+[chara_show name="osananajimi" face="sad" pos="center" time="500"]
 
 #osananajimi
-……嘘でしょ
+……嘘でしょ[l][er]
 
-（沈黙。）
+[chara_hide name="osananajimi" time="500"]
+
+（沈黙。）[l][er]
+
+[chara_show name="kakutogi" face="default" pos="center" time="500"]
 
 #kakutogi
-……俺は、いい
+……私は、いい[l][er]
 
 #全員
-え
+え[l][er]
 
 #kakutogi
-強くなれた。それだけで十分だ
+強くなれた。それだけで十分だ[l][er]
+
+[chara_hide name="kakutogi" time="500"]
+[chara_show name="furyo" face="default" pos="center" time="500"]
 
 #furyo
-……同感
+……同感[l][er]
 
 #furyo
-元々、強くなりたかった
+元々、強くなりたかった[l][er]
+
+[chara_hide name="furyo" time="500"]
+[chara_show name="imouto" face="blush" pos="center" time="500"]
 
 #imouto
-……私も
+……私も[l][er]
 
 #imouto
-これで、先輩に……
+これで、先輩に……[l][er]
 
-（言いかけて、止まる。）
+（言いかけて、止まる。）[l][er]
+
+[chara_hide name="imouto" time="500"]
+[chara_show name="osananajimi" face="sad" pos="center" time="500"]
 
 #osananajimi
-でも、学校は？
+でも、学校は？[l][er]
 
 #osananajimi
-みんな見てくるよ。変な目で
+みんな見てくるよ。変な目で[l][er]
+
+[chara_hide name="osananajimi" time="500"]
+[chara_show name="seitokai" face="default" pos="center" time="500"]
 
 #seitokai
-……そうですね
+……そうですね[l][er]
 
 #seitokai
-対策が必要です
+対策が必要です[l][er]
+
+[chara_hide name="seitokai" time="500"]
 
 
 ; ================================================================================
@@ -81,67 +111,103 @@
 ; Scene 2: ギャルの提案
 ; ================================================================================
 
-[bg storage="science_prep_room.png"]
+[bg storage="science_prep_room.png" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
+[chara_show name="gyaru" face="smile" pos="center" time="1000"]
+
 #gyaru
-ねえ、あたし思ったんだけど
+ねえ、あたし思ったんだけど[l][er]
 
 #全員
-？
+？[l][er]
 
 #gyaru
-隠すより、堂々としてた方がよくない？
+隠すより、堂々としてた方がよくない？[l][er]
+
+[chara_hide name="gyaru" time="500"]
+[chara_show name="osananajimi" face="surprised" pos="center" time="500"]
 
 #osananajimi
-堂々とって……
+堂々とって……[l][er]
+
+[chara_hide name="osananajimi" time="500"]
+[chara_show name="gyaru" face="smile" pos="center" time="500"]
 
 #gyaru
-部活作ろうよ。筋トレ系の
+部活作ろうよ。筋トレ系の[l][er]
 
 #gyaru
-そしたら、"筋肉ついてるのは練習してるから"って言える
+そしたら、"筋肉ついてるのは練習してるから"って言える[l][er]
+
+[chara_hide name="gyaru" time="500"]
+[chara_show name="otaku" face="default" pos="left" time="500"]
 
 #otaku
-……理にかなってますね
+……理にかなってますね[l][er]
+
+[chara_show name="seitokai" face="default" pos="right" time="500"]
 
 #seitokai
-確かに。カモフラージュとしては有効です
+確かに。カモフラージュとしては有効です[l][er]
+
+[chara_hide name="otaku" time="500"]
+[chara_hide name="seitokai" time="500"]
+
+[chara_show name="gyaru" face="smile" pos="center" time="500"]
 
 #gyaru
-でしょ？
+でしょ？[l][er]
 
 #gyaru
-あたし、インスタで"筋トレ女子"ってタグ見たことある
+あたし、インスタで"筋トレ女子"ってタグ見たことある[l][er]
 
 #gyaru
-意外とバズるかも
+意外とバズるかも[l][er]
+
+[chara_hide name="gyaru" time="500"]
+[chara_show name="kakutogi" face="smile" pos="center" time="500"]
 
 #kakutogi
-……俺も賛成
+……私も賛成[l][er]
 
 #kakutogi
-どうせなら、もっと鍛えたい
+どうせなら、もっと鍛えたい[l][er]
+
+[chara_hide name="kakutogi" time="500"]
+[chara_show name="furyo" face="default" pos="center" time="500"]
 
 #furyo
-……
+……[l][er]
 
 #furyo
-好きにしろ
+好きにしろ[l][er]
+
+[chara_hide name="furyo" time="500"]
+[chara_show name="osananajimi" face="default" pos="left" time="500"]
 
 #osananajimi
-……本当に、それでいいの？
+……本当に、それでいいの？[l][er]
+
+[chara_show name="seitokai" face="default" pos="right" time="500"]
 
 #seitokai
-他に案はありますか？
+他に案はありますか？[l][er]
 
-（沈黙。）
+[chara_hide name="osananajimi" time="500"]
+[chara_hide name="seitokai" time="500"]
+
+（沈黙。）[l][er]
+
+[chara_show name="seitokai" face="smile" pos="center" time="500"]
 
 #seitokai
-では、決定します
+では、決定します[l][er]
 
 #seitokai
-私たち7人で——筋肉同好会を設立します
+私たちで——筋肉同好会を設立します[l][er]
+
+[chara_hide name="seitokai" time="500"]
 
 
 ; ================================================================================
@@ -149,78 +215,102 @@
 ; Scene 3: 同好会設立
 ; ================================================================================
 
-[bg storage="student_council_room.png"]
+[bg storage="student_council_room.png" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-（生徒会室。）
+（生徒会室。）[l][er]
 
-（生徒会長が書類を書いている。）
+（生徒会長が書類を書いている。）[l][er]
 
-#seitokai
-設立趣旨……『健全な肉体と精神の育成』
-
-#seitokai
-顧問……体育教師・田中先生
+[chara_show name="seitokai" face="default" pos="center" time="1000"]
 
 #seitokai
-会員数……7名
+設立趣旨……『健全な肉体と精神の育成』[l][er]
+
+#seitokai
+顧問……体育教師・田中先生[l][er]
+
+#seitokai
+会員数……6名[l][er]
+
+#seitokai
+外部協力者……1名[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="otaku" face="smile" pos="left" time="500"]
 
 #otaku
-完璧ですね
+完璧ですね[l][er]
+
+[chara_show name="gyaru" face="default" pos="right" time="500"]
 
 #gyaru
-マジで通るの？
+マジで通るの？[l][er]
+
+[chara_hide name="otaku" time="500"]
+[chara_hide name="gyaru" time="500"]
+[chara_show name="seitokai" face="smile" pos="center" time="500"]
 
 #seitokai
-私が生徒会長です。通します
+私が生徒会長です。通します[l][er]
 
-（力強く、ハンコを押す。）
-
+（力強く、ハンコを押す。）[l][er]
 
 #seitokai
-これで——正式に『筋肉同好会』設立です
+これで——正式に『筋肉同好会』設立です[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="osananajimi" face="sad" pos="center" time="500"]
 
 #osananajimi
-……
+……[l][er]
 
 #protagonist
-どうした？
+どうした？[l][er]
 
 #osananajimi
-……なんか、現実味がない
+……なんか、現実味がない[l][er]
 
 #osananajimi
-昨日まで普通だったのに
+昨日まで普通だったのに[l][er]
 
 #osananajimi
-今は、"筋肉同好会"
+今は、"筋肉同好会"[l][er]
+
+[chara_hide name="osananajimi" time="500"]
+[chara_show name="gyaru" face="smile" pos="left" time="500"]
 
 #gyaru
-まあ、人生なんてそんなもんじゃない？
+まあ、人生なんてそんなもんじゃない？[l][er]
 
 #gyaru
-あたしも昨日まで普通のギャルだったし
+あたしも昨日まで普通のギャルだったし[l][er]
+
+[chara_show name="kakutogi" face="default" pos="right" time="500"]
 
 #kakutogi
-前向きに考えろ
+前向きに考えろ[l][er]
 
 #kakutogi
-強くなれるチャンスだ
+強くなれるチャンスだ[l][er]
+
+[chara_hide name="gyaru" time="500"]
+[chara_hide name="kakutogi" time="500"]
+[chara_show name="imouto" face="blush" pos="center" time="500"]
 
 #imouto
-……そうだね
+……そうだね[l][er]
 
 #imouto
-先輩に、認めてもらえるかも
+先輩に、認めてもらえるかも[l][er]
+
+[chara_hide name="imouto" time="500"]
 
 #protagonist
-……
+（みんな、前向きに……）[l][er]
 
 #protagonist
-（みんな、前向きに……）
-
-#protagonist
-（……本当に、大丈夫なのか？）
+（……本当に、大丈夫なのか？）[l][er]
 
 
 ; ================================================================================
@@ -228,223 +318,311 @@
 ; Scene 4: 初日の活動
 ; ================================================================================
 
-[bg storage="gym.png"]
+[bg storage="gym.png" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
-（放課後。体育館。）
+（放課後。体育館。）[l][er]
 
-（7人が集まっている。）
+（7人が集まっている。）[l][er]
+
+[chara_show name="seitokai" face="default" pos="center" time="1000"]
 
 #seitokai
-では、初日の活動を始めます
+では、初日の活動を始めます[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="kakutogi" face="default" pos="center" time="500"]
 
 #kakutogi
-メニューは？
+メニューは？[l][er]
+
+[chara_hide name="kakutogi" time="500"]
+[chara_show name="seitokai" face="default" pos="center" time="500"]
 
 #seitokai
-まず、基礎体力測定から
+まず、基礎体力測定から[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="otaku" face="smile" pos="left" time="500"]
 
 #otaku
-データ収集ですね。合理的です
+データ収集ですね。合理的です[l][er]
+
+[chara_show name="gyaru" face="surprised" pos="right" time="500"]
 
 #gyaru
-え、マジで測るの？
+え、マジで測るの？[l][er]
+
+[chara_hide name="otaku" time="500"]
+[chara_hide name="gyaru" time="500"]
+[chara_show name="seitokai" face="default" pos="center" time="500"]
 
 #seitokai
-当然です。現状把握が第一です
+当然です。現状把握が第一です[l][er]
 
-（生徒会がメジャーを取り出す。）
+（生徒会長がメジャーを取り出す。）[l][er]
 
 #seitokai
-では、腕周りから
+では、腕周りから[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="osananajimi" face="sad" pos="center" time="500"]
 
 #osananajimi
-……やだ
+……やだ[l][er]
+
+[chara_hide name="osananajimi" time="500"]
+[chara_show name="seitokai" face="default" pos="center" time="500"]
 
 #seitokai
-測ります
-
+測ります[l][er]
 
 #seitokai
-……32cm
+……32cm[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="osananajimi" face="crying" pos="center" time="500"]
 
 #osananajimi
-……
+……[l][er]
+
+[chara_hide name="osananajimi" time="500"]
+[chara_show name="gyaru" face="surprised" pos="center" time="500"]
 
 #gyaru
-マジで？ あたしは？
+マジで？　あたしは？[l][er]
+
+[chara_hide name="gyaru" time="500"]
+[chara_show name="seitokai" face="default" pos="center" time="500"]
 
 #seitokai
-……34cm
+……34cm[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="gyaru" face="surprised" pos="center" time="500"]
 
 #gyaru
-うそ……
+うそ……[l][er]
+
+[chara_hide name="gyaru" time="500"]
+[chara_show name="otaku" face="default" pos="center" time="500"]
 
 #otaku
-興味深い
-
-#otaku
-私は？
+興味深い。私は？[l][er]
 
 #seitokai
-……30cm
+……30cm[l][er]
+
+[chara_hide name="otaku" time="500"]
+[chara_show name="kakutogi" face="smile" pos="left" time="500"]
 
 #kakutogi
-俺は38cmだ
+私は38cmだ[l][er]
+
+[chara_show name="furyo" face="default" pos="right" time="500"]
 
 #furyo
-……36cm
+……36cm[l][er]
+
+[chara_hide name="kakutogi" time="500"]
+[chara_hide name="furyo" time="500"]
+[chara_show name="imouto" face="default" pos="center" time="500"]
 
 #imouto
-……28cm
+……28cm[l][er]
 
-（沈黙。）
+[chara_hide name="imouto" time="500"]
+
+（沈黙。）[l][er]
+
+[chara_show name="osananajimi" face="sad" pos="left" time="500"]
 
 #osananajimi
-……これ、異常だよね
+……これ、異常だよね[l][er]
+
+[chara_show name="seitokai" face="default" pos="right" time="500"]
 
 #seitokai
-……はい
+……はい[l][er]
 
 #seitokai
-通常の女子高生の平均は20cm前後
+通常の女子高生の平均は20cm前後[l][er]
 
 #seitokai
-私たちは、明らかに——
+私たちは、明らかに——[l][er]
+
+[chara_hide name="osananajimi" time="500"]
+[chara_hide name="seitokai" time="500"]
+[chara_show name="otaku" face="default" pos="center" time="500"]
 
 #otaku
-規格外ですね
+規格外ですね[l][er]
 
-（重い空気。）
+[chara_hide name="otaku" time="500"]
 
-#kakutogi
-……でも、力はある
+（重い空気。）[l][er]
 
-#kakutogi
-握力計、貸してくれ
-
+[chara_show name="kakutogi" face="default" pos="center" time="500"]
 
 #kakutogi
-……55kg
+……でも、力はある[l][er]
+
+#kakutogi
+握力計、貸してくれ[l][er]
+
+#kakutogi
+……75kg[l][er]
 
 #全員
-！
+！[l][er]
 
 #kakutogi
-……思ったより出た
+……思ったより出た[l][er]
+
+[chara_hide name="kakutogi" time="500"]
+[chara_show name="osananajimi" face="surprised" pos="left" time="500"]
 
 #osananajimi
-マジで……
+マジで……[l][er]
+
+[chara_show name="gyaru" face="default" pos="right" time="500"]
 
 #gyaru
-あたしもやる
-
-
-#gyaru
-……42kg
+あたしもやる[l][er]
 
 #gyaru
-うそ……男子より強い……
+……42kg[l][er]
 
-（一人ずつ、測っていく。）
+#gyaru
+うそ……男子より強い……[l][er]
 
-（全員が、"異常な力"を持っていた。）
+[chara_hide name="osananajimi" time="500"]
+[chara_hide name="gyaru" time="500"]
+
+（一人ずつ、測っていく。）[l][er]
+
+（全員が、"異常な力"を持っていた。）[l][er]
 
 
 ; ================================================================================
 *start_scene_5
-; Scene 5: 主人公の罪悪感
+; Scene 5: 主人公の立場
 ; ================================================================================
 
-[bg storage="gym.png"]
+[bg storage="gym.png" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
-（主人公は、隅で見ていた。）
+（主人公は、隅で見ていた。）[l][er]
 
 #protagonist
-（……俺のせいだ）
+（……俺のせいだ）[l][er]
 
 #protagonist
-（俺が、願ったから）
+（俺が願ったから）[l][er]
 
 #protagonist
-（みんな、こうなった）
+（みんな、こうなった）[l][er]
+
+[chara_show name="osananajimi" face="default" pos="center" time="1000"]
 
 #osananajimi
-……見てるだけ？
+……見てるだけ？[l][er]
 
 #protagonist
-あ……
+あ……[l][er]
 
 #osananajimi
-一緒にやろうよ
+一緒にやろうよ[l][er]
 
 #protagonist
-……いいのか
+……いいのか[l][er]
 
 #osananajimi
-同好会は7人だけど
+同好会は6人だけど[l][er]
 
 #osananajimi
-あんたも、"関係者"でしょ
+あんたも、"関係者"でしょ[l][er]
 
-（微笑む。）
-
-（でも、目は笑っていない。）
+（微笑む。でも、目は笑っていない。）[l][er]
 
 #protagonist
-……ごめん
+……ごめん[l][er]
 
 #osananajimi
-謝らないで
+謝らないで[l][er]
 
 #osananajimi
-謝られると、余計に辛い
+謝られると、余計に辛い[l][er]
+
+[chara_hide name="osananajimi" time="500"]
 
 #protagonist
-……
+……[l][er]
+
+[chara_show name="seitokai" face="default" pos="center" time="500"]
 
 #seitokai
-主人公さん
+&f.main_nameさん[l][er]
 
 #protagonist
-はい
+はい[l][er]
 
 #seitokai
-あなたも測定します
+あなたも測定します[l][er]
 
 #protagonist
-え
+え[l][er]
 
 #seitokai
-比較対象として、必要です
+比較対象として、必要です[l][er]
 
 #protagonist
-……わかった
+……わかった[l][er]
 
-（測定される。）
+[chara_hide name="seitokai" time="500"]
+
+（測定される。）[l][er]
+
+[chara_show name="seitokai" face="surprised" pos="center" time="500"]
 
 #seitokai
-腕周り……26cm
+腕周り……32cm[l][er]
 
 #seitokai
-握力……38kg
+握力……52kg[l][er]
 
-（沈黙。）
+#protagonist
+……え？[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="osananajimi" face="surprised" pos="left" time="500"]
 
 #osananajimi
-……あたしより細い
+……あれ、結構強い[l][er]
 
-#gyaru
-あたしより弱い
+[chara_show name="otaku" face="default" pos="right" time="500"]
 
-（気まずい空気。）
+#otaku
+悪魔が言っていましたね。「体を強化した」と[l][er]
+
+[chara_hide name="osananajimi" time="500"]
+[chara_hide name="otaku" time="500"]
 
 #protagonist
-（……逆転してる）
+（そういえば、そんなこと言ってたな……）[l][er]
+
+[chara_show name="kakutogi" face="smile" pos="center" time="500"]
+
+#kakutogi
+なら、お前も一緒に鍛えろ[l][er]
+
+#kakutogi
+私たちの相手ができるくらいにはな[l][er]
+
+[chara_hide name="kakutogi" time="500"]
 
 #protagonist
-（俺より、みんなの方が——）
+……ああ[l][er]
 
 
 ; ================================================================================
@@ -452,62 +630,109 @@
 ; Scene 6: 分岐点
 ; ================================================================================
 
-[bg storage="gym.png"]
+[bg storage="gym.png" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-#seitokai
-では、これで初日の活動は終了です
+[chara_show name="seitokai" face="default" pos="center" time="1000"]
 
 #seitokai
-次回から、本格的なトレーニングメニューを組みます
+では、これで初日の活動は終了です[l][er]
+
+#seitokai
+次回から、本格的なトレーニングメニューを組みます[l][er]
+
+[chara_hide name="seitokai" time="500"]
+[chara_show name="gyaru" face="default" pos="left" time="500"]
 
 #gyaru
-マジで？ キツいやつ？
+マジで？　キツいやつ？[l][er]
+
+[chara_show name="seitokai" face="default" pos="right" time="500"]
 
 #seitokai
-当然です
+当然です[l][er]
+
+[chara_hide name="gyaru" time="500"]
+[chara_hide name="seitokai" time="500"]
+[chara_show name="otaku" face="smile" pos="left" time="500"]
 
 #otaku
-楽しみですね
+楽しみですね[l][er]
+
+[chara_show name="kakutogi" face="smile" pos="right" time="500"]
 
 #kakutogi
-ああ
+ああ[l][er]
 
-（それぞれ帰り支度を始める。）
+[chara_hide name="otaku" time="500"]
+[chara_hide name="kakutogi" time="500"]
+
+（それぞれ帰り支度を始める。）[l][er]
 
 #protagonist
-（……これから、どうなる？）
+（……これから、どうなる？）[l][er]
 
 #protagonist
-（みんな、変わっていくのか？）
+（みんな、変わっていくのか？）[l][er]
 
-（ふと、悪魔の言葉を思い出す。）
+（ふと、悪魔の言葉を思い出す。）[l][er]
 
 #akuma
-願いは叶ったよ。7人もいるし、大盤振る舞いだね
+『願いは叶ったよ。7人もいるし、大盤振る舞いだね』[l][er]
 
 #protagonist
-（……7人）
+（……7人）[l][er]
 
 #protagonist
-（誰を、選ぶ？）
+（誰かを、選ぶことになるのか？）[l][er]
 
 #protagonist
-（それとも——）
-
-【分岐ポイント】
-
-ここから、各ルートへ分岐します。
-
-- 幼なじみルート
-- 生徒会ルート
-- ギャルルート
-- オタクルート
-- 格闘技部ルート
-- 不良ルート
-- 友達の妹ルート
-#- ハーレムルート
-（全員選ぶ）
-
+（それとも——）[l][er]
 
 ; ================================================================================
+; ルート選択
+; ================================================================================
+
+[bg storage="black.png" time="1000"]
+
+ここから、物語は分岐する。[l][er]
+
+個別ルートでは、選んだ相手との時間を地獄の朝からたどり直す。[l][er]
+
+同好会結成後のまま、誰も選ばない道へ進むこともできる。[l][er]
+
+誰と向き合うか——それは、君次第。[l][er]
+
+[glink target="*select_osananajimi" text="幼なじみルート"]
+[glink target="*select_seitokai" text="生徒会長ルート"]
+[glink target="*select_gyaru" text="ギャルルート"]
+[glink target="*select_otaku" text="オタクルート"]
+[glink target="*select_kakutogi" text="格闘技部ルート"]
+[glink target="*select_furyo" text="不良ルート"]
+[glink target="*select_imouto" text="友達の妹ルート"]
+[glink target="*select_harem" text="誰も選ばない"]
+[s]
+
+*select_osananajimi
+[jump storage="route_osananajimi.ks"]
+
+*select_seitokai
+[jump storage="route_seitokai.ks"]
+
+*select_gyaru
+[jump storage="route_gyaru.ks"]
+
+*select_otaku
+[jump storage="route_otaku.ks"]
+
+*select_kakutogi
+[jump storage="route_kakutogi.ks"]
+
+*select_furyo
+[jump storage="route_furyo.ks"]
+
+*select_imouto
+[jump storage="route_imouto.ks"]
+
+*select_harem
+[jump storage="route_harem.ks"]

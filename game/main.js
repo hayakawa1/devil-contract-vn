@@ -45,19 +45,7 @@ class TyranoParser {
 
       // 話者名: #キャラ名
       if (line.startsWith('#')) {
-        const newSpeaker = line.substring(1).trim();
-        // 話者が変わったらキャラクターを自動表示
-        if (newSpeaker !== currentSpeaker && newSpeaker) {
-          const position = this.getSpeakerPosition(newSpeaker);
-          // キャラクター表示コマンドを追加
-          this.commands.push({
-            type: 'char',
-            position: position,
-            image: this.buildCharacterImage(newSpeaker, 'neutral'),
-            highlight: true
-          });
-        }
-        currentSpeaker = newSpeaker;
+        currentSpeaker = line.substring(1).trim();
         continue;
       }
 
@@ -146,10 +134,15 @@ class TyranoParser {
 
       // キャラクター非表示
       case 'chara_hide':
-        return {
-          type: 'char_exit',
-          position: this.getPosition(params)
-        };
+        {
+          const hasExplicitPos = Object.prototype.hasOwnProperty.call(params, 'pos') ||
+            Object.prototype.hasOwnProperty.call(params, 'left');
+          return {
+            type: 'char_exit',
+            position: hasExplicitPos ? this.getPosition(params) : null,
+            character: params.name || params.character || ''
+          };
+        }
 
       // キャラクター表情変更
       case 'chara_face':
@@ -177,6 +170,14 @@ class TyranoParser {
       case 'p':
         return { type: 'page_break' };
 
+      // 名前入力
+      case 'edit':
+        return {
+          type: 'edit',
+          name: params.name || '',
+          maxchars: parseInt(params.maxchars || params.length || '10', 10)
+        };
+
       // 停止（選択肢待ちなど）
       case 's':
         return { type: 'stop' };
@@ -198,8 +199,16 @@ class TyranoParser {
       case 'link':
         return {
           type: 'glink',
-          text: params.text || params.name || '',
-          target: params.target || ''
+          text: this.substituteVariables(params.text || params.name || ''),
+          target: (params.target || '').replace(/^\*/, '')
+        };
+
+      // 明示テキスト（例: [TEXT: SPECIAL END]）
+      case 'text:':
+        return {
+          type: currentSpeaker ? 'text' : 'monologue',
+          speaker: currentSpeaker,
+          text: tagContent.replace(/^text:\s*/i, '').trim()
         };
 
       // 選択肢終了（無視）
@@ -356,6 +365,16 @@ class TyranoParser {
     return params;
   }
 
+  substituteVariables(text) {
+    if (!text) return text;
+    return text.replace(/&(?:f|sf|tf)\.(\w+)/g, (_, name) => {
+      const variables = this.variables || {};
+      const currentFlags = this.currentFlags || {};
+      const value = variables[name] ?? currentFlags[name] ?? '';
+      return String(value);
+    });
+  }
+
   /**
    * テキスト行をパース（インラインタグ対応）
    */
@@ -501,6 +520,10 @@ class GameEngine {
 
     // ティラノスクリプトパーサー
     this.parser = new TyranoParser();
+    const viteBaseUrl = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL)
+      ? import.meta.env.BASE_URL
+      : '/';
+    this.baseUrl = viteBaseUrl.endsWith('/') ? viteBaseUrl : `${viteBaseUrl}/`;
     this.currentLabels = {};
     this.callStack = []; // サブルーチン用コールスタック
     this.pendingChoices = []; // 選択肢収集用
@@ -508,7 +531,7 @@ class GameEngine {
     // 選択肢・フラグ・親密度システム
     this.choices = {};
     this.currentFlags = {};
-    this.variables = {}; // ティラノスクリプト変数
+    this.variables = { main_name: '主人公' }; // ティラノスクリプト変数
     this.affinity = {
       osananajimi: 0,
       seitokai: 0,
@@ -518,6 +541,10 @@ class GameEngine {
       furyo: 0,
       imouto: 0
     };
+
+    this.characterAliasMap = {};
+    this.lastCharacterPosition = {};
+    this.sceneHasExplicitCharacterControl = false;
 
     this.init();
   }
@@ -535,18 +562,59 @@ class GameEngine {
   async loadData() {
     try {
       // キャラクターデータ読み込み
-      const charRes = await fetch('public/assets/characters.json');
-      this.characters = await charRes.json();
+      this.characters = await this.fetchJsonWithFallback(
+        ['assets/characters.json', 'public/assets/characters.json'],
+        'characters'
+      );
+      this.buildCharacterAliasMap();
 
       // エピソードデータ読み込み
-      const epRes = await fetch('public/assets/episodes.json');
-      const epData = await epRes.json();
+      const epData = await this.fetchJsonWithFallback(
+        ['assets/episodes.json', 'public/assets/episodes.json'],
+        'episodes'
+      );
       this.episodes = epData.episodes;
 
       console.log('Data loaded:', this.episodes.length, 'episodes');
     } catch (error) {
       console.error('Failed to load data:', error);
     }
+  }
+
+  resolveUrl(path) {
+    const normalized = (path || '').toString().replace(/^\/+/, '');
+    return `${this.baseUrl}${normalized}`;
+  }
+
+  async fetchJsonWithFallback(paths, label = 'json') {
+    let lastError = null;
+    for (const path of paths) {
+      try {
+        const res = await fetch(this.resolveUrl(path));
+        if (!res.ok) {
+          continue;
+        }
+        const contentType = res.headers.get('content-type') || '';
+        const bodyText = await res.text();
+        if (this.looksLikeHtml(bodyText, contentType)) {
+          continue;
+        }
+        return JSON.parse(bodyText);
+      } catch (error) {
+        lastError = error;
+      }
+    }
+    throw new Error(`Failed to load ${label}${lastError ? `: ${lastError.message}` : ''}`);
+  }
+
+  looksLikeHtml(text, contentType = '') {
+    const type = (contentType || '').toLowerCase();
+    if (type.includes('text/html')) return true;
+    const head = (text || '').trimStart().slice(0, 300).toLowerCase();
+    return head.startsWith('<!doctype html') ||
+      head.startsWith('<html') ||
+      head.includes('<head') ||
+      head.includes('<body');
   }
 
   /**
@@ -561,12 +629,22 @@ class GameEngine {
     ];
 
     // .ksファイルを試す
+    const ksPaths = [];
     for (const name of nameVariants) {
-      const ksPath = `public/scenarios/${name}.ks`;
+      ksPaths.push(`scenarios/${name}.ks`);
+      ksPaths.push(`public/scenarios/${name}.ks`);
+    }
+
+    for (const ksPath of ksPaths) {
       try {
-        const ksRes = await fetch(ksPath);
+        const ksRes = await fetch(this.resolveUrl(ksPath));
         if (ksRes.ok) {
+          const contentType = ksRes.headers.get('content-type') || '';
           const scriptText = await ksRes.text();
+          if (this.looksLikeHtml(scriptText, contentType)) {
+            console.warn('Scenario fetch returned HTML, skipping:', ksPath);
+            continue;
+          }
           const parsed = this.parser.parse(scriptText);
           this.scenarios[scenarioName] = parsed.commands;
           this.currentLabels = parsed.labels;
@@ -579,24 +657,40 @@ class GameEngine {
     }
 
     // .jsonファイルにフォールバック
-    try {
-      const res = await fetch(`public/scenarios/${scenarioName}.json`);
-      const data = await res.json();
-      this.scenarios[scenarioName] = data[scenarioName];
-      this.currentLabels = {};
-      // JSONからラベルを抽出
-      if (this.scenarios[scenarioName]) {
-        this.scenarios[scenarioName].forEach((cmd, idx) => {
-          if (cmd.type === 'label' && cmd.id) {
-            this.currentLabels[cmd.id] = idx;
-          }
-        });
+    const jsonPaths = [
+      `scenarios/${scenarioName}.json`,
+      `public/scenarios/${scenarioName}.json`
+    ];
+
+    for (const jsonPath of jsonPaths) {
+      try {
+        const res = await fetch(this.resolveUrl(jsonPath));
+        if (!res.ok) continue;
+        const contentType = res.headers.get('content-type') || '';
+        const bodyText = await res.text();
+        if (this.looksLikeHtml(bodyText, contentType)) {
+          console.warn('Scenario JSON fetch returned HTML, skipping:', jsonPath);
+          continue;
+        }
+        const data = JSON.parse(bodyText);
+        this.scenarios[scenarioName] = data[scenarioName];
+        this.currentLabels = {};
+        // JSONからラベルを抽出
+        if (this.scenarios[scenarioName]) {
+          this.scenarios[scenarioName].forEach((cmd, idx) => {
+            if (cmd.type === 'label' && cmd.id) {
+              this.currentLabels[cmd.id] = idx;
+            }
+          });
+        }
+        return this.scenarios[scenarioName];
+      } catch (error) {
+        // 続行
       }
-      return this.scenarios[scenarioName];
-    } catch (error) {
-      console.error('Failed to load scenario:', scenarioName, error);
-      return null;
     }
+
+    console.error('Failed to load scenario:', scenarioName);
+    return null;
   }
 
   setupEventListeners() {
@@ -731,7 +825,7 @@ class GameEngine {
 
   playMenuBgm() {
     const bgm = document.getElementById('bgm');
-    const menuBgmFile = 'public/assets/bgm/bgm_devil.mp3';
+    const menuBgmFile = this.resolveUrl('assets/bgm/bgm_devil.mp3');
     // 既にメニューBGMが再生中なら何もしない
     if (bgm.src.endsWith('bgm_devil.mp3')) {
       return;
@@ -777,7 +871,7 @@ class GameEngine {
       const card = document.createElement('div');
       card.className = 'character-card';
       card.innerHTML = `
-        <div class="char-portrait" style="background-image: url('public/assets/characters/${id}_neutral.png')"></div>
+        <div class="char-portrait" style="background-image: url('${this.resolveUrl(`assets/characters/${id}_neutral.png`)}')"></div>
         <div class="char-name">${char.name_display || char.name}</div>
         <div class="char-role">${char.role || ''}</div>
       `;
@@ -792,7 +886,7 @@ class GameEngine {
 
   showCharacterDetail(id, char) {
     const portrait = document.getElementById('detail-portrait');
-    portrait.style.backgroundImage = `url('public/assets/characters/${id}_neutral.png')`;
+    portrait.style.backgroundImage = `url('${this.resolveUrl(`assets/characters/${id}_neutral.png`)}')`;
     document.getElementById('detail-name').textContent = char.name_display || char.name;
     document.getElementById('detail-meta').innerHTML = `
       <div>役割: ${char.role || '不明'}</div>
@@ -837,6 +931,7 @@ class GameEngine {
     this.currentStage = episode.stage || null;
     this.currentIndex = 0;
     this.backlog = [];
+    this.sceneHasExplicitCharacterControl = false;
     this.isAutoMode = false;
     this.isSkipMode = false;
 
@@ -872,6 +967,7 @@ class GameEngine {
     switch (cmd.type) {
       case 'bg':
         this.setBackground(cmd.image);
+        this.sceneHasExplicitCharacterControl = false;
         this.currentIndex++;
         this.processCommand();
         break;
@@ -895,13 +991,15 @@ class GameEngine {
         break;
 
       case 'char':
+        this.sceneHasExplicitCharacterControl = true;
         this.showCharacter(cmd.position, cmd.image, cmd.highlight);
         this.currentIndex++;
         this.processCommand();
         break;
 
       case 'char_exit':
-        this.hideCharacter(cmd.position);
+        this.sceneHasExplicitCharacterControl = true;
+        this.hideCharacter(cmd.position, cmd.character);
         this.currentIndex++;
         this.processCommand();
         break;
@@ -932,6 +1030,10 @@ class GameEngine {
         this.currentFlags[cmd.name] = cmd.value;
         this.currentIndex++;
         this.processCommand();
+        break;
+
+      case 'edit':
+        this.handleEdit(cmd);
         break;
 
       case 'affinity':
@@ -972,6 +1074,7 @@ class GameEngine {
 
       // ティラノスクリプト: 全キャラクター非表示
       case 'clear_characters':
+        this.sceneHasExplicitCharacterControl = true;
         this.clearCharacters();
         this.currentIndex++;
         this.processCommand();
@@ -1195,9 +1298,14 @@ class GameEngine {
     if (flagMatch) {
       const [, name, value] = flagMatch;
       try {
-        this.currentFlags[name] = new Function(`return ${value}`)();
+        const evaluated = new Function(`return ${value}`)();
+        if (typeof evaluated === 'string' || typeof evaluated === 'number') {
+          this.variables[name] = evaluated;
+        } else {
+          this.currentFlags[name] = evaluated;
+        }
       } catch (e) {
-        this.currentFlags[name] = value;
+        this.variables[name] = value;
       }
       return;
     }
@@ -1225,6 +1333,75 @@ class GameEngine {
     }
   }
 
+  handleEdit(cmd) {
+    const variableName = (cmd.name || '').replace(/^(?:f|sf|tf)\./, '');
+    const currentValue = this.variables[variableName] || '主人公';
+    const maxchars = cmd.maxchars || 10;
+    const overlay = document.createElement('div');
+    overlay.className = 'name-input-overlay';
+    overlay.innerHTML = `
+      <div class="name-input-panel">
+        <label for="main-name-input">名前</label>
+        <div class="name-input-row">
+          <input id="main-name-input" type="text" maxlength="${maxchars}">
+          <button type="button" id="main-name-submit">決定</button>
+        </div>
+      </div>
+    `;
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.65);';
+
+    const panel = overlay.querySelector('.name-input-panel');
+    panel.style.cssText = 'width:min(420px,calc(100vw - 40px));padding:24px;background:rgba(18,18,24,.96);border:1px solid rgba(255,255,255,.2);border-radius:8px;color:#fff;';
+
+    const label = overlay.querySelector('label');
+    label.style.cssText = 'display:block;margin-bottom:10px;font-size:14px;';
+
+    const row = overlay.querySelector('.name-input-row');
+    row.style.cssText = 'display:flex;gap:10px;';
+
+    const input = overlay.querySelector('#main-name-input');
+    input.value = currentValue;
+    input.style.cssText = 'flex:1;min-width:0;padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,.35);background:#fff;color:#111;font-size:18px;';
+
+    const button = overlay.querySelector('#main-name-submit');
+    button.style.cssText = 'padding:10px 18px;border:0;border-radius:6px;background:#c92a2a;color:#fff;font-weight:700;cursor:pointer;';
+
+    const submit = () => {
+      const name = (input.value || currentValue).trim().slice(0, maxchars) || '主人公';
+      this.variables[variableName] = name;
+
+      if (this.characters.characters?.protagonist) {
+        this.characters.characters.protagonist.name_display = name;
+      }
+
+      overlay.remove();
+      this.currentIndex++;
+      if (this.currentScenario[this.currentIndex]?.type === 'stop') {
+        this.currentIndex++;
+      }
+      this.processCommand();
+    };
+
+    button.addEventListener('click', submit);
+    input.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        submit();
+      }
+    });
+
+    document.body.appendChild(overlay);
+    input.focus();
+    input.select();
+  }
+
+  substituteVariables(text) {
+    if (!text) return text;
+    return text.replace(/&(?:f|sf|tf)\.(\w+)/g, (_, name) => {
+      const value = this.variables[name] ?? this.currentFlags[name] ?? '';
+      return String(value);
+    });
+  }
+
   setBackground(image) {
     const bg = document.getElementById('background');
 
@@ -1248,9 +1425,11 @@ class GameEngine {
       'night_street': 'street_night',
       'street_day': 'street_evening',
       'street': 'street_evening',
+      'alley': 'street_evening',
       'park_day': 'park',
       'entrance': 'hallway',
       'living_room': 'protagonist_home',
+      'kitchen': 'friend_house',
       'council_room': 'student_council_room',
       'seitokai_room': 'student_council_room',
       'gym_evening': 'gym',
@@ -1264,7 +1443,7 @@ class GameEngine {
     }
 
     // 実際の背景画像を使用
-    const bgPath = `public/assets/backgrounds/${mappedImage}.png`;
+    const bgPath = this.resolveUrl(`assets/backgrounds/${mappedImage}.png`);
     bg.style.backgroundImage = `url('${bgPath}')`;
     bg.style.backgroundSize = 'cover';
     bg.style.backgroundPosition = 'center';
@@ -1288,7 +1467,7 @@ class GameEngine {
 
     // 停止してから新しいBGMを再生
     bgm.pause();
-    bgm.src = `public/assets/bgm/${file}`;
+    bgm.src = this.resolveUrl(`assets/bgm/${file}`);
     bgm.currentTime = 0;
 
     bgm.play().catch(e => console.log('BGM autoplay blocked:', e));
@@ -1302,7 +1481,7 @@ class GameEngine {
 
   playSe(file) {
     const se = document.getElementById('se');
-    se.src = `public/assets/se/${file}`;
+    se.src = this.resolveUrl(`assets/se/${file}`);
     se.currentTime = 0;
     se.play().catch(e => console.log('SE autoplay blocked:', e));
   }
@@ -1334,6 +1513,71 @@ class GameEngine {
     return Boolean(sprites?.stage1 || sprites?.stage2);
   }
 
+  normalizeSpeakerKey(value) {
+    return (value || '')
+      .toString()
+      .trim()
+      .toLowerCase()
+      .replace(/[　\s]/g, '')
+      .replace(/[（(]/g, '')
+      .replace(/[）)]/g, '')
+      .replace(/[：:]/g, '')
+      .replace(/[・]/g, '');
+  }
+
+  buildCharacterAliasMap() {
+    const chars = this.characters.characters || {};
+    const aliases = {};
+
+    const register = (key, id) => {
+      const normalizedKey = this.normalizeSpeakerKey(key);
+      if (!normalizedKey || !id || aliases[normalizedKey]) return;
+      aliases[normalizedKey] = id;
+    };
+
+    Object.entries(chars).forEach(([id, char]) => {
+      register(id, id);
+      register(char.id, id);
+      register(char.name, id);
+      register(char.name_display, id);
+    });
+
+    const manualAliases = {
+      protagonist: 'protagonist',
+      主人公: 'protagonist',
+      悪魔off: 'akuma',
+      悪魔offvoice: 'akuma',
+      幼なじみの母: 'mother',
+      親友: 'friend',
+      友樹: 'friend',
+      tomoki: 'friend',
+      生徒: 'mob',
+      教頭: 'kyoutou',
+      理事長: 'rijichou',
+      顧問: 'komon'
+    };
+
+    Object.entries(manualAliases).forEach(([key, id]) => {
+      register(key, id);
+    });
+
+    this.characterAliasMap = aliases;
+  }
+
+  resolveCharacterId(nameOrId) {
+    if (!nameOrId) return '';
+
+    const raw = nameOrId.toString().trim();
+    if (!raw) return '';
+
+    if (this.characters.characters?.[raw]) {
+      return raw;
+    }
+
+    const normalized = this.normalizeSpeakerKey(raw);
+    return this.characterAliasMap[normalized] || raw;
+  }
+
   getStageSpritePrefix(stageId) {
     const id = (stageId || this.currentStage || this.currentEpisode?.stage || '').toString();
     if (id === 'neutral' || !id) return 'neutral';
@@ -1362,7 +1606,9 @@ class GameEngine {
       flustered: 'flustered',
       shy: 'flustered',
       embarrassed: 'flustered',
+      default: 'default',
       smile: 'smile',
+      smirk: 'smile',
       excited: 'smile',
       pleased: 'smile',
       proud: 'smile',
@@ -1372,31 +1618,86 @@ class GameEngine {
     return aliases[expr] || expr;
   }
 
+  resolveStage2FdImage(characterId, expr) {
+    const stage2FdCharacters = new Set([
+      'osananajimi',
+      'seitokai',
+      'gyaru',
+      'otaku',
+      'kakutogi',
+      'furyo',
+      'imouto'
+    ]);
+    if (!stage2FdCharacters.has(characterId)) return null;
+
+    const raw = expr || '';
+    const isExplicitFd =
+      /^stage2_fd(_|$)/.test(raw) ||
+      /^fd(_|$)/.test(raw) ||
+      raw === 'contact';
+    if (!isExplicitFd) return null;
+
+    const rawExpr = raw.replace(/^stage2_?/, '').replace(/^fd_?/, '') || 'contact';
+    const fdExpressionMap = {
+      contact: 'contact',
+      angry: 'angry',
+      blush: 'blush',
+      sad: 'sad',
+      worried: 'sad',
+      vulnerable: 'sad',
+      surprised: 'surprised'
+    };
+    const fdExpression = fdExpressionMap[rawExpr];
+    return fdExpression ? `${characterId}_stage2_fd_${fdExpression}` : null;
+  }
+
   resolveCharacterImage(image) {
     if (!image || typeof image !== 'string') return image;
 
     const parts = image.split('_');
     if (parts.length < 2) return image;
 
-    const [characterId, exprOrStage] = parts;
+    const rawCharacterId = parts.shift();
+    const exprOrStage = parts.join('_');
+    const characterId = this.resolveCharacterId(rawCharacterId);
     if (!characterId || !exprOrStage) return image;
+    if (!this.characters.characters?.[characterId]) return image;
 
-    // ステージ対応のキャラクターでない場合はそのまま返す
-    if (!this.isStageableCharacter(characterId)) return image;
-
-    const stagePrefix = this.getStageSpritePrefix();
     const expr = this.normalizeExpression(exprOrStage);
+    const stagePrefix = this.getStageSpritePrefix();
+
+    // Explicitly handle stage overrides in the expression (e.g. stage1_sad)
+    // If the expression starts with stageX, use it directly instead of prepending the global stage
+    if (/^stage\d+(_|$)/.test(expr)) {
+      if (expr.startsWith('stage2_fd')) {
+        const fdImage = this.resolveStage2FdImage(characterId, expr);
+        if (fdImage) return fdImage;
+      }
+      return `${characterId}_${expr}`;
+    }
+
+    // ステージ非対応キャラ（悪魔など）は neutral 系命名へ正規化
+    if (!this.isStageableCharacter(characterId)) {
+      if (expr === 'neutral' || expr === 'default') {
+        return `${characterId}_neutral`;
+      }
+      return `${characterId}_neutral_${expr}`;
+    }
 
     // neutralまたはstageが含まれている場合はステージプレフィックスで置換
     if (expr === 'neutral' || /^stage\d+$/.test(expr)) {
       // 既にステージが指定されている場合はそのまま返す
       if (/^stage\d+$/.test(expr)) {
-        return image;
+        return `${characterId}_${expr}`;
       }
       return `${characterId}_${stagePrefix}`;
     }
 
     // それ以外は表情をステージに合わせて追加
+    if (stagePrefix === 'stage2' && (/^fd(_|$)/.test(expr) || expr === 'contact')) {
+      const fdImage = this.resolveStage2FdImage(characterId, expr);
+      if (fdImage) return fdImage;
+    }
     return `${characterId}_${stagePrefix}_${expr}`;
   }
 
@@ -1409,16 +1710,39 @@ class GameEngine {
     const elemId = posMap[position] || 'char-center';
     const elem = document.getElementById(elemId);
 
-    // 新しいキャラクターが登場する場合はアニメーション
-    const isNewChar = !elem.classList.contains('visible');
+    const imageParts = typeof image === 'string' ? image.split('_') : [];
+    if (imageParts.length >= 2) {
+      const resolvedId = this.resolveCharacterId(imageParts[0]);
+      if (resolvedId && resolvedId !== imageParts[0]) {
+        imageParts[0] = resolvedId;
+        image = imageParts.join('_');
+      }
+    }
 
     // キャラクター画像を設定
     const resolvedImage = this.resolveCharacterImage(image);
-    elem.style.backgroundImage = `url('public/assets/characters/${resolvedImage}.png')`;
+    if (!resolvedImage) return;
+
     // キャラクター名をdata属性に設定（CSS用）
-    const charName = resolvedImage.split('_')[0];
+    const charName = this.resolveCharacterId(resolvedImage.split('_')[0]);
+
+    // 同一キャラクターが他の位置にいる場合は先に消す（重複表示防止）
+    ['char-left', 'char-center', 'char-right'].forEach((id) => {
+      if (id === elemId) return;
+      const target = document.getElementById(id);
+      if (target.dataset.character === charName) {
+        target.classList.remove('visible', 'dimmed');
+        target.dataset.character = '';
+      }
+    });
+
+    // 新しいキャラクターが登場する場合はアニメーション
+    const isNewChar = !elem.classList.contains('visible') || elem.dataset.character !== charName;
+
+    elem.style.backgroundImage = `url('${this.resolveUrl(`assets/characters/${resolvedImage}.png`)}')`;
     elem.dataset.character = charName;
     elem.classList.add('visible');
+    this.lastCharacterPosition[charName] = position;
 
     if (isNewChar) {
       elem.classList.add('entering');
@@ -1434,30 +1758,186 @@ class GameEngine {
     }
   }
 
-  hideCharacter(position) {
+  hideCharacter(position, character) {
     const posMap = {
       'left': 'char-left',
       'center': 'char-center',
       'right': 'char-right'
     };
-    const elemId = posMap[position] || 'char-center';
-    const elem = document.getElementById(elemId);
-    elem.classList.remove('visible');
+
+    const resolvedCharacter = this.resolveCharacterId(character);
+    let hidden = false;
+    if (resolvedCharacter) {
+      Object.values(posMap).forEach((elemId) => {
+        const elem = document.getElementById(elemId);
+        if (elem.dataset.character === resolvedCharacter) {
+          elem.classList.remove('visible');
+          elem.classList.remove('dimmed');
+          elem.dataset.character = '';
+          hidden = true;
+        }
+      });
+    }
+
+    if (!hidden && position) {
+      const elemId = posMap[position] || 'char-center';
+      const elem = document.getElementById(elemId);
+      elem.classList.remove('visible');
+      elem.classList.remove('dimmed');
+      elem.dataset.character = '';
+    }
   }
 
   clearCharacters() {
     ['char-left', 'char-center', 'char-right'].forEach(id => {
       const elem = document.getElementById(id);
       elem.classList.remove('visible', 'dimmed');
+      elem.dataset.character = '';
     });
   }
 
+  isCharacterVisible(characterId) {
+    const resolvedId = this.resolveCharacterId(characterId);
+    const ids = ['char-left', 'char-center', 'char-right'];
+    return ids.some((id) => {
+      const elem = document.getElementById(id);
+      return elem.classList.contains('visible') && elem.dataset.character === resolvedId;
+    });
+  }
+
+  getVisibleCharacterCount() {
+    const ids = ['char-left', 'char-center', 'char-right'];
+    return ids.filter((id) => {
+      const elem = document.getElementById(id);
+      return elem.classList.contains('visible');
+    }).length;
+  }
+
+  getVisibleCharactersWithPositions() {
+    const posMap = {
+      'char-left': 'left',
+      'char-center': 'center',
+      'char-right': 'right'
+    };
+    const ids = ['char-left', 'char-center', 'char-right'];
+    return ids
+      .map((id) => {
+        const elem = document.getElementById(id);
+        if (!elem.classList.contains('visible') || !elem.dataset.character) return null;
+        return {
+          id: elem.dataset.character,
+          position: posMap[id] || 'center'
+        };
+      })
+      .filter(Boolean);
+  }
+
+  getAssistPositionForExplicitScene(speakerId) {
+    const visible = this.getVisibleCharactersWithPositions();
+    if (visible.length === 0) {
+      return this.getAutoShowPosition(speakerId);
+    }
+
+    if (visible.length === 1) {
+      const current = visible[0];
+      if (current.id === speakerId) {
+        return null;
+      }
+
+      if (current.position === 'left') return 'right';
+      if (current.position === 'right') return 'left';
+      return 'right';
+    }
+
+    if (visible.length === 2) {
+      const positions = new Set(visible.map((v) => v.position));
+      const slots = ['left', 'center', 'right'];
+      const empty = slots.find((slot) => !positions.has(slot));
+      return empty || null;
+    }
+
+    if (visible.length >= 3) {
+      return null;
+    }
+    return null;
+  }
+
+  getAutoShowPosition(characterId) {
+    const positions = ['center', 'left', 'right'];
+    const posMap = {
+      'left': 'char-left',
+      'center': 'char-center',
+      'right': 'char-right'
+    };
+
+    const lastPos = this.lastCharacterPosition[characterId];
+    if (lastPos && posMap[lastPos]) {
+      const elem = document.getElementById(posMap[lastPos]);
+      if (!elem.classList.contains('visible') || elem.dataset.character === characterId) {
+        return lastPos;
+      }
+    }
+
+    for (const pos of positions) {
+      const elem = document.getElementById(posMap[pos]);
+      if (!elem.classList.contains('visible')) {
+        return pos;
+      }
+    }
+
+    return lastPos || 'center';
+  }
+
+  shouldAutoShowSpeaker(characterId) {
+    if (!characterId) return false;
+    if (characterId === 'protagonist') return false;
+
+    const char = this.characters.characters?.[characterId];
+    if (!char) return false;
+    if (characterId === 'akuma') return true;
+    if (char.type === 'classmate' || char.type === 'special') return true;
+    return false;
+  }
+
+  ensureSpeakerVisible(characterId) {
+    const resolvedSpeakerId = this.resolveCharacterId(characterId);
+    if (!this.shouldAutoShowSpeaker(resolvedSpeakerId)) return;
+    if (this.isCharacterVisible(resolvedSpeakerId)) return;
+
+    const image = this.parser.buildCharacterImage(resolvedSpeakerId, 'default');
+    if (!image) return;
+
+    const visibleCount = this.getVisibleCharacterCount();
+    if (this.sceneHasExplicitCharacterControl) {
+      const assistPos = this.getAssistPositionForExplicitScene(resolvedSpeakerId);
+      if (!assistPos) {
+        return;
+      }
+      this.showCharacter(assistPos, image, true);
+      return;
+    }
+
+    // 台本にchara_showが少ないシーンでは、話者を中央にフォーカス表示する
+    if (visibleCount > 0) {
+      this.clearCharacters();
+      this.showCharacter('center', image, true);
+      return;
+    }
+
+    const pos = this.getAutoShowPosition(resolvedSpeakerId);
+    this.showCharacter(pos, image, true);
+  }
+
   showText(speaker, text, isMonologue = false) {
+    const speakerId = this.resolveCharacterId(speaker);
+    this.ensureSpeakerVisible(speakerId);
+    const displayText = this.substituteVariables(text);
+
     // 話者名を取得
     let speakerName = '';
-    if (speaker) {
-      const char = this.characters.characters?.[speaker];
-      speakerName = char?.name_display || char?.name || speaker;
+    if (speakerId) {
+      const char = this.characters.characters?.[speakerId];
+      speakerName = char?.name_display || char?.name || speaker || '';
     }
 
     // 新しいUIに合わせてspeaker-nameを更新
@@ -1476,10 +1956,10 @@ class GameEngine {
     }
 
     // バックログに追加
-    this.backlog.push({ speaker: speakerName, text: text });
+    this.backlog.push({ speaker: speakerName, text: displayText });
 
     // テキスト表示
-    this.currentText = text;
+    this.currentText = displayText;
     this.displayedText = '';
     this.isTyping = true;
     this.startTyping();

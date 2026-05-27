@@ -1,0 +1,96 @@
+[
+  1544095273,
+  "",
+  {
+    "3": {
+      "inputs": {
+        "ckpt_name": "waiIllustriousSDXL_v150.safetensors"
+      },
+      "class_type": "CheckpointLoaderSimple"
+    },
+    "4": {
+      "inputs": {
+        "text": "(masterpiece, best quality, highres:1.2), \n1girl, solo, beautiful anime girl, \nsweating, blushing, bedroom, night, dim lighting,\n(large breasts:1.2), soft curves, \nseductive expression, looking at viewer,\npartially undressed, see-through fabric,\nintimate atmosphere, romantic mood,\ndetailed skin texture, soft lighting,\nanatomy, realistic, 8k, ultra detailed",
+        "clip": [
+          "3",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode"
+    },
+    "5": {
+      "inputs": {
+        "text": "(worst quality, low quality:1.4), \ndeformed, distorted, disfigured, \nbad anatomy, bad proportions, extra limbs, missing limbs,\n(male:1.5), (multiple people:1.5),\nblurry, pixelated, jpeg artifacts, \nwatermark, signature, text,\nugly, old, wrinkles,",
+        "clip": [
+          "3",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode"
+    },
+    "6": {
+      "inputs": {
+        "seed": 1544095273,
+        "steps": 20,
+        "cfg": 7.0,
+        "sampler_name": "euler_ancestral",
+        "scheduler": "normal",
+        "denoise": 1.0,
+        "model": [
+          "3",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "7",
+          0
+        ]
+      },
+      "class_type": "KSampler"
+    },
+    "7": {
+      "inputs": {
+        "width": 1024,
+        "height": 1024,
+        "batch_size": 1
+      },
+      "class_type": "EmptyLatentImage"
+    },
+    "8": {
+      "inputs": {
+        "samples": [
+          "6",
+          0
+        ],
+        "vae": [
+          "3",
+          2
+        ]
+      },
+      "class_type": "VAEDecode"
+    },
+    "9": {
+      "inputs": {
+        "filename_prefix": "generated",
+        "images": [
+          "8",
+          0
+        ]
+      },
+      "class_type": "SaveImage"
+    }
+  },
+  {
+    "create_time": 0
+  },
+  [
+    "9"
+  ]
+]

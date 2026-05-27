@@ -11,94 +11,94 @@
 ; 第1話「玄関が狭い」
 ; ================================================================================
 
-[bg storage="school_gate.png"]
+[bg storage="school_gate.png" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-（Day2地獄の朝。筋肉化。）
-（幼なじみは、最初に俺の袖を引いた。）
+（Day2地獄の朝。筋肉化。）[l][er]
+（幼なじみは、最初に俺の袖を引いた。）[l][er]
 
 #osananajimi
-……ねえ
+……ねえ[l][er]
 
 #protagonist
-ん？
+ん？[l][er]
 
 #osananajimi
-今日、帰り……一緒に来て
+今日、帰り……一緒に来て[l][er]
 
 #protagonist
-家？
+家？[l][er]
 
 #osananajimi
-……うん。たぶん、やばい
+……うん。たぶん、やばい[l][er]
 
-（彼女は笑ってる。いつもの調子を装ってる。）
-（でも、声が薄い。）
+（彼女は笑ってる。いつもの調子を装ってる。）[l][er]
+（でも、声が薄い。）[l][er]
 
 
 ; ================================================================================
 ; 第2話「帰宅」
 ; ================================================================================
 
-[bg storage="street_evening.png"]
+[bg storage="street_evening.png" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
-（家の前まで来た。普通の家。）
-（でも幼なじみの足が止まる。）
+（家の前まで来た。普通の家。）[l][er]
+（でも幼なじみの足が止まる。）[l][er]
 
 #osananajimi
-……ごめん
+……ごめん[l][er]
 
 #protagonist
-何が
+何が[l][er]
 
 #osananajimi
-たぶん、怒られるの、あたしだけじゃない
+たぶん、怒られるの、あたしだけじゃない[l][er]
 
 #protagonist
-俺も？
+俺も？[l][er]
 
 #osananajimi
-巻き込みたくないけど……来てほしい
+巻き込みたくないけど……来てほしい[l][er]
 
 #protagonist
-来た
+来た[l][er]
 
-（玄関の扉を開ける。）
+（玄関の扉を開ける。）[l][er]
 
-
-#mother
-……は？
-
-（母親の声が、一段低い。）
 
 #mother
-……誰？
+……は？[l][er]
+
+（母親の声が、一段低い。）[l][er]
+
+#mother
+……誰？[l][er]
 
 #osananajimi
-……お母さん
+……お母さん[l][er]
 
 #mother
-誰？ って聞いてるの
+誰？ って聞いてるの[l][er]
 
-（幼なじみは、黙った。）
-（筋肉があるせいじゃない。）
-（"娘"と認識してもらえてない。）
+（幼なじみは、黙った。）[l][er]
+（筋肉があるせいじゃない。）[l][er]
+（"娘"と認識してもらえてない。）[l][er]
 
 #protagonist
-……
+……[l][er]
 
 #mother
-まさか、冗談でしょ。
-うちの子、どこ
+まさか、冗談でしょ。[l][er]
+うちの子、どこ[l][er]
 
 #osananajimi
-……ここ
+……ここ[l][er]
 
 #mother
-……近寄らないで
+……近寄らないで[l][er]
 
-（言い方が、刺さる。）
+（言い方が、刺さる。）[l][er]
 
 
 ; ================================================================================
@@ -114,68 +114,68 @@
 ; 第3話「風呂場の鏡」（共通シーン）
 ; ================================================================================
 
-[bg storage="protagonist_room_night.png"]
+[bg storage="protagonist_room_night.png" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
-（夜。幼なじみは、自分の部屋で鏡を見ていた。）
+（夜。幼なじみは、自分の部屋で鏡を見ていた。）[l][er]
 
 #osananajimi
-……笑える
+……笑える[l][er]
 
 #protagonist
-笑ってない
+笑ってない[l][er]
 
 #osananajimi
-笑ってるよ。
-だってさ、あたしの体、別人じゃん
+笑ってるよ。[l][er]
+だってさ、あたしの体、別人じゃん[l][er]
 
 #protagonist
-……お前だろ
+……お前だろ[l][er]
 
 #osananajimi
-……わかんないよ
+……わかんないよ[l][er]
 
-（鏡の中の筋肉は、彼女の思春期を踏み潰すみたいに張っている。）
+（鏡の中の筋肉は、彼女の思春期を踏み潰すみたいに張っている。）[l][er]
 
 #osananajimi
-ねえ
+ねえ[l][er]
 
 #protagonist
-ん
+ん[l][er]
 
 #osananajimi
-……触ってもいい？
+……触ってもいい？[l][er]
 
 #protagonist
-どこを
+どこを[l][er]
 
 #osananajimi
-……自分の腕
+……自分の腕[l][er]
 
-（彼女が、自分の腕をそっと撫でる。）
-（強さが、怖さに変わる瞬間。）
-
-#osananajimi
-これ、あたしの"努力"じゃない
+（彼女が、自分の腕をそっと撫でる。）[l][er]
+（強さが、怖さに変わる瞬間。）[l][er]
 
 #osananajimi
-なのに、強い
+これ、あたしの"努力"じゃない[l][er]
+
+#osananajimi
+なのに、強い[l][er]
 
 #protagonist
-……
+……[l][er]
 
 #osananajimi
-ずるいよね
+ずるいよね[l][er]
 
 #protagonist
-ずるくない
+ずるくない[l][er]
 
 #osananajimi
-ずるいよ。
-ずるいって思わないと、あたし壊れる
+ずるいよ。[l][er]
+ずるいって思わないと、あたし壊れる[l][er]
 
 
-（→ 次は「第4話：悪魔の影」へ続く）
+（→ 次は「第4話：悪魔の影」へ続く）[l][er]
 
 ; source: 分岐A_真実ルート.txt
 *osananajimi_01
@@ -185,169 +185,169 @@
 ; ================================================================================
 
 #protagonist
-……お母さん、落ち着いて
+……お母さん、落ち着いて[l][er]
 
 #mother
-落ち着いて？
-知らない男が娘のフリして家に入ってきて？
+落ち着いて？[l][er]
+知らない男が娘のフリして家に入ってきて？[l][er]
 
 #osananajimi
-男じゃない……
+男じゃない……[l][er]
 
 #mother
-じゃあ何？
+じゃあ何？[l][er]
 
 #osananajimi
-……私
+……私[l][er]
 
-（母親は震えた。怒りじゃない。）
-（恐怖だ。）
+（母親は震えた。怒りじゃない。）[l][er]
+（恐怖だ。）[l][er]
 
 #mother
-……病院
+……病院[l][er]
 
 #osananajimi
-行く
+行く[l][er]
 
 #mother
-警察——
+警察——[l][er]
 
 #protagonist
-待って！
+待って！[l][er]
 
-（俺の声で、空気が止まる。）
-
-#protagonist
-昨日から、学校全体で起きてる
+（俺の声で、空気が止まる。）[l][er]
 
 #protagonist
-原因不明の……体の変化
-
-#mother
-……そんなの
+昨日から、学校全体で起きてる[l][er]
 
 #protagonist
-信じられないのはわかる
+原因不明の……体の変化[l][er]
+
+#mother
+……そんなの[l][er]
 
 #protagonist
-でも、本人が一番怖い
+信じられないのはわかる[l][er]
 
-（幼なじみが、息を吸う。）
+#protagonist
+でも、本人が一番怖い[l][er]
+
+（幼なじみが、息を吸う。）[l][er]
 
 #osananajimi
-……お母さん
+……お母さん[l][er]
 
 #osananajimi
-私、声……わかる？
+私、声……わかる？[l][er]
 
 #mother
-……
+……[l][er]
 
 #osananajimi
-小学校の時。
-熱出したとき、氷枕作ってくれた
+小学校の時。[l][er]
+熱出したとき、氷枕作ってくれた[l][er]
 
 #osananajimi
-そのとき……
-"泣くな"じゃなくて、"泣いていい"って言った
+そのとき……[l][er]
+"泣くな"じゃなくて、"泣いていい"って言った[l][er]
 
-（母の目が揺れる。）
+（母の目が揺れる。）[l][er]
 
 #mother
-……
+……[l][er]
 
 #mother
-……あなた、本当に
+……あなた、本当に[l][er]
 
 #osananajimi
-うん
+うん[l][er]
 
-（母は、崩れた。）
+（母は、崩れた。）[l][er]
 
 #mother
-……気持ち悪い、って思った
+……気持ち悪い、って思った[l][er]
 
 #osananajimi
-……
+……[l][er]
 
 #mother
-ごめん。ごめん……
+ごめん。ごめん……[l][er]
 
-（抱きしめようとして、止まる。）
-（筋肉があるからじゃない。）
-（怖いからだ。）
+（抱きしめようとして、止まる。）[l][er]
+（筋肉があるからじゃない。）[l][er]
+（怖いからだ。）[l][er]
 
 #osananajimi
-……いいよ。
-今、怖いの普通だよ
+……いいよ。[l][er]
+今、怖いの普通だよ[l][er]
 
-（彼女の方が大人みたいだった。）
+（彼女の方が大人みたいだった。）[l][er]
 
 
 ; ================================================================================
 ; 第5話「母の言葉」
 ; ================================================================================
 
-[bg storage="school_gate.png"]
+[bg storage="school_gate.png" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-（母親が味噌汁を作っている。）
-（幼なじみは黙って座っている。）
+（母親が味噌汁を作っている。）[l][er]
+（幼なじみは黙って座っている。）[l][er]
 
 #mother
-……学校は、休みなさい
+……学校は、休みなさい[l][er]
 
 #osananajimi
-……
+……[l][er]
 
 #mother
-その姿で出るの、危ないから
+その姿で出るの、危ないから[l][er]
 
-（"危ない"＝世間が、ではない。）
-（"私の世界が壊れるから"だ。）
+（"危ない"＝世間が、ではない。）[l][er]
+（"私の世界が壊れるから"だ。）[l][er]
 
 #osananajimi
-……私、隠すの嫌だ
+……私、隠すの嫌だ[l][er]
 
 #mother
-わがまま言わないで
+わがまま言わないで[l][er]
 
-（幼なじみの呼吸が荒くなる。）
-
-#protagonist
-……
-
-（ここで主人公が口を挟むと、母は"外敵"として扱う。）
-（だから——）
+（幼なじみの呼吸が荒くなる。）[l][er]
 
 #protagonist
-……お母さん
+……[l][er]
+
+（ここで主人公が口を挟むと、母は"外敵"として扱う。）[l][er]
+（だから——）[l][er]
 
 #protagonist
-一回だけでいい。
-娘さんの話、聞いてあげてください
+……お母さん[l][er]
+
+#protagonist
+一回だけでいい。[l][er]
+娘さんの話、聞いてあげてください[l][er]
 
 #mother
-……私は聞いてる！
+……私は聞いてる！[l][er]
 
 #protagonist
-……聞いてるのは、"安心できる話"です
+……聞いてるのは、"安心できる話"です[l][er]
 
-（母の手が止まる。）
-
-#mother
-……
+（母の手が止まる。）[l][er]
 
 #mother
-……わたしだって、怖いのよ
+……[l][er]
+
+#mother
+……わたしだって、怖いのよ[l][er]
 
 #osananajimi
-……あたしも怖い
+……あたしも怖い[l][er]
 
-（初めて、母娘の恐怖が並んだ。）
+（初めて、母娘の恐怖が並んだ。）[l][er]
 
 
-（→ 次は「第4話：悪魔の影」または分岐Bへ）
+（→ 次は「第4話：悪魔の影」または分岐Bへ）[l][er]
 [jump target="osananajimi_02"]
 
 ; source: 分岐A_偽装ルート.txt
@@ -358,169 +358,1039 @@
 ; ================================================================================
 
 #protagonist
-……お母さん、落ち着いて
+……お母さん、落ち着いて[l][er]
 
 #mother
-落ち着けるわけないでしょ！
+落ち着けるわけないでしょ！[l][er]
 
 #osananajimi
-……
+……[l][er]
 
 #protagonist
-（ここで正面突破すると、壊れる）
+（ここで正面突破すると、壊れる）[l][er]
 
 #protagonist
-……双子です
+……双子です[l][er]
 
 #mother
-……は？
+……は？[l][er]
 
 #protagonist
-幼なじみの、双子の姉
+幼なじみの、双子の姉[l][er]
 
 #mother
-うちの子に双子なんて——
+うちの子に双子なんて——[l][er]
 
 #protagonist
-……事情があって
+……事情があって[l][er]
 
-（幼なじみが、目を見開く。）
+（幼なじみが、目を見開く。）[l][er]
 
 #osananajimi
-……う、うん
+……う、うん[l][er]
 
-（声が震える。）
-
-#mother
-……冗談でしょ
-
-#protagonist
-冗談じゃないです
-
-#protagonist
-本人は今……体調が悪くて
-
-#protagonist
-だから、俺が代わりに来た
+（声が震える。）[l][er]
 
 #mother
-……
+……冗談でしょ[l][er]
 
-（母親は、疑いながらも"信じたい形"を選ぶ。）
-（信じたいのは娘じゃなく、"安心できる物語"だ。）
+#protagonist
+冗談じゃないです[l][er]
+
+#protagonist
+本人は今……体調が悪くて[l][er]
+
+#protagonist
+だから、俺が代わりに来た[l][er]
 
 #mother
-……とにかく、上がって
+……[l][er]
 
-（通った。）
+（母親は、疑いながらも"信じたい形"を選ぶ。）[l][er]
+（信じたいのは娘じゃなく、"安心できる物語"だ。）[l][er]
 
-（でも——）
+#mother
+……とにかく、上がって[l][er]
 
-（この嘘は、後で必ず牙を剥く。）
+（通った。）[l][er]
+
+（でも——）[l][er]
+
+（この嘘は、後で必ず牙を剥く。）[l][er]
 
 
 ; ================================================================================
 ; 第5話「嘘の代償」
 ; ================================================================================
 
-[bg storage="protagonist_room_night.png"]
+[bg storage="protagonist_room_night.png" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
-（部屋の中。）
+（部屋の中。）[l][er]
 
 #osananajimi
-……ねえ
+……ねえ[l][er]
 
 #protagonist
-なんだ
+なんだ[l][er]
 
 #osananajimi
-あたし、誰になったの？
+あたし、誰になったの？[l][er]
 
 #protagonist
-……
+……[l][er]
 
 #osananajimi
-双子の姉？
-そんな人、いないのに
+双子の姉？[l][er]
+そんな人、いないのに[l][er]
 
 #protagonist
-仕方なかった
+仕方なかった[l][er]
 
 #osananajimi
-うん……仕方ないよね
+うん……仕方ないよね[l][er]
 
-（彼女は笑う。）
+（彼女は笑う。）[l][er]
 
 #osananajimi
-お母さんは、
-"あたし"じゃない人を信じたんだ
+お母さんは、[l][er]
+"あたし"じゃない人を信じたんだ[l][er]
 
 #protagonist
-……
+……[l][er]
 
 #osananajimi
-嘘でよかったのかな
+嘘でよかったのかな[l][er]
 
 #protagonist
-よくない
+よくない[l][er]
 
 #osananajimi
-……じゃあ、いつ本当を話す？
+……じゃあ、いつ本当を話す？[l][er]
 
 #protagonist
-……
+……[l][er]
 
-（答えられない。）
+（答えられない。）[l][er]
 
-（嘘の中で、彼女は消えていく。）
+（嘘の中で、彼女は消えていく。）[l][er]
 
 
 ; ================================================================================
-後日：嘘の露見（バッドルート確定の場合）
+後日：嘘の露見（バッドルート確定の場合）[l][er]
 ; ================================================================================
 
-[bg storage="school_gate.png"]
+[bg storage="school_gate.png" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 #mother
-……ねえ
+……ねえ[l][er]
 
 #osananajimi
-なに
+なに[l][er]
 
 #mother
-あなた、本当に双子？
+あなた、本当に双子？[l][er]
 
 #osananajimi
-……
+……[l][er]
 
 #mother
-戸籍、調べたの
+戸籍、調べたの[l][er]
 
-（空気が凍る。）
-
-#mother
-双子なんて、いない
+（空気が凍る。）[l][er]
 
 #mother
-あなた、誰？
+双子なんて、いない[l][er]
+
+#mother
+あなた、誰？[l][er]
 
 #osananajimi
-……
+……[l][er]
 
-（嘘が、壊れた。）
+（嘘が、壊れた。）[l][er]
 
 #mother
-出てって
+出てって[l][er]
 
 #osananajimi
-……え
+……え[l][er]
 
 #mother
-出てけって言ってるの！
+出てけって言ってるの！[l][er]
 
-（母の叫びが、彼女を追い出す。）
+（母の叫びが、彼女を追い出す。）[l][er]
 
 
-（→ 次は「分岐B」または「END3_バッド.txt」へ）
+（→ 次は「分岐B」または「END3_バッド.txt」へ）[l][er]
+
+[jump target="osananajimi_03"]
+
+; ================================================================================
+; ■ 幼なじみルート - 第4話「悪魔の影」
+; テーマ：代償 / 変化への恐怖
+; ================================================================================
+
+*osananajimi_03
+[bg storage="school_gate.png" time="1000"]
+[playbgm storage="bgm_tension.mp3"]
+
+（数日が経った。）[l][er]
+
+（幼なじみは、家を出て俺の家に泊まっている。）[l][er]
+
+（母親との関係は、まだ修復されていない。）[l][er]
+
+[chara_show name="osananajimi" face="default" pos="center" time="1000"]
+
+#osananajimi
+……ねえ[l][er]
+
+#protagonist
+ん？[l][er]
+
+#osananajimi
+あたし、このままどうなるのかな[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+筋肉は——戻らないの？[l][er]
+
+#protagonist
+わからない[l][er]
+
+#osananajimi
+……だよね[l][er]
+
+（彼女は、自分の腕を見た。）[l][er]
+
+#osananajimi
+悪魔は、何も言わなかった？[l][er]
+
+#protagonist
+いや——[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+*osananajimi_03_scene_2
+; シーン2：悪魔の登場
+; ================================================================================
+
+[bg storage="school_gate.png" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+[chara_show name="akuma" face="default" pos="left" time="1000"]
+
+#akuma
+呼んだ？[l][er]
+
+#protagonist
+！[l][er]
+
+#osananajimi
+……あんた[l][er]
+
+#akuma
+久しぶり。元気そうだね[l][er]
+
+#osananajimi
+元気なわけないでしょ[l][er]
+
+#akuma
+そう？筋肉はいい感じじゃない[l][er]
+
+（悪魔は、にやりと笑う。）[l][er]
+
+#osananajimi
+……戻して[l][er]
+
+#akuma
+戻す？[l][er]
+
+#osananajimi
+元の体に。戻して[l][er]
+
+#akuma
+……[l][er]
+
+（悪魔は、少し考えるふりをした。）[l][er]
+
+#akuma
+無理だね[l][er]
+
+#osananajimi
+……！[l][er]
+
+#akuma
+契約は契約。代償は代償[l][er]
+
+#akuma
+君は"強さ"を願った。代償として"普通"を失った[l][er]
+
+#osananajimi
+あたしは願ってない！[l][er]
+
+#akuma
+願ったよ。心の奥で[l][er]
+
+（悪魔の目が、冷たく光る。）[l][er]
+
+#akuma
+君は——弱い自分が嫌だった[l][er]
+
+#akuma
+誰かに守られるだけの自分が[l][er]
+
+#osananajimi
+……[l][er]
+
+#akuma
+だから、強くなりたかった[l][er]
+
+#akuma
+無意識に、そう願った[l][er]
+
+（彼女は、何も言えなかった。）[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+; ================================================================================
+*osananajimi_03_scene_3
+; シーン3：本音
+; ================================================================================
+
+[bg storage="protagonist_room_night.png" time="1000"]
+[playbgm storage="bgm_sadness.mp3"]
+
+（夜。俺の部屋。）[l][er]
+
+[chara_show name="osananajimi" face="crying" pos="center" time="1000"]
+
+#osananajimi
+……ねえ[l][er]
+
+#protagonist
+ん[l][er]
+
+#osananajimi
+悪魔の言ったこと——本当かも[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+あたし、ずっと嫌だった[l][er]
+
+#osananajimi
+弱い自分が[l][er]
+
+#protagonist
+弱くないだろ[l][er]
+
+#osananajimi
+弱いよ[l][er]
+
+（彼女は、膝を抱えた。）[l][er]
+
+#osananajimi
+いつも、誰かに守ってもらってた[l][er]
+
+#osananajimi
+親に。友達に。あんたに[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+一人じゃ何もできない[l][er]
+
+#osananajimi
+そう思ってた[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+だから——こうなったのかな[l][er]
+
+#osananajimi
+強くなりたいって、思ったから[l][er]
+
+（涙が、こぼれた。）[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+*osananajimi_03_scene_4
+; シーン4：励まし
+; ================================================================================
+
+[bg storage="protagonist_room_night.png" time="1000"]
+[playbgm storage="bgm_romance.mp3"]
+
+#protagonist
+……お前は、弱くない[l][er]
+
+[chara_show name="osananajimi" face="surprised" pos="center" time="1000"]
+
+#osananajimi
+……え[l][er]
+
+#protagonist
+守ってもらってた？違う[l][er]
+
+#protagonist
+お前は、いつも俺を支えてくれてた[l][er]
+
+#osananajimi
+……[l][er]
+
+#protagonist
+落ち込んでる時、そばにいてくれた[l][er]
+
+#protagonist
+笑わせてくれた[l][er]
+
+#protagonist
+それは、強さだ[l][er]
+
+#osananajimi
+……そんなの——[l][er]
+
+#protagonist
+強さは、筋肉だけじゃない[l][er]
+
+#protagonist
+誰かを支える力。寄り添う力[l][er]
+
+#protagonist
+お前には、それがある[l][er]
+
+#osananajimi
+……[l][er]
+
+（彼女の目から、涙が止まらない。）[l][er]
+
+#osananajimi
+……ありがと[l][er]
+
+#protagonist
+俺の方こそ[l][er]
+
+（俺は、彼女の頭を撫でた。）[l][er]
+
+#protagonist
+お前は、そのままでいい[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+; ■ 幼なじみルート - 第5話「母との和解」
+; テーマ：家族 / 受け入れる
+; ================================================================================
+
+*osananajimi_04
+[bg storage="street_evening.png" time="1000"]
+[playbgm storage="bgm_daily.mp3"]
+
+（数日後。）[l][er]
+
+（幼なじみの母親から、連絡があった。）[l][er]
+
+（話がしたい、と。）[l][er]
+
+[chara_show name="osananajimi" face="default" pos="center" time="1000"]
+
+#osananajimi
+……行くの、怖い[l][er]
+
+#protagonist
+俺も一緒に行く[l][er]
+
+#osananajimi
+……いいの？[l][er]
+
+#protagonist
+当たり前だろ[l][er]
+
+（俺たちは、彼女の家に向かった。）[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+*osananajimi_04_scene_2
+; シーン2：母との対話
+; ================================================================================
+
+[bg storage="living_room.png" time="1000"]
+[playbgm storage="bgm_sadness.mp3"]
+
+（リビング。）[l][er]
+
+（母親が、座っていた。）[l][er]
+
+#mother
+……座って[l][er]
+
+[chara_show name="osananajimi" face="default" pos="right" time="1000"]
+
+#osananajimi
+……[l][er]
+
+（彼女は、おそるおそる座った。）[l][er]
+
+#mother
+……あの日から、ずっと考えてた[l][er]
+
+#osananajimi
+……[l][er]
+
+#mother
+娘が——変わってしまったこと[l][er]
+
+#mother
+受け入れられなかった[l][er]
+
+#protagonist
+……[l][er]
+
+#mother
+怖かった。気持ち悪いって思った[l][er]
+
+#osananajimi
+……わかってる[l][er]
+
+#mother
+でも——[l][er]
+
+（母親の目が、潤む。）[l][er]
+
+#mother
+それでも、あなたはあなたなのよね[l][er]
+
+#osananajimi
+……！[l][er]
+
+#mother
+声も、仕草も、笑い方も[l][er]
+
+#mother
+変わってない[l][er]
+
+#osananajimi
+……お母さん[l][er]
+
+#mother
+ごめんね。ひどいこと言って[l][er]
+
+#mother
+あなたを——追い出して[l][er]
+
+（母親が、泣いている。）[l][er]
+
+#osananajimi
+……[l][er]
+
+（幼なじみも、泣いていた。）[l][er]
+
+#osananajimi
+……あたしこそ、ごめん[l][er]
+
+#osananajimi
+びっくりさせて[l][er]
+
+#mother
+……おかえり[l][er]
+
+#osananajimi
+……ただいま[l][er]
+
+（二人は、抱き合った。）[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+*osananajimi_04_scene_3
+; シーン3：帰り道
+; ================================================================================
+
+[bg storage="street_evening.png" time="1000"]
+[playbgm storage="bgm_romance.mp3"]
+
+（帰り道。）[l][er]
+
+[chara_show name="osananajimi" face="smile" pos="center" time="1000"]
+
+#osananajimi
+……よかった[l][er]
+
+#protagonist
+ああ[l][er]
+
+#osananajimi
+お母さんと、話せて[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+あんたのおかげ[l][er]
+
+#protagonist
+俺は何もしてない[l][er]
+
+#osananajimi
+いたでしょ。隣に[l][er]
+
+#osananajimi
+それだけで、心強かった[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+……ねえ[l][er]
+
+#protagonist
+ん？[l][er]
+
+#osananajimi
+あたしたち——どうなるのかな[l][er]
+
+#protagonist
+どうって？[l][er]
+
+#osananajimi
+このまま、幼なじみ？[l][er]
+
+#protagonist
+……[l][er]
+
+（彼女は、俺を見た。）[l][er]
+
+（その目は——）[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+; ■ 幼なじみルート - 第6話「告白」
+; テーマ：恋 / 変わらないもの
+; ================================================================================
+
+*osananajimi_05
+[bg storage="park_night.png" time="1000"]
+[playbgm storage="bgm_romance.mp3"]
+
+（夜の公園。）[l][er]
+
+（幼なじみと、二人きり。）[l][er]
+
+[chara_show name="osananajimi" face="blush" pos="center" time="1000"]
+
+#osananajimi
+……ねえ[l][er]
+
+#protagonist
+ん？[l][er]
+
+#osananajimi
+あたしたち、小さい頃から一緒だったよね[l][er]
+
+#protagonist
+ああ[l][er]
+
+#osananajimi
+幼稚園から[l][er]
+
+#protagonist
+泣き虫だったな、お前[l][er]
+
+#osananajimi
+うるさい[l][er]
+
+（彼女は、笑った。）[l][er]
+
+#osananajimi
+でも——いつからか、変わった[l][er]
+
+#protagonist
+何が？[l][er]
+
+#osananajimi
+あんたを見る目[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+幼なじみじゃなくて——[l][er]
+
+#osananajimi
+男の子として、見るようになった[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+この体になって——もう、女の子として見てもらえないと思った[l][er]
+
+#osananajimi
+でも——[l][er]
+
+（彼女は、俺を見た。）[l][er]
+
+#osananajimi
+あんたは、変わらなかった[l][er]
+
+#osananajimi
+いつも通り、接してくれた[l][er]
+
+#protagonist
+当たり前だろ[l][er]
+
+#osananajimi
+当たり前じゃないよ[l][er]
+
+（彼女の目が、潤む。）[l][er]
+
+#osananajimi
+だから——[l][er]
+
+#osananajimi
+好き[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+幼なじみとしてじゃなくて——[l][er]
+
+#osananajimi
+女として、好き[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+*osananajimi_05_scene_2
+; シーン2：返事
+; ================================================================================
+
+[bg storage="park_night.png" time="1000"]
+
+[glink target="osananajimi_ending_good" text="俺も好きだ"]
+[glink target="osananajimi_ending_normal" text="幼なじみでいたい"]
+[s]
+
+; ================================================================================
+; ■ 幼なじみルート - グッドエンディング「変わらない気持ち」
+; ================================================================================
+
+*osananajimi_ending_good
+#protagonist
+俺も好きだ[l][er]
+
+[chara_show name="osananajimi" face="surprised" pos="center" time="1000"]
+
+#osananajimi
+……え[l][er]
+
+#protagonist
+ずっと、好きだった[l][er]
+
+#osananajimi
+……いつから[l][er]
+
+#protagonist
+わからない。気づいたら、そうだった[l][er]
+
+#protagonist
+幼なじみだからって、ごまかしてた[l][er]
+
+#osananajimi
+……[l][er]
+
+#protagonist
+でも、この体になっても——変わらなかった[l][er]
+
+#protagonist
+お前を好きな気持ちは[l][er]
+
+#osananajimi
+……[l][er]
+
+（彼女の目から、涙がこぼれた。）[l][er]
+
+#osananajimi
+……嬉しい[l][er]
+
+#protagonist
+泣くなよ[l][er]
+
+#osananajimi
+泣いてない……[l][er]
+
+（俺は、彼女を抱きしめた。）[l][er]
+
+#protagonist
+これからは、幼なじみじゃなくて——[l][er]
+
+#osananajimi
+……うん[l][er]
+
+#osananajimi
+恋人[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+*osananajimi_ending_good_epilogue
+; エピローグ
+; ================================================================================
+
+[bg storage="school_gate.png" time="1000"]
+[playbgm storage="bgm_romance.mp3"]
+
+（数ヶ月後。）[l][er]
+
+（俺たちは、毎日一緒に登校している。）[l][er]
+
+（昔と同じように。）[l][er]
+
+（でも、繋いだ手だけが——違う。）[l][er]
+
+[chara_show name="osananajimi" face="smile" pos="center" time="1000"]
+
+#osananajimi
+……ねえ[l][er]
+
+#protagonist
+ん？[l][er]
+
+#osananajimi
+昔から、こうしたかったんだ[l][er]
+
+#protagonist
+手を繋ぐこと？[l][er]
+
+#osananajimi
+うん[l][er]
+
+#osananajimi
+でも、恥ずかしくてできなかった[l][er]
+
+#protagonist
+……俺もだ[l][er]
+
+#osananajimi
+あはは、同じだね[l][er]
+
+（彼女は、笑った。）[l][er]
+
+#osananajimi
+この体になって——最初は嫌だった[l][er]
+
+#osananajimi
+でも、今は——[l][er]
+
+#protagonist
+今は？[l][er]
+
+#osananajimi
+ちょっとだけ、感謝してる[l][er]
+
+#protagonist
+なんで？[l][er]
+
+#osananajimi
+だって——[l][er]
+
+（彼女は、俺の手を握りしめた。）[l][er]
+
+#osananajimi
+これがなかったら、告白できなかったから[l][er]
+
+#protagonist
+……そうか[l][er]
+
+#osananajimi
+うん[l][er]
+
+#osananajimi
+だから——ありがと[l][er]
+
+#protagonist
+……俺の方こそ[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+[bg storage="black.png" time="1000"]
+
+（——幼なじみ。本名、藤咲結衣。）[l][er]
+
+（小さい頃から、ずっと一緒だった。）[l][er]
+
+（体が変わっても——気持ちは変わらなかった。）[l][er]
+
+（むしろ、気づけた。）[l][er]
+
+（ずっと、好きだったことに。）[l][er]
+
+（END - 「変わらない気持ち」）[l][er]
+
+[s]
+
+; ================================================================================
+; ■ 幼なじみルート - ノーマルエンディング「ずっと一緒」
+; ================================================================================
+
+*osananajimi_ending_normal
+#protagonist
+……ごめん[l][er]
+
+[chara_show name="osananajimi" face="sad" pos="center" time="1000"]
+
+#osananajimi
+……[l][er]
+
+#protagonist
+お前のことは大事だ。でも——[l][er]
+
+#osananajimi
+……幼なじみとして？[l][er]
+
+#protagonist
+……ああ[l][er]
+
+#osananajimi
+……そっか[l][er]
+
+（彼女は、俯いた。）[l][er]
+
+（でも——顔を上げた。）[l][er]
+
+#osananajimi
+……いいよ[l][er]
+
+#protagonist
+……[l][er]
+
+#osananajimi
+幼なじみでも、いい[l][er]
+
+#osananajimi
+だって——[l][er]
+
+（彼女は、笑った。）[l][er]
+
+#osananajimi
+それでも、一緒にいられるでしょ[l][er]
+
+#protagonist
+……ああ[l][er]
+
+#osananajimi
+じゃあ、いい[l][er]
+
+#osananajimi
+あたしは——あんたの隣にいられれば、それでいい[l][er]
+
+#protagonist
+……[l][er]
+
+（俺は、何も言えなかった。）[l][er]
+
+（彼女の笑顔が、眩しくて。）[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+; ================================================================================
+*osananajimi_ending_normal_epilogue
+; エピローグ
+; ================================================================================
+
+[bg storage="school_gate.png" time="1000"]
+[playbgm storage="bgm_daily.mp3"]
+
+（数ヶ月後。）[l][er]
+
+（俺たちは、相変わらず一緒に登校している。）[l][er]
+
+（昔と同じように。）[l][er]
+
+[chara_show name="osananajimi" face="smile" pos="center" time="1000"]
+
+#osananajimi
+今日も一緒だね[l][er]
+
+#protagonist
+ああ[l][er]
+
+#osananajimi
+明日も？[l][er]
+
+#protagonist
+当たり前だろ[l][er]
+
+#osananajimi
+あはは、よかった[l][er]
+
+（彼女は、笑っている。）[l][er]
+
+（いつもの笑顔。）[l][er]
+
+（幼なじみの、いつもの笑顔。）[l][er]
+
+#osananajimi
+ねえ[l][er]
+
+#protagonist
+ん？[l][er]
+
+#osananajimi
+あたしたち、ずっと一緒だよね[l][er]
+
+#protagonist
+……ああ[l][er]
+
+#osananajimi
+約束ね[l][er]
+
+#protagonist
+約束だ[l][er]
+
+（彼女は、小指を差し出した。）[l][er]
+
+（俺は、その小指に自分の小指を絡めた。）[l][er]
+
+（——昔、よくやった、指切りげんまん。）[l][er]
+
+#osananajimi
+嘘ついたら、針千本ね[l][er]
+
+#protagonist
+飲めないよ[l][er]
+
+#osananajimi
+あはは[l][er]
+
+[chara_hide name="osananajimi" time="1000"]
+
+[bg storage="black.png" time="1000"]
+
+（——幼なじみ。本名、藤咲結衣。）[l][er]
+
+（小さい頃から、ずっと一緒だった。）[l][er]
+
+（これからも——ずっと。）[l][er]
+
+（恋人じゃなくても。）[l][er]
+
+（幼なじみとして——ずっと。）[l][er]
+
+（END - 「ずっと一緒」）[l][er]
+
+[s]

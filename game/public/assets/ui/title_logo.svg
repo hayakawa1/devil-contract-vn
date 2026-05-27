@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">悪魔との契約</title>
+  <desc id="desc">Dark visual novel title logo with red contract seal and gold Japanese lettering.</desc>
+  <defs>
+    <radialGradient id="sealGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#ff3b2f" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#9b1018" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#1b0306" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0b6"/>
+      <stop offset="42%" stop-color="#b98638"/>
+      <stop offset="72%" stop-color="#f6d98a"/>
+      <stop offset="100%" stop-color="#6f431f"/>
+    </linearGradient>
+    <linearGradient id="bloodFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f44336"/>
+      <stop offset="55%" stop-color="#8d0e17"/>
+      <stop offset="100%" stop-color="#270205"/>
+    </linearGradient>
+    <filter id="logoShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.9"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#b30f18" flood-opacity="0.6"/>
+    </filter>
+    <filter id="softGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" fill="none"/>
+
+  <g opacity="0.9" filter="url(#softGlow)">
+    <circle cx="600" cy="205" r="176" fill="url(#sealGlow)"/>
+    <path d="M600 41 641 151 758 132 682 223 744 324 600 271 456 324 518 223 442 132 559 151Z"
+          fill="none" stroke="#9d131b" stroke-width="7" stroke-linejoin="round" opacity="0.75"/>
+    <circle cx="600" cy="205" r="118" fill="none" stroke="#c2252d" stroke-width="5" opacity="0.65"/>
+    <circle cx="600" cy="205" r="91" fill="none" stroke="#5f0810" stroke-width="3" opacity="0.9"/>
+  </g>
+
+  <g filter="url(#logoShadow)">
+    <text x="600" y="205"
+          font-family="'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', serif"
+          font-size="118"
+          font-weight="700"
+          letter-spacing="10"
+          text-anchor="middle"
+          dominant-baseline="middle"
+          fill="#130306"
+          stroke="#120204"
+          stroke-width="18"
+          stroke-linejoin="round">悪魔との契約</text>
+    <text x="600" y="205"
+          font-family="'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', serif"
+          font-size="118"
+          font-weight="700"
+          letter-spacing="10"
+          text-anchor="middle"
+          dominant-baseline="middle"
+          fill="url(#bloodFill)"
+          stroke="url(#goldStroke)"
+          stroke-width="5"
+          stroke-linejoin="round">悪魔との契約</text>
+    <text x="600" y="292"
+          font-family="'Cinzel', 'Times New Roman', serif"
+          font-size="30"
+          font-weight="600"
+          letter-spacing="12"
+          text-anchor="middle"
+          fill="#d4a650"
+          opacity="0.92">CONTRACT WITH THE DEVIL</text>
+  </g>
+
+  <g opacity="0.82">
+    <path d="M222 307H466" stroke="url(#goldStroke)" stroke-width="2"/>
+    <path d="M734 307H978" stroke="url(#goldStroke)" stroke-width="2"/>
+    <path d="M468 307 493 294 518 307 493 320Z" fill="#96101a"/>
+    <path d="M682 307 707 294 732 307 707 320Z" fill="#96101a"/>
+  </g>
+</svg>

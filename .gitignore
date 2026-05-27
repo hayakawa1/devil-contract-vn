@@ -16,9 +16,18 @@ Thumbs.db
 Desktop.ini
 *.ini
 
+# macOS
+.DS_Store
+
 # Temporary files
 nul
 *.tmp
+
+# Local dependencies and build output
+node_modules/
+dist/
+venv/
+.venv/
 
 # Output directory (generated files)
 output/

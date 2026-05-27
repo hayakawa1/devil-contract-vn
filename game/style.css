@@ -100,6 +100,17 @@ body {
   25%, 75% { opacity: 0.9; }
 }
 
+@keyframes titleLogoAppear {
+  0% { opacity: 0; transform: translateY(18px) scale(0.96); filter: blur(4px); }
+  65% { opacity: 1; filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes titleLogoGlow {
+  0%, 100% { filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 14px rgba(180, 30, 30, 0.35)); }
+  50% { filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 28px rgba(220, 40, 40, 0.62)); }
+}
+
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
@@ -187,10 +198,10 @@ body {
 
 /* ===== タイトル画面 ===== */
 #title-screen {
-  background: url('public/assets/backgrounds/devil_space.png') center center / cover no-repeat;
+  background: url('/assets/backgrounds/devil_space.png') center center / cover no-repeat;
   position: relative;
-  justify-content: flex-end;
-  padding-bottom: 8%;
+  justify-content: space-between;
+  padding: clamp(24px, 5vw, 56px) 0 8%;
 }
 
 #title-screen::before {
@@ -239,6 +250,22 @@ body {
   height: 80px;
   animation: bloodDrip 1.5s ease-out forwards 0.5s;
   opacity: 0.4;
+}
+
+.title-logo-wrap {
+  position: relative;
+  z-index: 4;
+  width: min(82%, 900px);
+  margin-top: clamp(8px, 2.4vh, 28px);
+  pointer-events: none;
+  animation: titleLogoAppear 1s ease-out both;
+}
+
+.title-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: titleLogoGlow 4s ease-in-out infinite 1s;
 }
 
 .menu {
@@ -292,7 +319,7 @@ body {
 /* ===== エピソード選択画面 ===== */
 #episodes-screen,
 #characters-screen {
-  background: url('public/assets/backgrounds/school_gate.png') center center / cover no-repeat;
+  background: url('/assets/backgrounds/school_gate.png') center center / cover no-repeat;
   padding: 2rem;
   position: relative;
 }

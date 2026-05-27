@@ -35,7 +35,7 @@
       "id": "ep03",
       "title": "第3話：同好会結成",
       "subtitle": "筋肉同好会",
-      "description": "戻れないなら、堂々と。7人で筋肉同好会を設立する",
+      "description": "戻れないなら、堂々と。6人の正式会員と1人の外部協力者で筋肉同好会を始める",
       "scenario": "episode_03",
       "featured_characters": ["osananajimi", "seitokai", "gyaru", "otaku", "kakutogi", "furyo", "imouto"],
       "stage": "stage1",
@@ -123,10 +123,10 @@
       "id": "route_harem",
       "title": "ハーレムルート",
       "subtitle": "全員と向き合う",
-      "description": "7人全員と向き合う真のエンディング",
+      "description": "7人全員と向き合う特殊エンディング",
       "scenario": "route_harem",
       "featured_characters": ["osananajimi", "seitokai", "gyaru", "otaku", "kakutogi", "furyo", "imouto"],
-      "stage": "stage2",
+      "stage": "stage1",
       "route": "harem",
       "status": "available"
     }
