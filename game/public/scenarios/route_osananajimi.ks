@@ -350,7 +350,7 @@
 
 
 （→ 次は「第4話：悪魔の影」または分岐Bへ）[l][er]
-[jump target="osananajimi_02"]
+[jump target="osananajimi_03"]
 
 ; source: 分岐A_偽装ルート.txt
 *osananajimi_02

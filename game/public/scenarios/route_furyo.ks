@@ -1063,11 +1063,13 @@
 ; シーン2：筋肉同好会の仲間たち
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="classroom.png" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （他のメンバーも集まってきた。）[l][er]
 
+[chara_show name="furyo" face="default" pos="center" time="1000"]
 [chara_show name="otaku" face="default" pos="left" time="1000"]
 
 #otaku
@@ -1086,9 +1088,6 @@
 
 #seitokai
 規則ですから[l][er]
-
-[chara_hide name="furyo" time="1000"]
-[chara_hide name="furyo" time="1000"]
 
 [chara_show name="kakutogi" face="default" pos="left" time="1000"]
 
@@ -1116,6 +1115,7 @@
 ; シーン3：初めての居場所
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="classroom.png" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
@@ -1190,6 +1190,7 @@
 ; ================================================================================
 
 *furyo_04
+[chara_hide_all]
 [bg storage="school_gate.png" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
@@ -1380,6 +1381,7 @@
 ; シーン3：廃工場
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="factory.png" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 

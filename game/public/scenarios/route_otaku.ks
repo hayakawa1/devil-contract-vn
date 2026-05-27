@@ -92,7 +92,7 @@
 #otaku
 正解です[l][er]
 
-[chara_hide name="furyo" time="1000"]
+[chara_hide name="otaku" time="1000"]
 
 ; ================================================================================
 *otaku_00_scene_3
@@ -144,7 +144,7 @@
 #otaku
 それでも、知りたい[l][er]
 
-[chara_hide name="furyo" time="1000"]
+[chara_hide name="otaku" time="1000"]
 
 ; ================================================================================
 *otaku_00_scene_4
@@ -269,7 +269,7 @@
 
 （彼女の実験が、始まる。）[l][er]
 
-[chara_hide name="furyo" time="1000"]
+[chara_hide name="otaku" time="1000"]
 
 ; ================================================================================
 *otaku_00_scene_6
@@ -308,7 +308,7 @@
 #protagonist
 （……）[l][er]
 
-[chara_hide name="furyo" time="1000"]
+[chara_hide name="otaku" time="1000"]
 
 ; ================================================================================
 *otaku_00_scene_7

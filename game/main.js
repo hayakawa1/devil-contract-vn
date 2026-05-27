@@ -525,7 +525,7 @@ class GameEngine {
       ? import.meta.env.BASE_URL
       : '/';
     this.baseUrl = viteBaseUrl.endsWith('/') ? viteBaseUrl : `${viteBaseUrl}/`;
-    this.assetVersion = '20260527-standee-bg-refresh';
+    this.assetVersion = '20260527-harem-standee-refresh';
     this.currentLabels = {};
     this.callStack = []; // サブルーチン用コールスタック
     this.pendingChoices = []; // 選択肢収集用
@@ -870,6 +870,7 @@ class GameEngine {
 
     Object.entries(chars).forEach(([id, char]) => {
       if (id === 'protagonist') return; // 主人公は除外
+      if (Object.keys(char.sprites || {}).length === 0) return;
 
       if (filter !== 'all') {
         const type = char.type || 'classmate';
@@ -1671,6 +1672,9 @@ class GameEngine {
     // Explicitly handle stage overrides in the expression (e.g. stage1_sad)
     // If the expression starts with stageX, use it directly instead of prepending the global stage
     if (/^stage\d+(_|$)/.test(expr)) {
+      if (/^stage\d+$/.test(expr)) {
+        return `${characterId}_${expr}_default`;
+      }
       if (expr.startsWith('stage2_fd')) {
         const fdImage = this.resolveStage2FdImage(characterId, expr);
         if (fdImage) return fdImage;

@@ -192,7 +192,7 @@ body {
 
 /* ===== タイトル画面 ===== */
 #title-screen {
-  background: url('/assets/backgrounds/devil_space.png') center center / cover no-repeat;
+  background: url('/assets/backgrounds/devil_space.png?v=20260527-image2-backgrounds') center center / cover no-repeat;
   position: relative;
   justify-content: space-between;
   padding: clamp(24px, 5vw, 56px) 0 8%;
@@ -313,7 +313,7 @@ body {
 /* ===== エピソード選択画面 ===== */
 #episodes-screen,
 #characters-screen {
-  background: url('/assets/backgrounds/school_gate.png') center center / cover no-repeat;
+  background: url('/assets/backgrounds/school_gate.png?v=20260527-image2-backgrounds') center center / cover no-repeat;
   padding: 2rem;
   position: relative;
 }

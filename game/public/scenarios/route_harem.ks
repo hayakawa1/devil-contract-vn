@@ -939,7 +939,7 @@ SPECIAL END：選ばなかった世界[l][er]
 ; ================================================================================
 
 [bg storage="gym.png" time="1000"]
-[chara_show name="osananajimi" face="default" pos="left" time="1000"]
+[chara_show name="osananajimi" face="stage1_default" pos="left" time="1000"]
 
 #osananajimi
 ねえ、今日の帰り、一緒に寄り道しない？[l][er]
@@ -958,7 +958,8 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
-[chara_show name="seitokai" face="default" pos="center" time="1000"]
+[chara_hide_all]
+[chara_show name="seitokai" face="stage1_default" pos="center" time="1000"]
 
 #seitokai
 &f.main_nameさん。書類、手伝ってください[l][er]
@@ -975,7 +976,8 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
-[chara_show name="gyaru" face="default" pos="right" time="1000"]
+[chara_hide_all]
+[chara_show name="gyaru" face="stage1_default" pos="right" time="1000"]
 
 #gyaru
 ねえ、今度あたしの配信、出てよ[l][er]
@@ -994,7 +996,8 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
-[chara_show name="otaku" face="default" pos="left" time="1000"]
+[chara_hide_all]
+[chara_show name="otaku" face="stage1_default" pos="left" time="1000"]
 
 #otaku
 &f.main_nameさん。この実験データ、見てくれますか[l][er]
@@ -1013,7 +1016,8 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
-[chara_show name="kakutogi" face="default" pos="center" time="1000"]
+[chara_hide_all]
+[chara_show name="kakutogi" face="stage1_default" pos="center" time="1000"]
 
 #kakutogi
 主人公。手合わせ、頼む[l][er]
@@ -1032,7 +1036,8 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
-[chara_show name="furyo" face="default" pos="right" time="1000"]
+[chara_hide_all]
+[chara_show name="furyo" face="stage1_default" pos="right" time="1000"]
 
 #furyo
 ……電車、一緒に乗る？[l][er]
@@ -1051,7 +1056,8 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
-[chara_show name="imouto" face="default" pos="center" time="1000"]
+[chara_hide_all]
+[chara_show name="imouto" face="stage1_default" pos="center" time="1000"]
 
 #imouto
 先輩！ 今日も来てくれた！[l][er]
@@ -1070,9 +1076,7 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
-[chara_hide name="imouto" time="1000"]
-[chara_hide name="furyo" time="1000"]
-[chara_hide name="kakutogi" time="1000"]
+[chara_hide_all]
 
 [bg storage="gym.png" time="1000"]
 [playbgm storage="bgm_ending.mp3"]
@@ -1106,6 +1110,7 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="black.png" time="1000"]
 
 #悪魔（OFF）

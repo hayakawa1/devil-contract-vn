@@ -674,6 +674,7 @@
 ; シーン2：説得
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="hallway.png" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
@@ -725,6 +726,7 @@
 ; シーン3：大会当日
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="dojo_night.png" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 

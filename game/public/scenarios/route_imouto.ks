@@ -86,12 +86,12 @@
 ; 第2話「お兄ちゃんは知らない」
 ; ================================================================================
 
-[bg storage="hallway.png" time="1000"]
+[bg storage="school_gate.png" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-（昼休み。）[l][er]
+（放課後。校門前。）[l][er]
 
-（教室の外で、彼女が立っていた。）[l][er]
+（門を出たところで、彼女が待っていた。）[l][er]
 
 [chara_show name="imouto" face="default" pos="center" time="1000"]
 

@@ -114,7 +114,7 @@
 
 （彼女は、スマホをしまった。）[l][er]
 
-[chara_hide name="furyo" time="1000"]
+[chara_hide name="gyaru" time="1000"]
 
 ; ================================================================================
 *gyaru_00_scene_3
@@ -360,6 +360,7 @@
 ; ================================================================================
 
 *gyaru_01
+[chara_hide_all]
 [bg storage="park.png" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
@@ -869,8 +870,6 @@ SNS、やめたら？[l][er]
 
 #seitokai
 誹謗中傷は、訴えられます[l][er]
-
-[chara_hide name="gyaru" time="1000"]
 
 [chara_show name="otaku" face="default" pos="left" time="1000"]
 
