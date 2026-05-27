@@ -943,22 +943,6 @@ class GameEngine {
     this.isAutoMode = false;
     this.isSkipMode = false;
 
-    // ステータス更新
-    document.getElementById('stat-episode').textContent = episode.title || 'プロローグ';
-    const stageNames = this.characters.stages || {};
-    document.getElementById('stat-stage').textContent = stageNames[episode.stage]?.name || episode.stage;
-
-    // 最初のヒロインを設定（主人公と悪魔は除外）
-    const heroineId = episode.featured_characters?.find(id =>
-      id !== 'protagonist' && id !== 'akuma'
-    );
-    if (heroineId) {
-      const char = this.characters.characters?.[heroineId];
-      document.getElementById('stat-heroine').textContent = char?.name_display || char?.name || '---';
-    } else {
-      document.getElementById('stat-heroine').textContent = '---';
-    }
-
     this.showScreen('game-screen');
     this.clearCharacters();
     this.processCommand();
@@ -2127,21 +2111,9 @@ class GameEngine {
   }
 
   updateStatus(stage, heroine) {
-    // ステータスバーを更新
     if (stage) {
       this.currentStage = stage;
-      const stageNames = this.characters.stages || {};
-      document.getElementById('stat-stage').textContent = stageNames[stage]?.name || stage;
     }
-    if (heroine) {
-      document.getElementById('stat-heroine').textContent = heroine;
-    }
-    // 視覚的フィードバック
-    const statusBar = document.getElementById('status-bar');
-    statusBar.classList.add('status-changed');
-    setTimeout(() => {
-      statusBar.classList.remove('status-changed');
-    }, 500);
   }
 
   endScenario() {

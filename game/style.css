@@ -131,12 +131,6 @@ body {
   to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 
-@keyframes status-flash {
-  0% { background: rgba(0, 0, 0, 0.7); }
-  50% { background: rgba(180, 30, 30, 0.5); box-shadow: 0 0 20px var(--primary-glow); }
-  100% { background: rgba(0, 0, 0, 0.7); }
-}
-
 .animate-text-reveal {
   animation: textReveal 0.4s ease-out forwards;
 }
@@ -701,56 +695,6 @@ body {
   background: rgba(180, 30, 30, 0.2);
 }
 
-/* ===== ステータスバー ===== */
-#status-bar {
-  position: absolute;
-  top: 12px;
-  left: 16px;
-  display: flex;
-  gap: 1rem;
-  z-index: 10;
-  background: rgba(10, 10, 10, 0.7);
-  padding: 8px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
-}
-
-#status-bar::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
-  background: var(--primary);
-  border-radius: 50%;
-  animation: pulseGlow 2s ease-in-out infinite;
-  margin-left: -4px;
-}
-
-.stat-item {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.stat-label {
-  color: var(--foreground-muted);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-}
-
-.stat-value {
-  color: var(--primary-light);
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-#status-bar.status-changed {
-  animation: status-flash 0.5s ease;
-}
-
 /* ===== ステータスポップアップ ===== */
 #stat-popup {
   position: absolute;
@@ -1157,9 +1101,4 @@ body {
     font-size: 9px;
   }
 
-  #status-bar {
-    font-size: 0.7rem;
-    padding: 6px 12px;
-    gap: 0.6rem;
-  }
 }
