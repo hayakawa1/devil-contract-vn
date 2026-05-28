@@ -179,7 +179,14 @@ function checkAsset(file, line, dirName, filename) {
   }
 
   const dir = path.join(assetsDir, dirName);
-  if (!hasFile(dir, filename)) {
+  const assetRef = path.normalize(String(filename));
+  if (path.isAbsolute(assetRef) || assetRef === '..' || assetRef.startsWith(`..${path.sep}`)) {
+    addError(file, line, `invalid ${dirName} asset path: ${filename}`);
+    return;
+  }
+
+  const assetPath = path.join(dir, assetRef);
+  if (!fs.existsSync(assetPath) || !fs.statSync(assetPath).isFile()) {
     addError(file, line, `missing ${dirName} asset: ${filename}`);
   }
 }
