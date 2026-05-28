@@ -1,4 +1,4 @@
-﻿; ■ 悪魔との契約 - 第1話：契約の夜
+; ■ 悪魔との契約 - 第1話：契約の夜
 *start
 
 ; ================================================================================
@@ -9,102 +9,97 @@
 [bg storage="black.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
-その夜、悪魔は7人の元を訪れた。[l][er]
+── その夜 ──[l][er]
 
-主人公を密かに想う、7人の少女たち。[l][er]
+（悪魔は、七つの部屋を、回った。）[l][er]
 
-悪魔は、それぞれの心の隙間に入り込んだ。[l][er]
+（七人の少女は、それぞれの机に、ベッドに、鏡の前にいた。）[l][er]
+（——誰にも、見られていない場所に。）[l][er]
 
 ; ================================================================================
 *start_scene_1
-; Scene 1: 幼なじみ「選ばれないのは辛い」
+; Scene 1: 幼なじみ「家具を辞める」
 ; ================================================================================
 
 [bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
-その夜。幼なじみの結衣は、自分の部屋にいた。[l][er]
+（夜。結衣は、自分の部屋にいた。）[l][er]
 
-[chara_show name="osananajimi" face="sad" pos="center" time="1000"]
+[chara_show name="osananajimi" face="default" pos="center" time="1000"]
 
-#osananajimi
-……また今日も、話せなかった[l][er]
-
-ベッドに座り、ため息をつく。[l][er]
-
-幼い頃からずっと一緒だった。[l][er]
-でも、その距離が逆に邪魔をする。[l][er]
+（スマホを開く。"彼"とのLINE。）[l][er]
+（最後の"おやすみ"スタンプの日付は、三週間前。）[l][er]
 
 #osananajimi
-幼なじみ、って……便利な言葉だよね[l][er]
+……[l][er]
+
+（送ろうとして、止めた。）[l][er]
+
+（"なんでもないけど"——なんでもないなら、送る理由がない。）[l][er]
+（"なんでもなくないけど"——なんでもなくないものは、送れない。）[l][er]
 
 #osananajimi
-恋人でも、他人でもない[l][er]
+……便利だよね、"幼なじみ"って[l][er]
+
+#osananajimi
+"恋人"でも、"他人"でもない位置[l][er]
+
+#osananajimi
+"いつでも会える"の、保険[l][er]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
 
 #akuma
-悩んでるね[l][er]
+ずっと、保険の中にいたいの？[l][er]
 
 #osananajimi
-っ——！　誰！？[l][er]
+っ——！　誰[l][er]
 
 [chara_show name="osananajimi" face="surprised" pos="center" time="500"]
 
 #akuma
-彼のこと、好きなんでしょ[l][er]
+ずっと隣にいたのに、選ばれないんじゃない[l][er]
+
+#akuma
+"ずっと隣にいたから"、選ばれないんだよ[l][er]
 
 #osananajimi
-な、なんで——[l][er]
+……[l][er]
+
+（——わかってた。）[l][er]
+
+（"幼なじみ"は、彼にとって、家具だ。）[l][er]
+（家具は、選ばれない。）[l][er]
+（最初から、そこに、ある。）[l][er]
+
+（悪魔は、瓶を差し出した。）[l][er]
 
 #akuma
-知ってるよ。ずっと見てたから[l][er]
-
-悪魔は、小さな瓶を差し出した。[l][er]
-
-#akuma
-これ、あげる[l][er]
+これ、飲んだら、家具を辞められる[l][er]
 
 #osananajimi
-……何これ[l][er]
+……どういう、意味[l][er]
 
 #akuma
-彼の好みを知ってる？[l][er]
-
-#osananajimi
-好み……？[l][er]
-
-#akuma
-彼はね——筋肉のある女の子が好きなんだ[l][er]
-
-[chara_show name="osananajimi" face="surprised" pos="center" time="500"]
-
-#osananajimi
-え……？[l][er]
-
-#akuma
-この薬を飲めば、君も彼の理想に近づける[l][er]
-
-#osananajimi
-そんな……嘘でしょ[l][er]
-
-#akuma
-嘘じゃないよ。僕は嘘をつかない[l][er]
-
-#akuma
-ずっと隣にいたのに、選ばれないのは辛いよね[l][er]
-
-その言葉が、刺さった。[l][er]
+"見慣れた結衣"じゃ、なくなる[l][er]
 
 [chara_show name="osananajimi" face="sad" pos="center" time="500"]
 
 #osananajimi
-……本当に、あの子の好みになれるの[l][er]
+……戻れる？[l][er]
 
 #akuma
-飲むかどうかは、君次第だよ[l][er]
+戻れない[l][er]
 
-彼女は、瓶を受け取った。[l][er]
+#osananajimi
+……[l][er]
+
+（"戻れない"と言われて、）[l][er]
+（怖い、より、）[l][er]
+（"ちょうどいい"と、思ってしまった。）[l][er]
+
+（彼女は、瓶を受け取った。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
 [chara_hide name="osananajimi" time="1000"]
@@ -112,97 +107,87 @@
 
 ; ================================================================================
 *start_scene_2
-; Scene 2: 生徒会長「完璧じゃ足りない」
+; Scene 2: 生徒会長「完璧の上に積む」
 ; ================================================================================
 
 [bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
-夜の生徒会室。生徒会長の凛は、一人で書類整理をしていた。[l][er]
+（夜の生徒会室。）[l][er]
+
+（書類の山。蛍光灯の、ジー、という音。）[l][er]
 
 [chara_show name="seitokai" face="default" pos="center" time="1000"]
 
-#seitokai
-……また、彼のことを考えてしまった[l][er]
-
-窓の外を見る。[l][er]
-
-完璧な生徒会長。それが私の役割。[l][er]
-でも、彼の前では——[l][er]
+（凛は、ペンを置いた。）[l][er]
+（——置くタイミングを、誰も見ていない部屋で、初めて、自分で決めた。）[l][er]
 
 #seitokai
-私らしくない……[l][er]
+……[l][er]
+
+（深く息を吸って、止める。）[l][er]
+（吐いたら、何かが崩れる気がして、止める。）[l][er]
+
+#seitokai
+（……また、彼のこと、考えていた）[l][er]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
 
 #akuma
-らしさって、何？[l][er]
+完璧でいるの、しんどそうだね[l][er]
 
 #seitokai
-——っ！　いつからそこに[l][er]
+っ——！　いつから[l][er]
 
 [chara_show name="seitokai" face="surprised" pos="center" time="500"]
 
 #akuma
-完璧な生徒会長。それが"らしさ"？[l][er]
+"完璧"を辞めたら、何が残るの？[l][er]
+
+#seitokai
+……答える義理は、ありません[l][er]
+
+#akuma
+答えないってことは——答えがない、ってこと？[l][er]
 
 #seitokai
 ……[l][er]
 
+（——図星だった。）[l][er]
+
+（"完璧な生徒会長"を脱いだ後の自分が、何者なのか、わからない。）[l][er]
+（だから、脱げない。）[l][er]
+
+（悪魔は、瓶を、机に置いた。）[l][er]
+
 #akuma
-でも、完璧じゃ足りないんでしょ。彼には[l][er]
+"完璧な生徒会長"の上に、もう一個、積めるよ[l][er]
 
 #seitokai
-何が言いたいのですか[l][er]
+……何を[l][er]
 
 #akuma
-彼の好み、知ってる？[l][er]
-
-悪魔は、瓶を取り出した。[l][er]
-
-#akuma
-彼はね、筋肉のある女の子が好きなんだ[l][er]
-
-[chara_show name="seitokai" face="surprised" pos="center" time="500"]
-
-#seitokai
-……筋肉？[l][er]
-
-#akuma
-この薬を飲めば、君も彼の理想に近づける[l][er]
-
-#seitokai
-そんな非科学的な——[l][er]
-
-#akuma
-非科学的？　君、恋愛が科学的だと思ってた？[l][er]
-
-#seitokai
-……[l][er]
-
-#akuma
-完璧でいたいんでしょ。彼の前でも[l][er]
-
-沈黙。[l][er]
+"彼の好みでもある、完璧な生徒会長"[l][er]
 
 [chara_show name="seitokai" face="default" pos="center" time="500"]
 
 #seitokai
-……一つ、聞かせてください[l][er]
+……副作用は[l][er]
 
 #akuma
-なに？[l][er]
+ない。ただ、元には戻れない[l][er]
 
 #seitokai
-副作用は[l][er]
-
-#akuma
-ないよ。ただ、元には戻れなくなるだけ[l][er]
+……戻る、必要があるとは、思いません[l][er]
 
 #seitokai
-……戻る必要がありますか[l][er]
+"元の私"の評価値が、十分でない以上[l][er]
 
-彼女は、瓶を受け取った。[l][er]
+（——言い終わってから、）[l][er]
+（自分の言葉の、ひどさに、気づいた。）[l][er]
+（でも、訂正しなかった。）[l][er]
+
+（彼女は、瓶を、受け取った。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
 [chara_hide name="seitokai" time="1000"]
@@ -210,87 +195,85 @@
 
 ; ================================================================================
 *start_scene_3
-; Scene 3: ギャル「埋もれてる私」
+; Scene 3: ギャル「可愛いのレースから降りる」
 ; ================================================================================
 
 [bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-夜。ギャルの美咲は、自室でスマホを見ていた。[l][er]
+（夜。美咲は、ベッドに転がって、スマホを見ていた。）[l][er]
 
 [chara_show name="gyaru" face="default" pos="center" time="1000"]
 
-#gyaru
-……あー、つまんな[l][er]
-
-今日の投稿、いいね83。いつもと同じ。[l][er]
-
-#gyaru
-埋もれてんなー、あたし[l][er]
-
-本当は、あの人に見てほしいのに。[l][er]
+（今日の投稿、いいね83。）[l][er]
+（昨日の投稿、いいね78。）[l][er]
+（——いつもと、同じ。）[l][er]
 
 #gyaru
-……あいつ、あたしのこと何とも思ってないんだろうな[l][er]
+……あー[l][er]
+
+（"埋もれてる"って言葉が、ぴったりだった。）[l][er]
+
+（埋もれてる、ってことは、）[l][er]
+（誰にも、見つけてもらえてない、ってこと。）[l][er]
+
+（——あいつにも。）[l][er]
+
+#gyaru
+……あいつ、フォローもしてくれないし[l][er]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
 
 #akuma
-そう思う？[l][er]
+バズりたいでしょ[l][er]
 
 #gyaru
-うわっ、何お前——てか、どっから入った！？[l][er]
+うわっ何お前——[l][er]
 
 [chara_show name="gyaru" face="surprised" pos="center" time="500"]
 
 #akuma
-彼のこと、好きなんでしょ[l][er]
-
-#gyaru
-……は？　何言って——[l][er]
-
-#akuma
-バズりたいんでしょ。彼に見てほしいから[l][er]
+"可愛い"は、もう、いっぱいいすぎる[l][er]
 
 #gyaru
 ……っ[l][er]
 
 #akuma
-唯一になりたい。彼にとっての特別になりたい[l][er]
+"可愛い"の隣に座ったら、たぶん、君は、二番手[l][er]
 
-図星だった。[l][er]
+（——刺さった。）[l][er]
+（一番、自分が、思ってたことだった。）[l][er]
 
 #akuma
-彼の好み、教えてあげようか[l][er]
+"可愛い"のレースから、降りようよ[l][er]
+
+#akuma
+誰も走ってない方に、走ろう[l][er]
+
+（悪魔は、瓶を、投げて寄越した。）[l][er]
 
 #gyaru
-……何[l][er]
+……何これ[l][er]
 
 #akuma
-筋肉のある女の子[l][er]
+飲んだら、君だけになる体[l][er]
 
-[chara_show name="gyaru" face="surprised" pos="center" time="500"]
+#akuma
+"可愛い"の隣じゃなくて——別ジャンルで、一位[l][er]
+
+[chara_show name="gyaru" face="smile" pos="center" time="500"]
 
 #gyaru
 ……マジで？[l][er]
 
 #akuma
-マジだよ。この薬を飲めば——[l][er]
+マジ[l][er]
 
-瓶を投げ渡された。[l][er]
+（彼女は、瓶を、両手で握った。）[l][er]
 
-#akuma
-誰にも真似できない体になれる[l][er]
-
-#akuma
-バズれるし、彼の好みにもなれる。一石二鳥じゃない？[l][er]
-
-[chara_show name="gyaru" face="smile" pos="center" time="500"]
-
-#gyaru
-……面白いじゃん[l][er]
-
-彼女は、瓶を握りしめた。[l][er]
+（——握り方が、）[l][er]
+（"欲しい"より、）[l][er]
+（"渡したくない"だった。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
 [chara_hide name="gyaru" time="1000"]
@@ -298,87 +281,94 @@
 
 ; ================================================================================
 *start_scene_4
-; Scene 4: オタク「被験者は私」
+; Scene 4: オタク「最初の被験者」
 ; ================================================================================
 
-[bg storage="protagonist_room_night.webp" time="1000"]
+[bg storage="science_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
-夜。オタクの理香は、自室で論文を読んでいた。[l][er]
+（夜。理科室。）[l][er]
+（理香は、PCの画面に向かっていた。）[l][er]
 
 [chara_show name="otaku" face="default" pos="center" time="1000"]
 
-#otaku
-……人体の筋肉増強には限界がある[l][er]
-
-なぜこんな論文を読んでいるのか。[l][er]
-理由は——自分でもわかっていた。[l][er]
+（——筋肉増強の論文を、五本目まで、読んでいる。）[l][er]
 
 #otaku
-彼の検索履歴……偶然見えてしまっただけですが[l][er]
+……被験者は[l][er]
+
+#otaku
+全員、男性[l][er]
+
+（つまり、女性の身体での前例は、ない。）[l][er]
+（"未踏領域"——研究者にとっての、麻薬。）[l][er]
+
+#otaku
+……[l][er]
+
+（なぜ調べているのか。）[l][er]
+（——彼の検索履歴を、偶然、見てしまったから。）[l][er]
+（偶然、ではない。三回、覗いた。）[l][er]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
 
 #akuma
-興味深いね[l][er]
+"前例がない"のは、楽しいよね[l][er]
 
 #otaku
-——！　セキュリティが——[l][er]
+——っ。誰[l][er]
 
 [chara_show name="otaku" face="surprised" pos="center" time="500"]
 
 #akuma
-好きな人の好みを調べるなんて、普通だよ[l][er]
+"前例がない"なら、君が、最初の論文を、書ける[l][er]
 
 #otaku
-好き、とは言っていません[l][er]
+……[l][er]
 
 #akuma
-言ってないね[l][er]
-
-悪魔は、瓶を机に置いた。[l][er]
+被験者、いないなら——[l][er]
 
 #akuma
-これ、研究対象として面白いと思うよ[l][er]
+君が、なれば？[l][er]
 
-#otaku
-……これは[l][er]
-
-#akuma
-人体の限界を超える薬。君の知的好奇心と、彼の好み。両方満たせる[l][er]
-
-#otaku
-そんな薬は存在しません[l][er]
-
-#akuma
-しないね、普通は[l][er]
-
-[chara_show name="otaku" face="default" pos="center" time="500"]
+（悪魔は、瓶を、机に置いた。）[l][er]
 
 #otaku
 ……成分は[l][er]
 
 #akuma
-飲めばわかるよ[l][er]
-
-#otaku
-被験者なしに——[l][er]
+分析してから飲むなら、それでいい[l][er]
 
 #akuma
-君が被験者になればいい[l][er]
+でも、分析してる間に、他の六人が、先に飲むよ[l][er]
 
-沈黙。[l][er]
+[chara_show name="otaku" face="default" pos="center" time="500"]
 
 #otaku
-……サンプルは、これだけですか[l][er]
+……六人[l][er]
 
 #akuma
-欲しいなら、もっとあげるよ[l][er]
-
-彼女は、瓶を手に取った。[l][er]
+うん。同じ薬、七本、配ってる[l][er]
 
 #otaku
-……飲んでみましょう[l][er]
+……[l][er]
+
+（——"最初"を、譲れない、と思った。）[l][er]
+
+（"彼の好み"より、）[l][er]
+（"最初の被験者"の席の方が、惜しかった。）[l][er]
+
+#otaku
+……いただきます[l][er]
+
+#akuma
+飲むの、早いね[l][er]
+
+#otaku
+分析は、自分の体内で、します[l][er]
+
+（彼女は、瓶を、ためらわずに、取った。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
 [chara_hide name="otaku" time="1000"]
@@ -386,34 +376,41 @@
 
 ; ================================================================================
 *start_scene_5
-; Scene 5: 格闘技部「強くなりたい」
+; Scene 5: 格闘技部「努力を飛ばす」
 ; ================================================================================
 
-[bg storage="dojo.webp" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
-夜の道場。格闘技部の響は、一人でサンドバッグに拳を叩き込んでいた。[l][er]
+（夜の道場。）[l][er]
+（響は、サンドバッグの前に、立っていた。）[l][er]
 
 [chara_show name="kakutogi" face="angry" pos="center" time="1000"]
 
-#kakutogi
-……っ[l][er]
-
-今日も練習試合で負けた。[l][er]
+（——一発、打つ。）[l][er]
+（音が、軽い。）[l][er]
 
 #kakutogi
-まだ、足りない[l][er]
+……[l][er]
 
-強くなりたい。[l][er]
-でも——本当の理由は、別にあった。[l][er]
+（今日の練習試合、三本中、二本、負けた。）[l][er]
+
+（負けるのは、はじめてじゃない。）[l][er]
+（負けて悔しいのも、はじめてじゃない。）[l][er]
+
+（——でも、）[l][er]
+（"あいつ"の前で負けたのが、はじめてだった。）[l][er]
 
 #kakutogi
-（あいつに、認められたい……）[l][er]
+（見られた……）[l][er]
+
+#kakutogi
+（弱いところを、見られた……）[l][er]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
 
 #akuma
-頑張ってるね[l][er]
+"強い君"を、見せたい？[l][er]
 
 #kakutogi
 ——誰だ[l][er]
@@ -421,52 +418,52 @@
 [chara_show name="kakutogi" face="default" pos="center" time="500"]
 
 #akuma
-強くなりたいんでしょ[l][er]
-
-#kakutogi
-……当たり前だ。武道家なら[l][er]
+"努力で強くなる"のは、時間がかかる[l][er]
 
 #akuma
-でも、本当の理由は違うよね[l][er]
+"あいつ"が、卒業するまでに、間に合う？[l][er]
 
 #kakutogi
 ……[l][er]
 
+（——間に合わない、と、すぐに、わかった。）[l][er]
+（自分の伸びしろより、卒業までの日数の方が、短い。）[l][er]
+
+（悪魔は、瓶を、差し出した。）[l][er]
+
 #akuma
-彼に認められたいんでしょ[l][er]
+これは、ズル[l][er]
 
 #kakutogi
-っ——[l][er]
+……ズル[l][er]
 
 #akuma
-彼の好み、知ってる？[l][er]
-
-悪魔は、瓶を差し出した。[l][er]
+うん。"努力"を、飛ばせる[l][er]
 
 #akuma
-筋肉のある女の子だよ[l][er]
+"努力で強い君"じゃなくなる代わりに、"今、強い君"になる[l][er]
 
 [chara_show name="kakutogi" face="surprised" pos="center" time="500"]
 
 #kakutogi
-……筋肉？[l][er]
-
-#akuma
-この薬を飲めば、誰にも負けない体になれる[l][er]
-
-#akuma
-強くなれる。彼と並べる自分になれる[l][er]
+……それは[l][er]
 
 #kakutogi
-……副作用は[l][er]
+私が、ずっと、否定してきたものだ[l][er]
 
 #akuma
-元には戻れなくなる[l][er]
+うん。だから、聞いてる[l][er]
+
+#akuma
+"今、見られたい"のと、"努力の自分"と、どっち？[l][er]
 
 #kakutogi
-戻る必要があるのか。弱い体に[l][er]
+……[l][er]
 
-彼女は、瓶を受け取った。[l][er]
+（彼女は、長く、迷った。）[l][er]
+（迷った、ということが、答えだった。）[l][er]
+
+（瓶を、受け取った。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
 [chara_hide name="kakutogi" time="1000"]
@@ -474,85 +471,95 @@
 
 ; ================================================================================
 *start_scene_6
-; Scene 6: 不良「誰かに気づいてほしかった」
+; Scene 6: 不良「近づかれないを極める」
 ; ================================================================================
 
 [bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
-夜の公園。他校の不良・響子は、一人でベンチに座っていた。[l][er]
+（夜の公園。）[l][er]
+（響子は、ベンチに、一人で、座っていた。）[l][er]
 
 [chara_show name="furyo" face="default" pos="center" time="1000"]
+
+（——いつも、一人で、座っている。）[l][er]
+
+（"他校の不良"。"近づくと殴られる"。）[l][er]
+（誰が言い出したのか、本当に殴ったのか、もう、覚えていない。）[l][er]
 
 #furyo
 ……[l][er]
 
-彼女は孤独だった。[l][er]
-強すぎて、誰も近づかない。[l][er]
+（電車で見かける、他校の男子のことを、考えていた。）[l][er]
 
-#furyo
-……強いだけじゃ、ダメなんだよな[l][er]
-
-小さく呟く。[l][er]
-
-あの人——電車で見かける、他校の男子。[l][er]
-なぜか、目で追ってしまう。[l][er]
+（一度だけ、目が合った。）[l][er]
+（——彼は、目を、そらさなかった。）[l][er]
+（みんな、そらすのに。）[l][er]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
 
 #akuma
-孤独そうだね[l][er]
+"目をそらさなかったね"[l][er]
 
 #furyo
-——っ！　誰だ[l][er]
+——っ！[l][er]
 
 [chara_show name="furyo" face="angry" pos="center" time="500"]
 
+#furyo
+誰だ[l][er]
+
 #akuma
-誰かに認められたいんでしょ[l][er]
+気になるよね、目をそらさない男[l][er]
 
 #furyo
 ……黙れ[l][er]
 
 #akuma
-彼のこと、気になってるよね[l][er]
+"近づくと殴る"って噂、君が広めたわけじゃ、ないでしょ[l][er]
 
 #furyo
 ……[l][er]
 
 #akuma
-彼の好み、教えてあげようか[l][er]
-
-悪魔は、瓶を差し出した。[l][er]
+広めたわけじゃないのに、訂正もしなかった[l][er]
 
 #akuma
-筋肉のある女の子だよ[l][er]
+"近づかれない"方が、楽だから[l][er]
+
+（——図星。）[l][er]
+
+（傷つかなくていい代わりに、）[l][er]
+（近づいてくる人も、いない。）[l][er]
+
+（悪魔は、瓶を、差し出した。）[l][er]
+
+#akuma
+これ飲んだら、もっと"近づかれない"よ[l][er]
+
+#furyo
+……それの、何が、いいんだ[l][er]
+
+#akuma
+"近づかれない"を、極めれば[l][er]
+
+#akuma
+——"わざわざ、近づいてくる人"が、わかる[l][er]
 
 [chara_show name="furyo" face="surprised" pos="center" time="500"]
 
 #furyo
-……私は元から——[l][er]
-
-#akuma
-でも、もっと強くなれるよ。この薬を飲めば[l][er]
-
-#akuma
-彼に認められるくらい、強くなれる[l][er]
-
-#furyo
 ……[l][er]
 
-#akuma
-孤独なままでいいの？[l][er]
+（あいつなら、近づいてくる気が、した。）[l][er]
 
-その言葉が、刺さった。[l][er]
-
-[chara_show name="furyo" face="sad" pos="center" time="500"]
+（"近づかれない"を、突き抜けた先で、）[l][er]
+（はじめて、ちゃんと、選ばれたい。）[l][er]
 
 #furyo
 ……くれ[l][er]
 
-彼女は、瓶を受け取った。[l][er]
+（彼女は、瓶を、受け取った。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
 [chara_hide name="furyo" time="1000"]
@@ -560,78 +567,90 @@
 
 ; ================================================================================
 *start_scene_7
-; Scene 7: 友達の妹「お兄ちゃんの親友」
+; Scene 7: 友達の妹「妹を置いていく」
 ; ================================================================================
 
 [bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
-夜。親友の妹の美羽は、自室で写真を見ていた。[l][er]
+（夜。美羽は、自分の部屋にいた。）[l][er]
 
 [chara_show name="imouto" face="default" pos="center" time="1000"]
+
+（机の上に、写真が、一枚。）[l][er]
+（——小学校の、卒業式。）[l][er]
+（お兄ちゃんと、お兄ちゃんの親友と、その間に、私。）[l][er]
 
 #imouto
 ……[l][er]
 
-お兄ちゃんの親友。[l][er]
-小さい頃から、ずっと憧れていた。[l][er]
+（写真の中の私は、笑っている。）[l][er]
+（"妹"の顔で。）[l][er]
 
 #imouto
-でも、私はお兄ちゃんの妹でしかない……[l][er]
+……まだ、"妹"だな、私[l][er]
+
+（——あの頃から、）[l][er]
+（一度も、"妹"以外で、見られたことが、ない。）[l][er]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
 
 #akuma
-切ないね[l][er]
+"妹"の上書きは、できないんだよ[l][er]
 
 #imouto
-っ——誰！？[l][er]
+っ——誰[l][er]
 
 [chara_show name="imouto" face="surprised" pos="center" time="500"]
 
 #akuma
-彼のこと、好きなんでしょ[l][er]
-
-#imouto
-な、なんで——[l][er]
+小さい頃から知ってる女の子は、いつまで経っても、"小さい頃の子"[l][er]
 
 #akuma
-知ってるよ。ずっと見てたから[l][er]
-
-悪魔は、瓶を差し出した。[l][er]
+背、伸びても[l][er]
 
 #akuma
-彼の好み、教えてあげる[l][er]
-
-#imouto
-好み……？[l][er]
-
-#akuma
-筋肉のある女の子だよ[l][er]
-
-[chara_show name="imouto" face="surprised" pos="center" time="500"]
-
-#imouto
-え……？[l][er]
-
-#akuma
-この薬を飲めば、君も彼の好みになれる[l][er]
-
-#akuma
-お兄ちゃんの妹じゃなくて、一人の女の子として見てもらえる[l][er]
+髪、伸ばしても[l][er]
 
 #imouto
 ……[l][er]
 
+（——わかってた。）[l][er]
+（だから、髪を伸ばしても、）[l][er]
+（彼は、何も、言わなかった。）[l][er]
+
+（悪魔は、瓶を、差し出した。）[l][er]
+
+#akuma
+これは、"上書き"じゃない[l][er]
+
+#akuma
+"別人"になる[l][er]
+
 [chara_show name="imouto" face="sad" pos="center" time="500"]
 
 #imouto
-……本当に？[l][er]
+……別人[l][er]
 
 #akuma
-本当だよ。飲むかどうかは、君次第だけど[l][er]
+"妹じゃない誰か"として、最初から、彼に、会える[l][er]
 
-彼女は、瓶を受け取った。[l][er]
+#imouto
+……[l][er]
+
+#imouto
+お兄ちゃんは、悲しむ？[l][er]
+
+#akuma
+うん。たぶん[l][er]
+
+#imouto
+……[l][er]
+
+（——それでも、）[l][er]
+（"妹"を、置いていきたい、と、思った。）[l][er]
+
+（彼女は、瓶を、受け取った。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
 [chara_hide name="imouto" time="1000"]
@@ -648,20 +667,35 @@
 [chara_show name="akuma" face="smile" pos="center" time="1000"]
 
 #akuma
-7人全員に配り終わった[l][er]
+……配り終わった[l][er]
 
 #akuma
-さて、誰が最初に飲むかな[l][er]
+七人とも、受け取った[l][er]
 
 #akuma
-希望と恐怖。その葛藤が——[l][er]
+——たぶん、全員、飲む[l][er]
 
 #akuma
-最高に美味しいんだよね[l][er]
+"飲むかどうかは君次第"って言ったのは[l][er]
+
+#akuma
+"飲まないかも"の目を、ちょっとだけ、残しておくため[l][er]
+
+#akuma
+その目が、希望[l][er]
+
+#akuma
+そして——飲んで、戻れないと、知った瞬間[l][er]
+
+#akuma
+その目が、恐怖[l][er]
+
+#akuma
+——美味しい[l][er]
 
 [chara_hide name="akuma" time="1000"]
 
-── そして、物語は動き出す ──[l][er]
+── そして、夜が、明ける ──[l][er]
 
 ; ================================================================================
 [jump storage="episode02.ks"]
