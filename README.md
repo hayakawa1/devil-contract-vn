@@ -113,22 +113,8 @@ node tools/merge_scenario.js path/to/source.ks game/public/scenarios/target.ks 5
 
 ## ⚠️ 注意事項（音楽ファイル）
 
-以下のBGMファイルは現在使用中のためassets/bgm/に移動できませんでした：
-- bgm_daily.mp3（重複: bgm_daily (1).mp3）
-- bgm_despair.mp3（重複: bgm_despair (1).mp3）
-- bgm_devil.mp3（重複: bgm_devil (1).mp3）
-- bgm_ending.mp3（重複: bgm_ending (1).mp3）
-- bgm_fight.mp3（重複: bgm_fight (1).mp3）
-- bgm_isolation.mp3（重複: bgm_isolation (1).mp3）
-- bgm_romance.mp3（重複: bgm_romance (1).mp3）
-- bgm_tension.mp3（重複: bgm_tension (1).mp3）
-- bgm_truth.mp3（重複: bgm_truth (1).mp3）
-- gm_sadness.mp3（重複: gm_sadness (1).mp3）
-
-**対処方法**：
-1. 使用中のアプリケーション（音楽プレーヤーなど）を終了
-2. 手動でassets/bgm/に移動
-3. 重複ファイル（(1)付き）は削除推奨
+BGMは `game/public/assets/bgm/` の通常ファイル名のみを使用します。
+`(1)` 付きの重複ファイルは削除済みです。
 
 ---
 

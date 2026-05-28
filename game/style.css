@@ -192,7 +192,7 @@ body {
 
 /* ===== タイトル画面 ===== */
 #title-screen {
-  background: url('/assets/backgrounds/devil_space.png?v=20260527-image2-backgrounds') center center / cover no-repeat;
+  background: url('/assets/backgrounds/devil_space.webp?v=20260527-image2-backgrounds') center center / cover no-repeat;
   position: relative;
   justify-content: space-between;
   padding: clamp(24px, 5vw, 56px) 0 8%;
@@ -313,7 +313,7 @@ body {
 /* ===== エピソード選択画面 ===== */
 #episodes-screen,
 #characters-screen {
-  background: url('/assets/backgrounds/school_gate.png?v=20260527-image2-backgrounds') center center / cover no-repeat;
+  background: url('/assets/backgrounds/school_gate.webp?v=20260527-image2-backgrounds') center center / cover no-repeat;
   padding: 2rem;
   position: relative;
 }
@@ -369,6 +369,9 @@ body {
   position: relative;
   background: rgba(20, 20, 25, 0.9);
   border: 1px solid var(--border-light);
+  color: inherit;
+  font: inherit;
+  text-align: left;
   padding: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -391,6 +394,12 @@ body {
   border-color: var(--primary);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(180, 30, 30, 0.2);
+}
+
+.episode-card:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 3px;
+  border-color: var(--primary);
 }
 
 .episode-card:hover::before {

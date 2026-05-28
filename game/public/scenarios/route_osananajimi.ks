@@ -11,8 +11,10 @@
 ; 第1話「玄関が狭い」
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
+
+[chara_hide_all]
 
 （Day2地獄の朝。筋肉化。）[l][er]
 （幼なじみは、最初に俺の袖を引いた。）[l][er]
@@ -40,7 +42,8 @@
 ; 第2話「帰宅」
 ; ================================================================================
 
-[bg storage="street_evening.png" time="1000"]
+[chara_hide_all]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （家の前まで来た。普通の家。）[l][er]
@@ -114,10 +117,12 @@
 ; 第3話「風呂場の鏡」（共通シーン）
 ; ================================================================================
 
-[bg storage="protagonist_room_night.png" time="1000"]
+*osananajimi_00_common_mirror
+[chara_hide_all]
+[bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
-（夜。幼なじみは、自分の部屋で鏡を見ていた。）[l][er]
+（夜。俺の部屋。家に戻りづらい幼なじみは、鏡の前に立っていた。）[l][er]
 
 #osananajimi
 ……笑える[l][er]
@@ -177,6 +182,8 @@
 
 （→ 次は「第4話：悪魔の影」へ続く）[l][er]
 
+[jump target="osananajimi_03"]
+
 ; source: 分岐A_真実ルート.txt
 *osananajimi_01
 ; ■ 幼なじみルート - 分岐A：真実ルート
@@ -184,7 +191,8 @@
 
 ; ================================================================================
 
-[bg storage="friend_house.png" time="1000"]
+[chara_hide_all]
+[bg storage="friend_house.webp" time="1000"]
 
 #protagonist
 ……お母さん、落ち着いて[l][er]
@@ -290,7 +298,8 @@
 ; 第5話「母の言葉」
 ; ================================================================================
 
-[bg storage="friend_house.png" time="1000"]
+[chara_hide_all]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （母親が味噌汁を作っている。）[l][er]
@@ -349,8 +358,8 @@
 （初めて、母娘の恐怖が並んだ。）[l][er]
 
 
-（→ 次は「第4話：悪魔の影」または分岐Bへ）[l][er]
-[jump target="osananajimi_03"]
+（→ 次は「第3話：風呂場の鏡」へ）[l][er]
+[jump target="osananajimi_00_common_mirror"]
 
 ; source: 分岐A_偽装ルート.txt
 *osananajimi_02
@@ -359,7 +368,8 @@
 
 ; ================================================================================
 
-[bg storage="friend_house.png" time="1000"]
+[chara_hide_all]
+[bg storage="friend_house.webp" time="1000"]
 
 #protagonist
 ……お母さん、落ち着いて[l][er]
@@ -427,7 +437,8 @@
 ; 第5話「嘘の代償」
 ; ================================================================================
 
-[bg storage="protagonist_room_night.png" time="1000"]
+[chara_hide_all]
+[bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （部屋の中。）[l][er]
@@ -484,7 +495,8 @@
 後日：嘘の露見（バッドルート確定の場合）[l][er]
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[chara_hide_all]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 #mother
@@ -527,9 +539,7 @@
 （母の叫びが、彼女を追い出す。）[l][er]
 
 
-（→ 次は「分岐B」または「END3_バッド.txt」へ）[l][er]
-
-[jump target="osananajimi_03"]
+[jump target="osananajimi_ending_bad"]
 
 ; ================================================================================
 ; ■ 幼なじみルート - 第4話「悪魔の影」
@@ -537,7 +547,8 @@
 ; ================================================================================
 
 *osananajimi_03
-[bg storage="school_gate.png" time="1000"]
+[chara_hide_all]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （数日が経った。）[l][er]
@@ -584,7 +595,7 @@
 ; シーン2：悪魔の登場
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
@@ -661,13 +672,14 @@
 （彼女は、何も言えなかった。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
+[chara_hide_all]
 
 ; ================================================================================
 *osananajimi_03_scene_3
 ; シーン3：本音
 ; ================================================================================
 
-[bg storage="protagonist_room_night.png" time="1000"]
+[bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （夜。俺の部屋。）[l][er]
@@ -733,7 +745,7 @@
 ; シーン4：励まし
 ; ================================================================================
 
-[bg storage="protagonist_room_night.png" time="1000"]
+[bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 #protagonist
@@ -798,7 +810,7 @@
 ; ================================================================================
 
 *osananajimi_04
-[bg storage="street_evening.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数日後。）[l][er]
@@ -830,7 +842,7 @@
 ; シーン2：母との対話
 ; ================================================================================
 
-[bg storage="friend_house.png" time="1000"]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （リビング。）[l][er]
@@ -922,7 +934,7 @@
 ; シーン3：帰り道
 ; ================================================================================
 
-[bg storage="street_evening.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （帰り道。）[l][er]
@@ -986,7 +998,7 @@
 ; ================================================================================
 
 *osananajimi_05
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （夜の公園。）[l][er]
@@ -1083,7 +1095,7 @@
 ; シーン2：返事
 ; ================================================================================
 
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 
 [glink target="osananajimi_ending_good" text="俺も好きだ"]
 [glink target="osananajimi_ending_normal" text="幼なじみでいたい"]
@@ -1155,7 +1167,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1231,7 +1243,7 @@
 
 [chara_hide name="osananajimi" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——幼なじみ。本名、藤咲結衣。）[l][er]
 
@@ -1316,7 +1328,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1383,7 +1395,7 @@
 
 [chara_hide name="osananajimi" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——幼なじみ。本名、藤咲結衣。）[l][er]
 
@@ -1396,5 +1408,150 @@
 （幼なじみとして——ずっと。）[l][er]
 
 （END - 「ずっと一緒」）[l][er]
+
+[s]
+
+; ================================================================================
+; ■ 幼なじみルート - バッドエンディング「壊れた家、消えた居場所」
+; 偽装ルートで嘘が露見した場合に到達
+; ================================================================================
+
+*osananajimi_ending_bad
+[chara_hide_all]
+[bg storage="street_evening.webp" time="1000"]
+[playbgm storage="bgm_isolation.mp3"]
+
+（家を追い出された幼なじみは、それから——うちにも来なくなった。）[l][er]
+
+（連絡も、途絶えた。）[l][er]
+
+（電話。LINE。何度送っても、既読すらつかない。）[l][er]
+
+#protagonist
+（……あの嘘さえつかなければ）[l][er]
+
+#protagonist
+（「双子の姉」なんて、口走らなければ）[l][er]
+
+（俺は、何度もあの瞬間を反芻した。）[l][er]
+
+（だが、戻らない。）[l][er]
+
+[chara_hide_all]
+[bg storage="protagonist_room_night.webp" time="1000"]
+[playbgm storage="bgm_sadness.mp3"]
+
+（数週間後。）[l][er]
+
+（同好会の集まりで、生徒会長が事務的に告げた。）[l][er]
+
+[chara_show name="seitokai" face="sad" pos="center" time="1000"]
+
+#seitokai
+……藤咲さんは、転校手続きを取ったそうです[l][er]
+
+#protagonist
+転校……？[l][er]
+
+#seitokai
+詳細は伝えられません。本人の希望です[l][er]
+
+#seitokai
+ただ——「会いたくない」と[l][er]
+
+#protagonist
+……[l][er]
+
+[chara_hide name="seitokai" time="1000"]
+
+（言葉が、出なかった。）[l][er]
+
+; ================================================================================
+*osananajimi_ending_bad_scene2
+; 悪魔の最後の囁き
+; ================================================================================
+
+[bg storage="black.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+[chara_show name="akuma" face="smile" pos="center" time="1000"]
+
+#akuma
+あーあ。もったいない[l][er]
+
+#protagonist
+……出てけ[l][er]
+
+#akuma
+怒らないでよ。僕は何もしてない[l][er]
+
+#akuma
+嘘をついたのは、君だ[l][er]
+
+#protagonist
+……[l][er]
+
+#akuma
+彼女の母親は、"娘"を失った[l][er]
+
+#akuma
+彼女は、"家"を失った[l][er]
+
+#akuma
+そして君は——"幼なじみ"を失った[l][er]
+
+#akuma
+おいしいね。この絶望[l][er]
+
+#protagonist
+黙れ……！[l][er]
+
+#akuma
+ふふ。じゃあね[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+（悪魔は、満足げに消えた。）[l][er]
+
+; ================================================================================
+*osananajimi_ending_bad_epilogue
+; エピローグ
+; ================================================================================
+
+[bg storage="school_gate.webp" time="1000"]
+[playbgm storage="bgm_isolation.mp3"]
+
+（次の朝。）[l][er]
+
+（校門の前で、いつもの場所に立つ。）[l][er]
+
+（隣に、誰もいない。）[l][er]
+
+（——昔から、毎朝そこにあった笑顔は、もうない。）[l][er]
+
+#protagonist
+（……ごめん）[l][er]
+
+#protagonist
+（守れるって思ったんだ。嘘ひとつで）[l][er]
+
+#protagonist
+（でも、嘘は——お前を、家から、俺から、引き剥がした）[l][er]
+
+（俺は、一人で歩き出した。）[l][er]
+
+（軋む筋肉だけが、悪魔の契約を覚えている。）[l][er]
+
+[bg storage="black.webp" time="1000"]
+
+（——幼なじみ。本名、藤咲結衣。）[l][er]
+
+（小さい頃から、ずっと一緒だった。）[l][er]
+
+（一つの嘘で、すべてが消えた。）[l][er]
+
+（END - 「壊れた家、消えた居場所」）[l][er]
+
+[s]
 
 [s]

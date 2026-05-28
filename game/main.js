@@ -525,8 +525,9 @@ class GameEngine {
       ? import.meta.env.BASE_URL
       : '/';
     this.baseUrl = viteBaseUrl.endsWith('/') ? viteBaseUrl : `${viteBaseUrl}/`;
-    this.assetVersion = '20260527-harem-standee-refresh';
+    this.assetVersion = '20260529-sprite-repair';
     this.currentLabels = {};
+    this.lastNonBlackBackground = null;
     this.callStack = []; // サブルーチン用コールスタック
     this.pendingChoices = []; // 選択肢収集用
 
@@ -849,8 +850,10 @@ class GameEngine {
     const stageNames = this.characters.stages || {};
 
     this.episodes.forEach(ep => {
-      const card = document.createElement('div');
+      const card = document.createElement('button');
+      card.type = 'button';
       card.className = 'episode-card';
+      card.setAttribute('aria-label', `${ep.title}を開始`);
       card.innerHTML = `
         <div class="ep-title">${ep.title}</div>
         <div class="ep-subtitle">「${ep.subtitle}」</div>
@@ -880,7 +883,7 @@ class GameEngine {
       const card = document.createElement('div');
       card.className = 'character-card';
       card.innerHTML = `
-        <div class="char-portrait" style="background-image: url('${this.resolveAssetUrl(`assets/characters/${this.getCharacterPortraitImage(id)}.png`)}')"></div>
+        <div class="char-portrait" style="background-image: url('${this.resolveAssetUrl(`assets/characters/${this.getCharacterPortraitImage(id)}.webp`)}')"></div>
         <div class="char-name">${char.name_display || char.name}</div>
         <div class="char-role">${char.role || ''}</div>
       `;
@@ -895,7 +898,7 @@ class GameEngine {
 
   showCharacterDetail(id, char) {
     const portrait = document.getElementById('detail-portrait');
-    portrait.style.backgroundImage = `url('${this.resolveAssetUrl(`assets/characters/${this.getCharacterPortraitImage(id)}.png`)}')`;
+    portrait.style.backgroundImage = `url('${this.resolveAssetUrl(`assets/characters/${this.getCharacterPortraitImage(id)}.webp`)}')`;
     document.getElementById('detail-name').textContent = char.name_display || char.name;
     document.getElementById('detail-meta').innerHTML = `
       <div>役割: ${char.role || '不明'}</div>
@@ -940,6 +943,7 @@ class GameEngine {
     this.currentStage = episode.stage || null;
     this.currentIndex = 0;
     this.backlog = [];
+    this.lastCharacterPosition = {};
     this.sceneHasExplicitCharacterControl = false;
     this.isAutoMode = false;
     this.isSkipMode = false;
@@ -1440,10 +1444,13 @@ class GameEngine {
     }
 
     // 実際の背景画像を使用
-    const bgPath = this.resolveAssetUrl(`assets/backgrounds/${mappedImage}.png`);
+    const bgPath = this.resolveAssetUrl(`assets/backgrounds/${mappedImage}.webp`);
     bg.style.backgroundImage = `url('${bgPath}')`;
     bg.style.backgroundSize = 'cover';
     bg.style.backgroundPosition = 'center';
+    if (mappedImage && mappedImage !== 'black') {
+      this.lastNonBlackBackground = mappedImage;
+    }
   }
 
   playBgm(file) {
@@ -1511,6 +1518,8 @@ class GameEngine {
   }
 
   getCharacterPortraitImage(characterId) {
+    const sprites = this.characters.characters?.[characterId]?.sprites || {};
+    if (sprites.neutral) return sprites.neutral;
     return this.isStageableCharacter(characterId)
       ? `${characterId}_neutral_default`
       : `${characterId}_neutral`;
@@ -1583,8 +1592,9 @@ class GameEngine {
 
   getStageSpritePrefix(stageId) {
     const id = (stageId || this.currentStage || this.currentEpisode?.stage || '').toString();
-    if (id === 'neutral' || !id) return 'neutral';
+    if (id === 'neutral' || id === 'scale1' || !id) return 'neutral';
     if (/^stage[1-4]$/.test(id)) return id;
+    if (/^scale[1-4]$/.test(id)) return 'neutral';
     return 'neutral';
   }
 
@@ -1671,8 +1681,8 @@ class GameEngine {
 
     // Explicitly handle stage overrides in the expression (e.g. stage1_sad)
     // If the expression starts with stageX, use it directly instead of prepending the global stage
-    if (/^stage\d+(_|$)/.test(expr)) {
-      if (/^stage\d+$/.test(expr)) {
+    if (/^(stage|scale)\d+(_|$)/.test(expr)) {
+      if (/^(stage|scale)\d+$/.test(expr)) {
         return `${characterId}_${expr}_default`;
       }
       if (expr.startsWith('stage2_fd')) {
@@ -1691,9 +1701,9 @@ class GameEngine {
     }
 
     // neutralまたはstageが含まれている場合はステージプレフィックスで置換
-    if (expr === 'neutral' || /^stage\d+$/.test(expr)) {
+    if (expr === 'neutral' || expr === 'default' || /^(stage|scale)\d+$/.test(expr)) {
       // 既にステージが指定されている場合はそのまま返す
-      if (/^stage\d+$/.test(expr)) {
+      if (/^(stage|scale)\d+$/.test(expr)) {
         return `${characterId}_${expr}_default`;
       }
       return `${characterId}_${stagePrefix}_default`;
@@ -1705,6 +1715,26 @@ class GameEngine {
       if (fdImage) return fdImage;
     }
     return `${characterId}_${stagePrefix}_${expr}`;
+  }
+
+  getFallbackCharacterImage(imageName) {
+    if (!imageName || typeof imageName !== 'string') return imageName;
+    const parts = imageName.split('_');
+    if (parts.length < 2) return imageName;
+
+    const characterId = this.resolveCharacterId(parts[0]);
+    const stage = parts[1];
+    if (!characterId || !stage) return imageName;
+
+    if (/^(stage|scale)\d+$/.test(stage)) {
+      return `${characterId}_${stage}_default`;
+    }
+    if (stage === 'neutral') {
+      return this.isStageableCharacter(characterId)
+        ? `${characterId}_neutral_default`
+        : `${characterId}_neutral`;
+    }
+    return imageName;
   }
 
   showCharacter(position, image, highlight) {
@@ -1728,6 +1758,7 @@ class GameEngine {
     // キャラクター画像を設定
     const resolvedImage = this.resolveCharacterImage(image);
     if (!resolvedImage) return;
+    const fallbackImage = this.getFallbackCharacterImage(resolvedImage);
 
     // キャラクター名をdata属性に設定（CSS用）
     const charName = this.resolveCharacterId(resolvedImage.split('_')[0]);
@@ -1745,7 +1776,18 @@ class GameEngine {
     // 新しいキャラクターが登場する場合はアニメーション
     const isNewChar = !elem.classList.contains('visible') || elem.dataset.character !== charName;
 
-    elem.style.backgroundImage = `url('${this.resolveAssetUrl(`assets/characters/${resolvedImage}.png`)}')`;
+    const imageUrl = this.resolveAssetUrl(`assets/characters/${resolvedImage}.webp`);
+    const fallbackUrl = this.resolveAssetUrl(`assets/characters/${fallbackImage}.webp`);
+    elem.style.backgroundImage = `url('${imageUrl}')`;
+    if (fallbackImage !== resolvedImage) {
+      const probe = new Image();
+      probe.onerror = () => {
+        if (elem.dataset.character === charName) {
+          elem.style.backgroundImage = `url('${fallbackUrl}')`;
+        }
+      };
+      probe.src = imageUrl;
+    }
     elem.dataset.character = charName;
     elem.classList.add('visible');
     this.lastCharacterPosition[charName] = position;
@@ -1841,7 +1883,7 @@ class GameEngine {
   getAssistPositionForExplicitScene(speakerId) {
     const visible = this.getVisibleCharactersWithPositions();
     if (visible.length === 0) {
-      return this.getAutoShowPosition(speakerId);
+      return 'center';
     }
 
     if (visible.length === 1) {
@@ -1930,8 +1972,7 @@ class GameEngine {
       return;
     }
 
-    const pos = this.getAutoShowPosition(resolvedSpeakerId);
-    this.showCharacter(pos, image, true);
+    this.showCharacter('center', image, true);
   }
 
   showText(speaker, text, isMonologue = false) {
@@ -2120,8 +2161,26 @@ class GameEngine {
     }
   }
 
+  getCompletionBackground() {
+    const route = this.currentEpisode?.route;
+    const routeBackgrounds = {
+      osananajimi: 'events/osananajimi_schoolgate',
+      seitokai: 'events/seitokai_councilroom',
+      gyaru: 'events/gyaru_stream',
+      otaku: 'events/otaku_scienceroom',
+      kakutogi: 'events/kakutogi_handup',
+      furyo: 'events/furyo_station',
+      imouto: 'events/imouto_park',
+      harem: 'events/harem_gym'
+    };
+    return routeBackgrounds[route] || this.lastNonBlackBackground || 'devil_space';
+  }
+
   endScenario() {
+    const completionBackground = this.getCompletionBackground();
     this.stopGame();
+    this.clearCharacters();
+    this.setBackground(completionBackground);
 
     // 次のエピソードを探す
     const currentIdx = this.episodes.findIndex(ep => ep.scenario === this.currentEpisode?.scenario);

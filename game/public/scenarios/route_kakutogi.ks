@@ -14,8 +14,10 @@
 ; シーン1：夜／学校道場（呼び出し）
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
+
+[chara_hide_all]
 
 （夜9時。学校に呼び出された。）[l][er]
 
@@ -56,7 +58,7 @@
 ; シーン2：練習試合の結果
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 #kakutogi
@@ -106,7 +108,7 @@
 ; シーン3：強くなりたかった
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [chara_show name="kakutogi" face="default" pos="center" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
@@ -146,7 +148,7 @@
 ; シーン4：孤立
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 #kakutogi
@@ -182,7 +184,7 @@
 ; シーン5：懇願
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 #kakutogi
@@ -237,7 +239,7 @@
 ; シーン6：悪魔の視線
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
 （道場の隅。）[l][er]
@@ -266,7 +268,7 @@
 ; ================================================================================
 
 *kakutogi_01
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （翌日。）[l][er]
@@ -299,7 +301,7 @@
 ; シーン2：同好会での歓迎
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （部室。）[l][er]
@@ -341,7 +343,7 @@
 ; シーン3：手合わせの申し出
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 [chara_show name="kakutogi" face="smile" pos="center" time="1000"]
@@ -392,7 +394,7 @@
 ; シーン4：スパーリング
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 （放課後。道場。）[l][er]
@@ -455,7 +457,7 @@
 ; ================================================================================
 
 *kakutogi_02
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （スパーリングの後。）[l][er]
@@ -515,7 +517,7 @@
 ; シーン2：願いの代償
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 [chara_show name="kakutogi" face="sad" pos="center" time="1000"]
@@ -576,7 +578,7 @@
 ; シーン3：約束
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 #protagonist
@@ -634,7 +636,7 @@
 ; ================================================================================
 
 *kakutogi_03
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （数週間後。）[l][er]
@@ -675,7 +677,7 @@
 ; ================================================================================
 
 [chara_hide_all]
-[bg storage="hallway.png" time="1000"]
+[bg storage="hallway.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （俺は、格闘技部の顧問に話をしに行った。）[l][er]
@@ -727,7 +729,7 @@
 ; ================================================================================
 
 [chara_hide_all]
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 （大会当日。）[l][er]
@@ -776,7 +778,7 @@
 ; シーン4：試合
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 （彼女の試合。）[l][er]
@@ -817,7 +819,7 @@
 ; シーン5：勝利の後
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （試合後。）[l][er]
@@ -869,7 +871,7 @@
 ; ================================================================================
 
 *kakutogi_04
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （大会から数日後。）[l][er]
@@ -943,7 +945,7 @@
 ; シーン2：返事
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 
 [glink target="kakutogi_ending_good" text="俺も好きだ"]
 [glink target="kakutogi_ending_normal" text="仲間として大事だ"]
@@ -1013,7 +1015,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1059,7 +1061,7 @@
 
 [chara_hide name="kakutogi" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——格闘技部。本名、虎谷響。）[l][er]
 
@@ -1130,7 +1132,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="dojo_night.png" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1173,7 +1175,7 @@
 
 [chara_hide name="kakutogi" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——格闘技部。本名、虎谷響。）[l][er]
 

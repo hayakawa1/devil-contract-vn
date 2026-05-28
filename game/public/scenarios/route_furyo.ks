@@ -12,8 +12,10 @@
 ; シーン1：放課後の電車
 ; ================================================================================
 
-[bg storage="train_interior.png" time="1000"]
+[bg storage="train_interior.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
+
+[chara_hide_all]
 
 （放課後。いつもの電車。）[l][er]
 
@@ -134,7 +136,7 @@
 
 （彼女は降りた。）[l][er]
 
-[bg storage="station.png" time="1000"]
+[bg storage="station.webp" time="1000"]
 
 （でも、駅のホームで——振り返った。）[l][er]
 
@@ -168,7 +170,7 @@
 ; シーン4：情報収集
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （翌日、学校。）[l][er]
@@ -220,7 +222,8 @@
 ; シーン5：再会への決意
 ; ================================================================================
 
-[bg storage="train_interior.png" time="1000"]
+[chara_hide_all]
+[bg storage="train_interior.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （その日の帰り。）[l][er]
@@ -251,7 +254,7 @@
 
 [playbgm storage="bgm_daily.mp3"]
 
-#akuma
+#？？？
 恋、だね[l][er]
 
 [chara_show name="akuma" face="neutral" pos="left" time="1000"]
@@ -316,7 +319,7 @@
 ; ================================================================================
 
 *furyo_01
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数日後。）[l][er]
@@ -337,7 +340,7 @@
 ; シーン2：校門前の再会
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （門が開く。）[l][er]
@@ -407,7 +410,7 @@
 ; シーン3：裏路地
 ; ================================================================================
 
-[bg storage="alley.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （彼女は、人気のない裏路地に入った。）[l][er]
@@ -478,7 +481,7 @@
 ; シーン4：過去の話
 ; ================================================================================
 
-[bg storage="alley.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （沈黙。）[l][er]
@@ -554,7 +557,7 @@
 ; シーン5：選択
 ; ================================================================================
 
-[bg storage="alley.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 [glink target="furyo_01_choice_a" text="それでも、離れない"]
@@ -725,7 +728,7 @@
 ; ================================================================================
 
 *furyo_02
-[bg storage="park.png" time="1000"]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （それから、俺たちは何度か会うようになった。）[l][er]
@@ -767,7 +770,7 @@
 ; シーン2：彼女の素顔
 ; ================================================================================
 
-[bg storage="park.png" time="1000"]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 #furyo
@@ -819,7 +822,7 @@
 ; シーン3：絡まれる
 ; ================================================================================
 
-[bg storage="street_evening.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （帰り道。）[l][er]
@@ -888,7 +891,7 @@
 ; シーン4：共闘
 ; ================================================================================
 
-[bg storage="street_evening.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 #protagonist
@@ -951,7 +954,7 @@
 ; シーン5：夜の公園
 ; ================================================================================
 
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （夜。公園のベンチ。）[l][er]
@@ -1022,7 +1025,7 @@
 ; ================================================================================
 
 *furyo_03
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （俺は、彼女を筋肉同好会に連れてきた。）[l][er]
@@ -1064,7 +1067,7 @@
 ; ================================================================================
 
 [chara_hide_all]
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （他のメンバーも集まってきた。）[l][er]
@@ -1116,7 +1119,7 @@
 ; ================================================================================
 
 [chara_hide_all]
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （夕方。）[l][er]
@@ -1191,7 +1194,7 @@
 
 *furyo_04
 [chara_hide_all]
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （ある日。）[l][er]
@@ -1247,7 +1250,7 @@
 ; シーン2：選択
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 [glink target="furyo_04_choice_a" text="一緒に行く"]
@@ -1382,7 +1385,7 @@
 ; ================================================================================
 
 [chara_hide_all]
-[bg storage="factory.png" time="1000"]
+[bg storage="abandoned_factory.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 （廃工場。）[l][er]
@@ -1431,7 +1434,7 @@
 ; シーン4：決戦
 ; ================================================================================
 
-[bg storage="factory.png" time="1000"]
+[bg storage="abandoned_factory.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 （戦いが始まった。）[l][er]
@@ -1485,7 +1488,7 @@
 ; シーン5：許し
 ; ================================================================================
 
-[bg storage="factory.png" time="1000"]
+[bg storage="abandoned_factory.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 [chara_show name="furyo" face="sad" pos="center" time="1000"]
@@ -1527,7 +1530,7 @@
 ; シーン6：友達との再会
 ; ================================================================================
 
-[bg storage="factory.png" time="1000"]
+[bg storage="abandoned_factory.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （縛られていた女の子を、助け出した。）[l][er]
@@ -1583,7 +1586,7 @@
 ; ================================================================================
 
 *furyo_05
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （あれから、数週間が経った。）[l][er]
@@ -1634,7 +1637,7 @@
 ; シーン2：告白の選択
 ; ================================================================================
 
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 
 [glink target="furyo_ending_good" text="好きだ"]
 [glink target="furyo_ending_normal" text="大切な仲間だ"]
@@ -1726,7 +1729,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="train_interior.png" time="1000"]
+[bg storage="train_interior.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1799,7 +1802,7 @@
 
 [chara_hide name="furyo" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——九条響子。）[l][er]
 
@@ -1872,7 +1875,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1914,7 +1917,7 @@
 
 [chara_hide name="furyo" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——九条響子。）[l][er]
 

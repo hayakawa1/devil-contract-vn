@@ -1,6 +1,6 @@
 ﻿; ■ 悪魔との契約 - プロローグ：悪魔との出会い
 *start
-[bg storage="black.png" time="500"]
+[bg storage="black.webp" time="500"]
 名前を入力してください。[l][er]
 [edit name="f.main_name" length="10" maxchars="10"]
 [s]
@@ -12,7 +12,7 @@
 ; Scene 1: 放課後の帰り道
 ; ================================================================================
 
-[bg storage="street_evening.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 放課後、いつもの帰り道。[l][er]
@@ -37,7 +37,7 @@
 
 [playbgm storage="bgm_devil.mp3"]
 
-#akuma
+#？？？
 退屈そうだね[l][er]
 
 声は、どこからともなく聞こえた。[l][er]
@@ -326,7 +326,7 @@
 ; Scene 8: その夜
 ; ================================================================================
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 ── その夜、悪魔は7人の元を訪れた ──[l][er]
 

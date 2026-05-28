@@ -14,8 +14,10 @@
 ; シーン1：放課後／理科準備室（呼び出し）
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
+
+[chara_hide_all]
 
 （放課後。理科準備室に呼び出された。）[l][er]
 
@@ -53,7 +55,7 @@
 ; シーン2：瓶の回収
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 
 #protagonist
 それ——[l][er]
@@ -99,7 +101,7 @@
 ; シーン3：欠番の存在
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 #otaku
@@ -151,7 +153,7 @@
 ; シーン4：研究者の本能
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [chara_show name="otaku" face="default" pos="center" time="1000"]
 
 #protagonist
@@ -208,7 +210,7 @@
 ; シーン5：研究開始
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （彼女は、すぐに動き出した。）[l][er]
@@ -276,7 +278,7 @@
 ; シーン6：一人で抱え込む（選択肢B後）
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="hallway.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
 （数日後。）[l][er]
@@ -315,7 +317,7 @@
 ; シーン7：夕暮れの窓辺（悪魔の気配）
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （実験が一段落した。）[l][er]
@@ -459,7 +461,7 @@
 ; ================================================================================
 
 *otaku_01
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （数日後。理科準備室。）[l][er]
@@ -519,7 +521,7 @@
 ; シーン2：仮説
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 [chara_show name="otaku" face="default" pos="center" time="1000"]
@@ -571,7 +573,7 @@
 ; シーン3：調査の深入り
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 #protagonist
@@ -633,7 +635,7 @@
 ; ================================================================================
 
 *otaku_02
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （研究が進んだ。）[l][er]
@@ -704,7 +706,7 @@
 ; シーン2：彼女の決意
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 [chara_show name="otaku" face="sad" pos="center" time="1000"]
@@ -768,7 +770,7 @@
 ; シーン3：悪魔の介入
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
 （突然——部屋の温度が下がった。）[l][er]
@@ -832,7 +834,7 @@
 ; シーン4：選択
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 
 [glink target="otaku_02_choice_a" text="やめろ。そんな取引するな"]
 [glink target="otaku_02_choice_b" text="彼女の判断に任せる"]
@@ -943,7 +945,7 @@
 ; ================================================================================
 
 *otaku_03
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数日後。）[l][er]
@@ -990,7 +992,7 @@
 ; シーン2：感謝
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （みんなが帰った後。）[l][er]
@@ -1049,7 +1051,7 @@
 ; ================================================================================
 
 *otaku_04
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （夕暮れ。理科準備室。）[l][er]
@@ -1115,7 +1117,7 @@
 ; シーン2：返事
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 
 [glink target="otaku_ending_good" text="好きだ"]
 [glink target="otaku_ending_normal" text="研究パートナーとして大事だ"]
@@ -1202,7 +1204,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1266,7 +1268,7 @@
 
 [chara_hide name="otaku" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——オタク。本名、神崎理香。）[l][er]
 
@@ -1346,7 +1348,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1386,7 +1388,7 @@
 
 [chara_hide name="otaku" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——オタク。本名、神崎理香。）[l][er]
 

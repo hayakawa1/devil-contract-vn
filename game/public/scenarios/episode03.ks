@@ -6,7 +6,7 @@
 ; Scene 1: それぞれの決断
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （翌日。理科準備室。）[l][er]
@@ -111,7 +111,7 @@
 ; Scene 2: ギャルの提案
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 [chara_show name="gyaru" face="smile" pos="center" time="1000"]
@@ -215,7 +215,7 @@
 ; Scene 3: 同好会設立
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （生徒会室。）[l][er]
@@ -318,7 +318,7 @@
 ; Scene 4: 初日の活動
 ; ================================================================================
 
-[bg storage="gym.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 （放課後。体育館。）[l][er]
@@ -509,7 +509,7 @@
 ; Scene 5: 主人公の立場
 ; ================================================================================
 
-[bg storage="gym.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （主人公は、隅で見ていた。）[l][er]
@@ -630,7 +630,7 @@
 ; Scene 6: 分岐点
 ; ================================================================================
 
-[bg storage="gym.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 [chara_show name="seitokai" face="default" pos="center" time="1000"]
@@ -677,8 +677,7 @@
 
 （ふと、悪魔の言葉を思い出す。）[l][er]
 
-#akuma
-『願いは叶ったよ。7人もいるし、大盤振る舞いだね』[l][er]
+悪魔の声『願いは叶ったよ。7人もいるし、大盤振る舞いだね』[l][er]
 
 #protagonist
 （……7人）[l][er]
@@ -693,7 +692,7 @@
 ; ルート選択
 ; ================================================================================
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 ここから、物語は分岐する。[l][er]
 

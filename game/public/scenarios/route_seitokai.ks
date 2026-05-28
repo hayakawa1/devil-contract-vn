@@ -14,8 +14,10 @@
 ; シーン1：朝／校門前（Day2地獄の朝）
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
+
+[chara_hide_all]
 
 （俺は、目を疑った。）[l][er]
 
@@ -130,7 +132,7 @@
 ; シーン2：昼休み／廊下（噂の拡散）
 ; ================================================================================
 
-[bg storage="hallway.png" time="1000"]
+[bg storage="hallway.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （昼休み。廊下はもう"筋肉"の話題で満ちていた。）[l][er]
@@ -172,7 +174,7 @@
 ; シーン3：放課後／生徒会室前（面談の前）
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （放課後。生徒会室の前で待つ。）[l][er]
@@ -260,7 +262,8 @@
 ; シーン4：章末／廊下（悪魔の気配）
 ; ================================================================================
 
-[bg storage="hallway.png" time="1000"]
+[chara_hide_all]
+[bg storage="hallway.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （生徒会長が生徒会室へ戻っていく。）[l][er]
@@ -270,18 +273,18 @@
 （そのとき——背中が、冷たくなった。）[l][er]
 
 
-#akuma
+#悪魔の声
 "正しさ"って便利だよね[l][er]
 
 （声は、耳元じゃない。廊下全体から聞こえた。）[l][er]
 
-#akuma
+#悪魔の声
 誰かを守るふりして、誰かを切れる[l][er]
 
 #protagonist
 ……誰だ[l][er]
 
-#akuma
+#悪魔の声
 君はまだ、何も切ってないと思ってる？[l][er]
 
 （返事の代わりに、視界の端で黒い影が笑った気がした。）[l][er]
@@ -425,7 +428,8 @@
 ; ================================================================================
 
 *seitokai_01
-[bg storage="student_council_room.png" time="1000"]
+[chara_hide_all]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （面談が終わった。）[l][er]
@@ -468,7 +472,7 @@
 ; シーン2：崩れる仮面
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （その夜。）[l][er]
@@ -535,7 +539,7 @@
 ; シーン3：本音
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 #protagonist
@@ -605,7 +609,7 @@
 ; シーン4：選択
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 
 [glink target="seitokai_01_choice_a" text="完璧じゃなくていい"]
 [glink target="seitokai_01_choice_b" text="一緒に戦おう"]
@@ -699,7 +703,7 @@
 ; ================================================================================
 
 *seitokai_02
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数日後。）[l][er]
@@ -744,7 +748,7 @@
 ; シーン2：署名活動
 ; ================================================================================
 
-[bg storage="hallway.png" time="1000"]
+[bg storage="hallway.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （署名活動を始めた。）[l][er]
@@ -787,7 +791,7 @@
 ; シーン3：成果
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （一週間後。）[l][er]
@@ -833,7 +837,7 @@
 ; ================================================================================
 
 *seitokai_03
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （再度の面談。）[l][er]
@@ -881,7 +885,7 @@
 ; シーン2：祝勝会
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （放課後。部室。）[l][er]
@@ -937,7 +941,7 @@
 ; ================================================================================
 
 *seitokai_04
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （夕暮れ。屋上。）[l][er]
@@ -1019,7 +1023,7 @@
 ; シーン2：返事
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 
 [glink target="seitokai_ending_good" text="俺も好きだ"]
 [glink target="seitokai_ending_normal" text="仲間として大事だ"]
@@ -1084,7 +1088,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1148,7 +1152,7 @@
 
 [chara_hide name="seitokai" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——生徒会長。本名、白鳥凛。）[l][er]
 
@@ -1224,7 +1228,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1269,7 +1273,7 @@
 
 [chara_hide name="seitokai" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——生徒会長。本名、白鳥凛。）[l][er]
 

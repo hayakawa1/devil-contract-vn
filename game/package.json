@@ -4,7 +4,9 @@
   "description": "悪魔との契約 - ビジュアルノベルゲーム",
   "scripts": {
     "dev": "node ./node_modules/vite/bin/vite.js",
-    "build": "node ./node_modules/vite/bin/vite.js build",
+    "build": "node ./node_modules/vite/bin/vite.js build --emptyOutDir false",
+    "build:clean": "node ./node_modules/vite/bin/vite.js build --emptyOutDir true",
+    "check": "node tools/check-content.js",
     "preview": "node ./node_modules/vite/bin/vite.js preview"
   },
   "devDependencies": {

@@ -14,8 +14,10 @@
 ; シーン1：昼休み／屋上（バズったSNS）
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
+
+[chara_hide_all]
 
 （昼休み。屋上。）[l][er]
 
@@ -69,7 +71,7 @@
 ; シーン2：屋上（承認への執着）
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
 #gyaru
@@ -121,7 +123,7 @@
 ; シーン3：写真撮影の依頼
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 #gyaru
@@ -156,7 +158,7 @@
 ; シーン4A：承諾後（距離が縮まる）
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 #gyaru
@@ -208,7 +210,7 @@
 ; シーン4B：拒絶後（孤立が深まる）
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
 （ギャルは、一人で階段を降りていった。）[l][er]
@@ -236,7 +238,7 @@
 ; シーン5：悪魔の囁き
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （放課後。）[l][er]
@@ -361,7 +363,7 @@
 
 *gyaru_01
 [chara_hide_all]
-[bg storage="park.png" time="1000"]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （日曜日。公園。）[l][er]
@@ -403,7 +405,7 @@
 ; シーン2：撮影中の違和感
 ; ================================================================================
 
-[bg storage="park.png" time="1000"]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （何枚か撮った。）[l][er]
@@ -455,7 +457,7 @@
 ; シーン3：休憩
 ; ================================================================================
 
-[bg storage="park.png" time="1000"]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （休憩。ベンチに座る。）[l][er]
@@ -537,7 +539,7 @@
 ; シーン4：本音
 ; ================================================================================
 
-[bg storage="park.png" time="1000"]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 [chara_show name="gyaru" face="crying" pos="center" time="1000"]
@@ -582,7 +584,7 @@
 ; シーン5：選択
 ; ================================================================================
 
-[bg storage="park.png" time="1000"]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 [glink target="gyaru_01_choice_a" text="俺は好きだぞ"]
@@ -689,7 +691,7 @@ SNS、やめたら？[l][er]
 ; ================================================================================
 
 *gyaru_02
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （月曜日。教室。）[l][er]
@@ -717,7 +719,7 @@ SNS、やめたら？[l][er]
 ; シーン2：探しに行く
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （俺は、彼女を探した。）[l][er]
@@ -783,7 +785,7 @@ SNS、やめたら？[l][er]
 ; シーン3：励まし
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 #protagonist
@@ -845,7 +847,7 @@ SNS、やめたら？[l][er]
 ; シーン4：筋肉同好会の仲間
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （放課後。部室。）[l][er]
@@ -912,7 +914,7 @@ SNS、やめたら？[l][er]
 ; シーン5：反撃
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （数日後。）[l][er]
@@ -950,7 +952,7 @@ SNS、やめたら？[l][er]
 ; ================================================================================
 
 *gyaru_03
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （炎上騒動が収まって、数週間。）[l][er]
@@ -1007,7 +1009,7 @@ SNSのこと[l][er]
 ; シーン2：新しい目標
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 [chara_show name="gyaru" face="smile" pos="center" time="1000"]
@@ -1074,7 +1076,7 @@ SNSのこと[l][er]
 ; シーン3：撮影会
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （部室。）[l][er]
@@ -1117,7 +1119,7 @@ SNSのこと[l][er]
 ; ================================================================================
 
 *gyaru_04
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （夜の公園。）[l][er]
@@ -1193,7 +1195,7 @@ SNSのこと[l][er]
 ; シーン2：告白
 ; ================================================================================
 
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 [chara_show name="gyaru" face="blush" pos="center" time="1000"]
@@ -1230,7 +1232,7 @@ SNSのこと[l][er]
 ; シーン3：選択
 ; ================================================================================
 
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 
 [glink target="gyaru_ending_good" text="俺も好きだ"]
 [glink target="gyaru_ending_normal" text="友達でいたい"]
@@ -1299,7 +1301,7 @@ SNSのこと[l][er]
 ; エピローグ
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1374,7 +1376,7 @@ SNSのこと[l][er]
 
 [chara_hide name="gyaru" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——ギャル。本名、星野美咲。）[l][er]
 
@@ -1457,7 +1459,7 @@ SNSのこと[l][er]
 ; エピローグ
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1500,7 +1502,7 @@ SNSのこと[l][er]
 
 [chara_hide name="gyaru" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——ギャル。本名、星野美咲。）[l][er]
 

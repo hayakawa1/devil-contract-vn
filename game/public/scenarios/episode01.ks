@@ -6,7 +6,7 @@
 ; イントロ
 ; ================================================================================
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
 その夜、悪魔は7人の元を訪れた。[l][er]
@@ -20,7 +20,7 @@
 ; Scene 1: 幼なじみ「選ばれないのは辛い」
 ; ================================================================================
 
-[bg storage="room_night.png" time="1000"]
+[bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 その夜。幼なじみの結衣は、自分の部屋にいた。[l][er]
@@ -115,7 +115,7 @@
 ; Scene 2: 生徒会長「完璧じゃ足りない」
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 夜の生徒会室。生徒会長の凛は、一人で書類整理をしていた。[l][er]
@@ -213,7 +213,7 @@
 ; Scene 3: ギャル「埋もれてる私」
 ; ================================================================================
 
-[bg storage="room_night.png" time="1000"]
+[bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 夜。ギャルの美咲は、自室でスマホを見ていた。[l][er]
@@ -301,7 +301,7 @@
 ; Scene 4: オタク「被験者は私」
 ; ================================================================================
 
-[bg storage="room_night.png" time="1000"]
+[bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 夜。オタクの理香は、自室で論文を読んでいた。[l][er]
@@ -389,7 +389,7 @@
 ; Scene 5: 格闘技部「強くなりたい」
 ; ================================================================================
 
-[bg storage="dojo.png" time="1000"]
+[bg storage="dojo.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 夜の道場。格闘技部の響は、一人でサンドバッグに拳を叩き込んでいた。[l][er]
@@ -477,7 +477,7 @@
 ; Scene 6: 不良「誰かに気づいてほしかった」
 ; ================================================================================
 
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
 夜の公園。他校の不良・響子は、一人でベンチに座っていた。[l][er]
@@ -563,7 +563,7 @@
 ; Scene 7: 友達の妹「お兄ちゃんの親友」
 ; ================================================================================
 
-[bg storage="room_night.png" time="1000"]
+[bg storage="protagonist_room_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 夜。親友の妹の美羽は、自室で写真を見ていた。[l][er]
@@ -642,7 +642,7 @@
 ; Scene 8: 悪魔の独白
 ; ================================================================================
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
 [chara_show name="akuma" face="smile" pos="center" time="1000"]

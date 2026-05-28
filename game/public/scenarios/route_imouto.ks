@@ -11,8 +11,10 @@
 ; 第1話「お兄ちゃんの友達」
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
+
+[chara_hide_all]
 
 （Day2地獄の朝。筋肉化。）[l][er]
 （校門の前で、誰かに呼び止められた。）[l][er]
@@ -86,7 +88,7 @@
 ; 第2話「お兄ちゃんは知らない」
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （放課後。校門前。）[l][er]
@@ -180,7 +182,7 @@
 ; 第3話「3年前の約束」
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （放課後、屋上。）[l][er]
@@ -309,7 +311,7 @@
 ; シーン4：夕焼け／契約の後悔
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 [chara_show name="imouto" face="default" pos="center" time="1000"]
@@ -422,7 +424,7 @@
 ; シーン6：約束の形
 ; ================================================================================
 
-[bg storage="rooftop_night.png" time="1000"]
+[bg storage="rooftop_night.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
 （夕日が沈み、夜が来る。）[l][er]
@@ -469,14 +471,14 @@
 ; シーン7：影の中の囁き
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
 （彼女と別れた後。）[l][er]
 
-（俺は一人、夜の道を歩いていた。）[l][er]
+（俺は一人、夕闇の道を歩いていた。）[l][er]
 
-#akuma
+#？？？
 優しいね[l][er]
 
 #protagonist
@@ -524,7 +526,7 @@
 ; ================================================================================
 
 *imouto_01
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （翌日。教室。）[l][er]
@@ -561,7 +563,7 @@
 ; シーン2：選択
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[bg storage="classroom.webp" time="1000"]
 
 [glink target="imouto_01_choice_a" text="正直に話す" x="100" y="200"]
 [glink target="imouto_01_choice_b" text="誤魔化す" x="100" y="300"]
@@ -647,7 +649,7 @@
 ; シーン3：彼女との再会
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （放課後。校門前。）[l][er]
@@ -713,7 +715,7 @@
 ; ================================================================================
 
 *imouto_02
-[bg storage="kitchen.png" time="1000"]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （日曜日。）[l][er]
@@ -749,7 +751,7 @@
 ; シーン2：お菓子作り
 ; ================================================================================
 
-[bg storage="kitchen.png" time="1000"]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （材料を混ぜる。）[l][er]
@@ -818,7 +820,7 @@
 ; シーン3：完成
 ; ================================================================================
 
-[bg storage="kitchen.png" time="1000"]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （オーブンから、いい匂い。）[l][er]
@@ -886,7 +888,7 @@
 ; ================================================================================
 
 *imouto_03
-[bg storage="school_gate.png" time="1000"]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （数日後。）[l][er]
@@ -920,7 +922,7 @@
 ; シーン2：友樹の本音
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （屋上に移動した。）[l][er]
@@ -992,7 +994,7 @@
 ; シーン3：許可
 ; ================================================================================
 
-[bg storage="rooftop.png" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 #友樹
@@ -1059,7 +1061,7 @@
 ; ================================================================================
 
 *imouto_04
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （夜の公園。）[l][er]
@@ -1141,7 +1143,7 @@
 ; シーン2：返事
 ; ================================================================================
 
-[bg storage="park_night.png" time="1000"]
+[bg storage="park_night.webp" time="1000"]
 
 [glink target="imouto_ending_good" text="俺も好きだ" x="100" y="200"]
 [glink target="imouto_ending_normal" text="妹みたいに思ってる" x="100" y="300"]
@@ -1207,7 +1209,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="living_room.png" time="1000"]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1273,7 +1275,7 @@
 
 [chara_hide name="imouto" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——友達の妹。本名、高橋美羽。）[l][er]
 
@@ -1353,7 +1355,7 @@
 ; エピローグ
 ; ================================================================================
 
-[bg storage="living_room.png" time="1000"]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数ヶ月後。）[l][er]
@@ -1388,7 +1390,7 @@
 
 [chara_hide name="imouto" time="1000"]
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
 （——友達の妹。本名、高橋美羽。）[l][er]
 

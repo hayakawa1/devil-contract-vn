@@ -6,7 +6,7 @@
 ; Scene 1: 登校前の異変
 ; ================================================================================
 
-[bg storage="room_morning.png" time="1000"]
+[bg storage="protagonist_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （翌朝。）[l][er]
@@ -24,21 +24,15 @@
 #protagonist
 （……誰からだ？）[l][er]
 
-#osananajimi
-『おはよ……じゃなくて、ヤバい』[l][er]
-#osananajimi
-『マジでヤバい』[l][er]
-#osananajimi
-『今すぐ来て』[l][er]
+結衣『おはよ……じゃなくて、ヤバい』[l][er]
+結衣『マジでヤバい』[l][er]
+結衣『今すぐ来て』[l][er]
 
-#seitokai
-『緊急連絡。至急相談したいことがあります』[l][er]
+凛『緊急連絡。至急相談したいことがあります』[l][er]
 
-#gyaru
-『え、マジで無理なんだけど』[l][er]
+美咲『え、マジで無理なんだけど』[l][er]
 
-#otaku
-『興味深い現象が発生しました。データを送ります』[l][er]
+理香『興味深い現象が発生しました。データを送ります』[l][er]
 
 #protagonist
 （……なんだこれ）[l][er]
@@ -49,7 +43,8 @@
 ; Scene 2: 学校到着
 ; ================================================================================
 
-[bg storage="classroom.png" time="1000"]
+[chara_hide_all]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （教室に着くと——）[l][er]
@@ -100,7 +95,7 @@
 ; Scene 3: 次々と発覚
 ; ================================================================================
 
-[bg storage="hallway.png" time="1000"]
+[bg storage="hallway.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （廊下を歩いていると——）[l][er]
@@ -147,7 +142,7 @@
 ; Scene 4: 理科準備室での集合
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （昼休み。理科準備室。）[l][er]
@@ -213,7 +208,7 @@
 ; Scene 5: 悪魔の再登場
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
 #akuma
@@ -241,6 +236,10 @@
 #akuma
 君たちが、自分で飲んだんでしょ[l][er]
 
+[chara_hide name="osananajimi" time="300"]
+[chara_hide name="seitokai" time="300"]
+[chara_show name="gyaru" face="angry" pos="right" time="500"]
+
 #gyaru
 でも、こんなこと聞いてない！[l][er]
 
@@ -262,8 +261,13 @@
 
 全員が、主人公を見る。[l][er]
 
+[chara_hide name="gyaru" time="300"]
+[chara_show name="osananajimi" face="surprised" pos="left" time="500"]
+
 #osananajimi
 ……え？[l][er]
+
+[chara_show name="seitokai" face="default" pos="right" time="500"]
 
 #seitokai
 &f.main_nameさん、これは……[l][er]
@@ -300,6 +304,7 @@
 （悪魔は、消えた。）[l][er]
 
 [chara_hide name="akuma" time="1000"]
+[chara_hide_all]
 
 （残されたのは、重い沈黙。）[l][er]
 
@@ -309,7 +314,7 @@
 ; Scene 6: 責任
 ; ================================================================================
 
-[bg storage="science_prep_room.png" time="1000"]
+[bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 [chara_show name="osananajimi" face="sad" pos="center" time="1000"]

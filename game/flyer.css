@@ -1,0 +1,410 @@
+:root {
+  --paper-w: 1240px;
+  --paper-h: 1754px;
+  --ink: #fff4e6;
+  --muted: #c8b8a6;
+  --gold: #d9aa52;
+  --gold-soft: rgba(217, 170, 82, 0.48);
+  --red: #bf1827;
+  --red-hot: #ff3547;
+  --cyan: #67c4d3;
+  --paper: #070608;
+  --serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
+  --sans: "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+  --latin: Georgia, "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: #171112;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(191, 24, 39, 0.28), transparent 34rem),
+    radial-gradient(circle at 88% 15%, rgba(103, 196, 211, 0.16), transparent 32rem),
+    linear-gradient(135deg, #171112, #050405 58%, #11080a);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+.poster {
+  position: relative;
+  width: var(--paper-w);
+  height: var(--paper-h);
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(10, 8, 10, 0.94), rgba(10, 8, 10, 0.98)),
+    url("/assets/backgrounds/school_gate.webp") center bottom / cover no-repeat;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.58);
+  isolation: isolate;
+}
+
+.poster::before,
+.poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.poster::before {
+  z-index: 10;
+  border: 20px solid rgba(8, 5, 5, 0.92);
+  box-shadow: inset 0 0 0 1px rgba(217, 170, 82, 0.5);
+}
+
+.poster::after {
+  z-index: 1;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(180deg, #000 0%, transparent 72%);
+}
+
+.hero {
+  position: relative;
+  height: 1028px;
+  padding: 72px 70px 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(217, 170, 82, 0.34);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background:
+    linear-gradient(90deg, rgba(4, 3, 4, 0.94) 0%, rgba(5, 4, 6, 0.76) 43%, rgba(5, 4, 6, 0.38) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.88) 96%),
+    url("/assets/backgrounds/devil_space.webp") center / cover no-repeat;
+  transform: scale(1.02);
+}
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 58% 0 0;
+  background: linear-gradient(180deg, transparent, #09070a 72%);
+}
+
+.sigil {
+  position: absolute;
+  top: 70px;
+  right: 74px;
+  z-index: 1;
+  width: 160px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 4px solid rgba(255, 53, 71, 0.54);
+  border-radius: 50%;
+  color: rgba(255, 53, 71, 0.62);
+  font-family: var(--serif);
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 1;
+  transform: rotate(-13deg);
+  box-shadow:
+    0 0 42px rgba(255, 53, 71, 0.22),
+    inset 0 0 28px rgba(255, 53, 71, 0.12);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 6;
+  width: 690px;
+}
+
+.genre,
+.section-label,
+.footer-label {
+  margin: 0;
+  color: var(--gold);
+  font-family: var(--latin);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.title-logo {
+  display: block;
+  width: 690px;
+  max-width: 100%;
+  margin: 22px 0 0 -18px;
+  filter:
+    drop-shadow(0 18px 24px rgba(0, 0, 0, 0.88))
+    drop-shadow(0 0 18px rgba(255, 53, 71, 0.38));
+}
+
+h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.tagline {
+  width: 620px;
+  margin: 30px 0 0;
+  color: #fff7ef;
+  font-family: var(--serif);
+  font-size: 37px;
+  font-weight: 900;
+  line-height: 1.42;
+  letter-spacing: 0;
+  text-shadow: 0 5px 22px rgba(0, 0, 0, 0.9);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.badges span,
+.routes span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 1px solid rgba(217, 170, 82, 0.48);
+  background: rgba(9, 8, 10, 0.72);
+  color: #ffe8bd;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.badges span {
+  padding: 9px 18px 10px;
+  backdrop-filter: blur(8px);
+}
+
+.character-lineup {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.char {
+  position: absolute;
+  bottom: -30px;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 28px 24px rgba(0, 0, 0, 0.86));
+}
+
+.char-seitokai {
+  right: 610px;
+  bottom: 32px;
+  height: 586px;
+  opacity: 0.62;
+  z-index: 1;
+}
+
+.char-gyaru {
+  right: 432px;
+  bottom: 18px;
+  height: 646px;
+  opacity: 0.84;
+  z-index: 2;
+}
+
+.char-furyo {
+  right: 200px;
+  height: 850px;
+  opacity: 0.98;
+  z-index: 4;
+}
+
+.char-kakutogi {
+  right: -86px;
+  bottom: -10px;
+  height: 754px;
+  opacity: 0.9;
+  z-index: 3;
+}
+
+.char-akuma {
+  right: 34px;
+  bottom: 80px;
+  height: 335px;
+  opacity: 0.94;
+  z-index: 5;
+  filter:
+    drop-shadow(0 14px 18px rgba(0, 0, 0, 0.82))
+    drop-shadow(0 0 16px rgba(255, 53, 71, 0.52));
+}
+
+.story {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 38px;
+  padding: 48px 72px 0;
+}
+
+.story-main h2 {
+  margin: 18px 0 20px;
+  color: #fff7ec;
+  font-family: var(--serif);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.22;
+  letter-spacing: 0;
+}
+
+.story-main p:not(.section-label) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.85;
+}
+
+.feature-list {
+  display: grid;
+  gap: 10px;
+}
+
+.feature-list article {
+  position: relative;
+  min-height: 116px;
+  padding: 17px 22px 16px 82px;
+  border-left: 3px solid var(--red-hot);
+  background:
+    linear-gradient(135deg, rgba(191, 24, 39, 0.22), rgba(103, 196, 211, 0.07) 58%, rgba(7, 6, 8, 0.72)),
+    rgba(11, 10, 12, 0.86);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.22);
+}
+
+.feature-list article span {
+  position: absolute;
+  left: 20px;
+  top: 19px;
+  color: var(--red-hot);
+  font-family: var(--latin);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.feature-list h3 {
+  margin: 0 0 5px;
+  color: #fff3df;
+  font-family: var(--latin);
+  font-size: 28px;
+  letter-spacing: 0.06em;
+}
+
+.feature-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.58;
+}
+
+.routes {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: 28px 72px 0;
+}
+
+.routes span {
+  flex: 1 1 122px;
+  padding: 8px 14px 10px;
+  border-color: rgba(103, 196, 211, 0.44);
+  color: #dffbff;
+  background: rgba(9, 14, 17, 0.72);
+}
+
+.poster-footer {
+  position: absolute;
+  left: 72px;
+  right: 72px;
+  bottom: 56px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 102px;
+  padding: 20px 28px;
+  border: 1px solid rgba(217, 170, 82, 0.48);
+  background:
+    linear-gradient(100deg, rgba(126, 13, 22, 0.95), rgba(209, 35, 48, 0.88) 48%, rgba(18, 15, 17, 0.86)),
+    rgba(10, 8, 10, 0.9);
+  box-shadow:
+    0 0 40px rgba(255, 53, 71, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.poster-footer strong {
+  display: block;
+  margin-top: 5px;
+  color: #fff;
+  font-family: var(--serif);
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.poster-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 276px;
+  min-height: 56px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: #fff6e8;
+  font-size: 22px;
+  font-weight: 900;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+    background: #000;
+    display: block;
+    overflow: hidden;
+  }
+
+  .poster {
+    width: var(--paper-w);
+    height: var(--paper-h);
+    box-shadow: none;
+    transform: scale(0.64);
+    transform-origin: top left;
+  }
+}

@@ -16,7 +16,7 @@
 ; シーン1：選択の強要（同好会結成の夜）
 ; ================================================================================
 
-[bg storage="rooftop_night.png" time="1000"]
+[bg storage="rooftop_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （同好会が結成されて、1週間が経った。）[l][er]
@@ -163,7 +163,7 @@
 ; シーン2：翌日／筋肉同好会の日常
 ; ================================================================================
 
-[bg storage="gym.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （次の日。同好会の活動。）[l][er]
@@ -244,7 +244,8 @@
 ; シーン3：生徒会長との会話
 ; ================================================================================
 
-[bg storage="student_council_room.png" time="1000"]
+[chara_hide_all]
+[bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （放課後。生徒会室。）[l][er]
@@ -339,10 +340,11 @@
 ; シーン4：ギャルとの会話
 ; ================================================================================
 
-[bg storage="school_gate.png" time="1000"]
+[chara_hide_all]
+[bg storage="school_gate.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-（中庭。ギャルがスマホを構えている。）[l][er]
+（校門前。ギャルがスマホを構えている。）[l][er]
 
 #gyaru
 ねえ、ちょっと写真撮らせて[l][er]
@@ -421,7 +423,8 @@
 ; シーン5：オタクとの会話
 ; ================================================================================
 
-[bg storage="science_room.png" time="1000"]
+[chara_hide_all]
+[bg storage="science_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
 （理科室。オタクが、顕微鏡を覗いている。）[l][er]
@@ -499,7 +502,8 @@
 ; シーン6：格闘技部との会話
 ; ================================================================================
 
-[bg storage="dojo.png" time="1000"]
+[chara_hide_all]
+[bg storage="dojo.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
 （道場。格闘技部がサンドバッグを打っている。）[l][er]
@@ -574,7 +578,8 @@
 ; シーン7：不良との会話
 ; ================================================================================
 
-[bg storage="station.png" time="1000"]
+[chara_hide_all]
+[bg storage="station.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （駅のホーム。不良が、一人で立っている。）[l][er]
@@ -677,7 +682,8 @@
 ; シーン8：友達の妹との会話
 ; ================================================================================
 
-[bg storage="park.png" time="1000"]
+[chara_hide_all]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
 （公園のベンチ。友達の妹が、隣に座っている。）[l][er]
@@ -770,7 +776,8 @@
 ; シーン9：1ヶ月後／体育館
 ; ================================================================================
 
-[bg storage="gym.png" time="1000"]
+[chara_hide_all]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （1ヶ月が経った。）[l][er]
@@ -821,7 +828,8 @@
 ; シーン10：悪魔の再登場
 ; ================================================================================
 
-[bg storage="rooftop_night.png" time="1000"]
+[chara_hide_all]
+[bg storage="rooftop_night.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
 （その夜。また屋上。）[l][er]
@@ -923,8 +931,13 @@ SPECIAL END：選ばなかった世界[l][er]
 
 [chara_hide name="akuma" time="1000"]
 
-[bg storage="gym.png" time="1000"]
+[chara_hide_all]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_ending.mp3"]
+
+[chara_hide_all]
+[bg storage="events/harem_gym.webp" time="600"]
+[wait time="1600"]
 
 （それから、半年が経った。）[l][er]
 
@@ -938,7 +951,7 @@ SPECIAL END：選ばなかった世界[l][er]
 
 ; ================================================================================
 
-[bg storage="gym.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [chara_show name="osananajimi" face="stage1_default" pos="left" time="1000"]
 
 #osananajimi
@@ -1078,7 +1091,7 @@ SPECIAL END：選ばなかった世界[l][er]
 
 [chara_hide_all]
 
-[bg storage="gym.png" time="1000"]
+[bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_ending.mp3"]
 
 （7人が、俺の周りにいる。）[l][er]
@@ -1111,33 +1124,33 @@ SPECIAL END：選ばなかった世界[l][er]
 ; ================================================================================
 
 [chara_hide_all]
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 
-#悪魔（OFF）
+#悪魔の声
 ……判定不能[l][er]
 
-#悪魔（OFF）
+#悪魔の声
 君は、勝ったのか？[l][er]
 
-#悪魔（OFF）
+#悪魔の声
 負けたのか？[l][er]
 
-#悪魔（OFF）
+#悪魔の声
 それとも——[l][er]
 
-#悪魔（OFF）
+#悪魔の声
 "戦わなかった"のか？[l][er]
 
 
-#悪魔（OFF）
+#悪魔の声
 ……面白い人間だ[l][er]
 
-#悪魔（OFF）
+#悪魔の声
 また、会おう[l][er]
 
 ; ================================================================================
 
-[bg storage="black.png" time="1000"]
+[bg storage="black.webp" time="1000"]
 [TEXT: SPECIAL END]
 [TEXT: 「選ばなかった世界」]
 
