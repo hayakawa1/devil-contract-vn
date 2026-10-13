@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\imouto_park.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Scene: a neighborhood park at sunset, warm orange light, benches and trees. In the foreground left, a high-school boy with short black hair in a dark navy blazer seen from behind (face not visible). The heroine from the reference (brown hair in twin tails with pink hair clips, navy blazer, beige vest, purple bow, purple plaid skirt, white socks) runs toward him holding out a small wrapped bag of homemade cookies with both hands, very muscular like the reference, smiling brightly with a blush. 16:9 landscape event CG.
+When done, print the saved file path.

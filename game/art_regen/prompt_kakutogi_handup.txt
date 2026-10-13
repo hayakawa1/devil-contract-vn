@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\kakutogi_handup.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Scene: a martial arts dojo at sunset with tatami floor and wooden walls, warm light through shoji windows. In the foreground left, a boy's hand and forearm in a dark navy blazer sleeve reaching up (first-person view from the floor). The heroine from the reference (brown hair in a high ponytail, tanned skin, black sports top, open black track jacket, white martial arts pants with red side stripe, black belt, hand wraps) is very muscular like the reference and holds out her wrapped hand to help him up, with a proud warm grin. 16:9 landscape event CG.
+When done, print the saved file path.

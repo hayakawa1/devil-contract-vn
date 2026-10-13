@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\furyo_station.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Scene: inside a commuter train at sunset, orange light through the windows, blue bench seats. In the foreground left, a high-school boy with short black hair in a dark navy blazer, seated, seen from behind (face not visible). The heroine from the reference (long wavy black hair, dark navy long coat draped over her shoulders with red lining, white shirt, loose red necktie, dark navy trousers) sits right next to him, very muscular like the reference, looking out the window with a quiet shy half-smile, shoulders almost touching. 16:9 landscape event CG.
+When done, print the saved file path.

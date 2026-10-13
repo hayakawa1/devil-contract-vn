@@ -19,31 +19,36 @@
       </div>
 
       <div class="menu">
-        <button id="btn-episodes">エピソード選択</button>
-        <button id="btn-characters">キャラクター図鑑</button>
-        <button id="btn-config">設定</button>
+        <button id="btn-episodes" data-i18n="title.episodes">エピソード選択</button>
+        <button id="btn-characters" data-i18n="title.characters">キャラクター図鑑</button>
+        <button id="btn-config" data-i18n="title.config">設定</button>
+      </div>
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="ja">日本語</button>
+        <button type="button" data-lang="en">English</button>
       </div>
     </div>
 
     <!-- エピソード選択画面 -->
     <div id="episodes-screen" class="screen">
-      <h2>エピソード選択</h2>
-      <p class="screen-description">閲覧するエピソードを選択してください</p>
+      <h2 data-i18n="episodes.heading">エピソード選択</h2>
+      <p class="screen-description" data-i18n="episodes.description">閲覧するエピソードを選択してください</p>
       <div id="episode-list" class="episode-grid"></div>
-      <button id="btn-episodes-back" class="back-button">戻る</button>
+      <button id="btn-episodes-back" class="back-button" data-i18n="common.back">戻る</button>
     </div>
 
     <!-- キャラクター図鑑画面 -->
     <div id="characters-screen" class="screen">
-      <h2>キャラクター図鑑</h2>
+      <h2 data-i18n="characters.heading">キャラクター図鑑</h2>
       <div id="character-filters">
-        <button class="filter-btn active" data-filter="all">全員</button>
-        <button class="filter-btn" data-filter="classmate">同級生</button>
-        <button class="filter-btn" data-filter="special">特殊枠</button>
-        <button class="filter-btn" data-filter="other">その他</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">全員</button>
+        <button class="filter-btn" data-filter="classmate" data-i18n="filter.classmate">同級生</button>
+        <button class="filter-btn" data-filter="special" data-i18n="filter.special">特殊枠</button>
+        <button class="filter-btn" data-filter="other" data-i18n="filter.other">その他</button>
       </div>
       <div id="character-grid" class="character-grid"></div>
-      <button id="btn-characters-back" class="back-button">戻る</button>
+      <button id="btn-characters-back" class="back-button" data-i18n="common.back">戻る</button>
     </div>
 
     <!-- キャラクター詳細画面 -->
@@ -52,22 +57,22 @@
         <div class="detail-header">
           <div id="detail-portrait" class="detail-portrait"></div>
           <div class="detail-info">
-            <h2 id="detail-name">キャラクター名</h2>
+            <h2 id="detail-name" data-i18n="detail.name">キャラクター名</h2>
             <div id="detail-meta" class="detail-meta"></div>
           </div>
         </div>
         <div class="detail-body">
           <div class="detail-section">
-            <h3>説明</h3>
+            <h3 data-i18n="detail.description">説明</h3>
             <p id="detail-description"></p>
           </div>
           <div class="detail-section">
-            <h3>登場エピソード</h3>
+            <h3 data-i18n="detail.episodes">登場エピソード</h3>
             <div id="detail-episodes" class="detail-episodes"></div>
           </div>
         </div>
         <div class="detail-actions">
-          <button id="btn-detail-back" class="back-button">戻る</button>
+          <button id="btn-detail-back" class="back-button" data-i18n="common.back">戻る</button>
         </div>
       </div>
     </div>
@@ -134,40 +139,47 @@
 
     <!-- バックログ画面 -->
     <div id="log-screen" class="screen">
-      <h2>バックログ</h2>
+      <h2 data-i18n="log.heading">バックログ</h2>
       <div id="log-content"></div>
-      <button id="btn-log-back" class="back-button">戻る</button>
+      <button id="btn-log-back" class="back-button" data-i18n="common.back">戻る</button>
     </div>
 
     <!-- 設定画面 -->
     <div id="config-screen" class="screen">
-      <h2>設定</h2>
+      <h2 data-i18n="config.heading">設定</h2>
       <div class="config-item">
-        <label>BGM音量</label>
+        <label data-i18n="config.bgm">BGM音量</label>
         <input type="range" id="bgm-volume" min="0" max="100" value="80" />
       </div>
       <div class="config-item">
-        <label>SE音量</label>
+        <label data-i18n="config.se">SE音量</label>
         <input type="range" id="se-volume" min="0" max="100" value="80" />
       </div>
       <div class="config-item">
-        <label>テキスト速度</label>
+        <label data-i18n="config.textSpeed">テキスト速度</label>
         <input type="range" id="text-speed" min="1" max="10" value="5" />
       </div>
       <div class="config-item">
-        <label>AUTO速度</label>
+        <label data-i18n="config.autoSpeed">AUTO速度</label>
         <input type="range" id="auto-speed" min="1" max="10" value="5" />
       </div>
-      <button id="btn-config-back" class="back-button">戻る</button>
+      <div class="config-item">
+        <label data-i18n="config.language">言語 / Language</label>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="ja">日本語</button>
+          <button type="button" data-lang="en">English</button>
+        </div>
+      </div>
+      <button id="btn-config-back" class="back-button" data-i18n="common.back">戻る</button>
     </div>
 
     <!-- ゲームメニュー（オーバーレイ） -->
     <div id="game-menu-overlay" class="hidden">
       <div class="game-menu">
         <h3>MENU</h3>
-        <button id="btn-resume">ゲームに戻る</button>
-        <button id="btn-to-episodes">エピソード選択へ</button>
-        <button id="btn-to-title">タイトルへ</button>
+        <button id="btn-resume" data-i18n="menu.resume">ゲームに戻る</button>
+        <button id="btn-to-episodes" data-i18n="menu.toEpisodes">エピソード選択へ</button>
+        <button id="btn-to-title" data-i18n="menu.toTitle">タイトルへ</button>
       </div>
     </div>
   </div>

@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\akuma_neutral.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Character standing sprite, portrait 2:3. A small cute-but-eerie devil cat creature: round black body, glowing red eyes, small red-tinted horns, bat wings, one long thin tail ending in a heart-shaped tip. Same design as the reference but clean: NO arrows, NO extra lines, only one tail. Floating, centered, full body visible with margin. Sly neutral expression with a thin closed mouth. Background must be a perfectly flat solid pure green (#00FF00) chroma-key color with no shadows, gradients or floor.
+When done, print the saved file path.

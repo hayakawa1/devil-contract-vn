@@ -1,1405 +1,1003 @@
-; route: 友達の妹
+; route: 友達の妹（高橋美羽）
+; 第3話の一週間後から。美羽は、兄の友樹（他校生）に、まだ体のことを話せていない。
 *start
-[jump target="imouto_00"]
-
-; source: 00_ルート開始.txt
-*imouto_00
-; ■ 友達の妹ルート「子供じゃない」
-; テーマ：成長への焦り / 子供扱い / 兄の親友への恋心
+[jump target="imouto_01"]
 
 ; ================================================================================
-; 第1話「お兄ちゃんの友達」
+; 第1話「パーカーの理由」
 ; ================================================================================
-
-[bg storage="school_gate.webp" time="1000"]
+*imouto_01
+[chara_hide_all]
+[bg storage="park.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-[chara_hide_all]
+（日曜日。昼。近所の公園。）[l][er]
 
-（Day2地獄の朝。筋肉化。）[l][er]
-（校門の前で、誰かに呼び止められた。）[l][er]
+（友樹に、呼び出された。）[l][er]
+（中学からの親友。高校は別々になったけど、今でも、月に何回かは会う。）[l][er]
+
+#友樹
+悪いな、急に[l][er]
+
+#protagonist
+いいよ。どうした[l][er]
+
+#友樹
+……美羽のことなんだけど[l][er]
+
+（心臓が、一回、変な打ち方をした。）[l][er]
+
+#友樹
+あいつ、この一週間、俺と目を合わせないんだ[l][er]
+
+#友樹
+家の中でも、ずっと、俺のでかいパーカー着てる。フード被って[l][er]
+
+#友樹
+飯も、自分の部屋で食う。風呂も、俺が寝てから入る[l][er]
+
+#友樹
+母さんは"思春期でしょ"って言うけどさ。……思春期で、ドアノブ壊すか？[l][er]
+
+#protagonist
+……ドアノブ[l][er]
+
+#友樹
+握ったら、取れたんだって。根元から[l][er]
+
+#友樹
+お前、美羽と同じ学校だろ。何か、知らないか[l][er]
+
+#友樹
+……いじめられてるとか、そういうのじゃ、ないよな？[l][er]
+
+（美羽からのLINEを、思い出した。）[l][er]
+（"先輩、お兄ちゃんには、まだ言わないでください。おねがいします"。）[l][er]
+
+[glink target="imouto_01_a" text="「……美羽ちゃんに、直接聞いてやってくれ」"]
+[glink target="imouto_01_b" text="「……いや、知らない」"]
+[s]
+
+*imouto_01_a
+#protagonist
+……美羽ちゃんに、直接聞いてやってくれ[l][er]
+
+#protagonist
+俺から言うことじゃない。でも、いじめじゃない。それは、約束する[l][er]
+
+#友樹
+……知ってるんだな[l][er]
+
+#protagonist
+……ああ[l][er]
+
+#友樹
+……わかった[l][er]
+
+#友樹
+お前がそう言うなら、待つ。あいつが自分で言うまで[l][er]
+
+#友樹
+……でも、もし、あいつが泣くようなことだったら、お前にも、怒るからな[l][er]
+
+#protagonist
+……わかってる[l][er]
+
+[jump target="imouto_01_end"]
+
+*imouto_01_b
+[eval exp="f.imouto_lie = true"]
+
+#protagonist
+……いや、知らない[l][er]
+
+#友樹
+……そっか[l][er]
+
+#友樹
+悪い。変なこと聞いた。お前なら、何か知ってるかと思ったんだけど[l][er]
+
+（友樹は、笑った。）[l][er]
+（俺を、少しも、疑っていない顔だった。）[l][er]
+（——その顔が、一番、きつかった。）[l][er]
+
+[jump target="imouto_01_end"]
+
+*imouto_01_end
+[chara_hide_all]
+[bg storage="street_evening.webp" time="1000"]
+[playbgm storage="bgm_sadness.mp3"]
+
+（帰り道。高橋家の近く。）[l][er]
+
+[chara_show name="imouto" face="surprised" pos="center" time="1000"]
+
+（——角を曲がったところで、大きなパーカーと、ぶつかりかけた。）[l][er]
+
+#imouto
+わっ……せ、先輩[l][er]
+
+（フードの下から、美羽の顔が、のぞいた。）[l][er]
+（パーカーの袖が、二の腕で、ぱんぱんに張っている。）[l][er]
+（友樹のパーカーなのに。友樹より、もう、肩幅が広い。）[l][er]
+
+#imouto
+……お兄ちゃんと、会ってました？[l][er]
+
+#protagonist
+……ああ[l][er]
+
+[if exp="f.imouto_lie"]
+#protagonist
+何も、言ってない。"知らない"って言った[l][er]
+
+[chara_show name="imouto" face="sad" pos="center" time="500"]
+
+#imouto
+……ありがとうございます[l][er]
+
+#imouto
+……でも、先輩に、嘘つかせちゃった[l][er]
+
+#imouto
+お兄ちゃんの、一番の友達なのに[l][er]
+[else]
+#protagonist
+何も、言ってない。"美羽ちゃんに直接聞け"って言った[l][er]
+
+[chara_show name="imouto" face="sad" pos="center" time="500"]
+
+#imouto
+……そう、ですよね。先輩は、そう言いますよね[l][er]
+
+#imouto
+……わかってます。いつまでも、隠せないって[l][er]
+[endif]
+
+#imouto
+あと、先輩[l][er]
+
+#imouto
+"美羽ちゃん"、やめてもらえませんか[l][er]
+
+#protagonist
+……え[l][er]
+
+#imouto
+ちゃん付けされると、小学生のときに戻っちゃう気がするんです[l][er]
+
+#imouto
+……せっかく、こんな体になったのに[l][er]
+
+[jump target="imouto_02"]
+
+; ================================================================================
+; 第2話「潰れたクッキー」
+; ================================================================================
+*imouto_02
+[chara_hide_all]
+[bg storage="science_room.webp" time="1000"]
+[playbgm storage="bgm_daily.mp3"]
+
+（数日後。放課後の、家庭科室——が、空いていなかったので、理香に頼んで借りた理科室。）[l][er]
+
+[chara_show name="imouto" face="flustered" pos="center" time="1000"]
+
+#imouto
+……また、割れた[l][er]
+
+（美羽の手の中で、卵が、殻ごと、潰れていた。）[l][er]
+（これで、四個目だった。）[l][er]
+
+#imouto
+前は、片手で割れたんです。お兄ちゃんに、自慢してたくらい[l][er]
+
+#imouto
+クッキー、焼くの、好きだったから[l][er]
+
+#protagonist
+……だった？[l][er]
+
+#imouto
+……子供っぽいって、思ってたんです。ずっと[l][er]
+
+#imouto
+"美羽はお菓子作りが好きなんだよな"って、お兄ちゃんが、先輩に言うたびに[l][er]
+
+#imouto
+ああ、私、まだ"お菓子作ってる小さい子"なんだ、って[l][er]
+
+#imouto
+だから、この体になったら、やめようと思ってて[l][er]
+
+#imouto
+……なのに、気づいたら、また、材料、買ってた[l][er]
+
+（五個目の卵。）[l][er]
+（今度は、指先だけで、そっと、ボウルの縁に当てた。）[l][er]
+（ひびが入った。殻が、二つに割れた。）[l][er]
+
+[chara_show name="imouto" face="smile" pos="center" time="500"]
+
+#imouto
+……割れた！　先輩、割れました！[l][er]
+
+#protagonist
+ああ。見てた[l][er]
+
+（美羽は、子どもみたいに、跳ねた。）[l][er]
+（床が、少しだけ、鳴った。）[l][er]
 
 #imouto
 ……あ[l][er]
 
-#protagonist
-……ん？[l][er]
+[chara_show name="imouto" face="sad" pos="center" time="500"]
 
-（見覚えのある顔。）[l][er]
-
-（でも——体が、明らかに違う。）[l][er]
-
-[chara_show name="imouto" face="default" pos="center" time="1000"]
-
-（制服の袖が、パンパンに張っている。）[l][er]
-（腕も、太ももも、すべてが——）[l][er]
+#imouto
+……今の、子供っぽかったですね[l][er]
 
 #protagonist
-……お前、もしかして[l][er]
+……別に、いいだろ[l][er]
 
 #imouto
-覚えてる？[l][er]
-
-#protagonist
-……友樹の妹[l][er]
+よくないです。私、"妹"も"子供"も、置いていくって決めたんです[l][er]
 
 #imouto
-うん[l][er]
+……先輩の前では、特に[l][er]
 
-（彼女は、少しだけ笑った。）[l][er]
+（その日、焼き上がったクッキーは、半分くらい、形が崩れていた。）[l][er]
+（美羽は、崩れたほうを、全部、自分で食べた。）[l][er]
 
-#imouto
-久しぶり[l][er]
-
-#protagonist
-……何年ぶりだ[l][er]
-
-#imouto
-3年[l][er]
-
-（3年前。俺はよく友達の家に遊びに行っていた。）[l][er]
-（その時、彼女はまだ中学生だった。）[l][er]
-
-（でも今は——）[l][er]
-
-#protagonist
-……高校生に、なったんだな[l][er]
-
-#imouto
-うん[l][er]
-
-（彼女は、自分の腕を見下ろす。）[l][er]
-
-#imouto
-……変じゃない？[l][er]
-
-#protagonist
-……変、だな[l][er]
-
-#imouto
-だよね[l][er]
-
-（嘘をつかない。）[l][er]
-（その方が,彼女も楽だと思った。）[l][er]
-
-[chara_hide name="imouto" time="1000"]
+[jump target="imouto_03"]
 
 ; ================================================================================
-; 第2話「お兄ちゃんは知らない」
+; 第3話「兄」
 ; ================================================================================
-
-[bg storage="school_gate.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（放課後。校門前。）[l][er]
-
-（門を出たところで、彼女が待っていた。）[l][er]
-
-[chara_show name="imouto" face="default" pos="center" time="1000"]
-
-#imouto
-……あのね[l][er]
-
-#protagonist
-ん？[l][er]
-
-#imouto
-お兄ちゃんには、言わないで[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-この体のこと[l][er]
-
-#protagonist
-友樹、知らないのか？[l][er]
-
-#imouto
-うん[l][er]
-
-#protagonist
-なんで[l][er]
-
-#imouto
-……怒られるから[l][er]
-
-#protagonist
-怒る？[l][er]
-
-#imouto
-"子供のくせに"って[l][er]
-
-（彼女は、少し俯く。）[l][er]
-
-#imouto
-お兄ちゃん、そういうの厳しいから[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-あのね[l][er]
-
-#imouto
-あたし、もう子供じゃないのに[l][er]
-
-#imouto
-ずっと、"妹"扱いなんだよ[l][er]
-
-（その声が、少し震えてる。）[l][er]
-
-#protagonist
-……で、その体は[l][er]
-
-#imouto
-証明したかった[l][er]
-
-#protagonist
-何を[l][er]
-
-#imouto
-大人だって[l][er]
-
-#protagonist
-……筋肉で？[l][er]
-
-#imouto
-変？[l][er]
-
-#protagonist
-……変だ[l][er]
-
-#imouto
-だよね[l][er]
-
-（彼女は笑う。）[l][er]
-（でも、目が笑ってない。）[l][er]
-
-[chara_hide name="imouto" time="1000"]
-
-; ================================================================================
-; 第3話「3年前の約束」
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（放課後、屋上。）[l][er]
-
-（彼女は、フェンスに寄りかかっていた。）[l][er]
-
-[chara_show name="imouto" face="default" pos="center" time="1000"]
-
-#imouto
-ねえ、覚えてる？[l][er]
-
-#protagonist
-何を[l][er]
-
-#imouto
-3年前、お兄ちゃんの家で[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-あたしが、お菓子作ったの[l][er]
-
-#protagonist
-……ああ[l][er]
-
-（覚えてる。）[l][er]
-
-（クッキーだった。少し焦げてた。）[l][er]
-
-#protagonist
-美味かったぞ[l][er]
-
-#imouto
-嘘つき[l][er]
-
-#protagonist
-……焦げてた[l][er]
-
-#imouto
-だよね[l][er]
-
-（彼女は笑う。）[l][er]
-
-#imouto
-でもさ、あの時[l][er]
-
-#imouto
-——褒めてくれたじゃん[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-"上手になったな"って[l][er]
-
-#imouto
-"次は一緒に作ろう"って[l][er]
-
-#protagonist
-……言ったな[l][er]
-
-#imouto
-うん[l][er]
-
-（沈黙。）[l][er]
-
-（風が、髪を揺らす。）[l][er]
-
-#imouto
-……あれから、ずっと練習してた[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-次に会った時、ちゃんと美味しいの作りたくて[l][er]
-
-#imouto
-でも——[l][er]
-
-（彼女は、自分の腕を見た。）[l][er]
-
-#imouto
-もう、作れないかも[l][er]
-
-#protagonist
-なんで[l][er]
-
-#imouto
-この手、力が入りすぎて[l][er]
-
-#imouto
-卵、割ったら粉々になった[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-料理の本、ページめくったら破れた[l][er]
-
-#imouto
-包丁、握ったら柄が割れた[l][er]
-
-（彼女の声が、少しずつ小さくなる。）[l][er]
-
-#imouto
-……もう、子供の頃みたいに戻れないのかな[l][er]
-
-#protagonist
-……子供の頃？[l][er]
-
-#imouto
-大人になりたかったのに[l][er]
-
-#imouto
-なんか、違う[l][er]
-
-（彼女は、泣いてない。）[l][er]
-（でも、泣きそうだった。）[l][er]
-
-[chara_hide name="imouto" time="1000"]
-
-; ================================================================================
-*imouto_00_scene_4
-; シーン4：夕焼け／契約の後悔
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_sadness.mp3"]
-
-[chara_show name="imouto" face="default" pos="center" time="1000"]
-
-#protagonist
-……なあ[l][er]
-
-#imouto
-ん[l][er]
-
-#protagonist
-どうして、筋肉なんだ[l][er]
-
-#imouto
-……[l][er]
-
-（少し間。）[l][er]
-
-#imouto
-悪魔がね[l][er]
-
-#protagonist
-！[l][er]
-
-#imouto
-"大人になれる"って言ったの[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-飲んだら、お兄ちゃんの友達じゃなくて[l][er]
-
-#imouto
-"一人の女の子"として見てもらえるって[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-でも、嘘だった[l][er]
-
-#protagonist
-嘘？[l][er]
-
-#imouto
-だって、こんなの——[l][er]
-
-（彼女は、自分の体を抱きしめる。）[l][er]
-
-#imouto
-誰も、"女の子"だと思わないよ[l][er]
-
-#imouto
-ただの……"バケモノ"だ[l][er]
-
-#protagonist
-バケモノじゃない[l][er]
-
-#imouto
-優しい嘘、いらない[l][er]
-
-#protagonist
-嘘じゃない[l][er]
-
-#imouto
-……[l][er]
-
-（彼女は、俺を見た。）[l][er]
-
-#imouto
-……本当に？[l][er]
-
-#protagonist
-お前は、お前だ[l][er]
-
-#imouto
-……[l][er]
-
-（夕日が、彼女の横顔を赤く染める。）[l][er]
-
-#imouto
-……ありがと[l][er]
-
-（小さな声。）[l][er]
-
-（3年前の、あの時と同じ声。）[l][er]
-
-
-; ================================================================================
-[glink target="imouto_00_choice_a" text="お菓子、一緒に作ろう" x="100" y="200"]
-[glink target="imouto_00_choice_b" text="悪魔を探そう" x="100" y="300"]
-[glink target="imouto_00_choice_c" text="友樹に相談しよう" x="100" y="400"]
-[s]
-
-*imouto_00_choice_a
-[chara_hide name="imouto" time="1000"]
-[jump target="imouto_00_scene_6"]
-
-*imouto_00_choice_b
-[chara_hide name="imouto" time="1000"]
-[jump target="imouto_00_scene_6"]
-
-*imouto_00_choice_c
-[chara_hide name="imouto" time="1000"]
-[jump target="imouto_00_scene_6"]
-
-; ================================================================================
-*imouto_00_scene_6
-; シーン6：約束の形
-; ================================================================================
-
-[bg storage="rooftop_night.webp" time="1000"]
-[playbgm storage="bgm_isolation.mp3"]
-
-（夕日が沈み、夜が来る。）[l][er]
-
-（彼女は、立ち上がった。）[l][er]
-
-[chara_show name="imouto" face="default" pos="center" time="1000"]
-
-#imouto
-……帰ろっか[l][er]
-
-#protagonist
-ああ[l][er]
-
-#imouto
-ねえ[l][er]
-
-#protagonist
-ん[l][er]
-
-#imouto
-これから、たまに会ってくれる？[l][er]
-
-#protagonist
-……いいぞ[l][er]
-
-#imouto
-本当？[l][er]
-
-#protagonist
-約束だ[l][er]
-
-#imouto
-……約束[l][er]
-
-（彼女は、少しだけ笑った。）[l][er]
-
-（3年前より、少しだけ大人の顔で。）[l][er]
-
-[chara_hide name="imouto" time="1000"]
-
-; ================================================================================
-*imouto_00_scene_7
-; シーン7：影の中の囁き
-; ================================================================================
-
-[bg storage="street_evening.webp" time="1000"]
-[playbgm storage="bgm_devil.mp3"]
-
-（彼女と別れた後。）[l][er]
-
-（俺は一人、夕闇の道を歩いていた。）[l][er]
-
-#？？？
-優しいね[l][er]
-
-#protagonist
-！[l][er]
-
-[chara_show name="akuma" face="default" pos="left" time="1000"]
-
-#akuma
-でも、優しさって——[l][er]
-
-#akuma
-時々、残酷だよ[l][er]
-
-#protagonist
-……何が言いたい[l][er]
-
-#akuma
-彼女はね[l][er]
-
-#akuma
-君に"恋"してるんだよ[l][er]
-
-#protagonist
-……[l][er]
-
-#akuma
-子供扱いされたくない、じゃない[l][er]
-
-#akuma
-君に"女"として見てほしいんだ[l][er]
-
-#akuma
-でも、君は気づいてない[l][er]
-
-#protagonist
-……[l][er]
-
-[chara_hide name="akuma" time="1000"]
-
-[jump target="imouto_01"]
-
-; ================================================================================
-; ■ 友達の妹ルート - 第2話「兄との対峙」
-; テーマ：秘密 / 守りたいもの
-; ================================================================================
-
-*imouto_01
-[bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_tension.mp3"]
-
-（翌日。教室。）[l][er]
-
-（友樹が、俺のところに来た。）[l][er]
-
-#友樹
-おい[l][er]
-
-#protagonist
-なんだ[l][er]
-
-#友樹
-最近、うちの妹と会ってるだろ[l][er]
-
-#protagonist
-……[l][er]
-
-（バレてる。）[l][er]
-
-#友樹
-目撃情報あるんだよ。校門前で一緒にいるとこ[l][er]
-
-#protagonist
-……[l][er]
-
-#友樹
-説明しろ[l][er]
-
-（友樹の目が、鋭い。）[l][er]
-
-; ================================================================================
-*imouto_01_scene_2
-; シーン2：選択
-; ================================================================================
-
-[bg storage="classroom.webp" time="1000"]
-
-[glink target="imouto_01_choice_a" text="正直に話す" x="100" y="200"]
-[glink target="imouto_01_choice_b" text="誤魔化す" x="100" y="300"]
-[s]
-
-*imouto_01_choice_a
-#protagonist
-……会ってる[l][er]
-
-#友樹
-なんで[l][er]
-
-#protagonist
-彼女に——相談されたから[l][er]
-
-#友樹
-相談？[l][er]
-
-#protagonist
-体のこと[l][er]
-
-#友樹
-……体？[l][er]
-
-#protagonist
-お前——気づいてないのか？[l][er]
-
-（友樹の顔色が、変わった。）[l][er]
-
-#友樹
-……何のことだ[l][er]
-
-#protagonist
-……見てないのか。妹の体[l][er]
-
-#友樹
-……[l][er]
-
-（沈黙。）[l][er]
-
-（友樹は、何か気づいているようだった。）[l][er]
-
-（でも、認めたくないらしい。）[l][er]
-
-[jump target="imouto_01_scene_3"]
-
-*imouto_01_choice_b
-#protagonist
-……たまたまだ[l][er]
-
-#友樹
-たまたま？[l][er]
-
-#protagonist
-ああ。すれ違っただけ[l][er]
-
-#友樹
-……[l][er]
-
-（友樹は、じっと俺を見ている。）[l][er]
-
-#友樹
-嘘つくなよ[l][er]
-
-#protagonist
-嘘じゃない[l][er]
-
-#友樹
-……お前がそう言うなら、いい[l][er]
-
-#友樹
-でも——あいつに手を出したら、許さない[l][er]
-
-#protagonist
-……[l][er]
-
-（友樹は去っていった。）[l][er]
-
-[jump target="imouto_01_scene_3"]
-
-; ================================================================================
-*imouto_01_scene_3
-; シーン3：彼女との再会
-; ================================================================================
-
-[bg storage="school_gate.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（放課後。校門前。）[l][er]
-
-（彼女が、待っていた。）[l][er]
-
-[chara_show name="imouto" face="default" pos="center" time="1000"]
-
-#imouto
-……遅い[l][er]
-
-#protagonist
-悪い[l][er]
-
-#imouto
-……何かあった？[l][er]
-
-#protagonist
-友樹に、会ってることバレた[l][er]
-
-#imouto
-……！[l][er]
-
-（彼女の顔が、青ざめる。）[l][er]
-
-#imouto
-お兄ちゃん、怒ってた？[l][er]
-
-#protagonist
-まあ……[l][er]
-
-#imouto
-……やっぱり[l][er]
-
-（彼女は、俯いた。）[l][er]
-
-#imouto
-お兄ちゃん、あたしのこと——[l][er]
-
-#imouto
-いつまでも子供だと思ってるから[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-勝手に男の人と会ってるなんて知ったら——[l][er]
-
-#imouto
-きっと怒る[l][er]
-
-#protagonist
-……大丈夫だ[l][er]
-
-#imouto
-……[l][er]
-
-[chara_hide name="imouto" time="1000"]
-
-; ================================================================================
-; ■ 友達の妹ルート - 第3話「一緒にお菓子を」
-; テーマ：約束を果たす / 距離が縮まる
-; ================================================================================
-
-*imouto_02
-[bg storage="friend_house.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-（日曜日。）[l][er]
-
-（俺は、彼女の家に来ていた。）[l][er]
-
-（友樹は、部活で不在。）[l][er]
-
-[chara_show name="imouto" face="smile" pos="center" time="1000"]
-
-#imouto
-……本当に、一緒に作ってくれるの？[l][er]
-
-#protagonist
-約束しただろ[l][er]
-
-#imouto
-……3年前の[l][er]
-
-#protagonist
-ああ[l][er]
-
-（彼女の目が、キラキラしている。）[l][er]
-
-#imouto
-じゃあ——クッキー、作ろう[l][er]
-
-#protagonist
-いいぞ[l][er]
-
-; ================================================================================
-*imouto_02_scene_2
-; シーン2：お菓子作り
-; ================================================================================
-
-[bg storage="friend_house.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（材料を混ぜる。）[l][er]
-
-（彼女は、慎重に作業している。）[l][er]
-
-#imouto
-……力、入れすぎないように……[l][er]
-
-（ボウルを持つ手が、震えている。）[l][er]
-
-#protagonist
-大丈夫か？[l][er]
-
-#imouto
-うん……[l][er]
-
-（慎重に、慎重に。）[l][er]
-
-（でも——）[l][er]
-
-#imouto
-あっ[l][er]
-
-（ボウルが、少し歪んだ。）[l][er]
-
-#imouto
-……また、力入れすぎた[l][er]
-
-#protagonist
-……[l][er]
-
-（彼女の目に、涙が浮かぶ。）[l][er]
-
-#imouto
-もう……[l][er]
-
-#protagonist
-待て[l][er]
-
-（俺は、彼女の後ろに立った。）[l][er]
-
-#protagonist
-一緒にやろう[l][er]
-
-#imouto
-……え？[l][er]
-
-（俺は、彼女の手に自分の手を重ねた。）[l][er]
-
-#protagonist
-俺が力加減する。お前は動きを教えてくれ[l][er]
-
-#imouto
-……[l][er]
-
-（彼女の顔が、赤くなる。）[l][er]
-
-#imouto
-……うん[l][er]
-
-[chara_hide name="imouto" time="1000"]
-
-; ================================================================================
-*imouto_02_scene_3
-; シーン3：完成
-; ================================================================================
-
-[bg storage="friend_house.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-（オーブンから、いい匂い。）[l][er]
-
-[chara_show name="imouto" face="smile" pos="center" time="1000"]
-
-#imouto
-……できた[l][er]
-
-（焼きあがったクッキー。）[l][er]
-
-（ちょっと形は不揃いだけど——）[l][er]
-
-#imouto
-……焦げてない[l][er]
-
-#protagonist
-ああ[l][er]
-
-#imouto
-ちゃんと、できた[l][er]
-
-（彼女の目に、涙が浮かぶ。）[l][er]
-
-#imouto
-3年前は、焦がしちゃったのに……[l][er]
-
-#protagonist
-……食べてみるか[l][er]
-
-#imouto
-うん[l][er]
-
-（俺は、クッキーを一つ取った。）[l][er]
-
-（口に入れる。）[l][er]
-
-#protagonist
-……美味い[l][er]
-
-#imouto
-……本当？[l][er]
-
-#protagonist
-ああ[l][er]
-
-（彼女の顔が、ぱっと明るくなった。）[l][er]
-
-#imouto
-……よかった[l][er]
-
-#imouto
-やっと——約束、果たせた[l][er]
-
-#protagonist
-……[l][er]
-
-（その笑顔が、眩しかった。）[l][er]
-
-[chara_hide name="imouto" time="1000"]
-
-; ================================================================================
-; ■ 友達の妹ルート - 第4話「兄の本音」
-; テーマ：家族の絆 / 許可
-; ================================================================================
-
 *imouto_03
-[bg storage="school_gate.webp" time="1000"]
+[chara_hide_all]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
-（数日後。）[l][er]
+（その週の土曜日。高橋家。）[l][er]
 
-（友樹が、俺を呼び出した。）[l][er]
-
-#友樹
-……話がある[l][er]
-
-#protagonist
-何だ[l][er]
+（"クッキー、余ったから、取りに来てください"——美羽に呼ばれて、玄関に入った。）[l][er]
+（台所から、声が聞こえた。）[l][er]
 
 #友樹
-妹のこと[l][er]
+——美羽、お前……[l][er]
 
-#protagonist
-……[l][er]
-
-#友樹
-お前、あいつのこと——どう思ってる[l][er]
-
-#protagonist
-……[l][er]
-
-（真剣な目。）[l][er]
-
-（ごまかせない。）[l][er]
-
-; ================================================================================
-*imouto_03_scene_2
-; シーン2：友樹の本音
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_sadness.mp3"]
-
-（屋上に移動した。）[l][er]
-
-#友樹
-……俺、気づいてたんだ[l][er]
-
-#protagonist
-何に[l][er]
-
-#友樹
-あいつの体のこと[l][er]
-
-#protagonist
-……[l][er]
-
-#友樹
-最初は、信じたくなかった[l][er]
-
-#友樹
-妹が——あんな体になるなんて[l][er]
-
-#protagonist
-……[l][er]
-
-#友樹
-でも、お前と会うようになってから——[l][er]
-
-#友樹
-あいつ、笑うようになった[l][er]
-
-#protagonist
-……[l][er]
-
-#友樹
-前は、部屋に閉じこもってたんだ[l][er]
-
-#友樹
-ご飯も、あんまり食べなくて[l][er]
-
-#友樹
-俺が話しかけても、素っ気なくて[l][er]
-
-#protagonist
-……[l][er]
-
-#友樹
-でも、最近は違う[l][er]
-
-#友樹
-明るくなった[l][er]
-
-（友樹の目が、少し潤む。）[l][er]
-
-#友樹
-……お前のおかげだ[l][er]
-
-#protagonist
-俺は——[l][er]
-
-#友樹
-礼を言う[l][er]
-
-#protagonist
-……[l][er]
-
-; ================================================================================
-*imouto_03_scene_3
-; シーン3：許可
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-#友樹
-……なあ[l][er]
-
-#protagonist
-ん？[l][er]
-
-#友樹
-お前、あいつのこと——好きなのか？[l][er]
-
-#protagonist
-……[l][er]
-
-（俺は——）[l][er]
-
-#protagonist
-……わからない[l][er]
-
-#友樹
-わからない？[l][er]
-
-#protagonist
-大切だとは思う[l][er]
-
-#protagonist
-守りたいとも思う[l][er]
-
-#protagonist
-でも、それが恋なのか——[l][er]
-
-#友樹
-……[l][er]
-
-（友樹は、少し笑った。）[l][er]
-
-#友樹
-お前らしいな[l][er]
-
-#protagonist
-……[l][er]
-
-#友樹
-いいよ[l][er]
-
-#protagonist
-え？[l][er]
-
-#友樹
-お前なら——妹を任せられる[l][er]
-
-#protagonist
-……[l][er]
-
-#友樹
-でも、泣かせたら許さないからな[l][er]
-
-#protagonist
-……ああ[l][er]
-
-; ================================================================================
-; ■ 友達の妹ルート - 第5話「告白」
-; テーマ：成長 / 恋の答え
-; ================================================================================
-
-*imouto_04
-[bg storage="park_night.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-（夜の公園。）[l][er]
-
-（彼女に、呼び出された。）[l][er]
-
-[chara_show name="imouto" face="blush" pos="center" time="1000"]
-
-#imouto
-……来てくれた[l][er]
-
-#protagonist
-呼んだのお前だろ[l][er]
-
-#imouto
-うん[l][er]
-
-（彼女は、俺の前に立った。）[l][er]
-
-（いつもより、緊張している。）[l][er]
-
-#imouto
-あのね[l][er]
-
-#protagonist
-ん？[l][er]
-
-#imouto
-3年前から——ずっと、好きだった[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-お兄ちゃんの友達としてじゃなくて[l][er]
-
-#imouto
-一人の男の人として[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-この体になって——[l][er]
-
-#imouto
-もう、女の子として見てもらえないと思った[l][er]
-
-#imouto
-でも——[l][er]
-
-（彼女の目が、潤む。）[l][er]
-
-#imouto
-あなたは、変わらなかった[l][er]
-
-#imouto
-いつも通り、接してくれた[l][er]
-
-#imouto
-約束も、守ってくれた[l][er]
-
-#protagonist
-……[l][er]
-
-#imouto
-だから——[l][er]
-
-#imouto
-好き[l][er]
-
-#imouto
-返事、聞かせて[l][er]
-
-[chara_hide name="imouto" time="1000"]
-
-; ================================================================================
-*imouto_04_scene_2
-; シーン2：返事
-; ================================================================================
-
-[bg storage="park_night.webp" time="1000"]
-
-[glink target="imouto_ending_good" text="俺も好きだ" x="100" y="200"]
-[glink target="imouto_ending_normal" text="妹みたいに思ってる" x="100" y="300"]
-[s]
-
-; ================================================================================
-; ■ 友達の妹ルート - グッドエンディング「子供じゃない」
-; ================================================================================
-
-*imouto_ending_good
-#protagonist
-俺も——好きだ[l][er]
+（台所の入り口で、友樹が、固まっていた。）[l][er]
 
 [chara_show name="imouto" face="surprised" pos="center" time="1000"]
+
+（美羽が、パーカーを脱いで、オーブンの前に立っていた。）[l][er]
+（暑かったのだろう。半袖のTシャツ一枚で。）[l][er]
+（その腕を、肩を、背中を——友樹が、見ていた。）[l][er]
+
+#imouto
+……お、お兄ちゃん。今日、部活じゃ……[l][er]
+
+#友樹
+……休みになった。それより[l][er]
+
+#友樹
+何だよ、それ[l][er]
+
+#imouto
+……[l][er]
+
+#友樹
+病気か？　病院、行ったのか？　なあ[l][er]
+
+（友樹が、振り返った。俺に、気づいた。）[l][er]
+
+[if exp="f.imouto_lie"]
+#友樹
+……お前、"知らない"って、言ったよな[l][er]
+
+#protagonist
+……[l][er]
+
+#友樹
+知ってたんだな。全部[l][er]
+
+#友樹
+……俺が、どんだけ心配してたか、知ってて、"知らない"って言ったんだな[l][er]
+[else]
+#友樹
+……お前が、"直接聞け"って言ったの、これか[l][er]
+
+#友樹
+……なんで、こんなことになってんだよ[l][er]
+[endif]
+
+#protagonist
+……俺のせいだ[l][er]
+
+#友樹
+……は？[l][er]
+
+#protagonist
+説明は、うまくできない。でも、俺が原因だ。美羽は、悪くない[l][er]
+
+（友樹の拳が、握られた。）[l][er]
+（殴られる、と思った。）[l][er]
+
+#imouto
+——やめて！[l][er]
+
+（美羽が、俺と友樹の間に、入った。）[l][er]
+（友樹の拳は、美羽の肩に当たって、止まった。）[l][er]
+（当たっただけで、止まった。美羽は、少しも、揺れなかった。）[l][er]
+
+#友樹
+……っ[l][er]
+
+#imouto
+先輩のせいじゃない。私が、自分で飲んだの[l][er]
+
+#imouto
+"妹"でいるのが、嫌だったから[l][er]
+
+#友樹
+……妹でいるのが、嫌？[l][er]
+
+#imouto
+お兄ちゃんは、私が何歳になっても、"小さい美羽"としか見ない[l][er]
+
+#imouto
+先輩も、お兄ちゃんの"妹"としか見ない[l][er]
+
+#imouto
+……だから、別人になりたかったの[l][er]
+
+#友樹
+……[l][er]
+
+#友樹
+……戻れ[l][er]
 
 #imouto
 ……え[l][er]
 
-#protagonist
-最初は、友樹の妹としか思ってなかった[l][er]
+#友樹
+戻れよ。前の美羽に。……戻れるんだろ、なあ[l][er]
 
-#protagonist
-でも——[l][er]
+#imouto
+……戻れないよ[l][er]
+
+#友樹
+……[l][er]
+
+（友樹の顔が、くしゃっと、歪んだ。）[l][er]
+（怒っている顔じゃなかった。）[l][er]
+（小さい頃、美羽が転んで泣いたときと、同じ顔だった。）[l][er]
+
+[chara_show name="imouto" face="crying" pos="center" time="500"]
+
+#imouto
+……お兄ちゃんの、ばか[l][er]
+
+（美羽は、パーカーも持たずに、玄関を飛び出していった。）[l][er]
+
+[jump target="imouto_04"]
+
+; ================================================================================
+; 第4話「二本目」
+; ================================================================================
+*imouto_04
+[chara_hide_all]
+[bg storage="park_night.webp" time="1000"]
+[playbgm storage="bgm_isolation.mp3"]
+
+（日が沈んでから、見つけた。）[l][er]
+
+（日曜日に、友樹と話した公園。）[l][er]
+（ジャングルジムの、一番上に、美羽が座っていた。）[l][er]
+
+[chara_show name="imouto" face="crying" pos="right" time="1000"]
+
+#imouto
+……先輩[l][er]
+
+#imouto
+ここ、小さいとき、一番上まで登れなくて、いつも、お兄ちゃんに抱っこしてもらってたんです[l][er]
+
+#imouto
+今は、一歩で、登れちゃった[l][er]
+
+#imouto
+……ジャングルジム、ちょっと、曲がっちゃいました[l][er]
+
+[chara_show name="akuma" face="default" pos="left" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+#akuma
+小さかった頃の場所って、大きくなってから行くと、狭いよね[l][er]
+
+#imouto
+……あ[l][er]
+
+#akuma
+ねえ。お兄ちゃんに、"戻れ"って言われて、どうだった？[l][er]
+
+#akuma
+悲しかった？　それとも——"やっぱり子供扱いだ"って、悔しかった？[l][er]
+
+#imouto
+……両方[l][er]
+
+#akuma
+だよね。だから、これ[l][er]
+
+（悪魔の前足に、小さな瓶。）[l][er]
+（一本目と同じ形。中身の色だけが、少し、暗い。）[l][er]
+
+#akuma
+二本目。飲めば、もう泣かない。甘えない。お兄ちゃんに何を言われても、平気[l][er]
+
+#akuma
+誰の妹でもない、ちゃんとした大人の女の人になれる[l][er]
+
+#akuma
+もう、誰にも、"子供"なんて言わせないよ[l][er]
 
 #imouto
 ……[l][er]
 
+（美羽の目が、瓶を見ていた。）[l][er]
+（涙で濡れた目で。）[l][er]
+
+#imouto
+……泣かなくなったら、先輩も、私のこと、大人だって思ってくれますか[l][er]
+
+#akuma
+思うんじゃない？　泣かない子を、子供扱いする人はいないよ[l][er]
+
+（悪魔は、瓶を、ジャングルジムの棒の上に、そっと置いた。）[l][er]
+
+#akuma
+飲むかどうかは、君次第[l][er]
+
+（美羽の手が、動いた。）[l][er]
+
+[glink target="imouto_04_refuse" text="「泣かないのは、大人じゃない。……降りてこい、美羽」"]
+[glink target="imouto_04_accept" text="「……美羽ちゃんが、決めていい」"]
+[s]
+
+*imouto_04_refuse
 #protagonist
-一緒にいるうちに、変わった[l][er]
+泣かないのは、大人じゃない[l][er]
+
+[chara_show name="imouto" face="surprised" pos="right" time="500"]
 
 #protagonist
-お前のことを——女の子として見るようになった[l][er]
+今日、お前、俺と友樹の間に入っただろ[l][er]
+
+#protagonist
+殴られるの、わかってて。……あれは、子供にはできない[l][er]
+
+#protagonist
+泣いたって、それは変わらない。泣きながら、間に入ったんだ。お前は[l][er]
+
+#protagonist
+……降りてこい、美羽[l][er]
 
 #imouto
 ……[l][er]
 
-#protagonist
-子供じゃない[l][er]
-
-#protagonist
-お前は——ちゃんと、大人の女性だ[l][er]
-
-（彼女の目から、涙がこぼれた。）[l][er]
-
 #imouto
-……嬉しい[l][er]
-
-#imouto
-ずっと——そう言ってほしかった[l][er]
-
-（俺は、彼女を抱きしめた。）[l][er]
-
-#imouto
-……ありがと[l][er]
+……今、"ちゃん"って、言わなかった[l][er]
 
 #protagonist
-俺の方こそ[l][er]
+言わないって、約束しただろ[l][er]
 
-[chara_hide name="imouto" time="1000"]
-
-; ================================================================================
-*imouto_ending_good_epilogue
-; エピローグ
-; ================================================================================
-
-[bg storage="friend_house.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-（数ヶ月後。）[l][er]
-
-（俺は、彼女の家にいる。）[l][er]
-
-（友樹も、一緒だ。）[l][er]
-
-[chara_show name="imouto" face="smile" pos="center" time="1000"]
+[chara_show name="imouto" face="crying" pos="right" time="500"]
 
 #imouto
-はい、クッキー！[l][er]
+……っ[l][er]
 
-#友樹
-……また作ったのか[l][er]
-
-#imouto
-うん！今回は自信作！[l][er]
-
-（友樹が、クッキーを一つ取る。）[l][er]
-
-#友樹
-……美味いな[l][er]
+（美羽は、瓶を、棒の上から、指で、はじき落とした。）[l][er]
+（瓶は、砂場に落ちて、音もなく、埋まった。）[l][er]
 
 #imouto
-でしょ？[l][er]
-
-（彼女は、俺を見た。）[l][er]
+いらない[l][er]
 
 #imouto
-ねえ、あなたも[l][er]
+泣き虫のままで、いい。泣きながら、大人になる[l][er]
+
+[chara_show name="akuma" face="smile" pos="left" time="500"]
+
+#akuma
+……ふうん。返品か[l][er]
+
+#akuma
+いいよ。ゲームは、まだ続いてるしね[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+（影は、消えた。）[l][er]
+
+（美羽は、ジャングルジムから、跳んだ。）[l][er]
+（響に教わった受け身で、音もなく、着地した。）[l][er]
+
+#imouto
+……先輩。お兄ちゃんのとこ、一緒に、帰ってくれますか[l][er]
 
 #protagonist
 ああ[l][er]
 
-（俺も、クッキーを食べる。）[l][er]
+[eval exp="f.imouto_refused = true"]
+[jump target="imouto_05"]
 
+*imouto_04_accept
 #protagonist
-……美味い[l][er]
+……美羽ちゃんが、決めていい[l][er]
+
+（言った瞬間に、間違えた、とわかった。）[l][er]
+（"ちゃん"が、口から、こぼれていた。）[l][er]
+
+[chara_show name="imouto" face="sad" pos="right" time="500"]
 
 #imouto
-えへへ[l][er]
-
-（彼女の笑顔。）[l][er]
-
-（3年前より、ずっと大人になった笑顔。）[l][er]
-
-#友樹
-……お前ら、いつまでイチャイチャしてんだ[l][er]
+……あ[l][er]
 
 #imouto
-イチャイチャしてないもん！[l][er]
+……また、"ちゃん"だ[l][er]
 
-#友樹
-してるだろ[l][er]
+#imouto
+……やっぱり、先輩にとっても、私は、ずっと"美羽ちゃん"なんですね[l][er]
+
+（違う、と言う前に。）[l][er]
+（美羽は、瓶を取っていた。）[l][er]
 
 #protagonist
-……[l][er]
+——待て！[l][er]
 
-（友樹は、呆れたように笑っている。）[l][er]
+（遅かった。）[l][er]
 
-（でも——嬉しそうだ。）[l][er]
-
-[chara_hide name="imouto" time="1000"]
-
-[bg storage="black.webp" time="1000"]
-
-（——友達の妹。本名、高橋美羽。）[l][er]
-
-（子供扱いされるのが嫌だった彼女は——）[l][er]
-
-（ちゃんと、大人になった。）[l][er]
-
-（俺の、大切な人に。）[l][er]
-
-（END - 「子供じゃない」）[l][er]
-
-[s]
+[jump target="imouto_ending_bad"]
 
 ; ================================================================================
-; ■ 友達の妹ルート - ノーマルエンディング「もう一つの家族」
+; 第5話「兄と妹のクッキー」
 ; ================================================================================
+*imouto_05
+[chara_hide_all]
+[bg storage="friend_house.webp" time="1000"]
+[playbgm storage="bgm_sadness.mp3"]
 
-*imouto_ending_normal
-#protagonist
-……ごめん[l][er]
+（高橋家。台所。）[l][er]
+
+（友樹は、オーブンの前の床に、座り込んでいた。）[l][er]
+（焦げたクッキーの匂いが、まだ、残っていた。）[l][er]
 
 [chara_show name="imouto" face="sad" pos="center" time="1000"]
 
 #imouto
-……[l][er]
+……お兄ちゃん[l][er]
 
-#protagonist
-お前のことは大事だ。でも——[l][er]
+#友樹
+……美羽[l][er]
 
-#protagonist
-妹みたいに思ってる[l][er]
+#友樹
+……ごめん。"戻れ"とか、言って[l][er]
+
+#友樹
+俺、怖かったんだ。お前が、知らない人になったみたいで[l][er]
+
+#友樹
+……小さい美羽が、いなくなるのが[l][er]
 
 #imouto
+……いなくならないよ[l][er]
+
+#imouto
+妹は、辞めない。お兄ちゃんの妹は、ずっと、私だけだもん[l][er]
+
+#imouto
+でも——子供は、辞める[l][er]
+
+#imouto
+もう、ジャングルジムのてっぺんまで、抱っこしてもらわなくていいから[l][er]
+
+#友樹
+……[l][er]
+
+#友樹
 ……そっか[l][er]
 
-（彼女は、俯いた。）[l][er]
-
-（でも——顔を上げた時、笑っていた。）[l][er]
-
-#imouto
-いいよ[l][er]
-
-#protagonist
-……[l][er]
+#友樹
+……でかくなったなあ、お前[l][er]
 
 #imouto
-妹でも、いい[l][er]
+……うん[l][er]
+
+#友樹
+……物理的に[l][er]
 
 #imouto
-だって——家族みたいなものでしょ[l][er]
+……それ言う？[l][er]
 
-#protagonist
-……[l][er]
+（友樹は、泣きながら、笑った。）[l][er]
+（美羽も、泣きながら、笑った。）[l][er]
 
-#imouto
-お兄ちゃんの親友で、あたしのお兄ちゃんみたいな人[l][er]
-
-#imouto
-それって——家族じゃん[l][er]
-
-#protagonist
-……そうだな[l][er]
+[chara_show name="imouto" face="smile" pos="center" time="500"]
 
 #imouto
-じゃあ、いいよ[l][er]
+ねえ、クッキー、もう一回焼こう。焦げちゃったから[l][er]
 
 #imouto
-これからも、よろしくね——お兄ちゃん[l][er]
+お兄ちゃん、卵割って。……そっと。指先だけで[l][er]
+
+#友樹
+なんで俺に指導してんだよ[l][er]
+
+#imouto
+私、今、卵割るの、世界一、上手いから[l][er]
+
+[if exp="f.imouto_lie"]
+（帰り際、友樹が、玄関で俺を呼び止めた。）[l][er]
+
+#友樹
+……"知らない"って言ったこと、まだ、怒ってるからな[l][er]
 
 #protagonist
 ……ああ[l][er]
 
-[chara_hide name="imouto" time="1000"]
+#友樹
+……でも、あいつを、公園から連れて帰ってきてくれたのは、お前だ[l][er]
+
+#友樹
+今度、焼肉おごれ。それで、チャラ[l][er]
+[else]
+（帰り際、友樹が、玄関で俺を呼び止めた。）[l][er]
+
+#友樹
+……"直接聞け"って言ってくれて、助かった[l][er]
+
+#友樹
+お前から聞いてたら、たぶん、お前を殴ってた。……殴る前に、美羽に止められただろうけど[l][er]
+[endif]
+
+[jump target="imouto_06"]
 
 ; ================================================================================
-*imouto_ending_normal_epilogue
-; エピローグ
+; 告白前夜：悪魔の味見
 ; ================================================================================
+*imouto_06
+[chara_hide_all]
+[bg storage="protagonist_room_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
 
+（その夜。自分の部屋。）[l][er]
+
+[chara_show name="akuma" face="default" pos="center" time="1000"]
+
+#akuma
+やあ。今の君、どんな味？[l][er]
+
+#protagonist
+……焦げたクッキーの味だよ[l][er]
+
+#akuma
+あはは。……ねえ。あの子の願いは、"妹を置いていく"だった[l][er]
+
+#akuma
+でも、あの子、妹を置いていかなかったね。子供だけ、置いてきた[l][er]
+
+#akuma
+契約書の想定外だよ、それ[l][er]
+
+#protagonist
+……想定してないことばっかりだな、お前の契約[l][er]
+
+#akuma
+人間って、そういうものだからね[l][er]
+
+[chara_show name="akuma" face="smile" pos="center" time="500"]
+
+#akuma
+で、"子供じゃない美羽"を、君は、何て呼ぶの？[l][er]
+
+#akuma
+"友達の妹"の、次の呼び方。考えておいたら？[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+（影は、消えた。）[l][er]
+
+[jump target="imouto_07"]
+
+; ================================================================================
+; 第6話「形の崩れていないクッキー」
+; ================================================================================
+*imouto_07
+[chara_hide_all]
+[bg storage="park.webp" time="1000"]
+[playbgm storage="bgm_romance.mp3"]
+
+（一週間後。夕方の公園。）[l][er]
+
+（ジャングルジムは、少し曲がったまま、立っている。）[l][er]
+
+[chara_show name="imouto" face="blush" pos="center" time="1000"]
+
+#imouto
+先輩、これ[l][er]
+
+（小さな袋。リボンで、結んである。）[l][er]
+（中のクッキーは、一枚も、形が崩れていなかった。）[l][er]
+
+#imouto
+全部、この手で作りました[l][er]
+
+#imouto
+卵も、生地も、絞り袋も。……一個も、潰さなかった[l][er]
+
+#protagonist
+……すごいな[l][er]
+
+#imouto
+はい。すごいんです、私[l][er]
+
+#imouto
+……それで、先輩[l][er]
+
+#imouto
+私、お兄ちゃんの妹は、辞めません[l][er]
+
+#imouto
+でも、先輩の"友達の妹"は、辞めたいです[l][er]
+
+#imouto
+……先輩のことが、好きだから[l][er]
+
+#imouto
+小学生のときから、ずっと[l][er]
+
+[glink target="imouto_ending_good" text="クッキーを受け取って「俺も好きだ、美羽」"]
+[glink target="imouto_ending_normal" text="クッキーを受け取って「……友樹の妹で、俺の大事な後輩だ」"]
+[s]
+
+; ================================================================================
+; GOOD END「子供じゃない」
+; ================================================================================
+*imouto_ending_good
+（クッキーを、受け取った。）[l][er]
+
+#protagonist
+俺も好きだ、美羽[l][er]
+
+[chara_show name="imouto" face="surprised" pos="center" time="500"]
+
+#imouto
+……[l][er]
+
+#imouto
+……"友達の妹"として、じゃなくて？[l][er]
+
+#protagonist
+じゃなくて[l][er]
+
+#imouto
+……"後輩"として、でもなくて？[l][er]
+
+#protagonist
+でもなくて[l][er]
+
+[chara_show name="imouto" face="crying" pos="center" time="500"]
+
+#imouto
+……っ、う、うわああん……[l][er]
+
+#protagonist
+泣くのか[l][er]
+
+#imouto
+泣きながら大人になるって、言ったじゃないですかぁ……[l][er]
+
+[chara_hide_all]
+[bg storage="protagonist_room_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+[chara_show name="akuma" face="smile" pos="center" time="1000"]
+
+#akuma
+——はい、ゲーム終了。君の勝ち[l][er]
+
+#akuma
+約束どおり、ご祝儀を一口だけ[l][er]
+
+（悪魔の前足が、胸に、ちょんと触れた。）[l][er]
+（何かが、ひとかけら、持っていかれた。）[l][er]
+（——たぶん、大泣きする美羽を見て、笑ってしまった瞬間の、その端っこ）[l][er]
+
+#akuma
+……うん。甘い。クッキーより、甘い[l][er]
+
+#akuma
+……あ、お兄ちゃんには、自分で言いなよ。それは、僕の契約の外だから[l][er]
+
+#akuma
+じゃあね。もう、来ないよ[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+[chara_hide_all]
+[bg storage="park.webp" time="1000"]
+[playbgm storage="bgm_ending.mp3"]
+
+（数ヶ月後。）[l][er]
+
+（友樹には、ちゃんと言った。）[l][er]
+（焼肉、三回分で、許してもらった。）[l][er]
+
+[bg storage="events/imouto_park.webp" time="1500"]
+
+#imouto
+先輩！　今日の分！[l][er]
+
+（夕方の公園に、美羽が走ってくる。）[l][er]
+（両手に、小さな袋を持って。）[l][er]
+（地面が、少しだけ、鳴る。）[l][er]
+
+#imouto
+今日のは、お兄ちゃんと一緒に作ったんです。お兄ちゃん、卵、三個潰しました[l][er]
+
+#protagonist
+……成長したな、友樹[l][er]
+
+#imouto
+はい。私の指導がいいので[l][er]
+
+（高橋美羽。）[l][er]
+（"妹"を置いていきたかった女の子は、）[l][er]
+（妹のまま、子供だけ、置いてきた。）[l][er]
+（——今は、俺の隣で、ときどき、泣いて、たくさん笑う。）[l][er]
+
+（GOOD END ——「子供じゃない」）[l][er]
+[s]
+
+; ================================================================================
+; NORMAL END「大事な後輩」
+; ================================================================================
+*imouto_ending_normal
+（クッキーを、受け取った。）[l][er]
+
+#protagonist
+……友樹の妹で、俺の大事な後輩だ[l][er]
+
+[chara_show name="imouto" face="sad" pos="center" time="500"]
+
+#imouto
+……[l][er]
+
+#imouto
+……"ちゃん"は、つかなかった[l][er]
+
+#imouto
+それだけ、今日は、もらっておきます[l][er]
+
+[chara_show name="imouto" face="smile" pos="center" time="500"]
+
+#imouto
+でも、先輩。私、待つの、得意なんです[l][er]
+
+#imouto
+小学生のときから、ずっと待ってたので。あと何年でも、待てます[l][er]
+
+[chara_hide_all]
+[bg storage="protagonist_room_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+[chara_show name="akuma" face="default" pos="center" time="1000"]
+
+#akuma
+……保留、か[l][er]
+
+#akuma
+二本目は飲まなかった。でも、"本物"にも、ならなかった[l][er]
+
+#akuma
+僕はお腹が空いたまま。……まあ、待つのが得意な子らしいからね。僕も待つよ[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+[chara_hide_all]
 [bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
 （数ヶ月後。）[l][er]
 
-（俺は、友樹の家によく遊びに来るようになった。）[l][er]
+（友樹の家に遊びに行くと、毎回、クッキーが出てくる。）[l][er]
+（形は、一枚も、崩れていない。）[l][er]
 
 [chara_show name="imouto" face="smile" pos="center" time="1000"]
 
 #imouto
-お兄ちゃん——じゃなくて、先輩！[l][er]
+先輩、今日のは、自信作です[l][er]
+
+#友樹
+俺の分は？[l][er]
+
+#imouto
+お兄ちゃんは、自分で焼いて[l][er]
+
+（友樹が、俺を見て、肩をすくめる。）[l][er]
+（美羽は、俺の皿にだけ、一枚、多く乗せた。）[l][er]
+
+（NORMAL END ——「大事な後輩」）[l][er]
+[s]
+
+; ================================================================================
+; BAD END「大人の女の人」
+; ================================================================================
+*imouto_ending_bad
+[playbgm storage="bgm_despair.mp3"]
+
+（彼女は、一息に、飲んだ。）[l][er]
+
+[chara_hide_all]
+[bg storage="devil_space.webp" time="1500"]
+
+（世界から、音が消えた。）[l][er]
+
+（ブレザーの縫い目が、裂けた。）[l][er]
+（肩が、腕が、もう一段、ふくれあがる。）[l][er]
+
+[status stage="stage2"]
+[chara_show name="imouto" face="default" pos="center" time="2000"]
+
+（——そして、それよりも、先に。）[l][er]
+（涙が、止まった。）[l][er]
+（止まったというより、最初から、流れていなかったみたいに。）[l][er]
+
+#imouto
+……ああ。落ち着きました[l][er]
+
+#imouto
+お兄ちゃんに"戻れ"って言われたこと、もう、何とも思いません[l][er]
 
 #protagonist
-どっちでもいいよ[l][er]
+美羽……！[l][er]
 
 #imouto
-じゃあ、お兄ちゃんで[l][er]
-
-#友樹
-お前、俺のことは何て呼ぶんだ[l][er]
+"美羽ちゃん"でいいですよ、先輩。どう呼ばれても、気にならないので[l][er]
 
 #imouto
-本物のお兄ちゃん[l][er]
+……帰りますね。お兄ちゃんには、私から、ちゃんと説明します。冷静に[l][er]
 
-#友樹
-なんだそれ[l][er]
+[chara_show name="akuma" face="smile" pos="left" time="1000"]
 
-（みんなで笑う。）[l][er]
+#akuma
+——はい、ゲーム終了[l][er]
 
-（俺は、もう一つの家族を見つけた。）[l][er]
+#akuma
+じゃ、約束どおり。——頂きます[l][er]
 
-（恋人じゃないけど——大切な、家族を。）[l][er]
+（悪魔の前足が、俺の胸に、触れた。）[l][er]
+（熱が、引いていく。）[l][er]
+（悔しさが。怖さが。形の崩れたクッキーを、二人で笑った記憶が。）[l][er]
+（順番に、消えて——）[l][er]
 
-[chara_hide name="imouto" time="1000"]
+[chara_hide_all]
+[bg storage="black.webp" time="2000"]
 
-[bg storage="black.webp" time="1000"]
+（……。）[l][er]
 
-（——友達の妹。本名、高橋美羽。）[l][er]
+[bg storage="friend_house.webp" time="1500"]
+[playbgm storage="bgm_isolation.mp3"]
 
-（子供扱いされるのが嫌だった彼女は——）[l][er]
+（数ヶ月後。）[l][er]
 
-（もう一人の兄を見つけた。）[l][er]
+（友樹の家に行くと、美羽が、静かにお茶を出してくれる。）[l][er]
+（"いらっしゃいませ"。丁寧な、大人の声で。）[l][er]
 
-（恋人じゃないけど——大切な、家族を。）[l][er]
+（台所に、お菓子の材料は、もう、置いていない。）[l][er]
+（友樹は、最近、あまり笑わなくなった。）[l][er]
 
-（END - 「もう一つの家族」）[l][er]
+（俺は、お茶を飲んで、帰る。）[l][er]
+（美羽の焼いたクッキーの味を、思い出そうとして——思い出す理由が、見つからない。）[l][er]
 
+（BAD END ——「大人の女の人」）[l][er]
 [s]

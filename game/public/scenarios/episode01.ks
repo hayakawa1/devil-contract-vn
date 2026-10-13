@@ -6,14 +6,15 @@
 ; イントロ
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="black.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
-── その夜 ──[l][er]
+── その日、日が沈んでから ──[l][er]
 
-（悪魔は、七つの部屋を、回った。）[l][er]
+（悪魔は、七人の少女を、順番に訪ねた。）[l][er]
 
-（七人の少女は、それぞれの机に、ベッドに、鏡の前にいた。）[l][er]
+（家の前の道に。夕暮れの教室に。夜の道場に。台所のテーブルに。）[l][er]
 （——誰にも、見られていない場所に。）[l][er]
 
 ; ================================================================================
@@ -21,10 +22,12 @@
 ; Scene 1: 幼なじみ「家具を辞める」
 ; ================================================================================
 
-[bg storage="protagonist_room_night.webp" time="1000"]
+[chara_hide_all]
+[bg storage="street_evening.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
-（夜。結衣は、自分の部屋にいた。）[l][er]
+（日が沈む頃。結衣は、自分の家の前に立っていた。）[l][er]
+（三軒先の、"彼"の家の窓を、見ないようにしながら。）[l][er]
 
 [chara_show name="osananajimi" face="default" pos="center" time="1000"]
 
@@ -110,6 +113,7 @@
 ; Scene 2: 生徒会長「完璧の上に積む」
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
@@ -198,10 +202,11 @@
 ; Scene 3: ギャル「可愛いのレースから降りる」
 ; ================================================================================
 
-[bg storage="protagonist_room_night.webp" time="1000"]
+[chara_hide_all]
+[bg storage="classroom.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-（夜。美咲は、ベッドに転がって、スマホを見ていた。）[l][er]
+（放課後の、誰もいない教室。美咲は、机に腰かけて、スマホを見ていた。）[l][er]
 
 [chara_show name="gyaru" face="default" pos="center" time="1000"]
 
@@ -284,6 +289,7 @@
 ; Scene 4: オタク「最初の被験者」
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="science_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
@@ -307,8 +313,8 @@
 ……[l][er]
 
 （なぜ調べているのか。）[l][er]
-（——彼の検索履歴を、偶然、見てしまったから。）[l][er]
-（偶然、ではない。三回、覗いた。）[l][er]
+（——図書室のPCで、彼のすぐ後に座ったとき、検索履歴が残っていたから。）[l][er]
+（閉じる前に、三回、読み返した。）[l][er]
 
 [chara_show name="akuma" face="default" pos="left" time="1000"]
 
@@ -379,6 +385,7 @@
 ; Scene 5: 格闘技部「努力を飛ばす」
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
@@ -474,11 +481,12 @@
 ; Scene 6: 不良「近づかれないを極める」
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="park_night.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
 （夜の公園。）[l][er]
-（響子は、ベンチに、一人で、座っていた。）[l][er]
+（冴は、ベンチに、一人で、座っていた。）[l][er]
 
 [chara_show name="furyo" face="default" pos="center" time="1000"]
 
@@ -570,14 +578,15 @@
 ; Scene 7: 友達の妹「妹を置いていく」
 ; ================================================================================
 
-[bg storage="protagonist_room_night.webp" time="1000"]
+[chara_hide_all]
+[bg storage="friend_house.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
-（夜。美羽は、自分の部屋にいた。）[l][er]
+（夜。高橋家の台所。お兄ちゃんは、もう二階で寝ている。）[l][er]
 
 [chara_show name="imouto" face="default" pos="center" time="1000"]
 
-（机の上に、写真が、一枚。）[l][er]
+（テーブルの上に、アルバムから抜いた写真が、一枚。）[l][er]
 （——小学校の、卒業式。）[l][er]
 （お兄ちゃんと、お兄ちゃんの親友と、その間に、私。）[l][er]
 
@@ -661,6 +670,7 @@
 ; Scene 8: 悪魔の独白
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="black.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
@@ -694,6 +704,121 @@
 ——美味しい[l][er]
 
 [chara_hide name="akuma" time="1000"]
+
+; ================================================================================
+*start_scene_9
+; Scene 9: ゲームの条件
+; ================================================================================
+
+[chara_hide_all]
+[bg storage="protagonist_room_night.webp" time="1000"]
+
+（深夜。俺の部屋。）[l][er]
+
+（眠れずに天井を見ていたら——部屋の空気が、一段、冷えた。）[l][er]
+
+[chara_show name="akuma" face="default" pos="center" time="1000"]
+
+#akuma
+配達、終わったよ[l][er]
+
+#protagonist
+……人の部屋に出るな[l][er]
+
+#akuma
+契約者へのアフターサービスだよ。大事でしょ[l][er]
+
+#akuma
+それと——言い忘れてた話が、一つだけ[l][er]
+
+#protagonist
+……まだ何かあるのか[l][er]
+
+#akuma
+代金の、受け取り方[l][er]
+
+（悪魔は、指を一本、立てた。）[l][er]
+
+#akuma
+これは、ゲームだ[l][er]
+
+#protagonist
+……ゲーム？[l][er]
+
+#akuma
+君が、七人の誰か一人と——"本物"になれたら、君の勝ち[l][er]
+
+#akuma
+そのときは、二人の感情を一口だけ。ご祝儀価格で、おしまい[l][er]
+
+#protagonist
+本物って、なんだよ[l][er]
+
+#akuma
+仮面も、強がりも、筋肉も、全部見た上で——それでも隣を選ぶ、ってこと[l][er]
+
+#akuma
+僕には作れない味でね。だから、高い[l][er]
+
+#protagonist
+……できなかったら？[l][er]
+
+[chara_show name="akuma" face="smile" pos="center" time="500"]
+
+#akuma
+いい質問[l][er]
+
+#akuma
+あの薬には、"二本目"があるんだ[l][er]
+
+#protagonist
+……二本目[l][er]
+
+#akuma
+一本目は、体を変える[l][er]
+
+#akuma
+二本目は——心ごと、作り変える[l][er]
+
+#akuma
+迷わない。揺れない。傷つかない。便利だよ[l][er]
+
+#protagonist
+……それの、どこが薬だ[l][er]
+
+#akuma
+ほら、君も、わかってる[l][er]
+
+#akuma
+七人の誰かが、自分を捨てて二本目に手を伸ばしたら——僕の勝ち[l][er]
+
+#akuma
+そのときは、君の感情を、まとめて頂く[l][er]
+
+#protagonist
+……なんで、俺が払う[l][er]
+
+#akuma
+始まりは、君の"あの一行"だから[l][er]
+
+（——何も、言い返せなかった。）[l][er]
+
+#akuma
+大丈夫。ルールは簡単だよ[l][er]
+
+#akuma
+誰も壊さない。一人と、ちゃんと向き合う。それだけ[l][er]
+
+（悪魔は、笑った。）[l][er]
+
+#akuma
+——それが一番難しいって、君はこれから知るんだけどね[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+（手の中に、汗をかいていた。）[l][er]
+
+（——ゲームは、もう、始まっている。）[l][er]
 
 ── そして、夜が、明ける ──[l][er]
 

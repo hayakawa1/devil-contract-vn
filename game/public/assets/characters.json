@@ -6,21 +6,24 @@
       "name_display": "主人公",
       "role": "男子高校生",
       "type": "other",
-      "description": "モテる男子高校生。筋肉フェチだが、現実の女性には満足できていない。悪魔に「肉ムキムキの彼女が欲しい」と願ってしまう。",
+      "description": "ごく普通の男子高校生（二年）。彼女はいない。誰にも言えない「筋肉のある女の子が好き」という本音を、悪魔に見抜かれてしまう。",
       "sprites": {
         "neutral": "protagonist_neutral",
         "surprised": "protagonist_neutral_surprised",
         "guilty": "protagonist_neutral_sad",
         "excited": "protagonist_neutral_smile"
-      }
+      },
+      "name_display_en": "You",
+      "role_en": "High-school boy",
+      "description_en": "An ordinary second-year with no girlfriend. A devil sees through the one thing he has never told anyone: he likes muscular girls."
     },
     "osananajimi": {
       "id": "osananajimi",
       "name": "幼なじみ",
-      "name_display": "幼なじみ",
+      "name_display": "結衣",
       "role": "正統派ヒロイン",
       "type": "classmate",
-      "description": "優しく、家庭的な正統派ヒロイン。主人公に片思いしている。家族にバレそう問題を抱える。",
+      "description": "主人公の幼なじみ（二年・同じクラス）。家が近所で、幼稚園からずっと隣にいる。「幼なじみ」という居場所から抜け出したくて、薬を飲んだ。",
       "route_theme": "居場所を求める",
       "sprites": {
         "neutral": "osananajimi_neutral_default",
@@ -28,15 +31,19 @@
         "worried": "osananajimi_neutral_sad",
         "stage1": "osananajimi_stage1_default",
         "stage2": "osananajimi_stage2_default"
-      }
+      },
+      "full_name": "藤咲 結衣",
+      "name_display_en": "Yui",
+      "role_en": "Childhood friend",
+      "description_en": "Yui Fujisaki. Second-year, same class, lives three doors down. She has been by his side since kindergarten, and drank the potion to stop being part of the furniture."
     },
     "seitokai": {
       "id": "seitokai",
       "name": "生徒会長",
-      "name_display": "生徒会長",
+      "name_display": "凛",
       "role": "完璧主義者",
       "type": "classmate",
-      "description": "真面目で完璧主義な生徒会長。規律を重んじる。校則・活動許可問題に悩む。主人公に片思いしている。",
+      "description": "三年生の生徒会長。真面目で完璧主義。「完璧な生徒会長」の上に、もう一つ積みたくて、薬を飲んだ。",
       "route_theme": "承認を求める",
       "sprites": {
         "neutral": "seitokai_neutral_default",
@@ -44,15 +51,19 @@
         "flustered": "seitokai_neutral_flustered",
         "stage1": "seitokai_stage1_default",
         "stage2": "seitokai_stage2_default"
-      }
+      },
+      "full_name": "白鳥 凛",
+      "name_display_en": "Rin",
+      "role_en": "Student council president",
+      "description_en": "Rin Shiratori. Third-year and student council president. Serious and perfectionist. She drank the potion to stack one more thing on top of \"the perfect president.\""
     },
     "gyaru": {
       "id": "gyaru",
       "name": "ギャル",
-      "name_display": "ギャル",
+      "name_display": "美咲",
       "role": "SNSインフルエンサー",
       "type": "classmate",
-      "description": "派手で目立ちたがりのギャル。承認欲求が強い。SNS炎上・アンチ問題を抱える。主人公に片思いしている。",
+      "description": "派手で明るいギャル（二年）。SNSでは埋もれている。「可愛い」のレースから降りて唯一になりたくて、薬を飲んだ。",
       "route_theme": "承認欲求",
       "sprites": {
         "neutral": "gyaru_neutral_default",
@@ -60,15 +71,19 @@
         "posing": "gyaru_neutral_smile",
         "stage1": "gyaru_stage1_default",
         "stage2": "gyaru_stage2_default"
-      }
+      },
+      "full_name": "星野 美咲",
+      "name_display_en": "Misaki",
+      "role_en": "Gyaru / influencer",
+      "description_en": "Misaki Hoshino. Second-year. Loud, bright, and buried on social media. She drank the potion to quit the \"cute\" race and become one of a kind."
     },
     "otaku": {
       "id": "otaku",
       "name": "オタク",
-      "name_display": "オタク",
+      "name_display": "理香",
       "role": "研究者タイプ",
       "type": "classmate",
-      "description": "好奇心旺盛なオタク系女子。薬の正体を追う研究者タイプ。主人公に片思いしている。",
+      "description": "好奇心の塊の科学部員（二年）。前例のない被験者の「最初」になりたくて、薬を飲んだ。",
       "route_theme": "真実を求める",
       "sprites": {
         "neutral": "otaku_neutral_default",
@@ -76,15 +91,19 @@
         "analyzing": "otaku_neutral_default",
         "stage1": "otaku_stage1_default",
         "stage2": "otaku_stage2_default"
-      }
+      },
+      "full_name": "神崎 理香",
+      "name_display_en": "Rika",
+      "role_en": "Researcher",
+      "description_en": "Rika Kanzaki. Second-year science club member made of pure curiosity. She drank the potion to be the first test subject in history."
     },
     "kakutogi": {
       "id": "kakutogi",
       "name": "格闘技部",
-      "name_display": "格闘技部",
+      "name_display": "響",
       "role": "求道者",
       "type": "classmate",
-      "description": "ストイックな格闘技部員。強さを求める求道者。競技での孤立問題を抱える。主人公に片思いしている。",
+      "description": "ストイックな格闘技部員（一年）。努力を飛ばしてでも、今の強さを見せたくて、薬を飲んだ。",
       "route_theme": "強さと孤独",
       "sprites": {
         "neutral": "kakutogi_neutral_default",
@@ -92,15 +111,19 @@
         "proud": "kakutogi_neutral_smile",
         "stage1": "kakutogi_stage1_default",
         "stage2": "kakutogi_stage2_default"
-      }
+      },
+      "full_name": "虎谷 響",
+      "name_display_en": "Hibiki",
+      "role_en": "Martial artist",
+      "description_en": "Hibiki Toraya. First-year in the martial arts club. Stoic. She drank the potion to skip years of training and be strong right now."
     },
     "furyo": {
       "id": "furyo",
       "name": "不良",
-      "name_display": "不良",
+      "name_display": "冴",
       "role": "クールビューティー",
       "type": "special",
-      "description": "他校の生徒。凛としていて孤独。電車で主人公に一目惚れした。居場所を探している。",
+      "description": "他校の二年生。「近づくと殴られる」と噂され、いつも一人。通学の電車で、目をそらさなかった主人公が気になっている。",
       "route_theme": "孤独と居場所",
       "sprites": {
         "neutral": "furyo_neutral_default",
@@ -108,15 +131,19 @@
         "vulnerable": "furyo_neutral_sad",
         "stage1": "furyo_stage1_default",
         "stage2": "furyo_stage2_default"
-      }
+      },
+      "full_name": "九条 冴",
+      "name_display_en": "Sae",
+      "role_en": "Delinquent (other school)",
+      "description_en": "Sae Kujo. Second-year from another school, rumored to hit anyone who gets close. Always alone. She can't stop thinking about the boy on the train who didn't look away."
     },
     "imouto": {
       "id": "imouto",
       "name": "友達の妹",
-      "name_display": "友達の妹",
+      "name_display": "美羽",
       "role": "健気系",
       "type": "special",
-      "description": "主人公の親友の妹。密かに主人公に憧れている。兄との関係問題を抱える。",
+      "description": "主人公の親友・友樹の妹（一年）。ずっと「妹」としか見られないのが嫌で、薬を飲んだ。",
       "route_theme": "依存と自立",
       "sprites": {
         "neutral": "imouto_neutral_default",
@@ -124,7 +151,11 @@
         "determined": "imouto_neutral_angry",
         "stage1": "imouto_stage1_default",
         "stage2": "imouto_stage2_default"
-      }
+      },
+      "full_name": "高橋 美羽",
+      "name_display_en": "Miu",
+      "role_en": "Best friend's little sister",
+      "description_en": "Miu Takahashi. First-year, younger sister of his best friend Tomoki. Tired of only ever being seen as \"the little sister,\" she drank the potion."
     },
     "akuma": {
       "id": "akuma",
@@ -132,30 +163,42 @@
       "name_display": "悪魔",
       "role": "契約者",
       "type": "other",
-      "description": "キューベー的存在。願いを「歪めて」叶える。毎章登場して主人公を煽る。",
+      "description": "猫のような姿の悪魔。人間の感情を食べる。願いを「選ばせて」叶え、七人の誰かが二本目の薬を飲むのを待っている。",
       "sprites": {
         "neutral": "akuma_neutral",
         "smirk": "akuma_neutral_smile",
         "surprised": "akuma_neutral_surprised"
-      }
+      },
+      "name_display_en": "Devil",
+      "role_en": "Contractor",
+      "description_en": "A devil shaped like a cat. Feeds on human emotions. It never forces anyone, it only lets them choose, and it is waiting for one of the seven to drink a second bottle."
     },
     "mother": {
       "id": "mother",
-      "name": "幼なじみの母",
-      "name_display": "幼なじみの母",
+      "name": "結衣の母",
+      "name_display": "結衣の母",
       "role": "保護者",
       "type": "other",
-      "description": "幼なじみの母親。娘の変化に困惑している。",
-      "sprites": {}
+      "description": "結衣の母親。娘の変化を受け止めきれずにいる。",
+      "sprites": {
+        "neutral": "mother_neutral"
+      },
+      "name_display_en": "Yui's Mom",
+      "role_en": "Parent",
+      "description_en": "Yui's mother. She can't bring herself to accept how her daughter has changed."
     },
     "friend": {
       "id": "friend",
       "name": "親友",
-      "name_display": "親友",
+      "name_display": "友樹",
       "role": "主人公の親友",
       "type": "other",
-      "description": "主人公の親友。妹のことを心配している兄。",
-      "sprites": {}
+      "description": "主人公の親友。美羽の兄。妹のことになると心配性。",
+      "sprites": {},
+      "full_name": "高橋 友樹",
+      "name_display_en": "Tomoki",
+      "role_en": "Best friend",
+      "description_en": "The protagonist's best friend since middle school, and Miu's older brother. Goes to a different high school. A worrier when it comes to his sister."
     },
     "mob": {
       "id": "mob",
@@ -164,7 +207,10 @@
       "role": "モブキャラクター",
       "type": "other",
       "description": "学校のモブ生徒。",
-      "sprites": {}
+      "sprites": {},
+      "name_display_en": "Student",
+      "role_en": "Extra",
+      "description_en": "A student."
     },
     "kyoutou": {
       "id": "kyoutou",
@@ -173,7 +219,10 @@
       "role": "学校の教頭",
       "type": "other",
       "description": "学校の教頭。規律を重視する。",
-      "sprites": {}
+      "sprites": {},
+      "name_display_en": "Vice Principal",
+      "role_en": "Vice principal",
+      "description_en": "The school's vice principal."
     },
     "rijichou": {
       "id": "rijichou",
@@ -182,7 +231,10 @@
       "role": "学校の理事長",
       "type": "other",
       "description": "学校の理事長。生徒会長の味方。",
-      "sprites": {}
+      "sprites": {},
+      "name_display_en": "Chairman",
+      "role_en": "School chairman",
+      "description_en": "The school's board chairman."
     },
     "komon": {
       "id": "komon",
@@ -191,24 +243,261 @@
       "role": "格闘技部顧問",
       "type": "other",
       "description": "格闘技部の顧問。生徒の安全を心配している。",
-      "sprites": {}
+      "sprites": {},
+      "name_display_en": "Coach",
+      "role_en": "Club advisor",
+      "description_en": "Advisor of the martial arts club."
+    },
+    "モブ女子A": {
+      "id": "モブ女子A",
+      "name": "モブ女子A",
+      "name_display": "モブ女子A",
+      "role": "生徒",
+      "type": "other",
+      "description": "学校のモブ女子生徒。",
+      "sprites": {},
+      "name_display_en": "Girl A",
+      "role_en": "Student",
+      "description_en": "A student."
+    },
+    "モブ女子B": {
+      "id": "モブ女子B",
+      "name": "モブ女子B",
+      "name_display": "モブ女子B",
+      "role": "生徒",
+      "type": "other",
+      "description": "学校のモブ女子生徒。",
+      "sprites": {},
+      "name_display_en": "Girl B",
+      "role_en": "Student",
+      "description_en": "A student."
+    },
+    "モブ男子A": {
+      "id": "モブ男子A",
+      "name": "モブ男子A",
+      "name_display": "モブ男子A",
+      "role": "生徒",
+      "type": "other",
+      "description": "学校のモブ男子生徒。",
+      "sprites": {},
+      "name_display_en": "Boy A",
+      "role_en": "Student",
+      "description_en": "A student."
+    },
+    "女子A": {
+      "id": "女子A",
+      "name": "女子A",
+      "name_display": "女子A",
+      "role": "生徒",
+      "type": "other",
+      "description": "学校の女子生徒。",
+      "sprites": {},
+      "name_display_en": "Girl A",
+      "role_en": "Student",
+      "description_en": "A student."
+    },
+    "女子B": {
+      "id": "女子B",
+      "name": "女子B",
+      "name_display": "女子B",
+      "role": "生徒",
+      "type": "other",
+      "description": "学校の女子生徒。",
+      "sprites": {},
+      "name_display_en": "Girl B",
+      "role_en": "Student",
+      "description_en": "A student."
+    },
+    "男子A": {
+      "id": "男子A",
+      "name": "男子A",
+      "name_display": "男子A",
+      "role": "生徒",
+      "type": "other",
+      "description": "学校の男子生徒。",
+      "sprites": {},
+      "name_display_en": "Boy A",
+      "role_en": "Student",
+      "description_en": "A student."
+    },
+    "男子B": {
+      "id": "男子B",
+      "name": "男子B",
+      "name_display": "男子B",
+      "role": "生徒",
+      "type": "other",
+      "description": "学校の男子生徒。",
+      "sprites": {},
+      "name_display_en": "Boy B",
+      "role_en": "Student",
+      "description_en": "A student."
+    },
+    "友樹": {
+      "id": "友樹",
+      "name": "友樹",
+      "name_display": "友樹",
+      "role": "主人公の親友",
+      "type": "other",
+      "description": "主人公の親友。美羽の兄。妹のことになると心配性。",
+      "sprites": {},
+      "full_name": "高橋 友樹",
+      "name_display_en": "Tomoki",
+      "role_en": "Best friend",
+      "description_en": "The protagonist's best friend since middle school, and Miu's older brother. Goes to a different high school. A worrier when it comes to his sister."
+    },
+    "友達": {
+      "id": "友達",
+      "name": "友達",
+      "name_display": "友達",
+      "role": "不良の旧友",
+      "type": "other",
+      "description": "冴の中学時代の友達。",
+      "sprites": {},
+      "name_display_en": "Friend",
+      "role_en": "Old friend",
+      "description_en": "An old friend."
+    },
+    "不良A": {
+      "id": "不良A",
+      "name": "不良A",
+      "name_display": "不良A",
+      "role": "不良グループ",
+      "type": "other",
+      "description": "不良グループの一人。",
+      "sprites": {},
+      "name_display_en": "Thug A",
+      "role_en": "Gang",
+      "description_en": "A member of a delinquent gang."
+    },
+    "不良B": {
+      "id": "不良B",
+      "name": "不良B",
+      "name_display": "不良B",
+      "role": "不良グループ",
+      "type": "other",
+      "description": "不良グループの一人。",
+      "sprites": {},
+      "name_display_en": "Thug B",
+      "role_en": "Gang",
+      "description_en": "A member of a delinquent gang."
+    },
+    "不良リーダー": {
+      "id": "不良リーダー",
+      "name": "不良リーダー",
+      "name_display": "不良リーダー",
+      "role": "不良グループ",
+      "type": "other",
+      "description": "不良グループのリーダー。",
+      "sprites": {},
+      "name_display_en": "Gang Leader",
+      "role_en": "Gang",
+      "description_en": "Leader of a delinquent gang."
+    },
+    "全員": {
+      "id": "全員",
+      "name": "全員",
+      "name_display": "全員",
+      "role": "複数話者",
+      "type": "other",
+      "description": "複数人が同時に話す場面用の話者。",
+      "sprites": {},
+      "name_display_en": "Everyone",
+      "role_en": "Group",
+      "description_en": "Several people at once."
+    },
+    "審判": {
+      "id": "審判",
+      "name": "審判",
+      "name_display": "審判",
+      "role": "大会審判",
+      "type": "other",
+      "description": "格闘技大会の審判。",
+      "sprites": {},
+      "name_display_en": "Referee",
+      "role_en": "Referee",
+      "description_en": "A tournament referee."
+    },
+    "悪魔の声": {
+      "id": "悪魔の声",
+      "name": "悪魔の声",
+      "name_display": "悪魔の声",
+      "role": "悪魔",
+      "type": "other",
+      "description": "姿を見せずに聞こえる悪魔の声。",
+      "sprites": {},
+      "name_display_en": "Devil's Voice",
+      "role_en": "Devil",
+      "description_en": "The devil's voice, heard without a body."
+    },
+    "教頭": {
+      "id": "教頭",
+      "name": "教頭",
+      "name_display": "教頭",
+      "role": "学校の教頭",
+      "type": "other",
+      "description": "学校の教頭。校則を重視する。",
+      "sprites": {},
+      "name_display_en": "Vice Principal",
+      "role_en": "Vice principal",
+      "description_en": "The school's vice principal. A stickler for the rules."
+    },
+    "顧問": {
+      "id": "顧問",
+      "name": "顧問",
+      "name_display": "顧問",
+      "role": "格闘技部顧問",
+      "type": "other",
+      "description": "格闘技部の顧問。生徒の安全を心配している。",
+      "sprites": {},
+      "name_display_en": "Coach",
+      "role_en": "Club advisor",
+      "description_en": "Advisor of the martial arts club. Worries about his students' safety."
+    },
+    "？？？": {
+      "id": "？？？",
+      "name": "？？？",
+      "name_display": "？？？",
+      "role": "正体不明",
+      "type": "other",
+      "description": "正体が明かされていない話者。",
+      "sprites": {},
+      "name_display_en": "???",
+      "role_en": "Unknown",
+      "description_en": "Identity unknown."
+    },
+    "千夏": {
+      "id": "千夏",
+      "name": "千夏",
+      "name_display": "千夏",
+      "role": "冴の旧友",
+      "type": "other",
+      "description": "冴の中学時代の友達。",
+      "name_display_en": "Chinatsu",
+      "role_en": "Sae's old friend",
+      "description_en": "Sae's friend from middle school."
     }
   },
   "stages": {
     "neutral": {
       "id": "neutral",
       "name": "通常状態",
-      "description": "一般的な女子高生の体型（筋肉なし）"
+      "description": "一般的な女子高生の体型（筋肉なし）",
+      "name_en": "Normal",
+      "description_en": "An ordinary high-school build (no muscle)"
     },
     "stage1": {
       "id": "stage1",
       "name": "かなりのムキムキ",
-      "description": "主人公にとっての理想体型"
+      "description": "主人公にとっての理想体型",
+      "name_en": "Very Muscular",
+      "description_en": "The protagonist's ideal physique"
     },
     "stage2": {
       "id": "stage2",
       "name": "モンスターレベル",
-      "description": "人間の限界を超えた筋肉量"
+      "description": "人間の限界を超えた筋肉量",
+      "name_en": "Monster Level",
+      "description_en": "Muscle mass beyond human limits"
     }
   }
 }

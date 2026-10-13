@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\mother_neutral.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Character standing sprite, portrait 2:3, full body from head to shoes with margin, centered, same anime art style and line weight as the reference heroine sprite. A gentle Japanese mother in her early forties, ordinary slim build (not muscular), brown hair tied loosely at the nape, brown eyes like the reference girl (her daughter), beige knit cardigan over a cream blouse, long dark gray skirt. Worried, troubled expression, one hand at her chest. Background must be a perfectly flat solid pure green (#00FF00) chroma-key color with no shadows, gradients or floor.
+When done, print the saved file path.

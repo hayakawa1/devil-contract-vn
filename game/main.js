@@ -1,3 +1,6 @@
+import { embeddedFiles } from './embedded-data.js';
+import { LANG, t, loc, applyStaticTranslations } from './i18n.js';
+
 /**
  * 悪魔との契約 - ビジュアルノベルエンジン
  * ティラノスクリプト互換パーサー搭載
@@ -534,7 +537,7 @@ class GameEngine {
     // 選択肢・フラグ・親密度システム
     this.choices = {};
     this.currentFlags = {};
-    this.variables = { main_name: '主人公' }; // ティラノスクリプト変数
+    this.variables = { main_name: t('name.default') }; // ティラノスクリプト変数
     this.affinity = {
       osananajimi: 0,
       seitokai: 0,
@@ -553,6 +556,7 @@ class GameEngine {
   }
 
   async init() {
+    applyStaticTranslations();
     await this.loadData();
     this.setupEventListeners();
     this.renderEpisodeList();
@@ -613,7 +617,21 @@ class GameEngine {
         lastError = error;
       }
     }
+    for (const path of paths) {
+      const embeddedText = this.getEmbeddedText(path);
+      if (embeddedText !== null) {
+        return JSON.parse(embeddedText);
+      }
+    }
+
     throw new Error(`Failed to load ${label}${lastError ? `: ${lastError.message}` : ''}`);
+  }
+
+  getEmbeddedText(path) {
+    const normalized = (path || '').toString().replace(/^\/+/, '');
+    return Object.prototype.hasOwnProperty.call(embeddedFiles, normalized)
+      ? embeddedFiles[normalized]
+      : null;
   }
 
   looksLikeHtml(text, contentType = '') {
@@ -639,6 +657,12 @@ class GameEngine {
 
     // .ksファイルを試す
     const ksPaths = [];
+    if (LANG === 'en') {
+      for (const name of nameVariants) {
+        ksPaths.push(`scenarios/en/${name}.ks`);
+        ksPaths.push(`public/scenarios/en/${name}.ks`);
+      }
+    }
     for (const name of nameVariants) {
       ksPaths.push(`scenarios/${name}.ks`);
       ksPaths.push(`public/scenarios/${name}.ks`);
@@ -662,6 +686,17 @@ class GameEngine {
         }
       } catch (e) {
         // 続行
+      }
+    }
+
+    for (const ksPath of ksPaths) {
+      const scriptText = this.getEmbeddedText(ksPath);
+      if (scriptText !== null) {
+        const parsed = this.parser.parse(scriptText);
+        this.scenarios[scenarioName] = parsed.commands;
+        this.currentLabels = parsed.labels;
+        console.log(`Loaded embedded TyranoScript: ${ksPath} (${parsed.commands.length} commands)`);
+        return this.scenarios[scenarioName];
       }
     }
 
@@ -695,6 +730,23 @@ class GameEngine {
         return this.scenarios[scenarioName];
       } catch (error) {
         // 続行
+      }
+    }
+
+    for (const jsonPath of jsonPaths) {
+      const jsonText = this.getEmbeddedText(jsonPath);
+      if (jsonText !== null) {
+        const data = JSON.parse(jsonText);
+        this.scenarios[scenarioName] = data[scenarioName];
+        this.currentLabels = {};
+        if (this.scenarios[scenarioName]) {
+          this.scenarios[scenarioName].forEach((cmd, idx) => {
+            if (cmd.type === 'label' && cmd.id) {
+              this.currentLabels[cmd.id] = idx;
+            }
+          });
+        }
+        return this.scenarios[scenarioName];
       }
     }
 
@@ -853,13 +905,26 @@ class GameEngine {
       const card = document.createElement('button');
       card.type = 'button';
       card.className = 'episode-card';
-      card.setAttribute('aria-label', `${ep.title}を開始`);
-      card.innerHTML = `
-        <div class="ep-title">${ep.title}</div>
-        <div class="ep-subtitle">「${ep.subtitle}」</div>
-        <div class="ep-description">${ep.description}</div>
-        <span class="ep-stage">${stageNames[ep.stage]?.name || ep.stage}</span>
-      `;
+      card.setAttribute('aria-label', `${loc(ep, 'title')} start`);
+
+      const title = document.createElement('div');
+      title.className = 'ep-title';
+      title.textContent = loc(ep, 'title');
+
+      const subtitle = document.createElement('div');
+      subtitle.className = 'ep-subtitle';
+      const subtitleText = loc(ep, 'subtitle');
+      subtitle.textContent = subtitleText ? (LANG === 'en' ? `“${subtitleText}”` : `「${subtitleText}」`) : '';
+
+      const description = document.createElement('div');
+      description.className = 'ep-description';
+      description.textContent = loc(ep, 'description') || '';
+
+      const stage = document.createElement('span');
+      stage.className = 'ep-stage';
+      stage.textContent = loc(stageNames[ep.stage], 'name') || ep.stage || '';
+
+      card.append(title, subtitle, description, stage);
       card.addEventListener('click', () => this.startEpisode(ep));
       container.appendChild(card);
     });
@@ -882,10 +947,11 @@ class GameEngine {
 
       const card = document.createElement('div');
       card.className = 'character-card';
+      card.dataset.character = id;
       card.innerHTML = `
         <div class="char-portrait" style="background-image: url('${this.resolveAssetUrl(`assets/characters/${this.getCharacterPortraitImage(id)}.webp`)}')"></div>
-        <div class="char-name">${char.name_display || char.name}</div>
-        <div class="char-role">${char.role || ''}</div>
+        <div class="char-name">${loc(char, 'name_display') || char.name}</div>
+        <div class="char-role">${loc(char, 'role') || ''}</div>
       `;
       card.addEventListener('click', () => this.showCharacterDetail(id, char));
       container.appendChild(card);
@@ -898,13 +964,15 @@ class GameEngine {
 
   showCharacterDetail(id, char) {
     const portrait = document.getElementById('detail-portrait');
+    portrait.dataset.character = id;
     portrait.style.backgroundImage = `url('${this.resolveAssetUrl(`assets/characters/${this.getCharacterPortraitImage(id)}.webp`)}')`;
-    document.getElementById('detail-name').textContent = char.name_display || char.name;
+    document.getElementById('detail-name').textContent = loc(char, 'name_display') || char.name;
+    const typeKey = `type.${char.type || 'classmate'}`;
     document.getElementById('detail-meta').innerHTML = `
-      <div>役割: ${char.role || '不明'}</div>
-      <div>タイプ: ${char.type || '同級生'}</div>
+      <div>${t('detail.role')}: ${loc(char, 'role') || t('detail.unknown')}</div>
+      <div>${t('detail.type')}: ${t(typeKey)}</div>
     `;
-    document.getElementById('detail-description').textContent = char.description || '情報なし';
+    document.getElementById('detail-description').textContent = loc(char, 'description') || t('detail.noInfo');
 
     // 登場エピソードを検索
     const epContainer = document.getElementById('detail-episodes');
@@ -914,7 +982,7 @@ class GameEngine {
       if (ep.featured_characters?.includes(id)) {
         const tag = document.createElement('span');
         tag.className = 'ep-tag';
-        tag.textContent = ep.title;
+        tag.textContent = loc(ep, 'title');
         tag.addEventListener('click', () => {
           this.startEpisode(ep);
         });
@@ -947,6 +1015,10 @@ class GameEngine {
     this.sceneHasExplicitCharacterControl = false;
     this.isAutoMode = false;
     this.isSkipMode = false;
+
+    // 前のエピソードの選択肢が残っていたら消す（メニューから別の話を始めた場合など）
+    document.getElementById('choices-container')?.classList.add('hidden');
+    this.pendingChoices = [];
 
     this.showScreen('game-screen');
     this.clearCharacters();
@@ -1035,7 +1107,7 @@ class GameEngine {
 
       case 'affinity':
         this.affinity[cmd.character] += cmd.value;
-        this.showStatChange(cmd.character + '好感度', cmd.value);
+        this.showStatChange(t('stat.affinity', { name: cmd.character }), cmd.value);
         this.currentIndex++;
         this.processCommand();
         break;
@@ -1061,11 +1133,13 @@ class GameEngine {
         this.processCommand();
         break;
 
-      // ティラノスクリプト: 停止（選択肢表示）
+      // ティラノスクリプト: 停止（選択肢表示／選択肢なしならシナリオ終端）
       case 'stop':
         if (this.pendingChoices.length > 0) {
           this.showChoices('', this.pendingChoices);
           this.pendingChoices = [];
+        } else {
+          this.endScenario();
         }
         break;
 
@@ -1186,10 +1260,24 @@ class GameEngine {
       if (scenario) {
         this.currentScenario = scenario;
         this.currentIndex = 0;
+        this.syncEpisodeForScenario(target);
         this.clearCharacters();
         this.processCommand();
       }
     });
+  }
+
+  /**
+   * ファイルをまたいでjumpしたとき、移動先のエピソード情報（ステージ等）に合わせる。
+   * これをしないと、プロローグから通しで遊んだ場合に stage が neutral のまま残る。
+   */
+  syncEpisodeForScenario(scenarioName) {
+    const normalize = (name) => String(name || '').replace(/\.(ks|json)$/i, '').replace(/[^a-z0-9]/gi, '').toLowerCase();
+    const key = normalize(scenarioName);
+    const episode = this.episodes.find((ep) => normalize(ep.scenario) === key);
+    if (!episode) return;
+    this.currentEpisode = episode;
+    this.currentStage = episode.stage || null;
   }
 
   /**
@@ -1336,16 +1424,16 @@ class GameEngine {
 
   handleEdit(cmd) {
     const variableName = (cmd.name || '').replace(/^(?:f|sf|tf)\./, '');
-    const currentValue = this.variables[variableName] || '主人公';
+    const currentValue = this.variables[variableName] || t('name.default');
     const maxchars = cmd.maxchars || 10;
     const overlay = document.createElement('div');
     overlay.className = 'name-input-overlay';
     overlay.innerHTML = `
       <div class="name-input-panel">
-        <label for="main-name-input">名前</label>
+        <label for="main-name-input">${t('name.label')}</label>
         <div class="name-input-row">
           <input id="main-name-input" type="text" maxlength="${maxchars}">
-          <button type="button" id="main-name-submit">決定</button>
+          <button type="button" id="main-name-submit">${t('name.submit')}</button>
         </div>
       </div>
     `;
@@ -1368,11 +1456,12 @@ class GameEngine {
     button.style.cssText = 'padding:10px 18px;border:0;border-radius:6px;background:#c92a2a;color:#fff;font-weight:700;cursor:pointer;';
 
     const submit = () => {
-      const name = (input.value || currentValue).trim().slice(0, maxchars) || '主人公';
+      const name = (input.value || currentValue).trim().slice(0, maxchars) || t('name.default');
       this.variables[variableName] = name;
 
       if (this.characters.characters?.protagonist) {
         this.characters.characters.protagonist.name_display = name;
+        this.characters.characters.protagonist.name_display_en = name;
       }
 
       overlay.remove();
@@ -1405,6 +1494,8 @@ class GameEngine {
 
   setBackground(image) {
     const bg = document.getElementById('background');
+    // イベントCG表示中は話者の立ち絵を自動表示しない（CGの上に重なるため）
+    this.isEventBackground = /^events\//.test(String(image || ''));
 
     // 背景名のマッピング（.ksファイル内の名前 → 実際のファイル名）
     const bgMapping = {
@@ -1509,7 +1600,7 @@ class GameEngine {
       `;
       document.getElementById('game-screen').appendChild(povElem);
     }
-    povElem.textContent = `視点: ${name}`;
+    povElem.textContent = `${t('pov.prefix')}${name}`;
   }
 
   isStageableCharacter(characterId) {
@@ -1561,12 +1652,27 @@ class GameEngine {
       悪魔offvoice: 'akuma',
       幼なじみの母: 'mother',
       親友: 'friend',
-      友樹: 'friend',
+      友樹: '友樹',
       tomoki: 'friend',
       生徒: 'mob',
+      モブ女子A: 'モブ女子A',
+      モブ女子B: 'モブ女子B',
+      モブ男子A: 'モブ男子A',
+      女子A: '女子A',
+      女子B: '女子B',
+      男子A: '男子A',
+      男子B: '男子B',
+      不良A: '不良A',
+      不良B: '不良B',
+      不良リーダー: '不良リーダー',
+      全員: '全員',
+      友達: '友達',
+      審判: '審判',
+      悪魔の声: '悪魔の声',
       教頭: 'kyoutou',
       理事長: 'rijichou',
-      顧問: 'komon'
+      顧問: 'komon',
+      '？？？': '？？？'
     };
 
     Object.entries(manualAliases).forEach(([key, id]) => {
@@ -1637,7 +1743,6 @@ class GameEngine {
       'seitokai',
       'gyaru',
       'otaku',
-      'kakutogi',
       'furyo',
       'imouto'
     ]);
@@ -1950,6 +2055,7 @@ class GameEngine {
   ensureSpeakerVisible(characterId) {
     const resolvedSpeakerId = this.resolveCharacterId(characterId);
     if (!this.shouldAutoShowSpeaker(resolvedSpeakerId)) return;
+    if (this.isEventBackground) return;
     if (this.isCharacterVisible(resolvedSpeakerId)) return;
 
     const image = this.parser.buildCharacterImage(resolvedSpeakerId, 'default');
@@ -1984,7 +2090,7 @@ class GameEngine {
     let speakerName = '';
     if (speakerId) {
       const char = this.characters.characters?.[speakerId];
-      speakerName = char?.name_display || char?.name || speaker || '';
+      speakerName = loc(char, 'name_display') || char?.name || speaker || '';
     }
 
     // 新しいUIに合わせてspeaker-nameを更新
@@ -2048,6 +2154,14 @@ class GameEngine {
       this.scheduleAutoAdvance();
     } else if (this.isSkipMode) {
       this.scheduleSkipAdvance();
+    } else {
+      // [l]が直後にある場合はそこまで進めて1回のクリック待ちに統合する
+      // （テキスト表示と[l]で二重にクリックを要求しない）
+      const next = this.currentScenario?.[this.currentIndex + 1];
+      if (next && (next.type === 'wait_click' || next.type === 'page_break')) {
+        this.currentIndex++;
+        this.processCommand();
+      }
     }
   }
 
@@ -2143,6 +2257,7 @@ class GameEngine {
             if (scenario) {
               this.currentScenario = scenario;
               this.currentIndex = 0;
+              this.syncEpisodeForScenario(choice.next);
               this.clearCharacters();
               this.processCommand();
             }
@@ -2182,11 +2297,11 @@ class GameEngine {
     this.clearCharacters();
     this.setBackground(completionBackground);
 
-    // 次のエピソードを探す
+    // 次のエピソードを探す（ルートは終点なので「次の話へ」は出さない）
     const currentIdx = this.episodes.findIndex(ep => ep.scenario === this.currentEpisode?.scenario);
     const nextEp = this.episodes[currentIdx + 1];
 
-    if (nextEp) {
+    if (nextEp && !this.currentEpisode?.route) {
       // 次のエピソードがある場合、選択肢を表示
       this.showEndMenu(nextEp);
     } else {
@@ -2198,10 +2313,10 @@ class GameEngine {
     const overlay = document.getElementById('game-menu-overlay');
     const menu = overlay.querySelector('.game-menu');
     menu.innerHTML = `
-      <h3>エピソード終了</h3>
-      <button id="btn-next-episode">次の話へ（${nextEp.title}）</button>
-      <button id="btn-end-to-episodes">エピソード選択へ</button>
-      <button id="btn-end-to-title">タイトルへ</button>
+      <h3>${t('end.heading')}</h3>
+      <button id="btn-next-episode">${t('end.next', { title: loc(nextEp, 'title') })}</button>
+      <button id="btn-end-to-episodes">${t('menu.toEpisodes')}</button>
+      <button id="btn-end-to-title">${t('menu.toTitle')}</button>
     `;
     overlay.classList.remove('hidden');
 
@@ -2228,9 +2343,9 @@ class GameEngine {
     const menu = document.querySelector('.game-menu');
     menu.innerHTML = `
       <h3>MENU</h3>
-      <button id="btn-resume">ゲームに戻る</button>
-      <button id="btn-to-episodes">エピソード選択へ</button>
-      <button id="btn-to-title">タイトルへ</button>
+      <button id="btn-resume">${t('menu.resume')}</button>
+      <button id="btn-to-episodes">${t('menu.toEpisodes')}</button>
+      <button id="btn-to-title">${t('menu.toTitle')}</button>
     `;
     // イベントリスナーを再設定
     document.getElementById('btn-resume').onclick = () => this.hideGameMenu();
@@ -2332,7 +2447,7 @@ class GameEngine {
       const div = document.createElement('div');
       div.className = 'log-entry';
       div.innerHTML = `
-        <div class="log-speaker">${entry.speaker || '（モノローグ）'}</div>
+        <div class="log-speaker">${entry.speaker || t('log.monologue')}</div>
         <div class="log-text">${entry.text}</div>
       `;
       container.appendChild(div);

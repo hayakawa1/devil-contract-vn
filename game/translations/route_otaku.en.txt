@@ -1,0 +1,294 @@
+14|After school. The science prep room.
+16|The room where the seven of them and I gathered on the club's first day.
+17|These days, it's basically Rika's private room.
+22|You came. Please sit. Not there, that's the reagent shelf. Please don't lean on it.
+24|She was wearing a lab coat. The sleeves stopped at her elbows.
+25|Not a single button would close.
+28|Your lab coat's way too tight.
+31|I'm aware. It's the largest size in the science club's supplies.
+34|More importantly, look at this.
+36|Seven empty bottles stood in a row on the desk.
+39|...You collected everyone's?
+42|I negotiated. Yui said "I was gonna throw it out," Rin-senpai said "I am keeping it as evidence," and Misaki said "after I take a pic."
+45|Kujo-san helped me search the trash cans at the station.
+48|...That's dedication.
+51|That's science.
+53|Rika held one bottle up to the light.
+56|There are small numbers printed under the labels.
+59|03, 07, 12, 13, 14, 15, 16.
+62|...They're not consecutive.
+65|Correct. And the lowest is 03.
+68|—So where did 01 and 02 go?
+70|Rika's eyes were shining.
+71|Not a reflection off her glasses. From inside.
+74|The devil said, "I'm handing out seven of the same potion." But the numbers go up to sixteen.
+77|In other words, someone drank this before us.
+80|I want to research it. What that devil is. What this potion is.
+83|...And what the "second bottle" is.
+86|You know about the second bottle?
+89|In the science prep room, the first day we all gathered, the devil said it to me alone on its way out.
+92|"You'd be interested in the second bottle too, wouldn't you?"
+94|A chill ran down my spine.
+97|Will you help me? I need someone to keep records.
+100|Measuring my own body and recording it myself has its limits.
+102|"I'll help. But don't do anything reckless."
+103|"...Stay away from the second bottle."
+110|I'll help. But don't do anything reckless.
+115|Thank you. We can agree on a definition of "reckless" later.
+118|You have no intention of agreeing on anything.
+121|I do. About ninety percent.
+123|She handed me a brand new notebook.
+124|On the cover was written "Subject R: Observation Log."
+127|Mr. Recordkeeper. Every day, please write down my measurements—and also how I seem.
+130|Because "how I seem" is something I can't measure.
+136|...Stay away from the second bottle.
+141|I won't go near it. I'll only research it.
+144|That IS going near it.
+147|...
+150|Whenever I say "I want to know," you always pull back a little.
+153|Fine. I'll do it alone. I'm used to it.
+155|She looked away from me and put the bottles back in their case, one by one.
+156|Carefully. So no one else could touch them.
+168|One week later. The science prep room at night.
+171|I was writing page seven of "Subject R: Observation Log."
+172|"Grip strength: unmeasurable. Sleep: three hours. Dinner: two protein bars. How she seems: having fun. But dark circles under her eyes."
+174|I heard from Rin that Rika had been staying overnight at school.
+175|"I told the teachers it's the science club's nighttime observation. It's the third day."
+176|I snuck into the school building at night.
+182|—I found it.
+184|Rika spread an old booklet out on the desk.
+185|"Science Club Bulletin, Issue No. 12." Dated thirty years ago.
+188|It was on the bottom shelf of the library stacks. No record of anyone ever checking it out.
+191|Read this part.
+193|"Report: Cases of sudden muscle hypertrophy in two female students."
+194|"Case One. Several weeks after the hypertrophy, re-examined at the subject's request. Marked flattening of emotional expression observed. The subject stated, 'It got quiet.'"
+195|"Case Two. Record deleted at the subject's request."
+198|...Case One.
+201|Yes. Most likely the person with bottle number 01.
+204|"Flattening of emotional expression." "It got quiet."
+207|...I believe this is the effect of the second bottle.
+209|The devil had said it that night, in my room.
+210|"The second one remakes the heart along with it. No hesitation, no wavering, no getting hurt."
+213|Case Two had her record deleted. Which means she was still in a state where she could choose of her own free will.
+216|I think the person with number 02 didn't drink the second bottle.
+219|...What happened to her afterward isn't written anywhere.
+224|&f.main_name. I've realized something.
+227|No one has ever accurately recorded the effects of the second bottle.
+230|The author of Case One only observed from the outside. No one knows what happens on the inside.
+233|...Rika.
+236|I know. I know, but—
+239|"No precedent" is a drug to me.
+241|Rika smiled.
+242|With her usual researcher's face.
+243|—For the first time, that face scared me a little.
+255|A few days later. The science room after school.
+259|Rika had a heart rate monitor clipped to her finger.
+262|Please help me with a small experiment.
+265|What kind?
+268|I'm measuring the change in my heart rate when you enter the room.
+271|...Huh?
+274|Before you entered: sixty-eight beats per minute. On entry: ninety-four. Currently: eighty-eight.
+277|A significant increase.
+280|...What's this experiment for?
+283|To verify whether or not I have romantic feelings for you.
+285|I couldn't say anything.
+290|That night, the devil told me "his type," and I drank the potion.
+293|But I believe the reason I drank it was "because I wanted to be the first test subject."
+296|Was it because of my feelings? Or because of my desire to research?
+299|...I don't know. Because I can't measure it.
+302|My heart rate goes up. But it also goes up with nervousness, or fear.
+305|There's no way to isolate "love" and measure it alone.
+308|I can't prove the existence of something I can't measure.
+311|...If you can't prove it, it's the same as not existing?
+314|For me, yes. ...That's how I've always lived.
+316|The number on the monitor rose to ninety-one.
+317|Rika looked at it with a troubled face.
+329|Friday of that week. Night.
+332|I went to the science prep room to write the observation log.
+334|Rin contacted me. "Kanzaki-san is staying overnight again tonight. Could you go check on her?"
+337|Through the gap in the door, I heard voices.
+344|—See? Didn't I say you'd be interested?
+347|...The bottle number is...?
+350|17. Made just for you.
+352|A small bottle in the devil's front paw.
+353|The same shape as the first one. Only the color of what was inside was a little darker.
+356|The second bottle. Drink it, and you can observe every effect from the inside.
+359|You're the only one who can write the "continuation" of that report from thirty years ago.
+362|And you know what? The noise you can't measure—"love," "fear," all of that—disappears too.
+365|No more agonizing over things you can't prove. You'll be the perfect researcher.
+368|...
+371|...Will I still be able to take records? After I drink it?
+374|You will. They'll be even more accurate. No more subjectivity getting in.
+376|Rika's hand began to reach for the bottle.
+379|Rika.
+384|...! Why are you here?
+387|Hey there. You came at a good moment.
+390|We were just discussing her research plans. Whether she drinks it is up to her, of course.
+392|Rika was looking at the bottle.
+393|The same eyes she'd had when she found that thirty-year-old bulletin.
+396|...&f.main_name. Please don't stop me.
+399|This is research only I can do.
+401|—What do I say?
+403|"It's okay if you can't measure it. I'll keep that record."
+404|"...It's your research. Your call."
+409|It's okay if you can't measure it.
+412|...
+415|If your "love" can't be measured, then I'll record it.
+418|Not "her heart rate went up." What you laughed at, what troubled you, what scared you.
+421|I'll write all of it. Subjectively.
+424|...Subjective data has low reliab—
+427|Low is fine.
+430|If you drink the second bottle, that record can never be written anywhere.
+433|"Flattening of emotional expression." One line, and that's the end.
+436|That's not the one line I've been keeping records of you for.
+441|...
+444|...I'm not even measuring my heart rate right now.
+447|But I can tell. It's going up so much.
+450|...Is this nervousness? Is it fear?
+453|No idea. You decide.
+456|...You're not fair.
+458|Rika pulled her hand back from the bottle.
+459|And then, slowly, she took off her glasses and wiped her eyes.
+462|...I'm returning it.
+465|"No precedent" is appealing. But "no precedent" applies to this, too.
+470|...Hmm. A return, huh.
+473|Number seventeen goes missing, then. Fine. The game's still going, after all.
+477|The shadow vanished.
+484|...It's your research. Your call.
+486|The instant I said it, I knew I'd gotten it wrong.
+491|...Yes. You're right.
+494|You always respect my research.
+497|...Maybe right now I wanted you to stop me. I don't know. I can't measure it.
+499|She took the bottle and copied the label number into her notebook.
+500|"No.17. Time of ingestion: 21:04."
+503|—Wait!
+505|Too late.
+517|One week later.
+522|I've stopped researching the second bottle.
+525|I'm starting a different study instead.
+528|A different one?
+531|What happened after "Case Two."
+534|The person who deleted her record. The person who didn't drink the second bottle. How she lived.
+537|That's probably the data we need most.
+542|I brought out the alumni roster from thirty years ago from the student council archives.
+547|I'm going through alumni socials one by one! I searched "muscle" and found someone who might be her!
+549|Everyone in the club pitched in, a little at a time.
+551|And then, three days later.
+557|...She replied.
+559|The account Misaki found. A woman around fifty.
+560|Her profile picture showed her laughing with a child and a man who seemed to be her husband.
+561|—Her arms were still astonishingly thick.
+564|"I'm bottle 02. That takes me back."
+567|"I didn't drink the second bottle. When I was about to, the person beside me stopped me."
+570|"I've been married to that person for twenty-five years now."
+573|"My body never went back. But now I think I'm glad it didn't."
+576|"To my juniors: no need to say hi to the devil for me."
+578|Rika stared at the screen for a long time.
+583|...n = 1. Statistically, it proves nothing.
+586|But—
+589|I think I'll believe in this one case for the rest of my life.
+601|That night. The roof.
+606|Hey there. What do you taste like right now?
+609|...You knew about number 02?
+612|Of course. She was the first one I ever lost to.
+615|...It's been thirty years since I had the second bottle returned twice.
+618|You know, Rika's wish was "to be the first test subject."
+621|But she isn't first anymore, is she? A precedent turned up.
+624|...She'll still be first.
+627|First in the experiment of trusting her feelings without measuring them.
+630|Hmm.
+635|Then I'll look forward to seeing who co-authors that paper.
+639|The shadow vanished.
+651|One week later. The science prep room at night.
+656|I wrote a paper.
+658|Rika held out a stapled stack of paper.
+659|On the cover: "Observational Report on the Devil's Potion — with Appendix: A Guide to Not Drinking the Second Bottle."
+662|It'll go in the Science Club Bulletin, Issue No. 51. For someone, thirty years from now.
+665|And—the author line is still blank.
+668|It's your name, obviously.
+671|I'll write my name. The problem is the name next to it.
+676|All the records in the second half of this report are your subjective observations.
+679|What I laughed at, what troubled me, what scared me.
+682|...Not listing the person who wrote that as a co-author would be a violation of research ethics.
+685|And also—
+688|I've been thinking ever since that night. About the reason for my rising heart rate.
+691|I've reached a conclusion. Without measuring.
+694|I love you.
+697|...Will you be my co-author?
+699|"Let's co-author it. Everything after this, too."
+700|"...Let me stay your recordkeeper."
+708|Let's co-author it.
+711|Everything after this, too. ...I love you too.
+716|...
+719|...I should have had the heart rate monitor on just now.
+722|Don't measure it.
+725|...Okay. I won't.
+729|Rika picked up a pen and wrote two names on the author line.
+730|Her name, and mine.
+731|After she finished, we both noticed the letters were a little shaky, and laughed.
+740|—And that's game. You win.
+743|As promised, one bite. A wedding gift.
+745|The devil's paw tapped my chest, lightly.
+746|Something—just a sliver—was taken.
+747|—Probably the edge of the moment we laughed at the shaky letters.
+750|...Mm. A flavor you can't measure. Even I can't tell what's in it.
+753|The taste of losing, for the first time in thirty years. Bye now. I won't be coming back.
+761|A few months later.
+765|Science Club Bulletin, Issue No. 51, was placed on the bottom shelf of the library stacks.
+766|Right next to Issue No. 12.
+769|...&f.main_name. Did you write today's log?
+772|I did. "How she seems: looking at me the whole time."
+775|...That's far too subjective.
+778|Co-author privileges.
+781|...Heh. Okay.
+783|Rika Kanzaki.
+784|The girl who wanted to measure everything
+785|now believes in one thing she doesn't need to measure.
+787|(GOOD END — "n = 2")
+795|...Let me stay your recordkeeper.
+800|...
+803|I want to properly record your feelings. But I'm not confident I can write down mine yet.
+806|...I see.
+809|Insufficient data, then.
+814|Understood. I'll publish it as sole author.
+817|I'll put your name in the acknowledgments. As "recordkeeper."
+820|...Once additional data comes in, I'll publish a revised edition. Be prepared.
+829|...On hold, then.
+832|She didn't drink the second bottle. But you didn't become "the real thing," either.
+835|I'm still hungry. ...Well, I'll wait for the revised edition.
+843|A few months later.
+845|I'm still writing "Subject R: Observation Log."
+846|We're on the third notebook now.
+851|How did I "seem" today?
+854|"Thought of a new hypothesis and was very loud."
+857|...Accurate.
+859|There's still no deadline for the revised edition.
+861|(NORMAL END — "The Recordkeeper")
+870|She drank it in one gulp.
+875|The sound drained out of the world.
+877|Her lab coat split down the back.
+878|Her shoulders, her arms, swelled up one more stage.
+883|—And before any of that,
+884|the light behind her glasses, the one that shone from inside, went out.
+887|...Thirty seconds after ingestion. Renewed hypertrophy of muscle tissue confirmed.
+890|Emotional expression: none. Heart rate: sixty-two per minute. Stable.
+893|...Ah. So this is what it was.
+896|It's very quiet.
+899|Rika...!
+902|&f.main_name. A recordkeeper is no longer necessary.
+905|Subjectivity is noise.
+910|—And that's game.
+913|Well then, as promised. —Thanks for the meal.
+915|The devil's paw touched my chest.
+916|The heat drained away.
+917|The frustration. The fear. The words I'd written in the "how she seems" column of the log.
+918|One by one, they disappeared—
+923|(...)
+928|A few months later.
+930|Science Club Bulletin, Issue No. 51, carried a report on "Case Three."
+931|Author: Rika Kanzaki. Subject: Rika Kanzaki.
+932|A very accurate, very short report.
+934|I read it in the library.
+935|It was well written, I thought.
+936|I didn't think anything beyond that.
+938|(BAD END — "No. 17")

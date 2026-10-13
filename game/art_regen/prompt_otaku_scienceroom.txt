@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\otaku_scienceroom.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Scene: school science prep room at night, shelves of glassware and books, a desk lamp, a whiteboard covered in handwritten formulas and muscle-fiber diagrams. In the foreground left, a high-school boy with short black hair in a dark navy blazer seen from behind (face not visible). The heroine from the reference (short messy dark purple hair, glasses, oversized dark gray hoodie jacket with purple stripes, plaid skirt) sits at the desk, very muscular like the reference, writing in a notebook, looking up at him with a small embarrassed smile. A small empty medicine bottle stands on the desk. 16:9 landscape event CG.
+When done, print the saved file path.

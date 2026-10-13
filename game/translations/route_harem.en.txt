@@ -1,0 +1,198 @@
+17|...You're still not choosing anyone?
+20|Nope.
+23|I told you, didn't I? While you're being nice to everyone, someone might reach for the second bottle.
+26|I know.
+29|That's why I'm telling all of them.
+32|...Telling them what?
+35|About your game. About the second bottle. About what happens if I lose. Everything.
+40|...Oh?
+43|Sure. Nothing in the rules says "keep it a secret."
+46|But once they know, they'll be angry, won't they? Finding out their hearts were the prize in a bet.
+49|I'm telling them so they can be angry.
+57|The next day, after school. The science prep room.
+58|I called the seven of them back to the room where we'd first gathered.
+63|Everyone is present. &f.main_name, the floor is yours.
+66|...There's something about the devil I haven't told you yet.
+68|I told them everything.
+70|How the devil came to my room that night.
+71|How it told me, "This is a game."
+72|If I became "the real thing" with one of the seven, I'd win.
+73|If one of the seven threw herself away and drank the "second bottle," the devil would win.
+74|How the second bottle changes the body even more, and remakes the heart along with it—into a heart that doesn't hesitate, doesn't waver, doesn't get hurt.
+75|And how, if the devil won, it would eat all of my emotions at once.
+77|—When I finished, the room was silent.
+84|...Huh?
+87|What the hell? So our hearts were, like, the prize in a bet?
+90|...Don't go betting on us.
+93|I'm not the one who made the bet. But I'm the one who started this.
+96|...I'm sorry. I should have told you sooner.
+102|...I had heard a little about the existence of the second bottle.
+105|The devil said to me, "You'd be interested in the second bottle too, wouldn't you?"
+108|...To be honest, I was interested.
+115|...So what you're saying is this.
+118|On whichever night one of us is at our weakest, that thing shows up with a bottle.
+121|...And it tells us, "Drink this and you'll never have to cry again."
+124|...Honestly, I think there'd be a night when I'd drink it.
+126|Yui tried to laugh and failed.
+127|No one laughed. Every one of them was thinking the same thing.
+133|...Senpai, what do you want to do?
+136|If you pick one person, the game ends, right?
+139|...I can't choose. Not yet.
+142|While I'm facing one person, someone else might take the bottle alone.
+145|That scares me more than anything.
+148|So—I have a favor to ask.
+151|If the second bottle comes, don't take it alone.
+154|Call me. It doesn't have to be me. Call anyone here.
+157|It comes when you're alone, when you're weakest. So—we don't let anyone be alone.
+159|A long silence.
+165|...I will put it in the minutes.
+168|"The Second Bottle Pact." Article One. Anyone offered the second bottle shall not accept it on the spot, and shall contact a club member.
+171|Article Two. Anyone so contacted shall come running, regardless of time or place.
+174|Article Three—
+177|...Article Three is a penalty clause for &f.main_name.
+180|...Huh?
+183|"The founder shall not carry everything alone."
+186|That is all. All in favor?
+188|Seven thick arms went up.
+200|After that, a month passed.
+202|The devil came.
+203|Just as it said it would—on the weakest nights.
+210|—The first was Misaki.
+211|Two in the morning, after reading hate comments for hours.
+214|...Yui, sorry, it's so late. The cat's here. Right now.
+219|On my way! I'm in pajamas! Three minutes!
+221|Yui really did make it in three minutes.
+222|The two of them sat on a bench and talked until morning.
+223|The devil went home, still holding the bottle, looking bored.
+230|—Next was Hibiki.
+231|The night her tournament ban became official.
+234|...Kujo. Come. The dojo.
+239|...Why me?
+242|Because you're the best there is at "wanting to hit something and not hitting it."
+245|...Is that supposed to be a compliment?
+247|Sae transferred trains to get there.
+248|The two of them did no-contact sparring all night long.
+249|The devil yawned in a corner of the dojo.
+256|—Rika called Rin on her own.
+259|Rin-senpai. I've been handed a bottle. I haven't opened it yet.
+262|...I want to open it. Very much.
+267|Understood. In that case, the student council will take custody of the bottle as "evidence."
+270|The safe can only be opened with the agreement of two people: me, and &f.main_name.
+273|...That's not fair.
+276|It's procedure.
+278|The bottle was locked in the student council room safe.
+279|The devil knocked on the safe three times and went home.
+286|—Miu called me.
+287|The night she had a huge fight with Tomoki.
+290|...Senpai. Will you come?
+293|...That's Article Two, right?
+295|I went.
+296|Tomoki was the one who opened the front door.
+297|"Miu says she called you." That was all he said before letting me in.
+299|That night, the three of us baked cookies in the Takahashi kitchen.
+300|Outside the window, the devil scrunched up its face at the burnt smell.
+308|—Yui called Rin on the evening she fought with her mom.
+309|Rin called Yui on the night she made a mistake at student council.
+310|Sae called Misaki the day she got harassed at the station.
+312|Every night, a phone rang somewhere.
+313|And every time, someone ran.
+315|In one month, the devil came eleven times.
+316|All eleven times, the bottle stayed closed.
+328|A month later, at night. The gym.
+330|Club practice had ended, and everyone was about to go home.
+331|Every light in the gym went out at once.
+336|...Okay, seriously.
+339|Isn't this cheating?
+341|In the middle of the dark gym, the devil floated.
+342|Around it—seven small bottles, lined up in midair.
+345|One month, eleven times. Every single one ruined by one phone call.
+348|My game is the "make them choose alone on their weakest night" game, you know.
+351|Never being alone has to be against the rules.
+354|The rules don't say "you have to take it alone."
+357|...Your personality's gotten worse.
+362|Fine. Then, a final sale.
+365|Seven bottles. One for everyone. Tonight, right here, I'll hand them out in front of all of you.
+368|On a night when no one's weak, in a place where no one's alone—will anyone still reach for one?
+371|If even one of you drinks, I win. If no one drinks—
+374|...If no one drinks, what do I do? I hadn't thought about that.
+376|One by one, the bottles floated down in front of the seven of them.
+382|...I don't want it.
+385|I'm still in the middle of making up with Mom. If I stop crying, making up won't mean anything.
+390|Unnecessary. Per Article One of the minutes, I decline to accept it.
+393|...Besides, a version of me who doesn't waver couldn't call Yui.
+399|Nah, I'm good. Like, if I drank this, Yui wouldn't show up in her pajamas when I'm crying over my search results anymore.
+402|That was, like, honestly the happiest I've been.
+407|Combined with the one in the safe, that makes two samples of the second bottle.
+410|...I'm returning it. My research subject has changed to "what happens after, to the ones who don't drink."
+416|Don't want it. The frustration is mine.
+421|...Don't want it.
+424|I quit being "unapproachable."
+430|...I don't want it.
+433|I decided I'd grow up while staying a crybaby.
+435|The seven bottles stayed floating in midair.
+441|...
+444|...And you?
+447|Me?
+450|Want one too? Special offer.
+453|Drink it, and you won't hesitate. Even if you can't choose any of the seven, it won't hurt at all.
+456|The easiest way to "choose no one."
+458|An eighth bottle dangled from the devil's front paw.
+460|"No thanks. Hesitating is my job."
+461|"...If it means nobody gets hurt..."
+466|No thanks.
+469|Hesitating is my job.
+472|All seven of them just said no, hesitating the whole time. I can't be the only one who takes the easy way.
+475|Besides—Article Three. "The founder shall not carry everything alone."
+478|If I hesitate, I'll call them.
+483|...Pff, ahaha.
+486|Ahahahaha!
+488|The devil laughed.
+489|A laugh I'd never seen before—like it was clutching its stomach.
+492|All eight, returned. I've never lost like this before.
+498|...If it means nobody gets hurt...
+505|—Idiot!
+507|Yui's hand grabbed my wrist.
+508|Hibiki's hand knocked the devil's bottle away.
+511|That's a violation of Article Three.
+514|Rin-senpai wrote "don't carry it alone," didn't she?!
+520|...I am adding a penalty.
+523|"The founder shall serve as the club's cleaning duty for the next year."
+526|...That's harsh.
+529|That's the lenient version.
+531|I was surrounded by seven of them.
+532|Every one of them was angry—and every one of them looked about to cry.
+535|...Sorry. I don't want it. I really don't.
+540|...Aww. This time his friends stopped him.
+543|All eight, returned.
+556|...So. How do I score this?
+559|No one drank the second bottle. So I didn't win.
+562|But no one became "the real thing" with you, either. So you didn't win.
+565|...No verdict.
+568|Seven wavering hearts right in front of me, the whole time, and I can't take a single bite.
+571|This is the worst game ever. First time this has ever happened.
+574|...Sorry about that.
+577|You should be.
+579|The eight bottles scattered and were sucked into the devil's shadow.
+582|...But remember this.
+585|The game isn't over. Someday you might choose someone. Or you might never choose anyone.
+588|When that happens, if anyone spends a night alone—I'll be back.
+591|...If you come, a phone will just ring.
+596|...Heh. I'm sure it will.
+599|Bye now. I'll drop by now and then, still hungry.
+603|Every light in the gym came back on at once.
+609|After that, half a year passed.
+613|The Muscle Club is still meeting today, in a corner of the gym.
+615|Yui sometimes fights with her mom, and sometimes makes up.
+616|The "Second Bottle Pact" page is still in Rin's minutes.
+617|Sometimes everyone shows up on Misaki's streams.
+618|Rika's research theme is "what happens after, to the ones who don't drink." She's still collecting data.
+619|Hibiki can compete in tournaments now, in the kata division.
+620|Sae transfers trains to come twice a week.
+621|Miu's cookies don't break anymore. Not a single one.
+623|I still haven't chosen anyone.
+624|I don't know if that's the right answer.
+626|But—if my phone rings in the middle of the night, I'll run.
+627|Whether one of the seven is calling. Or one of the seven is calling for me.
+629|No one spends a night alone.
+630|—That's our answer, for now.
+632|(SPECIAL END — "Eight Bottles Returned")

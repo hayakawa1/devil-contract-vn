@@ -31,3 +31,16 @@ venv/
 
 # Output directory (generated files)
 output/
+
+# Game: generated art sources, Tauri build outputs, dev logs
+game/art_regen/*.png
+game/art_regen/*.jpg
+game/art_regen/*.log
+game/art_regen/log_*.txt
+game/art_regen/old/
+game/dist-tauri/
+game/dist-tauri-embed/
+game/release/
+game/src-tauri/target/
+game/*.log
+.vercel

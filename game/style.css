@@ -56,7 +56,7 @@ body {
 }
 
 #game-container {
-  /* 16:9アスペクト比を維持 */
+  /* Distribution target: fixed 16:9 stage, scaled to the viewport. */
   aspect-ratio: 16 / 9;
   /* ビューポートに収まる最大サイズ */
   width: min(100vw, calc(100vh * 16 / 9));
@@ -310,6 +310,44 @@ body {
   opacity: 1;
 }
 
+/* ===== 言語切り替え ===== */
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+  position: relative;
+  z-index: 10;
+}
+
+.config-item .lang-switch {
+  margin-top: 0;
+}
+
+.lang-switch button {
+  padding: 0.4rem 1.1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  background: rgba(10, 10, 10, 0.7);
+  border: 1px solid var(--dialogue-border);
+  color: var(--foreground);
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.08em;
+}
+
+.lang-switch button:hover {
+  opacity: 1;
+  border-color: var(--primary);
+}
+
+.lang-switch button.active {
+  opacity: 1;
+  border-color: var(--primary);
+  color: var(--primary-light);
+  box-shadow: 0 0 16px var(--primary-glow);
+}
+
 /* ===== エピソード選択画面 ===== */
 #episodes-screen,
 #characters-screen {
@@ -493,10 +531,20 @@ body {
   background: #1a1a1a;
   border-radius: 50%;
   margin: 0 auto 0.5rem;
-  background-size: 200%;
-  background-position: center 15%;
+  background-size: 340%;
+  background-position: center 30%;
   border: 2px solid var(--primary);
   box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.character-card[data-character="akuma"] .char-portrait {
+  background-size: 150%;
+  background-position: center 40%;
+}
+
+.character-card[data-character="mother"] .char-portrait {
+  background-size: 245%;
+  background-position: center 24%;
 }
 
 .character-card .char-name {
@@ -535,10 +583,20 @@ body {
   height: 150px;
   background: #1a1a1a;
   border-radius: 50%;
-  background-size: 200%;
-  background-position: center 15%;
+  background-size: 320%;
+  background-position: center 30%;
   border: 3px solid var(--primary);
   box-shadow: 0 0 25px var(--primary-glow);
+}
+
+.detail-portrait[data-character="akuma"] {
+  background-size: 145%;
+  background-position: center 40%;
+}
+
+.detail-portrait[data-character="mother"] {
+  background-size: 230%;
+  background-position: center 24%;
 }
 
 .detail-info h2 {
@@ -623,8 +681,8 @@ body {
 
 .character {
   position: absolute;
-  width: 28%;
-  height: 85%;
+  width: 36%;
+  height: 98%;
   bottom: 0;
   background-size: contain;
   background-position: bottom center;
@@ -633,19 +691,23 @@ body {
   transition: opacity 0.4s ease, filter 0.3s ease;
 }
 
-/* 左: 画面左端から5% */
+/* 左 */
+.character[data-character="mother"] {
+  background-size: 78% auto;
+}
+
 #char-left {
-  left: 5%;
+  left: 0%;
 }
 
-/* 中央: 画面中央（36%開始で28%幅 = 36%~64%） */
+/* 中央 */
 #char-center {
-  left: 36%;
+  left: 32%;
 }
 
-/* 右: 画面右端から5%（67%開始で28%幅 = 67%~95%） */
+/* 右 */
 #char-right {
-  left: 67%;
+  left: 64%;
 }
 
 .character.visible {

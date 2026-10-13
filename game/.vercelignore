@@ -1,0 +1,10 @@
+art_regen
+promo
+translations
+dist
+dist-tauri
+dist-tauri-embed
+release
+src-tauri
+electron
+*.log

@@ -1,468 +1,330 @@
-; route: 格闘技部
+; route: 格闘技部（虎谷響）
+; 第3話の一週間後から。強くなった響は、誰とも戦えなくなっている。
 *start
-[jump target="kakutogi_00"]
-
-; source: 第1話_勝ちすぎた代償.txt
-*kakutogi_00
-; ■ 格闘技部ルート - 第1話「勝ちすぎた代償」
-
-; 勝利執着：+3
-; 孤立度：+2（強すぎて孤立）
+[jump target="kakutogi_01"]
 
 ; ================================================================================
-*kakutogi_00_scene_1
-; シーン1：夜／学校道場（呼び出し）
+; 第1話「出場停止」
 ; ================================================================================
-
+*kakutogi_01
+[chara_hide_all]
 [bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_isolation.mp3"]
 
-[chara_hide_all]
+（夜。格闘技部の道場。）[l][er]
 
-（夜9時。学校に呼び出された。）[l][er]
-
-（体育館の道場。）[l][er]
-
-
-（彼女は、一人でサンドバッグを打っていた。）[l][er]
+（"話がある。道場に来い"——響からの、LINEは、それだけだった。）[l][er]
 
 [chara_show name="kakutogi" face="default" pos="center" time="1000"]
 
-（——いや、サンドバッグだったもの、か。）[l][er]
-
-（すでに原形をとどめていない。）[l][er]
-
-（床も、ひび割れている。）[l][er]
-
+（響は、サンドバッグの前に、立っていた。）[l][er]
+（打っては、いなかった。）[l][er]
 
 #kakutogi
 来たか[l][er]
 
 #protagonist
-呼んだのはお前だろ[l][er]
+どうした、こんな時間に[l][er]
 
 #kakutogi
-……[l][er]
-
-（打つのをやめない。）[l][er]
-
-
-（ドスン、ドスン、と重い音が響く。）[l][er]
-
-（一発一発が、骨を砕くような重さ。）[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_00_scene_2
-; シーン2：練習試合の結果
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
+……今日、顧問に言われた[l][er]
 
 #kakutogi
-今日、練習試合があった[l][er]
+"当面、部員とのスパーリングは禁止"[l][er]
+
+#kakutogi
+それから、来月の県大会。連盟から、"健康上の理由が確認できるまで、出場を見合わせるように"と[l][er]
 
 #protagonist
 ……[l][er]
 
 #kakutogi
-相手は、県大会3位の選手だった[l][er]
-
-#protagonist
-——結果は[l][er]
-
-
-（彼女は、拳を止めた。）[l][er]
+当然だ。私が今、誰かと組んだら、相手は、骨が折れる[l][er]
 
 #kakutogi
-一撃で、終わった[l][er]
+昨日、確かめた。軽く投げたつもりで、マットが、裂けた[l][er]
 
-（彼女は、拳を見た。）[l][er]
+（道場の隅に、テープで補修されたマットが、立てかけてあった。）[l][er]
 
-（傷一つない。）[l][er]
-
-#kakutogi
-相手は、担架で運ばれた[l][er]
-
-#protagonist
-……[l][er]
-
-（沈黙。）[l][er]
+[chara_show name="kakutogi" face="sad" pos="center" time="500"]
 
 #kakutogi
-顎の骨が、折れたらしい[l][er]
-
-#protagonist
-お前——[l][er]
+笑えるだろう[l][er]
 
 #kakutogi
-手加減したつもりだった[l][er]
-
-（彼女の声が、震えた。）[l][er]
-
-
-; ================================================================================
-*kakutogi_00_scene_3
-; シーン3：強くなりたかった
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[chara_show name="kakutogi" face="default" pos="center" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
+"今、強い君"になれる、と言われて、飲んだ。お前の前で、もう二度と負けないために[l][er]
 
 #kakutogi
-なあ[l][er]
-
-（彼女は、俺を見た。）[l][er]
+……強くなった。誰にも負けない[l][er]
 
 #kakutogi
-私は、強くなりたかった[l][er]
+代わりに、誰とも、戦えなくなった[l][er]
 
 #protagonist
 ……[l][er]
 
 #kakutogi
-誰にも負けない。勝ち続ける。それが目標だった[l][er]
-
-（彼女は、笑った。）[l][er]
-
-（苦しそうに、笑った。）[l][er]
+それで、頼みがある[l][er]
 
 #kakutogi
-願い、叶ったな[l][er]
+ミットを、持ってくれ[l][er]
 
 #protagonist
-——[l][er]
+……俺が？[l][er]
 
 #kakutogi
-なのに——なんでこんな……[l][er]
+同好会の連中は、私と同じ体だ。加減がわからなくなる[l][er]
 
-（声が、震えた。）[l][er]
+#kakutogi
+普通の体のお前が持っていれば、私は、絶対に加減を忘れない[l][er]
 
-[chara_hide name="kakutogi" time="1000"]
+#kakutogi
+……お前を壊すのだけは、死んでも、嫌だからな[l][er]
+
+[glink target="kakutogi_01_a" text="「わかった。持つ」"]
+[glink target="kakutogi_01_b" text="「……怖いから、やめとく」"]
+[s]
+
+*kakutogi_01_a
+[eval exp="f.kakutogi_mitt = true"]
+
+#protagonist
+わかった。持つ[l][er]
+
+[chara_show name="kakutogi" face="surprised" pos="center" time="500"]
+
+#kakutogi
+……いいのか[l][er]
+
+#protagonist
+お前が加減するって言ったんだろ。信じる[l][er]
+
+#kakutogi
+……っ[l][er]
+
+[chara_show name="kakutogi" face="default" pos="center" time="500"]
+
+（ミットを、両手で構えた。）[l][er]
+
+（響の拳が、来た。）[l][er]
+
+（——ぱすん、と。）[l][er]
+（間の抜けた音がした。）[l][er]
+（ミットに、羽毛が当たったみたいだった。）[l][er]
+
+#protagonist
+……え[l][er]
+
+#kakutogi
+……加減した[l][er]
+
+#protagonist
+しすぎだろ[l][er]
+
+#kakutogi
+うるさい。初日だ[l][er]
+
+（響は、二発目を打った。）[l][er]
+（今度は、少しだけ、音がした。）[l][er]
+（打つたびに、ほんの少しずつ、音が大きくなる。）[l][er]
+（——加減を、一から、覚え直しているみたいだった。）[l][er]
+
+[jump target="kakutogi_01_end"]
+
+*kakutogi_01_b
+#protagonist
+……怖いから、やめとく[l][er]
+
+[chara_show name="kakutogi" face="sad" pos="center" time="500"]
+
+#kakutogi
+……そうか[l][er]
+
+#kakutogi
+正しい。お前は、正しい[l][er]
+
+#kakutogi
+私でも、私が怖い[l][er]
+
+（響は、ミットを、棚に戻した。）[l][er]
+（それから、サンドバッグに向き直って——打たなかった。）[l][er]
+（拳を、握ったまま、下ろした。）[l][er]
+
+#kakutogi
+……帰っていいぞ。呼び出して、悪かった[l][er]
+
+#protagonist
+……いや。見てる。ここで[l][er]
+
+#kakutogi
+……好きにしろ[l][er]
+
+[jump target="kakutogi_01_end"]
+
+*kakutogi_01_end
+#悪魔の声
+——努力を飛ばした体で、努力をやり直すの？[l][er]
+
+（道場の窓の外で、何かが、笑った気がした。）[l][er]
+（振り返ったときには、もう、何もいなかった。）[l][er]
+
+[jump target="kakutogi_02"]
 
 ; ================================================================================
-*kakutogi_00_scene_4
-; シーン4：孤立
+; 第2話「意味のない練習」
 ; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_fight.mp3"]
-
-#kakutogi
-もう誰も、私と組んでくれない[l][er]
-
-#kakutogi
-スパーリングも、断られる[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-先生も、試合に出すなって[l][er]
-
-#kakutogi
-『階級を逸脱している』『危険だ』って[l][er]
-
-（道場の静寂。）[l][er]
-
-（風が、窓を揺らす。）[l][er]
-
-#kakutogi
-勝つために強くなったのに——[l][er]
-
-#kakutogi
-勝負すらさせてもらえない[l][er]
-
-（俺は、何も言えなかった。）[l][er]
-
-
-; ================================================================================
-*kakutogi_00_scene_5
-; シーン5：懇願
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-#kakutogi
-なあ[l][er]
-
-（彼女が、振り返る。）[l][er]
-
-[chara_show name="kakutogi" face="sad" pos="center" time="1000"]
-
-（月明かりの中。）[l][er]
-
-（その目は——）[l][er]
-
-（孤独で、怯えている。）[l][er]
-
-#kakutogi
-お前は——私から、逃げないでいてくれるか[l][er]
-
-#protagonist
-……[l][er]
-
-（彼女の拳が、震えている。）[l][er]
-
-（強すぎる拳が。）[l][er]
-
-#protagonist
-逃げない[l][er]
-
-#kakutogi
-……[l][er]
-
-#protagonist
-お前の強さから、逃げたりしない[l][er]
-
-#kakutogi
-——バカだな、お前[l][er]
-
-
-（ぽん、と肩を叩かれた。）[l][er]
-
-（軽くのつもりだろうが、結構重い。）[l][er]
-
-#kakutogi
-……ありがとう[l][er]
-
-（小さく、そう聞こえた。）[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_00_scene_6
-; シーン6：悪魔の視線
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_devil.mp3"]
-
-（道場の隅。）[l][er]
-
-（影が、揺れた。）[l][er]
-
-（悪魔が、そこにいる気がした。）[l][er]
-
-#protagonist
-（……見てるのか）[l][er]
-
-（強すぎる力を与えて。）[l][er]
-
-（孤立させて。）[l][er]
-
-（楽しんでいるのか。）[l][er]
-
-
-（笑い声が、聞こえた気がした。）[l][er]
-
-[jump target="kakutogi_01"]
-
-; ================================================================================
-; ■ 格闘技部ルート - 第2話「居場所」
-; テーマ：仲間を求めて / 孤独からの脱出
-; ================================================================================
-
-*kakutogi_01
-[bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（翌日。）[l][er]
-
-（俺は、彼女を筋肉同好会に誘った。）[l][er]
-
-[chara_show name="kakutogi" face="default" pos="center" time="1000"]
-
-#kakutogi
-筋肉同好会？[l][er]
-
-#protagonist
-ああ。俺たちみたいな奴らの集まりだ[l][er]
-
-#kakutogi
-……[l][er]
-
-#protagonist
-一人じゃない。同じ境遇の仲間がいる[l][er]
-
-#kakutogi
-……行ってみるか[l][er]
-
-（彼女は、少しだけ期待の目をしていた。）[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_01_scene_2
-; シーン2：同好会での歓迎
-; ================================================================================
-
-[bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（部室。）[l][er]
-
-[chara_show name="gyaru" face="smile" pos="left" time="1000"]
-
-#gyaru
-おー！新メンバー？[l][er]
-
-[chara_show name="kakutogi" face="default" pos="right" time="1000"]
-
-#kakutogi
-……[l][er]
-
-#gyaru
-めっちゃ強そう！何かスポーツやってた？[l][er]
-
-#kakutogi
-……格闘技[l][er]
-
-#gyaru
-かっこいー！[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-[chara_show name="otaku" face="default" pos="left" time="1000"]
-
-#otaku
-格闘技ですか。筋肉の発達パターンを調べさせてください[l][er]
-
-#kakutogi
-……いいぞ[l][er]
-
-[chara_hide name="otaku" time="1000"]
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*kakutogi_01_scene_3
-; シーン3：手合わせの申し出
-; ================================================================================
-
-[bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_tension.mp3"]
-
-[chara_show name="kakutogi" face="smile" pos="center" time="1000"]
-
-#kakutogi
-なあ[l][er]
-
-#protagonist
-ん？[l][er]
-
-#kakutogi
-誰か、手合わせしてくれないか[l][er]
-
-#protagonist
-手合わせ？[l][er]
-
-#kakutogi
-ここなら——怪我させても、大丈夫だろ[l][er]
-
-#protagonist
-……[l][er]
-
-（彼女の目が、輝いている。）[l][er]
-
-（戦いたくてたまらない——でも、相手がいなかった。）[l][er]
-
-#protagonist
-俺でいいか？[l][er]
-
-#kakutogi
-……！[l][er]
-
-#kakutogi
-本気か？[l][er]
-
-#protagonist
-本気だ。でも、手加減してくれ[l][er]
-
-#kakutogi
-……わかった[l][er]
-
-（彼女は、嬉しそうに笑った。）[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_01_scene_4
-; シーン4：スパーリング
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_fight.mp3"]
-
-（放課後。道場。）[l][er]
-
-（彼女と、向き合う。）[l][er]
-
-[chara_show name="kakutogi" face="default" pos="center" time="1000"]
-
-#kakutogi
-来い[l][er]
-
-#protagonist
-ああ[l][er]
-
-（俺が先に動いた。）[l][er]
-
-（——止められた。）[l][er]
-
-#kakutogi
-遅い[l][er]
-
-（反撃。）[l][er]
-
-（避けられない。）[l][er]
-
-（——ドスン。）[l][er]
-
-#protagonist
-ぐっ……[l][er]
-
-（床に倒れた。）[l][er]
-
-#kakutogi
-……大丈夫か[l][er]
-
-#protagonist
-……大丈夫。強いな、お前[l][er]
-
-#kakutogi
-……[l][er]
-
-（彼女は、手を差し出した。）[l][er]
-
-#kakutogi
-ありがとう[l][er]
-
-#protagonist
-え？[l][er]
-
-#kakutogi
-久しぶりに——戦えた[l][er]
-
-（その顔が、とても嬉しそうだった。）[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-; ■ 格闘技部ルート - 第3話「過去」
-; テーマ：なぜ強くなりたかったのか
-; ================================================================================
-
 *kakutogi_02
-[bg storage="dojo_night.webp" time="1000"]
+[chara_hide_all]
+[bg storage="dojo.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
-（スパーリングの後。）[l][er]
+（一週間後。早朝の道場。）[l][er]
 
-（二人で、道場に座っている。）[l][er]
+[chara_show name="kakutogi" face="default" pos="center" time="1000"]
+
+（響は、毎朝、六時から、走り込みと、筋トレをしている。）[l][er]
+（変わる前から、ずっと、そうしてきたらしい。）[l][er]
+
+#kakutogi
+……百。……百一[l][er]
+
+（腕立て伏せ。）[l][er]
+（汗一つ、かいていない。）[l][er]
+
+#kakutogi
+……三百[l][er]
+
+（彼女は、床に手をついたまま、止まった。）[l][er]
+
+[chara_show name="kakutogi" face="crying" pos="center" time="500"]
+
+#kakutogi
+……疲れないんだ[l][er]
+
+#protagonist
+……[l][er]
+
+#kakutogi
+いくらやっても、疲れない。筋肉が、張らない。昨日より、強くならない[l][er]
+
+#kakutogi
+もう、ここが天井なんだ。悪魔に、天井まで、連れていかれた[l][er]
+
+#kakutogi
+三年かけて、一段ずつ、登るつもりだった階段を[l][er]
+
+#kakutogi
+……毎朝、六時に起きる理由が、なくなった[l][er]
+
+#kakutogi
+私は、ズルをした[l][er]
+
+#kakutogi
+ずっと、"努力しない強さ"を、軽蔑してきたのに[l][er]
+
+#kakutogi
+今の私は、軽蔑してきたものそのものだ[l][er]
+
+（響が泣くのを、初めて見た。）[l][er]
+（泣いても、声が、震えなかった。）[l][er]
+（体が、強すぎて。）[l][er]
+
+[if exp="f.kakutogi_mitt"]
+#protagonist
+……でも、加減は、覚え直してるだろ[l][er]
+
+#protagonist
+最初は羽毛だった。昨日は、ちゃんと、ミット越しに手が痺れた[l][er]
+
+#protagonist
+あれは、薬がくれたもんじゃない。お前が、毎晩、やり直したやつだ[l][er]
+
+#kakutogi
+……[l][er]
+
+#kakutogi
+……加減なんて、強さじゃない[l][er]
+
+#protagonist
+そうか？　お前、今、それが一番、難しいだろ[l][er]
+
+#kakutogi
+……[l][er]
+[else]
+#protagonist
+……響[l][er]
+
+#kakutogi
+慰めは、いらない[l][er]
+
+#kakutogi
+……お前は、見てるって言った。それで、十分だ[l][er]
+[endif]
+
+[jump target="kakutogi_03"]
+
+; ================================================================================
+; 第3話「教えるということ」
+; ================================================================================
+*kakutogi_03
+[chara_hide_all]
+[bg storage="gym.webp" time="1000"]
+[playbgm storage="bgm_daily.mp3"]
+
+（放課後。同好会の活動日。）[l][er]
+
+[chara_show name="osananajimi" face="surprised" pos="left" time="800"]
+[chara_show name="imouto" face="flustered" pos="right" time="800"]
+
+#osananajimi
+響ちゃん、ごめん！　また、マット、破れちゃった……[l][er]
+
+#imouto
+私、ジャンプしただけなんです……着地しただけなんです……[l][er]
+
+（同好会の連中は、まだ、自分の体の扱いに慣れていない。）[l][er]
+（階段で手すりを曲げた、とか。ドアノブを取った、とか。毎日、誰かが何かを壊す。）[l][er]
+
+[chara_show name="kakutogi" face="default" pos="center" time="800"]
+
+#kakutogi
+……着地の仕方が、悪い[l][er]
+
+#kakutogi
+膝を、伸ばしたまま落ちるな。足首、膝、股関節。三つで、受けろ[l][er]
+
+#imouto
+三つで……？[l][er]
+
+#kakutogi
+見てろ[l][er]
+
+（響が、跳んだ。）[l][er]
+（天井に届きそうな高さから——音もなく、降りた。）[l][er]
+（マットが、かすかに、沈んだだけだった。）[l][er]
+
+#osananajimi
+……すご[l][er]
+
+#imouto
+猫みたい……[l][er]
+
+#kakutogi
+受け身だ。小学生のときから、毎日、千回やった[l][er]
+
+（言ってから、響は、自分の足元を見た。）[l][er]
+
+#kakutogi
+……千回、やった[l][er]
+
+（その日、響は、全員に、受け身と、力の逃がし方を教えた。）[l][er]
+（帰る頃には、誰も、何も、壊さなくなっていた。）[l][er]
+
+[chara_hide_all]
+[bg storage="dojo.webp" time="1000"]
+[playbgm storage="bgm_romance.mp3"]
+
+（帰り道。夕方の道場の前。）[l][er]
 
 [chara_show name="kakutogi" face="default" pos="center" time="1000"]
 
@@ -470,723 +332,685 @@
 ……なあ[l][er]
 
 #protagonist
-ん？[l][er]
+ん[l][er]
 
 #kakutogi
-なんで、格闘技を始めたか——聞きたいか[l][er]
+今日、気づいた[l][er]
+
+#kakutogi
+この体は、悪魔のものだ。力も、速さも、もらいものだ[l][er]
+
+#kakutogi
+でも、受け身は、私のだ[l][er]
+
+#kakutogi
+足の運びも。呼吸も。力を、逃がす場所も。全部、三年分、私が積んだやつだ[l][er]
+
+#kakutogi
+……それは、薬じゃ、上書きされてなかった[l][er]
 
 #protagonist
-聞かせてくれ[l][er]
-
-#kakutogi
-……[l][er]
-
-（彼女は、天井を見上げた。）[l][er]
-
-#kakutogi
-……小さい頃、弱かったんだ[l][er]
-
-#protagonist
-お前が？[l][er]
-
-#kakutogi
-ああ。いじめられてた[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-毎日、殴られて、蹴られて[l][er]
-
-#kakutogi
-誰も助けてくれなかった[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-だから——強くなりたかった[l][er]
-
-#kakutogi
-誰にも負けない、絶対的な強さが欲しかった[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_02_scene_2
-; シーン2：願いの代償
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_sadness.mp3"]
-
-[chara_show name="kakutogi" face="sad" pos="center" time="1000"]
-
-#kakutogi
-悪魔が来た時——迷わなかった[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-強くなりたい。それだけ願った[l][er]
-
-#kakutogi
-そしたら——この体になった[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-最初は嬉しかった[l][er]
-
-#kakutogi
-誰にも負けない。絶対的な強さが手に入った[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-でも——[l][er]
-
-（彼女の声が、震えた。）[l][er]
-
-#kakutogi
-強すぎた[l][er]
-
-#kakutogi
-相手を壊してしまう[l][er]
-
-#kakutogi
-誰も、私と戦ってくれない[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-弱い頃は、殴られるのが怖かった[l][er]
-
-#kakutogi
-強くなったら——殴るのが怖くなった[l][er]
-
-（涙が、こぼれた。）[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_02_scene_3
-; シーン3：約束
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-#protagonist
-俺が相手になる[l][er]
-
-[chara_show name="kakutogi" face="surprised" pos="center" time="1000"]
-
-#kakutogi
-……え[l][er]
-
-#protagonist
-スパーリング。これからも[l][er]
-
-#kakutogi
-でも、怪我——[l][er]
-
-#protagonist
-俺も筋肉がある。そう簡単には壊れない[l][er]
-
-#kakutogi
-……[l][er]
-
-#protagonist
-お前が戦いたい時は、いつでも呼べ[l][er]
-
-#protagonist
-俺が相手になる[l][er]
-
-#kakutogi
-……[l][er]
-
-（彼女の目から、涙がこぼれた。）[l][er]
-
-#kakutogi
-……ありがとう[l][er]
-
-#kakutogi
-こんなこと言ってくれたの——お前が初めてだ[l][er]
-
-#protagonist
-これからも、一緒に強くなろう[l][er]
-
-#kakutogi
 ……ああ[l][er]
 
-（彼女は、笑った。）[l][er]
+[chara_show name="kakutogi" face="smile" pos="center" time="500"]
 
-（強くて、でも脆い——そんな笑顔だった。）[l][er]
+#kakutogi
+大会、組手は出られない。でも、"型"の部門なら、相手がいない[l][er]
 
-[chara_hide name="kakutogi" time="1000"]
+#kakutogi
+型は、力じゃ、点が出ない。正確さと、積み重ねだけだ[l][er]
+
+#kakutogi
+……出る。連盟に、頼んでみる[l][er]
+
+#kakutogi
+"強い私"じゃなくて、"積んだ私"を、お前に見せたい[l][er]
+
+[jump target="kakutogi_04"]
 
 ; ================================================================================
-; ■ 格闘技部ルート - 第4話「大会」
-; テーマ：挑戦 / 本当の強さ
+; 第4話「二本目」
 ; ================================================================================
-
-*kakutogi_03
-[bg storage="classroom.webp" time="1000"]
+*kakutogi_04
+[chara_hide_all]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
-（数週間後。）[l][er]
+（大会の、前の晩。）[l][er]
 
-（格闘技の大会の話が出た。）[l][er]
+（夕方、響から、一行だけ、LINEが来た。）[l][er]
+（"だめだった"）[l][er]
 
-[chara_show name="kakutogi" face="default" pos="center" time="1000"]
+[chara_show name="kakutogi" face="angry" pos="right" time="1000"]
+
+（道場の真ん中に、響が、正座していた。）[l][er]
+（膝の上で、拳が、握られていた。）[l][er]
 
 #kakutogi
-……出たい[l][er]
+……型の部門も、だめだそうだ[l][er]
+
+#kakutogi
+"他の選手への心理的影響"。"前例がない"[l][er]
+
+#kakutogi
+……前例がないのは、私のせいか？[l][er]
 
 #protagonist
-大会に？[l][er]
+響[l][er]
 
 #kakutogi
-ああ。でも——[l][er]
-
-（彼女の顔が、曇る。）[l][er]
+悔しい[l][er]
 
 #kakutogi
-先生に止められてる[l][er]
+悔しい。悔しい。悔しい[l][er]
 
 #kakutogi
-「危険だ」って[l][er]
+三年分、積んできたものを、見せる場所すら、ない[l][er]
+
+[chara_show name="akuma" face="default" pos="left" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+#akuma
+悔しいの、つらいよね[l][er]
+
+#kakutogi
+……お前[l][er]
+
+#akuma
+はい、これ[l][er]
+
+（悪魔の前足に、小さな瓶。）[l][er]
+（一本目と同じ形。中身の色だけが、少し、暗い。）[l][er]
+
+#akuma
+二本目。飲めば、もう、悔しくない[l][er]
+
+#akuma
+勝ちたいとも、負けたくないとも、思わない。誰とも、比べない[l][er]
+
+#akuma
+試合に出られなくても、平気。毎朝六時に起きる理由がなくても、平気[l][er]
+
+#akuma
+——"努力"なんて、最初から、要らなかったことになる[l][er]
+
+#kakutogi
+……[l][er]
+
+#akuma
+君、ずっと、"努力"と"今の強さ"の間で、引き裂かれてるでしょ[l][er]
+
+#akuma
+これで、楽になれるよ[l][er]
+
+（悪魔は、瓶を、畳の上に置いた。）[l][er]
+
+#akuma
+飲むかどうかは、君次第[l][er]
+
+（響は、瓶を、見下ろしていた。）[l][er]
+（握っていた拳が、ゆっくり、開いていく。）[l][er]
+
+#kakutogi
+……悔しくなくなれば、もう、泣かなくて済む[l][er]
+
+（——言わなきゃいけない。）[l][er]
+
+[glink target="kakutogi_04_refuse" text="「悔しいままでいい。お前の型を、俺に見せろ」"]
+[glink target="kakutogi_04_accept" text="「……お前が、楽になれるなら」"]
+[s]
+
+*kakutogi_04_refuse
+#protagonist
+悔しいままでいい[l][er]
+
+[chara_show name="kakutogi" face="surprised" pos="right" time="500"]
 
 #protagonist
+悔しいのは、積んだからだろ[l][er]
+
+#protagonist
+三年分、毎朝六時に起きたから、見せる場所がないのが、悔しいんだろ[l][er]
+
+#protagonist
+それ飲んだら、その三年が、"要らなかった"ことになる。悪魔が、今そう言った[l][er]
+
+#protagonist
+大会がだめなら——ここで見せろ。俺に[l][er]
+
+#protagonist
+審判もいない。点数も出ない。でも、俺は、ちゃんと見る[l][er]
+
+#kakutogi
 ……[l][er]
 
 #kakutogi
-試合に出れなきゃ——何のために強くなったのか、わからない[l][er]
+……お前は、型のこと、何もわからないだろう[l][er]
 
 #protagonist
-……[l][er]
+わからない。だから、説明しながらやれ[l][er]
+
+#kakutogi
+……っ[l][er]
+
+[chara_show name="kakutogi" face="crying" pos="right" time="500"]
+
+#kakutogi
+……バカか、お前は[l][er]
+
+（響は、瓶を、指で弾いた。）[l][er]
+（瓶は、畳の上を転がって、悪魔の足元で、止まった。）[l][er]
+
+#kakutogi
+返す[l][er]
+
+#kakutogi
+悔しいのは、私のだ。お前に、やるものか[l][er]
+
+[chara_show name="akuma" face="smile" pos="left" time="500"]
+
+#akuma
+……ふうん。返品か[l][er]
+
+#akuma
+いいよ。ゲームは、まだ続いてるしね[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+（影は、消えた。）[l][er]
+
+（響は、立ち上がった。）[l][er]
+（袖で、顔を、乱暴に拭いた。）[l][er]
+
+#kakutogi
+……座れ。正座だ[l][er]
+
+#protagonist
+今やるのか[l][er]
+
+#kakutogi
+今だ。気が変わる前に[l][er]
+
+[eval exp="f.kakutogi_refused = true"]
+[jump target="kakutogi_05"]
+
+*kakutogi_04_accept
+#protagonist
+……お前が、楽になれるなら[l][er]
+
+（言った瞬間に、間違えた、とわかった。）[l][er]
+
+[chara_show name="kakutogi" face="sad" pos="right" time="500"]
+
+#kakutogi
+……そうか[l][er]
+
+#kakutogi
+お前も、そう思うか。私の三年は、もう、どうでもいいと[l][er]
+
+（違う、と言う前に。）[l][er]
+（響は、試合の前にいつもそうするように、一礼して——）[l][er]
+（瓶を、取った。）[l][er]
+
+#protagonist
+——待て！[l][er]
+
+（遅かった。）[l][er]
+
+[jump target="kakutogi_ending_bad"]
 
 ; ================================================================================
-*kakutogi_03_scene_2
-; シーン2：説得
+; 第5話「観客一人の演武」
 ; ================================================================================
-
+*kakutogi_05
 [chara_hide_all]
-[bg storage="hallway.webp" time="1000"]
-[playbgm storage="bgm_tension.mp3"]
-
-（俺は、格闘技部の顧問に話をしに行った。）[l][er]
-
-#顧問
-……君か。筋肉同好会の[l][er]
-
-#protagonist
-先生、彼女を大会に出してください[l][er]
-
-#顧問
-無理だ。相手を怪我させる[l][er]
-
-#protagonist
-彼女は、力の加減を覚えています[l][er]
-
-#顧問
-……[l][er]
-
-#protagonist
-毎日、俺と練習してます[l][er]
-
-#protagonist
-相手を壊さない戦い方を[l][er]
-
-#顧問
-……[l][er]
-
-#protagonist
-彼女に——挑戦する機会を与えてください[l][er]
-
-（長い沈黙。）[l][er]
-
-#顧問
-……わかった。一度だけだ[l][er]
-
-#protagonist
-！[l][er]
-
-#顧問
-だが——相手を怪我させたら、即刻引退だ[l][er]
-
-#protagonist
-……わかりました[l][er]
-
-; ================================================================================
-*kakutogi_03_scene_3
-; シーン3：大会当日
-; ================================================================================
-
-[chara_hide_all]
-[bg storage="gym.webp" time="1000"]
+[bg storage="dojo_night.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
-（大会当日。）[l][er]
+（夜の道場。）[l][er]
+
+（観客は、俺一人。）[l][er]
 
 [chara_show name="kakutogi" face="default" pos="center" time="1000"]
 
 #kakutogi
-……緊張する[l][er]
+……型、"三十二手"。始める[l][er]
+
+（響が、構えた。）[l][er]
+
+#kakutogi
+一手目。前足の、親指の付け根に、体重を乗せる。かかとは、紙一枚、浮かせる[l][er]
+
+（説明しながら、動く。）[l][er]
+（声と、体が、ぴったり重なっている。）[l][er]
+
+#kakutogi
+四手目。突きは、拳じゃなくて、背中で出す。小学四年のとき、師範に、千回、直された[l][er]
+
+#kakutogi
+十一手目。ここで、息を吐く。吐かないと、次の受けが、半拍、遅れる[l][er]
+
+（あの体で、と思った。）[l][er]
+（壁みたいな背中で。丸太みたいな腕で。）[l][er]
+（——それでも、一つも、力任せの動きがない。）[l][er]
+（全部、細い糸の上を歩くみたいに、正確だった。）[l][er]
+
+#kakutogi
+二十六手目。……ここは、まだ、師範に、一回も褒められたことがない[l][er]
+
+（汗が、落ちた。）[l][er]
+（腕立て三百回でも出なかった汗が、型の途中で、落ちた。）[l][er]
+
+#kakutogi
+……三十二手目。残心[l][er]
+
+（響は、構えたまま、止まった。）[l][er]
+（それから、ゆっくりと、礼をした。）[l][er]
+
+（俺は、拍手した。）[l][er]
+（一人ぶんの拍手が、道場に、響いた。）[l][er]
+
+[chara_show name="kakutogi" face="smile" pos="center" time="500"]
+
+#kakutogi
+……どうだった[l][er]
 
 #protagonist
-大丈夫だ。お前なら勝てる[l][er]
-
-#kakutogi
-勝つのは——わかってる[l][er]
-
-#kakutogi
-問題は——相手を壊さずに勝てるか[l][er]
+わからない。型のことは[l][er]
 
 #protagonist
-できる[l][er]
-
-#kakutogi
-……[l][er]
-
-#protagonist
-お前は変わった。この数週間で[l][er]
-
-#protagonist
-力の加減。相手を見る目。全部[l][er]
-
-#kakutogi
-……[l][er]
-
-#protagonist
-信じてる[l][er]
-
-#kakutogi
-……ありがとう[l][er]
-
-（試合が始まる。）[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_03_scene_4
-; シーン4：試合
-; ================================================================================
-
-[bg storage="gym.webp" time="1000"]
-[playbgm storage="bgm_fight.mp3"]
-
-（彼女の試合。）[l][er]
-
-（相手は、強豪校のエース。）[l][er]
-
-（でも——）[l][er]
-
-[chara_show name="kakutogi" face="default" pos="center" time="1000"]
-
-#kakutogi
-……[l][er]
-
-（彼女の動きは、完璧だった。）[l][er]
-
-（強すぎない。弱すぎない。）[l][er]
-
-（相手を制しながら、壊さない。）[l][er]
-
-（そして——）[l][er]
-
-#審判
-一本！勝者——！[l][er]
-
-（勝った。）[l][er]
-
-（相手は——無傷だった。）[l][er]
+でも、汗、かいてたぞ[l][er]
 
 #kakutogi
 ……！[l][er]
 
-（彼女の目が、輝いた。）[l][er]
+#kakutogi
+……ほんとだ[l][er]
 
-[chara_hide name="kakutogi" time="1000"]
+（響は、自分の手のひらを見て、笑った。）[l][er]
+（初めて、泣きそうじゃない顔で、笑った。）[l][er]
+
+（——道場の入り口で、誰かが、咳払いをした。）[l][er]
+
+#顧問
+……いいもん見せてもらった[l][er]
+
+#kakutogi
+！　先生……[l][er]
+
+#顧問
+今の型、連盟の人間にも見せてやれ。動画、撮っといたから[l][er]
+
+#顧問
+"前例がない"なら、作るしかない。……三年分の型だったよ、虎谷[l][er]
+
+[jump target="kakutogi_06"]
 
 ; ================================================================================
-*kakutogi_03_scene_5
-; シーン5：勝利の後
+; 告白前夜：悪魔の味見
 ; ================================================================================
+*kakutogi_06
+[chara_hide_all]
+[bg storage="rooftop_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
 
-[bg storage="gym.webp" time="1000"]
+（その夜。屋上。）[l][er]
+
+[chara_show name="akuma" face="default" pos="center" time="1000"]
+
+#akuma
+やあ。今の君、どんな味？[l][er]
+
+#protagonist
+……拍手しすぎて、手が痛い味だよ[l][er]
+
+#akuma
+あはは。いいね[l][er]
+
+#akuma
+……ねえ。あの子の願いは、"努力を飛ばして、今、強くなる"だった[l][er]
+
+#akuma
+叶えたよ。でも、飛ばしたはずの努力が、型の中に、全部残ってた[l][er]
+
+#akuma
+僕の薬は、体は書き換えられても、三年分の"千回"は、消せないらしい[l][er]
+
+#protagonist
+……そりゃそうだろ[l][er]
+
+[chara_show name="akuma" face="smile" pos="center" time="500"]
+
+#akuma
+で、あの子、明日、たぶん、君に勝負を挑んでくるよ[l][er]
+
+#akuma
+負けたら、どうするか——考えておいたら？[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+（影は、消えた。）[l][er]
+
+[jump target="kakutogi_07"]
+
+; ================================================================================
+; 第6話「腕相撲」
+; ================================================================================
+*kakutogi_07
+[chara_hide_all]
+[bg storage="dojo.webp" time="1000"]
 [playbgm storage="bgm_romance.mp3"]
 
-（試合後。）[l][er]
+（一週間後。夕方の道場。）[l][er]
 
-[chara_show name="kakutogi" face="smile" pos="center" time="1000"]
+（連盟から、返事が来た。"次の大会から、型の部門への出場を認める"。）[l][er]
+（顧問の撮った動画が、何十人もの指導者に回ったらしい。）[l][er]
+
+[chara_show name="kakutogi" face="default" pos="center" time="1000"]
+
+#kakutogi
+勝負しろ[l][er]
+
+#protagonist
+……は？[l][er]
+
+#kakutogi
+腕相撲だ[l][er]
+
+#protagonist
+勝てるわけないだろ[l][er]
+
+#kakutogi
+知ってる。私が勝つ。加減して、ぎりぎりで勝つ[l][er]
+
+#kakutogi
+それが、今の私の、一番難しい技だ[l][er]
+
+（畳の上に、二人で、うつ伏せになった。）[l][er]
+（手を、組んだ。）[l][er]
+（俺の手のひらが、彼女の手の中に、すっぽり収まった。）[l][er]
+
+#kakutogi
+……行くぞ[l][er]
+
+（——押してくる。）[l][er]
+（押し返す。全力で。）[l][er]
+（腕が、震える。俺の腕だけが。）[l][er]
+
+（彼女の腕は、少しも震えずに、俺の全力と、ぴったり同じ力で、押してくる。）[l][er]
+（一ミリずつ。一ミリずつ。）[l][er]
+
+（三十秒かけて、俺の手の甲が、畳についた。）[l][er]
+
+[chara_show name="kakutogi" face="blush" pos="center" time="500"]
 
 #kakutogi
 ……勝った[l][er]
 
 #protagonist
-ああ[l][er]
+……知ってた[l][er]
 
 #kakutogi
-相手を——壊さずに[l][er]
-
-#protagonist
-お前の力だ[l][er]
+……なあ。最初に、お前の前で負けたとき[l][er]
 
 #kakutogi
-……違う[l][er]
-
-（彼女は、俺を見た。）[l][er]
+悔しかったのは、負けたからじゃない[l][er]
 
 #kakutogi
-お前のおかげだ[l][er]
+お前に、"弱い私"を見られたと思ったからだ[l][er]
 
 #kakutogi
-毎日、練習に付き合ってくれて[l][er]
+でも、お前は、弱い私を見ても、強い私を見ても、同じ顔をする[l][er]
 
 #kakutogi
-力の加減を——教えてくれて[l][er]
+……泣いてる私を見ても。汗をかいてる私を見ても[l][er]
 
-#protagonist
-俺は何も——[l][er]
-
-#kakutogi
-そばにいてくれた[l][er]
+（手は、まだ、組んだままだった。）[l][er]
 
 #kakutogi
-それだけで——十分だった[l][er]
-
-（彼女の目が、潤む。）[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-; ■ 格闘技部ルート - 第5話「告白」
-; テーマ：恋 / 守りたいもの
-; ================================================================================
-
-*kakutogi_04
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-（大会から数日後。）[l][er]
-
-（夜の道場。二人きり。）[l][er]
-
-[chara_show name="kakutogi" face="blush" pos="center" time="1000"]
+勝ったから、言う。私は、お前が好きだ[l][er]
 
 #kakutogi
-……なあ[l][er]
+……負けたお前の返事を、聞かせろ[l][er]
 
-#protagonist
-ん？[l][er]
-
-#kakutogi
-お前に——言いたいことがある[l][er]
-
-#protagonist
-何だ[l][er]
-
-#kakutogi
-……[l][er]
-
-（彼女は、深呼吸した。）[l][er]
-
-#kakutogi
-私は——強くなりたかった[l][er]
-
-#kakutogi
-誰にも負けない強さが欲しかった[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-でも、今は——違う[l][er]
-
-#protagonist
-違う？[l][er]
-
-#kakutogi
-守りたいものができた[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-お前を——守りたい[l][er]
-
-#protagonist
-俺を？[l][er]
-
-#kakutogi
-ああ[l][er]
-
-（彼女の顔が、赤くなる。）[l][er]
-
-#kakutogi
-好きだ[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-お前のことが——好きだ[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_04_scene_2
-; シーン2：返事
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-
-[glink target="kakutogi_ending_good" text="俺も好きだ"]
-[glink target="kakutogi_ending_normal" text="仲間として大事だ"]
+[glink target="kakutogi_ending_good" text="手を握り返して「俺も好きだ。次は勝つ」"]
+[glink target="kakutogi_ending_normal" text="「……お前は、最高の稽古相手だ」"]
 [s]
 
 ; ================================================================================
-; ■ 格闘技部ルート - グッドエンディング「二人の強さ」
+; GOOD END「二人の強さ」
 ; ================================================================================
-
 *kakutogi_ending_good
+（組んだままの手を、握り返した。）[l][er]
+
 #protagonist
 俺も好きだ[l][er]
 
-[chara_show name="kakutogi" face="surprised" pos="center" time="1000"]
+#protagonist
+それと——次は、勝つ[l][er]
+
+[chara_show name="kakutogi" face="surprised" pos="center" time="500"]
 
 #kakutogi
-……！[l][er]
+……一生、無理だろう[l][er]
 
 #protagonist
-最初は——正直、怖かった[l][er]
+一生かけて、やる[l][er]
 
 #kakutogi
 ……[l][er]
 
-#protagonist
-でも、お前と過ごすうちに——変わった[l][er]
-
-#protagonist
-強さの裏にある、弱さを見た[l][er]
-
-#protagonist
-孤独で、寂しがり屋なところを見た[l][er]
+[chara_show name="kakutogi" face="smile" pos="center" time="500"]
 
 #kakutogi
-……[l][er]
+……一生、か[l][er]
+
+#kakutogi
+いいな。それは、毎朝六時に起きる理由になる[l][er]
+
+[chara_hide_all]
+[bg storage="rooftop_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+[chara_show name="akuma" face="smile" pos="center" time="1000"]
+
+#akuma
+——はい、ゲーム終了。君の勝ち。……腕相撲は負けたけどね[l][er]
+
+#akuma
+約束どおり、ご祝儀を一口だけ[l][er]
+
+（悪魔の前足が、胸に、ちょんと触れた。）[l][er]
+（何かが、ひとかけら、持っていかれた。）[l][er]
+（——たぶん、手の甲が畳についた瞬間の、悔しさの端っこ）[l][er]
+
+#akuma
+……うん。汗の味がする。いい稽古の味だ[l][er]
+
+#akuma
+じゃあね。もう、来ないよ[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+[chara_hide_all]
+[bg storage="dojo.webp" time="1000"]
+[playbgm storage="bgm_ending.mp3"]
+
+（数ヶ月後。県大会、型の部門。）[l][er]
+
+（響は、準優勝だった。）[l][er]
+（二十六手目で、ほんの少しだけ、足がぶれたらしい。）[l][er]
+
+[bg storage="events/kakutogi_handup.webp" time="1500"]
+
+#kakutogi
+……悔しい[l][er]
 
 #protagonist
-そういうお前を——好きになった[l][er]
+そうか[l][er]
 
 #kakutogi
-……[l][er]
-
-（彼女の目から、涙がこぼれた。）[l][er]
+悔しい。すごく、悔しい[l][er]
 
 #kakutogi
-……嬉しい[l][er]
+——だから、明日も、六時に起きる[l][er]
+
+（夕方の道場。今日も、腕相撲に負けた俺に、響が手を差し出す。）[l][er]
+（その手を取って、立ち上がる。）[l][er]
+
+（虎谷響。）[l][er]
+（努力を飛ばした女の子は、）[l][er]
+（今、もう一度、一段ずつ、階段を登っている。）[l][er]
+（——俺と、手をつないで。）[l][er]
+
+（GOOD END ——「二人の強さ」）[l][er]
+[s]
+
+; ================================================================================
+; NORMAL END「最高の稽古相手」
+; ================================================================================
+*kakutogi_ending_normal
+#protagonist
+……お前は、最高の稽古相手だ[l][er]
+
+[chara_show name="kakutogi" face="default" pos="center" time="500"]
 
 #kakutogi
-私を——怖がらないでくれて[l][er]
+……稽古相手[l][er]
 
 #kakutogi
-好きになってくれて[l][er]
+……そうか[l][er]
+
+（響は、組んでいた手を、ゆっくり、離した。）[l][er]
+
+[chara_show name="kakutogi" face="smile" pos="center" time="500"]
+
+#kakutogi
+いい。今は、それでいい[l][er]
+
+#kakutogi
+腕相撲と同じだ。一回で勝てないなら、毎日やる[l][er]
+
+#kakutogi
+……いつか、"稽古相手"以外の言葉で、負けさせてやる[l][er]
+
+[chara_hide_all]
+[bg storage="rooftop_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+[chara_show name="akuma" face="default" pos="center" time="1000"]
+
+#akuma
+……保留、か[l][er]
+
+#akuma
+二本目は飲まなかった。でも、"本物"にも、ならなかった[l][er]
+
+#akuma
+僕はお腹が空いたまま。……まあ、あの子、粘り強いからね。待つよ[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+[chara_hide_all]
+[bg storage="dojo.webp" time="1000"]
+[playbgm storage="bgm_daily.mp3"]
+
+（数ヶ月後。）[l][er]
+
+（俺は、毎朝六時に、道場でミットを持っている。）[l][er]
+（響の拳は、もう、羽毛じゃない。でも、俺の手は、一度も、痺れすぎたことがない。）[l][er]
+
+[chara_show name="kakutogi" face="smile" pos="center" time="1000"]
+
+#kakutogi
+よし。今日の稽古は、ここまで[l][er]
+
+#kakutogi
+……明日も、来るか[l][er]
 
 #protagonist
-これからは、二人で強くなろう[l][er]
+来る[l][er]
+
+#kakutogi
+……そうか[l][er]
+
+（毎朝、同じ会話。）[l][er]
+（それでも、響は、毎朝、少しだけ嬉しそうに、礼をする。）[l][er]
+
+（NORMAL END ——「最高の稽古相手」）[l][er]
+[s]
+
+; ================================================================================
+; BAD END「天井の上」
+; ================================================================================
+*kakutogi_ending_bad
+[playbgm storage="bgm_despair.mp3"]
+
+（彼女は、一息に、飲んだ。）[l][er]
+
+[chara_hide_all]
+[bg storage="devil_space.webp" time="1500"]
+
+（世界から、音が消えた。）[l][er]
+
+（道着の袖が、裂けた。）[l][er]
+（肩が、背中が、天井を押し上げるみたいに、もう一段、ふくれあがる。）[l][er]
+
+[status stage="stage2"]
+[chara_show name="kakutogi" face="default" pos="center" time="2000"]
+
+（——そして、それよりも、先に。）[l][er]
+（握っていた拳から、力が、ふっと抜けた。）[l][er]
 
 #kakutogi
 ……ああ[l][er]
 
 #kakutogi
-二人で——[l][er]
+悔しくない[l][er]
 
-[chara_hide name="kakutogi" time="1000"]
+#kakutogi
+大会に出られなくても、何とも思わない。……変だな。あんなに、悔しかったのに[l][er]
 
-; ================================================================================
-*kakutogi_ending_good_epilogue
-; エピローグ
-; ================================================================================
+#protagonist
+響……！[l][er]
 
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
+#kakutogi
+帰っていいぞ。もう、ミットも、要らない[l][er]
+
+#kakutogi
+練習する理由が、ないからな[l][er]
+
+[chara_show name="akuma" face="smile" pos="left" time="1000"]
+
+#akuma
+——はい、ゲーム終了[l][er]
+
+#akuma
+じゃ、約束どおり。——頂きます[l][er]
+
+（悪魔の前足が、俺の胸に、触れた。）[l][er]
+（熱が、引いていく。）[l][er]
+（悔しさが。怖さが。ミット越しに、手が痺れた夜の記憶が。）[l][er]
+（順番に、消えて——）[l][er]
+
+[chara_hide_all]
+[bg storage="black.webp" time="2000"]
+
+（……。）[l][er]
+
+[bg storage="dojo.webp" time="1500"]
+[playbgm storage="bgm_isolation.mp3"]
 
 （数ヶ月後。）[l][er]
 
-（俺たちは、一緒に練習を続けている。）[l][er]
+（響は、格闘技部を、辞めた。）[l][er]
+（朝六時の道場には、もう、誰も来ない。）[l][er]
 
-[chara_show name="kakutogi" face="smile" pos="center" time="1000"]
+（廊下ですれ違うと、彼女は、穏やかに会釈をする。）[l][er]
+（俺も、会釈を返す。）[l][er]
 
-#kakutogi
-来い[l][er]
+（あの子が、昔、毎朝千回、何かをしていた気がする。）[l][er]
+（何だったかは、もう、思い出せない。）[l][er]
 
-#protagonist
-ああ[l][er]
-
-（スパーリング。）[l][er]
-
-（もう、怪我の心配はない。）[l][er]
-
-（彼女は、完璧に力を制御できるようになった。）[l][er]
-
-#kakutogi
-……強くなったな、お前[l][er]
-
-#protagonist
-お前のおかげだ[l][er]
-
-#kakutogi
-……私も、お前のおかげだ[l][er]
-
-（彼女は、笑った。）[l][er]
-
-#kakutogi
-二人で——もっと強くなろう[l][er]
-
-#protagonist
-ああ[l][er]
-
-#kakutogi
-そして——ずっと、一緒にいよう[l][er]
-
-#protagonist
-約束だ[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-[bg storage="black.webp" time="1000"]
-
-（——格闘技部。本名、虎谷響。）[l][er]
-
-（強さを求めた彼女は——）[l][er]
-
-（守りたいものを見つけた。）[l][er]
-
-（そして——二人の強さを手に入れた。）[l][er]
-
-（END - 「二人の強さ」）[l][er]
-
+（BAD END ——「天井の上」）[l][er]
 [s]
-
-; ================================================================================
-; ■ 格闘技部ルート - ノーマルエンディング「最強のライバル」
-; ================================================================================
-
-*kakutogi_ending_normal
-#protagonist
-……仲間として、大事だ[l][er]
-
-[chara_show name="kakutogi" face="default" pos="center" time="1000"]
-
-#kakutogi
-……そうか[l][er]
-
-#protagonist
-お前のおかげで、俺も強くなれた[l][er]
-
-#protagonist
-感謝してる[l][er]
-
-#kakutogi
-……[l][er]
-
-（彼女は、少し俯いた。）[l][er]
-
-（でも——顔を上げた時、笑っていた。）[l][er]
-
-#kakutogi
-……いいさ[l][er]
-
-#kakutogi
-仲間でも——いい[l][er]
-
-#kakutogi
-いや、仲間の方が——いいかもな[l][er]
-
-#protagonist
-……[l][er]
-
-#kakutogi
-お前は、最高の練習相手だ[l][er]
-
-#kakutogi
-これからも——相手してくれ[l][er]
-
-#protagonist
-ああ[l][er]
-
-#protagonist
-いつでも[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-; ================================================================================
-*kakutogi_ending_normal_epilogue
-; エピローグ
-; ================================================================================
-
-[bg storage="dojo_night.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（数ヶ月後。）[l][er]
-
-（俺たちは、毎日のように練習している。）[l][er]
-
-[chara_show name="kakutogi" face="smile" pos="center" time="1000"]
-
-#kakutogi
-今日も——やるぞ[l][er]
-
-#protagonist
-ああ[l][er]
-
-（スパーリング。）[l][er]
-
-（お互いを高め合う。）[l][er]
-
-（最強のライバル。）[l][er]
-
-#kakutogi
-……お前、また強くなったな[l][er]
-
-#protagonist
-お前もだ[l][er]
-
-#kakutogi
-当然だ[l][er]
-
-（彼女は、笑った。）[l][er]
-
-#kakutogi
-私たちは——最強のライバルだ[l][er]
-
-#protagonist
-ああ[l][er]
-
-#protagonist
-ずっと[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-[bg storage="black.webp" time="1000"]
-
-（——格闘技部。本名、虎谷響。）[l][er]
-
-（強さを求めた彼女は——）[l][er]
-
-（最強のライバルを見つけた。）[l][er]
-
-（恋人じゃないけど——誰より強い絆で結ばれた、ライバルを。）[l][er]
-
-（END - 「最強のライバル」）[l][er]
-
-[s]
-
-; ================================================================================

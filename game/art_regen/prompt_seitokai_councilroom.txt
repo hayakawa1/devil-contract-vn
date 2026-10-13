@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\seitokai_councilroom.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Scene: student council room at night, long wooden table with stacks of documents, a desk lamp, city lights through the window. In the foreground left, a high-school boy with short black hair in a dark navy blazer seen from behind (face not visible). The heroine from the reference (long straight black hair, glasses, dark navy blazer uniform with gold buttons, necktie, pencil skirt, black tights) stands by the window with arms crossed, very muscular like the reference, her stern face softening into a small relieved smile. A red ink stamp and a stamped document lie on the table. 16:9 landscape event CG.
+When done, print the saved file path.

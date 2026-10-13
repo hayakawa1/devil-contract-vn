@@ -6,6 +6,7 @@
 ; Scene 1: 翌日／隠せない
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="science_prep_room.webp" time="1000"]
 [playbgm storage="bgm_tension.mp3"]
 
@@ -35,7 +36,7 @@
 [chara_show name="osananajimi" face="sad" pos="center" time="500"]
 
 #osananajimi
-学校、来るの？[l][er]
+このまま、毎日、学校来るの？[l][er]
 
 [chara_show name="gyaru" face="default" pos="right" time="500"]
 
@@ -268,6 +269,7 @@
 ; Scene 3: 設立
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="student_council_room.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
@@ -319,6 +321,7 @@
 ; Scene 4: 初日の活動／規格外
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_fight.mp3"]
 
@@ -414,6 +417,7 @@
 ; Scene 5: 主人公／共犯
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="gym.webp" time="1000"]
 [playbgm storage="bgm_sadness.mp3"]
 
@@ -432,15 +436,15 @@
 
 （——俺は、握力計を、握った。）[l][er]
 
-（——五二キロ。）[l][er]
+（——三十八キロ。）[l][er]
 
 [chara_show name="otaku" face="default" pos="center" time="500"]
 
 #otaku
-通常成人男性の、上位[l][er]
+高校二年男子の、平均値です[l][er]
 
 #otaku
-あなたも、強化されています[l][er]
+あなたは、何も、変わっていない[l][er]
 
 [chara_hide name="otaku" time="500"]
 
@@ -448,13 +452,13 @@
 ……[l][er]
 
 #protagonist
-（俺は、巻き込まれた、つもりだった）[l][er]
+（七人は、もう、戻れない体で、ここに立っている）[l][er]
 
 #protagonist
-（——でも、）[l][er]
+（——なのに、）[l][er]
 
 #protagonist
-（俺の体にも、ちゃんと、悪魔の手が、入っている）[l][er]
+（原因の俺だけが、何ひとつ、変わっていない）[l][er]
 
 [chara_show name="kakutogi" face="default" pos="center" time="500"]
 
@@ -487,6 +491,7 @@
 ; Scene 6: 一週間後／悪魔の問い
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="rooftop_night.webp" time="1000"]
 [playbgm storage="bgm_devil.mp3"]
 
@@ -547,13 +552,16 @@
 最初に、誰と話すかだ[l][er]
 
 #akuma
-ただ——選ばないなら、七人、誰も、解放されない[l][er]
+いいね。でも、覚えておいて[l][er]
 
 #akuma
-"選ばれなかった六人"が、出ない代わりに[l][er]
+君が全員にいい顔をしてる間に——誰かが、二本目に手を伸ばすかもしれない[l][er]
 
 #akuma
-"選ばれた一人"も、出ない[l][er]
+一人に時間を使えば、その間、残りの六人からは目を離すことになる[l][er]
+
+#akuma
+どっちにしても、僕はお腹が空かない[l][er]
 
 #protagonist
 ……[l][er]
@@ -569,6 +577,7 @@
 ; ルート選択
 ; ================================================================================
 
+[chara_hide_all]
 [bg storage="black.webp" time="1000"]
 
 [glink target="*select_osananajimi" text="幼なじみと向き合う"]
@@ -578,7 +587,7 @@
 [glink target="*select_kakutogi" text="格闘技部と向き合う"]
 [glink target="*select_furyo" text="不良と向き合う"]
 [glink target="*select_imouto" text="友達の妹と向き合う"]
-[glink target="*select_harem" text="誰も選ばない"]
+[glink target="*select_harem" text="まだ誰も選ばない（七人全員と向き合う）"]
 [s]
 
 *select_osananajimi

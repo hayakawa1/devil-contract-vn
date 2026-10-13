@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\gyaru_stream.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Scene: an empty school gym after school, late afternoon light through high windows. A smartphone on a tripod with a ring light in the foreground left. The heroine from the reference (long blonde hair, tanned skin, pink jacket over white blouse with purple bow, purple plaid mini skirt, white loose socks) stands center, very muscular exactly like the reference, doing a confident flexing pose for her livestream with a big bright grin. 16:9 landscape event CG.
+When done, print the saved file path.

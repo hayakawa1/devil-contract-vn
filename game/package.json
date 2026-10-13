@@ -4,12 +4,16 @@
   "description": "悪魔との契約 - ビジュアルノベルゲーム",
   "scripts": {
     "dev": "node ./node_modules/vite/bin/vite.js",
-    "build": "node ./node_modules/vite/bin/vite.js build --emptyOutDir false",
-    "build:clean": "node ./node_modules/vite/bin/vite.js build --emptyOutDir true",
+    "build": "node tools/generate-embedded-data.js && node ./node_modules/vite/bin/vite.js build --emptyOutDir false",
+    "build:clean": "node tools/generate-embedded-data.js && node ./node_modules/vite/bin/vite.js build --emptyOutDir true",
     "check": "node tools/check-content.js",
-    "preview": "node ./node_modules/vite/bin/vite.js preview"
+    "check:i18n": "node tools/check-translation.js",
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
+    "package:win": "tauri build",
+    "tauri": "tauri"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^2.11.2",
     "vite": "^7.3.1"
   }
 }

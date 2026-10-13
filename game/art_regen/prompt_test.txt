@@ -1,0 +1,10 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then save it as a PNG file at:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\osananajimi_schoolgate.png
+(copy it from wherever the image tool writes it). Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity):
+Anime visual-novel event CG, 16:9 landscape (1536x1024 or similar), same painterly anime style as the attached reference sprite.
+Scene: school front gate at sunset, warm orange light. In the foreground on the left, a high-school boy with short black hair in a dark navy school blazer, seen from behind (back of head and shoulders only, face not visible).
+Facing him, the heroine from the attached reference image: brown hair in a side ponytail, white sailor-style school uniform with red neckerchief and navy pleated skirt, white socks, brown loafers. She is very muscular (thick arms and legs, broad shoulders) exactly like the reference, the uniform tight on her arms. She is smiling shyly with a light blush, one hand reaching toward him as if to hold his hand.
+Keep her face, hair, and outfit faithful to the reference. No text, no watermark.
+When done, print the saved file path.

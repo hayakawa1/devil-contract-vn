@@ -1,1517 +1,983 @@
-; route: ギャル
+; route: ギャル（星野美咲）
+; 第3話の一週間後から。美咲が「看板」として上げた写真が、バズっている。
 *start
-[jump target="gyaru_00"]
-
-; source: 第1話_10万いいね.txt
-*gyaru_00
-; ■ ギャルルート - 第1話「10万いいね」
-
-; SNS依存度：+3（バズへの執着）
-; 孤立度：0
-
-; ================================================================================
-*gyaru_00_scene_1
-; シーン1：昼休み／屋上（バズったSNS）
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-[chara_hide_all]
-
-（昼休み。屋上。）[l][er]
-
-（ギャルが、俺を呼び出した。）[l][er]
-
-[chara_show name="gyaru" face="default" pos="center" time="1000"]
-
-#gyaru
-見てこれ[l][er]
-
-（スマホを突きつけられた。）[l][er]
-
-（画面には、彼女の写真。）[l][er]
-
-（——ムキムキの、ポージング写真。）[l][er]
-
-
-#protagonist
-お前、これ——[l][er]
-
-#gyaru
-バズった[l][er]
-
-#protagonist
-は？[l][er]
-
-#gyaru
-10万いいね。まじウケる[l][er]
-
-（笑ってる。）[l][er]
-
-（いつもみたいに、笑ってる。）[l][er]
-
-（でも——）[l][er]
-
-#gyaru
-"加工じゃないの？"とか"どこのジム？"とか、めっちゃリプきてる[l][er]
-
-
-#protagonist
-……[l][er]
-
-（通知が、止まらない。）[l][er]
-
-（画面が、延々とリプライで埋まっている。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_00_scene_2
-; シーン2：屋上（承認への執着）
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_isolation.mp3"]
-
-#gyaru
-あたしさ、前から思ってたんだよね。バズりたいって[l][er]
-
-（彼女は、空を見上げた。）[l][er]
-
-#gyaru
-可愛い子なんていっぱいいるじゃん。あたしより可愛い子、いくらでも[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-でもこれはさ、あたしだけじゃん。唯一じゃん[l][er]
-
-（彼女の目が、キラキラしている。）[l][er]
-
-（でも——）[l][er]
-
-（それは、嬉しさじゃない。）[l][er]
-
-（何かに、憑かれているような目。）[l][er]
-
-#protagonist
-お前——[l][er]
-
-#gyaru
-だから続ける。もっとバズる[l][er]
-
-#protagonist
-待て。それ、バレるぞ。学校に[l][er]
-
-#gyaru
-バレたら何？[l][er]
-
-#protagonist
-何って——[l][er]
-
-#gyaru
-誰も関係ないじゃん。あたしの体でしょ[l][er]
-
-（彼女は、スマホをしまった。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_00_scene_3
-; シーン3：写真撮影の依頼
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-#gyaru
-ね、今度写真撮ってよ。一人じゃ限界あるし[l][er]
-
-#protagonist
-俺が？[l][er]
-
-#gyaru
-他に誰がいんの[l][er]
-
-（じっと見てくる。）[l][er]
-
-#gyaru
-……あんたに撮ってほしいの。だめ？[l][er]
-
-（その目だけは——）[l][er]
-
-（笑ってなかった。）[l][er]
-
-#protagonist
-……[l][er]
-
-
-[glink target="gyaru_00_choice_a" text="わかった、撮ってやる"]
-[glink target="gyaru_00_choice_b" text="やめとけ。危ないぞ"]
-[s]
-[chara_hide name="furyo" time="1000"]
-
-; ================================================================================
-*gyaru_00_scene_4a
-; シーン4A：承諾後（距離が縮まる）
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-#gyaru
-……ありがと[l][er]
-
-（小さく、そう言った。）[l][er]
-
-#protagonist
-何が[l][er]
-
-#gyaru
-あんたが撮ってくれるなら——[l][er]
-
-（彼女は、少し笑った。）[l][er]
-
-#gyaru
-なんか、安心[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-変だよね。SNSに載せるのに[l][er]
-
-#protagonist
-……変だな[l][er]
-
-#gyaru
-でしょ[l][er]
-
-（彼女は、スマホを見た。）[l][er]
-
-（通知が、まだ増え続けている。）[l][er]
-
-#gyaru
-……あたし、どこまで行けるかな[l][er]
-
-#protagonist
-……[l][er]
-
-（俺は、嫌な予感がした。）[l][er]
-
-[jump target="gyaru_00_scene_5"]
-
-[chara_hide name="furyo" time="1000"]
-
-; ================================================================================
-*gyaru_00_scene_4b
-; シーン4B：拒絶後（孤立が深まる）
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_isolation.mp3"]
-
-（ギャルは、一人で階段を降りていった。）[l][er]
-
-#protagonist
-（……まずかったか）[l][er]
-
-（でも、あれは危ない。）[l][er]
-
-（炎上するかもしれない。）[l][er]
-
-（身バレするかもしれない。）[l][er]
-
-#protagonist
-（……）[l][er]
-
-（彼女の背中が、小さく見えた。）[l][er]
-
-[jump target="gyaru_00_scene_5"]
-
-[chara_hide name="furyo" time="1000"]
-
-; ================================================================================
-*gyaru_00_scene_5
-; シーン5：悪魔の囁き
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_tension.mp3"]
-
-（放課後。）[l][er]
-
-（屋上に、あいつがいた。）[l][er]
-
-[chara_show name="akuma" face="smile" pos="center" time="1000"]
-
-#akuma
-面白いね、彼女[l][er]
-
-#protagonist
-……[l][er]
-
-#akuma
-10万いいね。すごいじゃない[l][er]
-
-#protagonist
-お前、何を——[l][er]
-
-#akuma
-何もしてないよ[l][er]
-
-（悪魔は、笑った。）[l][er]
-
-#akuma
-ただ——[l][er]
-
-#akuma
-筋肉は、バズる[l][er]
-
-#akuma
-見てもらえる。注目される[l][er]
-
-#akuma
-でも——[l][er]
-
-（悪魔の目が、冷たくなる。）[l][er]
-
-#akuma
-見られすぎると、どうなるか[l][er]
-
-#protagonist
-……[l][er]
-
-#akuma
-楽しみだね[l][er]
-
-
-（影が、消えた。）[l][er]
-
 [jump target="gyaru_01"]
 
 ; ================================================================================
-
-*gyaru_00_choice_a
-#protagonist
-わかった。撮ってやる[l][er]
-
-#gyaru
-ほんと？[l][er]
-
-（彼女の顔が、明るくなる。）[l][er]
-
-#gyaru
-やった！ じゃあ今度の日曜——[l][er]
-
-#protagonist
-でも、条件がある[l][er]
-
-#gyaru
-……なに[l][er]
-
-#protagonist
-俺が見て、ダメだと思ったら投稿するな[l][er]
-
-#gyaru
-……[l][er]
-
-（彼女は、少し考えた。）[l][er]
-
-#gyaru
-……わかった[l][er]
-
-
-
-
-[jump target="gyaru_00_scene_4a"]
-
-*gyaru_00_choice_b
-#protagonist
-やめとけ。SNSは危ない[l][er]
-
-#gyaru
-……[l][er]
-
-（彼女の目が、冷たくなる。）[l][er]
-
-#gyaru
-あっそ[l][er]
-
-#protagonist
-おい——[l][er]
-
-#gyaru
-わかった。自分で撮るし[l][er]
-
-（彼女は、背を向けた。）[l][er]
-
-#gyaru
-もういい[l][er]
-
-
-
-
-[jump target="gyaru_00_scene_4b"]
-
+; 第1話「10万いいね」
 ; ================================================================================
-; ■ ギャルルート - 第2話「撮影会」
-; テーマ：承認欲求 / 本当の自分
-; ================================================================================
-
 *gyaru_01
 [chara_hide_all]
-[bg storage="park.webp" time="1000"]
+[bg storage="rooftop.webp" time="1000"]
 [playbgm storage="bgm_daily.mp3"]
 
-（日曜日。公園。）[l][er]
-
-（約束通り、ギャルの写真を撮ることになった。）[l][er]
+（昼休み。屋上。）[l][er]
 
 [chara_show name="gyaru" face="smile" pos="center" time="1000"]
 
 #gyaru
-おっそーい。待ったし[l][er]
+見て見て見て[l][er]
+
+（美咲が、スマホを顔の前に突き出してきた。近すぎて、何も見えない。）[l][er]
 
 #protagonist
-5分前だろ[l][er]
+近い[l][er]
 
 #gyaru
-女子を待たせるとか最悪[l][er]
+いいから！　ほら！[l][er]
 
-#protagonist
-……で、どう撮ればいい？[l][er]
+（画面には、体育館で撮った、彼女の写真。）[l][er]
+（両腕を曲げて、力こぶを作っている。ピースの代わりに。）[l][er]
+（同好会の"看板"として、一週間前に上げた一枚だ。）[l][er]
 
 #gyaru
-んー、とりあえずポージングするから、いい感じに撮って[l][er]
+十万いいね。十万だよ？　前のあたし、最高で三百だったんだけど[l][er]
 
-（彼女は、カメラの前に立った。）[l][er]
-
-（そして——筋肉を見せつけるポーズ。）[l][er]
+#gyaru
+フォロワー、一週間で四万増えた。DMも、毎日百件くらい来る[l][er]
 
 #protagonist
-（……すごいな）[l][er]
+……すごいな[l][er]
 
-（彼女の体は、明らかに普通じゃない。）[l][er]
+#gyaru
+でしょ？　あの猫、言ってたじゃん。"別ジャンルで、一位"って[l][er]
 
-（でも——どこか、作り物みたいだ。）[l][er]
+#gyaru
+マジで一位。"筋肉JK"で検索したら、あたしが一番上に出てくんの[l][er]
 
-[chara_hide name="gyaru" time="1000"]
+（笑っている。いつもより、大きな声で。）[l][er]
+（——でも、スマホを持つ手が、ずっと、画面を更新し続けている。）[l][er]
+（話しながら。笑いながら。親指だけが、別の生き物みたいに。）[l][er]
+
+#gyaru
+でさ。お願いがあんだけど[l][er]
+
+#gyaru
+今夜から、毎晩、配信やろうと思ってて。体育館、凛先輩に許可もらったの[l][er]
+
+#gyaru
+カメラ、やってくんない？　三脚だと、いい角度撮れないんだよね[l][er]
+
+#gyaru
+あんたが一番、あたしの筋肉の"いいとこ"わかってそうだし[l][er]
+
+#protagonist
+……どういう意味だ[l][er]
+
+#gyaru
+そういう意味だよ、"彼の好み"くん[l][er]
+
+（からかう声。でも、目は、本気だった。）[l][er]
+
+[glink target="gyaru_01_a" text="「わかった。撮る」"]
+[glink target="gyaru_01_b" text="「……毎晩は、やめとけ」"]
+[s]
+
+*gyaru_01_a
+[eval exp="f.gyaru_camera = true"]
+
+#protagonist
+わかった。撮る[l][er]
+
+[chara_show name="gyaru" face="smile" pos="center" time="500"]
+
+#gyaru
+マジ？　やった！[l][er]
+
+#gyaru
+じゃあ今日、七時ね。遅れたら、あんたの寝顔上げるから[l][er]
+
+#protagonist
+持ってないだろ、そんなの[l][er]
+
+#gyaru
+結衣ちゃんに頼めば、小学生のときのやつ、あると思う[l][er]
+
+#protagonist
+やめろ[l][er]
+
+（彼女は、笑いながら、屋上を出ていった。）[l][er]
+（——階段の途中で、また、スマホを開く音がした。）[l][er]
+
+[jump target="gyaru_02"]
+
+*gyaru_01_b
+#protagonist
+……毎晩は、やめとけ[l][er]
+
+[chara_show name="gyaru" face="angry" pos="center" time="500"]
+
+#gyaru
+は？　なんで[l][er]
+
+#protagonist
+今、お前、俺と喋りながら、ずっと更新してる[l][er]
+
+#gyaru
+……してないし[l][er]
+
+#protagonist
+してる。今も[l][er]
+
+（彼女は、親指を、止めた。）[l][er]
+（止めた指が、少しだけ、震えていた。）[l][er]
+
+#gyaru
+……うっざ[l][er]
+
+#gyaru
+いいよ。三脚でやる。あんたに頼んだあたしがバカだった[l][er]
+
+#gyaru
+……やっと見つけてもらえたのに。邪魔すんなら、あんたも"アンチ"だからね[l][er]
+
+（彼女は、屋上を出ていった。）[l][er]
+（扉が、閉まる音が、少しだけ、強かった。）[l][er]
+
+[jump target="gyaru_02"]
 
 ; ================================================================================
-*gyaru_01_scene_2
-; シーン2：撮影中の違和感
+; 第2話「可愛い、が来ない」
 ; ================================================================================
+*gyaru_02
+[chara_hide_all]
+[bg storage="gym.webp" time="1000"]
+[playbgm storage="bgm_tension.mp3"]
 
-[bg storage="park.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
+（三日後。夜の体育館。）[l][er]
 
-（何枚か撮った。）[l][er]
+[if exp="f.gyaru_camera"]
+（俺は、美咲のスマホを構えていた。）[l][er]
+（リングライトの光の中で、彼女が、ポーズを取る。）[l][er]
+[else]
+（俺は、体育館の入り口に立っていた。）[l][er]
+（"見るだけなら"と、凛が入れてくれた。）[l][er]
+（三脚の前で、美咲が、一人でポーズを取っている。）[l][er]
+[endif]
 
-[chara_show name="gyaru" face="default" pos="center" time="1000"]
-
-#gyaru
-どう？見せて[l][er]
-
-（スマホの画面を見せる。）[l][er]
-
-#gyaru
-……[l][er]
-
-#protagonist
-どうした[l][er]
-
-#gyaru
-……なんか、違う[l][er]
-
-#protagonist
-違う？[l][er]
+[chara_show name="gyaru" face="smile" pos="center" time="1000"]
 
 #gyaru
-もっと——いい感じにならない？[l][er]
-
-#protagonist
-十分いい感じだと思うけど[l][er]
+はーい、今日もやってくよー！　同接、三千！　えぐ！[l][er]
 
 #gyaru
-違うの。もっと——[l][er]
+リクエスト来てる。"背中見せて"？　いいよー[l][er]
 
-（彼女は、言い淀んだ。）[l][er]
+（流れていくコメントが、画面の端に、滝みたいに落ちていく。）[l][er]
+
+（"でかすぎw"）[l][er]
+（"これ加工？"）[l][er]
+（"ゴリラ"）[l][er]
+（"すげえ、どうやったらこうなるの"）[l][er]
+（"化け物で草"）[l][er]
 
 #gyaru
-もっと、"映える"やつ[l][er]
+化け物はひどくない？　あはは[l][er]
 
-#protagonist
-……[l][er]
+（笑っている。）[l][er]
+（コメントを読み上げて、ツッコんで、笑っている。）[l][er]
 
-（何かが、おかしい。）[l][er]
+（一時間。）[l][er]
+（配信が終わった瞬間——彼女の顔から、全部、抜け落ちた。）[l][er]
 
-（彼女は笑ってるけど、目が笑ってない。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_01_scene_3
-; シーン3：休憩
-; ================================================================================
-
-[bg storage="park.webp" time="1000"]
-[playbgm storage="bgm_sadness.mp3"]
-
-（休憩。ベンチに座る。）[l][er]
-
-[chara_show name="gyaru" face="sad" pos="center" time="1000"]
+[chara_show name="gyaru" face="sad" pos="center" time="500"]
 
 #gyaru
 ……ねえ[l][er]
 
 #protagonist
-ん？[l][er]
+ん[l][er]
 
 #gyaru
-あたしさ、前は普通だったんだよね[l][er]
+今日のコメント、何件か、知ってる？[l][er]
 
 #protagonist
-普通？[l][er]
+……いや[l][er]
 
 #gyaru
-可愛い系で売ってた[l][er]
+八千二百件。全部読んだ[l][er]
 
 #gyaru
-でも、可愛い子なんていっぱいいるじゃん[l][er]
-
-#protagonist
-……[l][er]
+"すごい"が千四百。"でかい"が九百。"化け物"系が六百くらい[l][er]
 
 #gyaru
-埋もれるの。全然バズらない[l][er]
-
-#gyaru
-だから——[l][er]
-
-（彼女は、自分の腕を見た。）[l][er]
-
-#gyaru
-これなら、唯一になれると思った[l][er]
-
-#protagonist
-……悪魔の薬で？[l][er]
-
-#gyaru
-うん[l][er]
-
-（彼女は、笑った。）[l][er]
-
-（でも、その笑顔が痛々しい。）[l][er]
-
-#gyaru
-バズった。10万いいね[l][er]
-
-#gyaru
-でも——[l][er]
-
-#protagonist
-でも？[l][er]
-
-#gyaru
-コメント、読んだ？[l][er]
-
-#protagonist
-いや[l][er]
-
-#gyaru
-"気持ち悪い""加工でしょ""病気？"[l][er]
+……"可愛い"は、四件だった[l][er]
 
 #protagonist
 ……[l][er]
 
 #gyaru
-褒めてるコメントより、叩いてるコメントの方が多いの[l][er]
-
-（彼女の声が、震えた。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_01_scene_4
-; シーン4：本音
-; ================================================================================
-
-[bg storage="park.webp" time="1000"]
-[playbgm storage="bgm_sadness.mp3"]
-
-[chara_show name="gyaru" face="crying" pos="center" time="1000"]
+笑うよね。あたし、"可愛い"のレースから降りるために飲んだのに[l][er]
 
 #gyaru
-……あたし、何してんだろ[l][er]
+降りたら、降りたで、"可愛い"が欲しくなってんの[l][er]
+
+#gyaru
+唯一には、なれたよ。"化け物枠"の、唯一[l][er]
+
+[if exp="f.gyaru_camera"]
+#gyaru
+……あんたさ。カメラ越しに、ずっとあたし見てたじゃん[l][er]
+
+#gyaru
+どうだった。……正直に[l][er]
 
 #protagonist
-……[l][er]
-
-#gyaru
-注目されたかった[l][er]
-
-#gyaru
-見てもらいたかった[l][er]
-
-#gyaru
-でも——[l][er]
-
-（涙が、こぼれた。）[l][er]
-
-#gyaru
-見てもらえても、嫌われたら意味ないじゃん[l][er]
+……カメラ越しのお前は、ずっと笑ってた[l][er]
 
 #protagonist
-……[l][er]
+カメラを下ろしたら、今の顔だった。俺は、今のほうが、見てて痛い[l][er]
 
 #gyaru
-あたしのこと、好きって言ってくれる人——[l][er]
-
+……そういうの、ズルい[l][er]
+[else]
 #gyaru
-一人もいない[l][er]
-
-（彼女は、泣いていた。）[l][er]
-
-（SNSの女王は、こんなにも脆かった。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_01_scene_5
-; シーン5：選択
-; ================================================================================
-
-[bg storage="park.webp" time="1000"]
-[playbgm storage="bgm_sadness.mp3"]
-
-[glink target="gyaru_01_choice_a" text="俺は好きだぞ"]
-[glink target="gyaru_01_choice_b" text="SNS、やめたら？"]
-[s]
-
-*gyaru_01_choice_a
-#protagonist
-俺は好きだぞ[l][er]
-
-[chara_show name="gyaru" face="surprised" pos="center" time="1000"]
-
-#gyaru
-……え[l][er]
+……あんた、なんで来たの。"やめとけ"って言ったくせに[l][er]
 
 #protagonist
-お前のこと[l][er]
+やめとけって言ったから、来た[l][er]
 
 #gyaru
-……何、急に[l][er]
-
-#protagonist
-急じゃない。前から思ってた[l][er]
-
-#protagonist
-明るくて、前向きで、ちょっとうるさいけど[l][er]
+……意味わかんない[l][er]
 
 #gyaru
-うるさいは余計[l][er]
-
-#protagonist
-でも、そういうとこ好きだ[l][er]
+……でも、終わったあと、誰もいない体育館で一人でこれ読むの、ちょっと無理だったから[l][er]
 
 #gyaru
-……[l][er]
+……来てくれて、たすかった。今日だけ[l][er]
+[endif]
 
-（彼女の目が、潤む。）[l][er]
-
-#gyaru
-……ほんとに？[l][er]
-
-#protagonist
-ああ[l][er]
-
-#gyaru
-……ありがと[l][er]
-
-（小さく、そう言った。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-[jump target="gyaru_02"]
-
-*gyaru_01_choice_b
-#protagonist
-SNS、やめたら？[l][er]
-
-[chara_show name="gyaru" face="angry" pos="center" time="1000"]
-
-#gyaru
-……は？[l][er]
-
-#protagonist
-辛いなら、やめればいい[l][er]
-
-#gyaru
-……無理[l][er]
-
-#protagonist
-なんで[l][er]
-
-#gyaru
-だって——[l][er]
-
-（彼女は、俯いた。）[l][er]
-
-#gyaru
-やめたら、あたし何もなくなる[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-フォロワー10万人いるのに[l][er]
-
-#gyaru
-リアルの友達——一人もいないんだよ[l][er]
-
-#protagonist
-……[l][er]
-
-（俺は、何も言えなかった。）[l][er]
-
-#gyaru
-……ごめん。今日、帰る[l][er]
-
-（彼女は、立ち上がった。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-[jump target="gyaru_02"]
-
-; ================================================================================
-; ■ ギャルルート - 第3話「炎上」
-; テーマ：ネット社会の闘 / 味方
-; ================================================================================
-
-*gyaru_02
-[bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_tension.mp3"]
-
-（月曜日。教室。）[l][er]
-
-（ギャルの席が、空いている。）[l][er]
-
-#protagonist
-（……来てないのか）[l][er]
-
-（スマホを見る。）[l][er]
-
-（SNSを開くと——）[l][er]
-
-#protagonist
-……！[l][er]
-
-（炎上していた。）[l][er]
-
-（ギャルの写真が、まとめサイトに転載されている。）[l][er]
-
-（コメント欄は、誹謗中傷の嵐。）[l][er]
-
-; ================================================================================
-*gyaru_02_scene_2
-; シーン2：探しに行く
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_tension.mp3"]
-
-（俺は、彼女を探した。）[l][er]
-
-（屋上。）[l][er]
-
-（——いた。）[l][er]
-
-[chara_show name="gyaru" face="crying" pos="center" time="1000"]
-
-#gyaru
-……来ないでよ[l][er]
-
-#protagonist
-来た[l][er]
-
-#gyaru
-見たんでしょ。炎上[l][er]
-
-#protagonist
-ああ[l][er]
-
-#gyaru
-笑った？[l][er]
-
-#protagonist
-笑わない[l][er]
-
-#gyaru
-……[l][er]
-
-（彼女は、フェンスに寄りかかっていた。）[l][er]
-
-（目が、真っ赤だった。）[l][er]
-
-#gyaru
-学校にもバレた[l][er]
-
-#gyaru
-親にも[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-"何考えてるの"って[l][er]
-
-#gyaru
-"恥ずかしい"って[l][er]
-
-（声が、震える。）[l][er]
-
-#gyaru
-……あたし、恥ずかしいのかな[l][er]
-
-#gyaru
-認められたかっただけなのに[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_02_scene_3
-; シーン3：励まし
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_sadness.mp3"]
-
-#protagonist
-恥ずかしくない[l][er]
-
-[chara_show name="gyaru" face="surprised" pos="center" time="1000"]
-
-#gyaru
-……え[l][er]
-
-#protagonist
-お前は、自分を見てほしかっただけだ[l][er]
-
-#protagonist
-それの何が悪い[l][er]
-
-#gyaru
-でも——[l][er]
-
-#protagonist
-ネットの奴らは、お前のことを知らない[l][er]
-
-#protagonist
-俺は知ってる[l][er]
-
-#gyaru
-……[l][er]
-
-#protagonist
-明るくて、ちょっとバカで[l][er]
-
-#gyaru
-バカは余計[l][er]
-
-#protagonist
-でも、一生懸命で[l][er]
-
-#protagonist
-そういうお前を、俺は知ってる[l][er]
-
-#gyaru
-……[l][er]
-
-（彼女の目から、また涙がこぼれた。）[l][er]
-
-#gyaru
-……あんた、ほんと変[l][er]
-
-#protagonist
-よく言われる[l][er]
-
-#gyaru
-……ありがと[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_02_scene_4
-; シーン4：筋肉同好会の仲間
-; ================================================================================
-
-[bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（放課後。部室。）[l][er]
-
-（ギャルを連れてきた。）[l][er]
-
-[chara_show name="seitokai" face="default" pos="left" time="1000"]
-
-#seitokai
-炎上の件、把握しています[l][er]
-
-[chara_show name="gyaru" face="sad" pos="right" time="1000"]
-
-#gyaru
-……[l][er]
-
-#seitokai
-法的対処を検討しましょう[l][er]
-
-#gyaru
-え？[l][er]
-
-#seitokai
-誹謗中傷は、訴えられます[l][er]
-
-[chara_show name="otaku" face="default" pos="left" time="1000"]
-
-#otaku
-まとめサイトの管理者、特定できそうです[l][er]
-
-#gyaru
-……なんで、そこまで[l][er]
-
-#otaku
-仲間ですから[l][er]
-
-[chara_hide name="otaku" time="1000"]
-
-[chara_show name="kakutogi" face="default" pos="left" time="1000"]
-
-#kakutogi
-ネットで叩いてる奴ら、直接会ったら絶対ビビるぞ[l][er]
-
-#gyaru
-……[l][er]
-
-#kakutogi
-お前は強いんだ。こんな筋肉、普通の奴にはない[l][er]
-
-[chara_hide name="kakutogi" time="1000"]
-
-#gyaru
-……みんな[l][er]
-
-（彼女の目が、潤む。）[l][er]
-
-#gyaru
-ありがと……[l][er]
-
-[chara_hide name="seitokai" time="1000"]
-
-; ================================================================================
-*gyaru_02_scene_5
-; シーン5：反撃
-; ================================================================================
-
-[bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_tension.mp3"]
-
-（数日後。）[l][er]
-
-（生徒会長とオタクが動いた。）[l][er]
-
-（まとめサイトは削除された。）[l][er]
-
-（悪質なコメントを書いた人物には、警告が送られた。）[l][er]
-
-[chara_show name="gyaru" face="smile" pos="center" time="1000"]
-
-#gyaru
-……すごい[l][er]
-
-#protagonist
-生徒会長とオタク、ガチだからな[l][er]
-
-#gyaru
-あたし、こんなに味方がいたんだ[l][er]
-
-#protagonist
-当たり前だろ[l][er]
-
-（彼女は、笑った。）[l][er]
-
-（今度は、本当の笑顔だった。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
 [jump target="gyaru_03"]
 
 ; ================================================================================
-; ■ ギャルルート - 第4話「本当の自分」
-; テーマ：SNSとの向き合い方 / 自己肯定
+; 第3話「検証動画」
 ; ================================================================================
-
 *gyaru_03
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
-
-（炎上騒動が収まって、数週間。）[l][er]
-
-（ギャルは、SNSの更新を止めていた。）[l][er]
-
-[chara_show name="gyaru" face="default" pos="center" time="1000"]
-
-#gyaru
-ねえ[l][er]
-
-#protagonist
-ん？[l][er]
-
-#gyaru
-あたし、考えたんだ[l][er]
-
-#protagonist
-何を[l][er]
-
-#gyaru
-SNSのこと[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-やめようかなって[l][er]
-
-#protagonist
-……本当に？[l][er]
-
-#gyaru
-うん[l][er]
-
-（彼女は、空を見上げた。）[l][er]
-
-#gyaru
-フォロワー10万人いても、あたしを守ってくれたのは——[l][er]
-
-#gyaru
-ここにいる人たちだけだった[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-数字って、意味ないんだなって[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_03_scene_2
-; シーン2：新しい目標
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-[chara_show name="gyaru" face="smile" pos="center" time="1000"]
-
-#gyaru
-でもさ[l][er]
-
-#protagonist
-ん？[l][er]
-
-#gyaru
-写真撮るのは好きなんだよね[l][er]
-
-#protagonist
-撮られるのが？[l][er]
-
-#gyaru
-撮るのも[l][er]
-
-#protagonist
-……知らなかった[l][er]
-
-#gyaru
-言ってなかったし[l][er]
-
-#gyaru
-あたし、いつも"撮られる側"だったから[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-でも、撮る側も楽しいかなって[l][er]
-
-#gyaru
-みんなの写真、撮りたい[l][er]
-
-#protagonist
-筋肉同好会の？[l][er]
-
-#gyaru
-うん[l][er]
-
-（彼女は、カメラを構えるポーズをした。）[l][er]
-
-#gyaru
-筋肉美少女図鑑、作るの[l][er]
-
-#protagonist
-……それ、バズりそうだな[l][er]
-
-#gyaru
-あはは、でもバズらなくてもいい[l][er]
-
-#gyaru
-みんなが喜んでくれたら、それでいい[l][er]
-
-（彼女は、変わり始めていた。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_03_scene_3
-; シーン3：撮影会
-; ================================================================================
-
+[chara_hide_all]
 [bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
+[playbgm storage="bgm_tension.mp3"]
 
-（部室。）[l][er]
+（一週間後。朝の教室。）[l][er]
 
-（ギャルが、みんなの写真を撮っている。）[l][er]
+（美咲の席が、空いていた。）[l][er]
 
-[chara_show name="gyaru" face="smile" pos="center" time="1000"]
+[chara_show name="otaku" face="default" pos="center" time="800"]
 
-#gyaru
-はい、そこ！いい感じ！[l][er]
+#otaku
+これです[l][er]
 
-[chara_show name="kakutogi" face="default" pos="right" time="1000"]
+（理香が、タブレットを差し出した。）[l][er]
+
+（動画のタイトルは——"【検証】話題の筋肉JK、薬物使用の可能性について"。）[l][er]
+（再生数、六十万。）[l][er]
+
+#otaku
+内容は、科学的にはでたらめです。ただ——[l][er]
+
+#otaku
+後半で、彼女の中学時代の写真と、今の写真が、並べられています[l][er]
+
+#otaku
+それから、制服から、学校名が特定されています[l][er]
+
+#protagonist
+……[l][er]
+
+[chara_show name="seitokai" face="default" pos="right" time="800"]
+
+#seitokai
+今朝から、学校の電話が鳴り続けています[l][er]
+
+#seitokai
+"薬を使う部活があるのか"と[l][er]
+
+#seitokai
+同好会の活動は、しばらく、自粛するよう、指示が出ました[l][er]
+
+#protagonist
+星野は[l][er]
+
+#seitokai
+……昨夜、配信の最後に、"みんなごめん"と言って、アカウントを非公開にしたそうです[l][er]
+
+#seitokai
+今朝は、電話に出ません[l][er]
+
+[chara_hide_all]
+[chara_show name="osananajimi" face="sad" pos="left" time="800"]
+[chara_show name="kakutogi" face="angry" pos="right" time="800"]
+
+#osananajimi
+美咲ちゃん、昨日、あたしにLINEくれたの。"同好会、潰したらごめん"って[l][er]
 
 #kakutogi
-こ、こうか？[l][er]
+……あいつのせいじゃない。動画を作ったやつのせいだ[l][er]
 
-#gyaru
-もっと自然に！力抜いて！[l][er]
+#osananajimi
+うん。でも、美咲ちゃん、自分のせいだと思ってる[l][er]
 
-#kakutogi
-力を抜くと筋肉が——[l][er]
+#osananajimi
+……&f.main_nameくん。探しに行って[l][er]
 
-#gyaru
-いいからいいから！[l][er]
+#osananajimi
+今、美咲ちゃんが一番"見つけてほしい"の、たぶん、あんただから[l][er]
 
-[chara_hide name="kakutogi" time="1000"]
-
-（みんなが笑っている。）[l][er]
-
-（ギャルも、笑っている。）[l][er]
-
-（前より、ずっと自然な笑顔で。）[l][er]
-
-[chara_hide name="gyaru" time="1000"]
 [jump target="gyaru_04"]
 
 ; ================================================================================
-; ■ ギャルルート - 第5話「告白」
-; テーマ：恋 / 本当の繋がり
+; 第4話「二本目」
 ; ================================================================================
-
 *gyaru_04
+[chara_hide_all]
 [bg storage="park_night.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
+[playbgm storage="bgm_isolation.mp3"]
 
-（夜の公園。）[l][er]
+（夜。駅の向こうの、公園。）[l][er]
 
-（ギャルに呼び出された。）[l][er]
+（美咲の家の近く。小さい頃、よくここで写真を撮っていたと、前に言っていた。）[l][er]
 
-[chara_show name="gyaru" face="blush" pos="center" time="1000"]
+[chara_show name="gyaru" face="crying" pos="right" time="1000"]
 
-#gyaru
-……来てくれた[l][er]
-
-#protagonist
-呼んだのお前だろ[l][er]
-
-#gyaru
-うん[l][er]
-
-（彼女は、俺の前に立った。）[l][er]
-
-（いつもより、緊張している。）[l][er]
-
-#gyaru
-あのさ[l][er]
+（ベンチの上で、膝を抱えて、スマホを見ていた。）[l][er]
+（画面の光だけが、彼女の顔を照らしている。）[l][er]
 
 #protagonist
-ん？[l][er]
+……星野[l][er]
 
 #gyaru
-あたし、ずっと考えてたんだ[l][er]
-
-#protagonist
-何を[l][er]
+……見ないで[l][er]
 
 #gyaru
-あんたのこと[l][er]
+今、可愛くないから。……前から、だけど[l][er]
 
 #protagonist
+……アカウント、非公開にしたんじゃないのか[l][er]
+
+#gyaru
+したよ。でも、エゴサは、やめらんない[l][er]
+
+#gyaru
+"ドーピング女"。"学校ごと終わり"。"整形前、普通にブスで草"[l][er]
+
+#gyaru
+……中学のときの写真、誰が流したんだろ。あたし、あれ、自分でも消したのに[l][er]
+
+[chara_show name="akuma" face="default" pos="left" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+#akuma
+読むの、やめられないよね[l][er]
+
+#gyaru
+……出たな、猫[l][er]
+
+#akuma
+悪魔だよ。……ねえ、君、ほんとはわかってるでしょ[l][er]
+
+#akuma
+君が欲しいのは、"いいね"じゃなくて、"見つけてもらうこと"[l][er]
+
+#akuma
+でも、画面の向こうには、見つけてくれる人なんていない。数字があるだけ[l][er]
+
+#akuma
+だからね。これ[l][er]
+
+（悪魔の前足に、小さな瓶。）[l][er]
+（一本目と同じ形。中身の色だけが、少し、暗い。）[l][er]
+
+#akuma
+二本目。これを飲めば、何を書かれても、何も感じない[l][er]
+
+#akuma
+"ブス"も、"化け物"も、"可愛い"も、全部、同じ数字に見える[l][er]
+
+#akuma
+永遠に笑って、永遠に配信できる。完璧なインフルエンサーだよ[l][er]
+
+#akuma
+もう、エゴサで泣かなくていい[l][er]
+
+#gyaru
 ……[l][er]
 
-#gyaru
-炎上した時、一番最初に来てくれたじゃん[l][er]
+（美咲の目が、瓶を見ていた。）[l][er]
+（スマホの画面を見るのと、同じ目で。）[l][er]
 
 #gyaru
-みんなに嫌われても、味方でいてくれたじゃん[l][er]
+……それ飲んだら、同好会のみんなに迷惑かけたことも、平気になる？[l][er]
 
-#protagonist
-当たり前だろ[l][er]
+#akuma
+なるよ。気にならなくなる[l][er]
 
-#gyaru
-当たり前じゃないよ[l][er]
+（悪魔は、瓶を、ベンチの上に置いた。）[l][er]
 
-（彼女の目が、潤む。）[l][er]
+#akuma
+飲むかどうかは、君次第[l][er]
 
-#gyaru
-あたし、フォロワー10万人いたけど[l][er]
+（——今、言わなきゃいけない。）[l][er]
+（画面の外から、言わなきゃいけない。）[l][er]
 
-#gyaru
-炎上した時、誰も助けてくれなかった[l][er]
-
-#gyaru
-でも、あんたは——[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-あんただけは、来てくれた[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_04_scene_2
-; シーン2：告白
-; ================================================================================
-
-[bg storage="park_night.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-[chara_show name="gyaru" face="blush" pos="center" time="1000"]
-
-#gyaru
-だから——[l][er]
-
-（彼女は、深呼吸した。）[l][er]
-
-#gyaru
-好き[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-あんたのこと、好き[l][er]
-
-#gyaru
-いいねとか、フォロワーとか、そんなのじゃなくて[l][er]
-
-#gyaru
-本当に、好き[l][er]
-
-（彼女の顔が、真っ赤になっている。）[l][er]
-
-#gyaru
-……返事、聞かせて[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_04_scene_3
-; シーン3：選択
-; ================================================================================
-
-[bg storage="park_night.webp" time="1000"]
-
-[glink target="gyaru_ending_good" text="俺も好きだ"]
-[glink target="gyaru_ending_normal" text="友達でいたい"]
+[glink target="gyaru_04_refuse" text="スマホを取り上げて「画面の外のお前を、見ろ」"]
+[glink target="gyaru_04_accept" text="「……お前が、楽になれるなら」"]
 [s]
 
-; ================================================================================
-; ■ ギャルルート - グッドエンディング「いいねより大切なもの」
-; ================================================================================
+*gyaru_04_refuse
+（俺は、彼女の手から、スマホを、取り上げた。）[l][er]
 
-*gyaru_ending_good
-#protagonist
-俺も好きだ[l][er]
-
-[chara_show name="gyaru" face="surprised" pos="center" time="1000"]
+[chara_show name="gyaru" face="surprised" pos="right" time="500"]
 
 #gyaru
-……え[l][er]
+ちょっ——返して[l][er]
 
 #protagonist
-お前のこと[l][er]
-
-#gyaru
-……ほんとに？[l][er]
+返さない[l][er]
 
 #protagonist
-ああ[l][er]
+画面の外のお前を、見ろ。俺が、今、見てる[l][er]
 
 #protagonist
-明るくて、バカで、ちょっとうるさくて[l][er]
+目が腫れてて、鼻が赤くて、髪がぐちゃぐちゃで、ベンチに体育座りしてる[l][er]
 
 #gyaru
-褒めてるの？けなしてるの？[l][er]
+……最悪じゃん[l][er]
 
 #protagonist
-褒めてる[l][er]
+可愛いよ[l][er]
+
+#gyaru
+……は[l][er]
 
 #protagonist
-そういうお前が、好きだ[l][er]
+可愛い。五件目だ。数えとけ[l][er]
 
 #gyaru
-……[l][er]
-
-（彼女の目から、涙がこぼれた。）[l][er]
-
-#gyaru
-……嬉しい[l][er]
+……っ[l][er]
 
 #protagonist
-泣くなよ[l][er]
-
-#gyaru
-泣いてない……泣いてるけど……[l][er]
-
-（彼女は、俺に抱きついた。）[l][er]
-
-#gyaru
-ありがと……[l][er]
+"すごい"も"でかい"も、俺は言わない。それはもう、八千件も来てる[l][er]
 
 #protagonist
-……ああ[l][er]
+俺は、画面に映らないほうのお前に、"可愛い"って言う。それしか、俺にはできない[l][er]
 
-[chara_hide name="gyaru" time="1000"]
-
-; ================================================================================
-*gyaru_ending_good_epilogue
-; エピローグ
-; ================================================================================
-
-[bg storage="rooftop.webp" time="1000"]
-[playbgm storage="bgm_romance.mp3"]
-
-（数ヶ月後。）[l][er]
-
-（ギャルは、SNSを再開した。）[l][er]
-
-（でも、前とは違う。）[l][er]
-
-[chara_show name="gyaru" face="smile" pos="center" time="1000"]
+[chara_show name="gyaru" face="crying" pos="right" time="500"]
 
 #gyaru
-見て見て、この写真！[l][er]
+……ばか[l][er]
+
+#gyaru
+ばか。そういうの、今、言うな[l][er]
+
+#gyaru
+……飲めなくなるじゃん[l][er]
+
+（彼女は、ベンチの上の瓶を、手の甲で、押しやった。）[l][er]
+
+#gyaru
+……いらない。猫、持って帰って[l][er]
+
+[chara_show name="akuma" face="smile" pos="left" time="500"]
+
+#akuma
+……ふうん。返品か[l][er]
+
+#akuma
+いいよ。ゲームは、まだ続いてるしね[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+（影は、消えた。）[l][er]
+
+（美咲は、俺の手から、スマホを取り返そうとしなかった。）[l][er]
+（代わりに、俺の袖を、指先でつまんだ。）[l][er]
+
+#gyaru
+……今、何件目？[l][er]
 
 #protagonist
-どれ[l][er]
+何が[l][er]
 
 #gyaru
-筋肉同好会のみんな！[l][er]
-
-（スマホの画面には、仲間たちの写真。）[l][er]
-
-（みんな、笑っている。）[l][er]
-
-#gyaru
-いいねより、コメントが嬉しいの[l][er]
+"可愛い"[l][er]
 
 #protagonist
-コメント？[l][er]
+……五件目[l][er]
 
 #gyaru
-"楽しそう"とか"仲良さそう"とか[l][er]
+……六件目、明日までに言って[l][er]
 
-#gyaru
-数じゃなくて、言葉が嬉しい[l][er]
+[eval exp="f.gyaru_refused = true"]
+[jump target="gyaru_05"]
 
+*gyaru_04_accept
 #protagonist
-……変わったな[l][er]
+……お前が、楽になれるなら[l][er]
 
-#gyaru
-うん[l][er]
+（言った瞬間に、間違えた、とわかった。）[l][er]
 
-（彼女は、俺を見た。）[l][er]
-
-#gyaru
-あんたのおかげ[l][er]
-
-#protagonist
-俺？[l][er]
-
-#gyaru
-あんたが、あたしを見てくれたから[l][er]
-
-#gyaru
-数字じゃなくて、あたしを[l][er]
-
-#protagonist
-……[l][er]
-
-#gyaru
-だから、あたしも変われた[l][er]
-
-（彼女は、俺の手を握った。）[l][er]
-
-#gyaru
-これからも、見ててね[l][er]
-
-#protagonist
-ああ[l][er]
-
-#protagonist
-ずっと見てる[l][er]
-
-[chara_hide name="gyaru" time="1000"]
-
-[bg storage="black.webp" time="1000"]
-
-（——ギャル。本名、星野美咲。）[l][er]
-
-（SNSの女王だった彼女は——）[l][er]
-
-（本当の繋がりを見つけた。）[l][er]
-
-（いいねより大切なもの。）[l][er]
-
-（それは、隣にいてくれる人。）[l][er]
-
-（END - 「いいねより大切なもの」）[l][er]
-
-[s]
-
-; ================================================================================
-; ■ ギャルルート - ノーマルエンディング「最高の友達」
-; ================================================================================
-
-*gyaru_ending_normal
-#protagonist
-……ごめん[l][er]
-
-[chara_show name="gyaru" face="sad" pos="center" time="1000"]
-
-#gyaru
-……[l][er]
-
-#protagonist
-お前のことは好きだ。でも——[l][er]
-
-#gyaru
-……友達として？[l][er]
-
-#protagonist
-……ああ[l][er]
+[chara_show name="gyaru" face="sad" pos="right" time="500"]
 
 #gyaru
 ……そっか[l][er]
 
-（彼女は、俯いた。）[l][er]
-
-（でも——顔を上げた時、笑っていた。）[l][er]
+#gyaru
+あんたも、そう思うんだ。そのほうがいいって[l][er]
 
 #gyaru
-いいよ[l][er]
+……だよね。今のあたし、めんどくさいもんね[l][er]
+
+（違う、と言う前に。）[l][er]
+（彼女は、瓶を取って——）[l][er]
+（いつも配信でやるみたいに、カメラに向かって、ピースした。）[l][er]
 
 #protagonist
+——待て！[l][er]
+
+（遅かった。）[l][er]
+
+[jump target="gyaru_ending_bad"]
+
+; ================================================================================
+; 第5話「カウンター、オフ」
+; ================================================================================
+*gyaru_05
+[chara_hide_all]
+[bg storage="gym.webp" time="1000"]
+[playbgm storage="bgm_tension.mp3"]
+
+（三日後。夜の体育館。）[l][er]
+
+（凛が、教頭に頭を下げて、一晩だけ、使用許可を取ってくれた。）[l][er]
+
+[chara_show name="gyaru" face="default" pos="center" time="1000"]
+
+#gyaru
+……配信、するね[l][er]
+
+#gyaru
+アカウント、公開に戻す。で、一回だけ、ちゃんと喋る[l][er]
+
+#protagonist
+怖くないか[l][er]
+
+#gyaru
+怖いよ。めっちゃ怖い[l][er]
+
+#gyaru
+だから、あんた、カメラやって。今日は、三脚じゃ無理[l][er]
+
+（俺は、スマホを構えた。）[l][er]
+（画面の中の美咲は、いつもより、少しだけ、小さく見えた。）[l][er]
+
+[chara_hide_all]
+[bg storage="events/gyaru_stream.webp" time="1500"]
+[playbgm storage="bgm_romance.mp3"]
+
+#gyaru
+……こんばんは。美咲です[l][er]
+
+#gyaru
+動画のこと、知ってる人、多いと思う。学校にも、いっぱい迷惑かけた[l][er]
+
+#gyaru
+この体になった理由は、言えない。言っても、たぶん信じてもらえない[l][er]
+
+#gyaru
+でも、ひとつだけ。誰かに無理やりやらされたんじゃない[l][er]
+
+#gyaru
+あたしが、自分で選んだ体です[l][er]
+
+#gyaru
+……それと、もうひとつ[l][er]
+
+#gyaru
+今日から、いいねの数、見るのやめます。カウンター、オフにした[l][er]
+
+#gyaru
+数字じゃなくて、来てくれた人の顔、見たいから[l][er]
+
+（コメントが、流れる。）[l][er]
+（"逃げんな"。"どうせ薬だろ"。）[l][er]
+（——そして。）[l][er]
+
+（"美咲ちゃんのクラスの者です。この子、ほんとに頑張ってます"）[l][er]
+（"同じ学校。体育館でいつも一番最後まで残ってる"）[l][er]
+（"中学の写真のとき、私、隣にいました。そのときから可愛かったよ"）[l][er]
+
+#gyaru
+……っ[l][er]
+
+（画面の端に、ひょい、と、人影が入ってきた。）[l][er]
+
+#kakutogi
+星野。私も映っていいか[l][er]
+
+#osananajimi
+あたしも！　美咲ちゃんの隣、あいてる？[l][er]
+
+#otaku
+この体の筋繊維構成について、十分ほど解説してもいいですか[l][er]
+
+#gyaru
+ちょ、なに、みんな——[l][er]
+
+#seitokai
+同好会の活動です。生徒会長として、許可します[l][er]
+
+（画面が、筋肉で、いっぱいになった。）[l][er]
+（美咲は、泣きながら、笑っていた。）[l][er]
+（カメラ越しじゃなくても、ちゃんと、笑っていた。）[l][er]
+
+[jump target="gyaru_06"]
+
+; ================================================================================
+; 告白前夜：悪魔の味見
+; ================================================================================
+*gyaru_06
+[chara_hide_all]
+[bg storage="rooftop_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
+
+（配信のあと。屋上。）[l][er]
+
+[chara_show name="akuma" face="default" pos="center" time="1000"]
+
+#akuma
+やあ。今の君、どんな味？[l][er]
+
+#protagonist
+……味見すんな[l][er]
+
+#akuma
+いいじゃない。今日の配信、僕も見てたよ。同接一万二千[l][er]
+
+#akuma
+……ねえ。あの子の願いは、"唯一になりたい"だった[l][er]
+
+#akuma
+僕は、"化け物枠の唯一"にしてあげた。そういう契約だから[l][er]
+
+#akuma
+でも、今日の画面には、七人映ってた。唯一じゃなくなったのに、あの子、一番いい顔してた[l][er]
+
+#protagonist
+……唯一じゃなくても、見つけてもらえるって、わかったんだろ[l][er]
+
+#akuma
+ふうん[l][er]
+
+[chara_show name="akuma" face="smile" pos="center" time="500"]
+
+#akuma
+じゃあ、最後に残ってるのは、"画面に映らない唯一"だけだね[l][er]
+
+#akuma
+それをあげられるのは、カメラを持ってた人だけだよ[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+（影は、消えた。）[l][er]
+
+[jump target="gyaru_07"]
+
+; ================================================================================
+; 第6話「投稿しない一枚」
+; ================================================================================
+*gyaru_07
+[chara_hide_all]
+[bg storage="rooftop.webp" time="1000"]
+[playbgm storage="bgm_romance.mp3"]
+
+（一週間後。昼休み。屋上。）[l][er]
+
+（同好会の自粛は、解けた。あの配信のあと、学校への電話は、応援のほうが多くなったらしい。）[l][er]
+
+[chara_show name="gyaru" face="default" pos="center" time="1000"]
+
+#gyaru
+ねえ。一枚、撮って[l][er]
+
+#protagonist
+また配信用か[l][er]
+
+#gyaru
+ううん。投稿しないやつ[l][er]
+
+#gyaru
+あんたのスマホで撮って。あんたのスマホにだけ、残しといて[l][er]
+
+（彼女は、フェンスの前に立った。）[l][er]
+（力こぶも、作らない。ピースも、しない。）[l][er]
+（ただ、立って、こっちを見ている。）[l][er]
+
+[chara_show name="gyaru" face="blush" pos="center" time="500"]
+
+#gyaru
+……"可愛い"の、六件目、まだ聞いてないんだけど[l][er]
+
+#gyaru
+てか、あたし、数えるのやめたんだった。いいねも、"可愛い"も[l][er]
+
+#gyaru
+だから、今度は、数じゃなくて——中身で、言って[l][er]
+
+#gyaru
+あたしのこと、どう思ってんの[l][er]
+
+[glink target="gyaru_ending_good" text="シャッターを切って「好きだ。画面の外でも、中でも」"]
+[glink target="gyaru_ending_normal" text="シャッターを切って「……最高の被写体だよ」"]
+[s]
+
+; ================================================================================
+; GOOD END「投稿しない一枚」
+; ================================================================================
+*gyaru_ending_good
+（シャッターを、切った。）[l][er]
+
+#protagonist
+好きだ[l][er]
+
+#protagonist
+画面の外でも、中でも。数えてない分も、全部[l][er]
+
+[chara_show name="gyaru" face="surprised" pos="center" time="500"]
+
+#gyaru
 ……[l][er]
 
 #gyaru
-友達でも、いい[l][er]
-
-#gyaru
-あたし、今まで本当の友達いなかったから[l][er]
-
-#gyaru
-あんたが最初の、本当の友達[l][er]
+……今の、撮った？[l][er]
 
 #protagonist
-……[l][er]
+撮った[l][er]
 
 #gyaru
-それで、十分だよ[l][er]
+見せて[l][er]
 
-（彼女は、手を差し出した。）[l][er]
+（画面を、見せた。）[l][er]
+（フェンスの前の美咲は、目を丸くして、口が半開きで——）[l][er]
+（今まで見たどの写真よりも、間抜けで、可愛かった。）[l][er]
+
+[chara_show name="gyaru" face="smile" pos="center" time="500"]
 
 #gyaru
-これからも、よろしくね[l][er]
+……ぶっさ[l][er]
+
+#gyaru
+……絶対、投稿すんなよ。これ、あんた専用[l][er]
 
 #protagonist
-……ああ[l][er]
+しない[l][er]
 
-（俺は、その手を握った。）[l][er]
+#gyaru
+……あたしも、好き[l][er]
 
-[chara_hide name="gyaru" time="1000"]
+#gyaru
+十万いいねより、こっちのほうが、ずっといい[l][er]
 
-; ================================================================================
-*gyaru_ending_normal_epilogue
-; エピローグ
-; ================================================================================
+[chara_hide_all]
+[bg storage="rooftop_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
 
-[bg storage="classroom.webp" time="1000"]
-[playbgm storage="bgm_daily.mp3"]
+[chara_show name="akuma" face="smile" pos="center" time="1000"]
+
+#akuma
+——はい、ゲーム終了。君の勝ち[l][er]
+
+#akuma
+約束どおり、ご祝儀を一口だけ[l][er]
+
+（悪魔の前足が、胸に、ちょんと触れた。）[l][er]
+（何かが、ひとかけら、持っていかれた。）[l][er]
+（——たぶん、シャッターを切った瞬間の、指先の熱の端っこ）[l][er]
+
+#akuma
+……うん。画面越しじゃない味。炭酸みたいにはじける[l][er]
+
+#akuma
+じゃあね。もう、来ないよ[l][er]
+
+[chara_hide name="akuma" time="1000"]
+
+[chara_hide_all]
+[bg storage="gym.webp" time="1000"]
+[playbgm storage="bgm_ending.mp3"]
 
 （数ヶ月後。）[l][er]
 
-（ギャルは、筋肉同好会の専属カメラマンになった。）[l][er]
+（美咲は、今も、週に一回、配信をしている。）[l][er]
+（カウンターは、オフのまま。）[l][er]
+（カメラは、だいたい、俺が持っている。）[l][er]
 
 [chara_show name="gyaru" face="smile" pos="center" time="1000"]
 
 #gyaru
-はい、チーズ！[l][er]
+はい、今日はここまで！　またね！[l][er]
 
-（みんなの写真を撮っている。）[l][er]
-
-（その姿は、前よりずっと生き生きしている。）[l][er]
+（配信が終わる。）[l][er]
+（彼女の顔から、何も、抜け落ちない。）[l][er]
 
 #gyaru
-ねえ、次はあんたの番！[l][er]
+ねえ、今日の"可愛い"は？[l][er]
 
 #protagonist
-俺？[l][er]
+……三回言った[l][er]
 
 #gyaru
-当たり前じゃん！最高の友達の写真、撮らせてよ！[l][er]
+足りない。あと二回[l][er]
+
+（俺のスマホの、鍵のかかったフォルダには、投稿されない写真が、今日も一枚、増えた。）[l][er]
+
+（星野美咲。）[l][er]
+（"唯一"になりたかった女の子は、）[l][er]
+（今、数えなくていいものを、手に入れた。）[l][er]
+
+（GOOD END ——「投稿しない一枚」）[l][er]
+[s]
+
+; ================================================================================
+; NORMAL END「最高の被写体」
+; ================================================================================
+*gyaru_ending_normal
+（シャッターを、切った。）[l][er]
 
 #protagonist
-……しょうがないな[l][er]
+……最高の被写体だよ[l][er]
 
-（俺は、カメラの前に立った。）[l][er]
+[chara_show name="gyaru" face="default" pos="center" time="500"]
 
 #gyaru
-いい顔してる[l][er]
+……被写体、ね[l][er]
+
+#gyaru
+……ふーん[l][er]
 
 #protagonist
-……そうか？[l][er]
+怒ったか[l][er]
 
 #gyaru
-うん。あたしの自慢の友達[l][er]
+怒ってない。ちょっと、悔しいだけ[l][er]
 
-（彼女は、シャッターを切った。）[l][er]
+[chara_show name="gyaru" face="smile" pos="center" time="500"]
 
-[chara_hide name="gyaru" time="1000"]
+#gyaru
+いいよ。じゃあ、カメラマンとして、これからもよろしく[l][er]
 
-[bg storage="black.webp" time="1000"]
+#gyaru
+いつか、"被写体"じゃない言葉、言わせてみせるから[l][er]
 
-（——ギャル。本名、星野美咲。）[l][er]
+[chara_hide_all]
+[bg storage="rooftop_night.webp" time="1000"]
+[playbgm storage="bgm_devil.mp3"]
 
-（SNSの女王だった彼女は——）[l][er]
+[chara_show name="akuma" face="default" pos="center" time="1000"]
 
-（本当の友達を見つけた。）[l][er]
+#akuma
+……保留、か[l][er]
 
-（フォロワー10万人より大切な、たった一人の友達。）[l][er]
+#akuma
+二本目は飲まなかった。でも、"本物"にも、ならなかった[l][er]
 
-（END - 「最高の友達」）[l][er]
+#akuma
+僕はお腹が空いたまま。……まあ、あの子、しつこそうだしね。続きを待つよ[l][er]
 
+[chara_hide name="akuma" time="1000"]
+
+[chara_hide_all]
+[bg storage="gym.webp" time="1000"]
+[playbgm storage="bgm_daily.mp3"]
+
+（数ヶ月後。）[l][er]
+
+（美咲の配信には、ときどき、同好会の全員が出る。）[l][er]
+（"筋肉同好会チャンネル"は、学校公認になった。凛が、また判子を押した。）[l][er]
+
+[chara_show name="gyaru" face="smile" pos="center" time="1000"]
+
+#gyaru
+カメラマーン、今の角度、最高！[l][er]
+
+#protagonist
+はいはい[l][er]
+
+（彼女は、カメラ越しに、こっちを見て笑う。）[l][er]
+（たまに、カメラじゃなくて、俺を見て。）[l][er]
+
+（NORMAL END ——「最高の被写体」）[l][er]
+[s]
+
+; ================================================================================
+; BAD END「永遠の配信」
+; ================================================================================
+*gyaru_ending_bad
+[playbgm storage="bgm_despair.mp3"]
+
+（彼女は、ピースしたまま、一息に、飲んだ。）[l][er]
+
+[chara_hide_all]
+[bg storage="devil_space.webp" time="1500"]
+
+（世界から、音が消えた。）[l][er]
+
+（ジャケットの袖が、裂けた。）[l][er]
+（肩が、腕が、脚が、もう一段、ふくれあがる。）[l][er]
+
+[status stage="stage2"]
+[chara_show name="gyaru" face="smile" pos="center" time="2000"]
+
+（——そして、それよりも、先に。）[l][er]
+（泣き腫らした目が、ぴたりと、乾いた。）[l][er]
+
+#gyaru
+……あ。すご[l][er]
+
+#gyaru
+エゴサしても、なんも感じない。"ブス"も"可愛い"も、同じ[l][er]
+
+#gyaru
+これで、ずっと配信できるね。ずっと笑ってられる[l][er]
+
+#protagonist
+星野……！[l][er]
+
+#gyaru
+あ、カメラ、もういいよ。三脚でいい[l][er]
+
+#gyaru
+あんたが撮っても、三脚が撮っても、同じだし[l][er]
+
+[chara_show name="akuma" face="smile" pos="left" time="1000"]
+
+#akuma
+——はい、ゲーム終了[l][er]
+
+#akuma
+じゃ、約束どおり。——頂きます[l][er]
+
+（悪魔の前足が、俺の胸に、触れた。）[l][er]
+（熱が、引いていく。）[l][er]
+（悔しさが。怖さが。カメラ越しに彼女を見ていたときの、あの痛みが。）[l][er]
+（順番に、消えて——）[l][er]
+
+[chara_hide_all]
+[bg storage="black.webp" time="2000"]
+
+（……。）[l][er]
+
+[bg storage="classroom.webp" time="1500"]
+[playbgm storage="bgm_isolation.mp3"]
+
+（数ヶ月後。）[l][er]
+
+（美咲のフォロワーは、百万人を超えた。）[l][er]
+（毎晩、八時間、配信している。いつ見ても、同じ笑顔で。）[l][er]
+
+（クラスの誰かが、スマホの画面を見せてくる。"これ、星野さんだよね"。）[l][er]
+（"ああ"と答える。）[l][er]
+（それ以上、何も、思わない。）[l][er]
+
+（画面の中の彼女も、たぶん、何も、思っていない。）[l][er]
+
+（BAD END ——「永遠の配信」）[l][er]
 [s]
