@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\furyo_stage1_crying.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Edit the reference image. Keep EVERYTHING identical to the reference: same character, same pose, same muscular body, same outfit, same size and position in the frame, same lighting and art style, same flat pure green (#00FF00) background. Change ONLY her facial expression to crying: tears streaming down her cheeks, glistening eyes, trembling lips. Nothing else changes.
+When done, print the saved file path.

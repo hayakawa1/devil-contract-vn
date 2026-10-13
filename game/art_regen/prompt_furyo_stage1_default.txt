@@ -1,0 +1,7 @@
+Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
+C:\Users\hayak\Dropbox\悪魔との契約\game\art_regen\furyo_stage1_default.png
+Do not modify any other files.
+
+Image spec (all-ages, non-sexual, no nudity): anime visual-novel art in the same painterly anime style as the attached reference image(s). Keep each character's face, hair, skin tone and outfit faithful to the references. No text, no watermark.
+Character standing sprite, portrait 2:3, full body from head to shoes with margin, centered, same framing, pose and art style as the first reference. The girl from the first reference (long wavy black hair, sharp golden eyes, dark navy long coat with red lining draped over her shoulders, white shirt, loose red necktie, dark navy trousers, brown shoes, hands in pockets, cool expression), but now clearly MUSCULAR: a midpoint between the first reference and the second reference (her monster-level form). Use the third reference girl's muscle level as the target: broad shoulders, thick arms straining the shirt sleeves, a thick neck, a wide back, strong thighs filling out the trousers. Clearly more muscular than the first reference, clearly less than the second. Same face, same outfit, same neutral cool expression. Background must be a perfectly flat solid pure green (#00FF00) chroma-key color with no shadows, gradients or floor.
+When done, print the saved file path.

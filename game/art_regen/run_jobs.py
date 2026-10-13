@@ -36,6 +36,22 @@ JOBS = [
     ("promo_keyvisual", ["osananajimi_stage1_smile", "seitokai_stage1_default", "gyaru_stage1_smile", "otaku_stage1_default",
                          "kakutogi_stage1_smile", "furyo_stage1_default", "imouto_stage1_smile", "akuma_neutral_smile"],
      "Promotional key visual, 16:9 landscape, dramatic and polished like a game poster. Exactly seven very muscular high-school heroines standing together in a confident group pose, full bodies or from the knees up, each matching one attached heroine reference exactly (same hair, outfit, skin tone): brown side-ponytail girl in white sailor uniform; long black-haired girl in glasses, navy blazer and black tights, arms crossed; blonde tanned girl in pink jacket flexing; short purple-haired girl in glasses and gray hoodie; tanned ponytail girl in black sports top and white martial-arts pants with fists raised; wavy black-haired girl in long navy coat and red necktie; brown twin-tailed girl in navy blazer and beige vest. Above and behind them floats the small black devil cat from the last reference (red eyes, horns, bat wings, one heart-tipped tail) grinning. Background: deep crimson and black magical sky with glowing red contract sigils and a full moon, rim lighting on the girls. No boy, no extra people. Leave the bottom 22 percent of the image as a dark, plain, low-detail area for text overlay. No text, no letters, no logo, no watermark."),
+    ("furyo_stage1_default", ["furyo_neutral_default", "furyo_stage2_default", "gyaru_stage1_default"],
+     "Character standing sprite, portrait 2:3, full body from head to shoes with margin, centered, same framing, pose and art style as the first reference. The girl from the first reference (long wavy black hair, sharp golden eyes, dark navy long coat with red lining draped over her shoulders, white shirt, loose red necktie, dark navy trousers, brown shoes, hands in pockets, cool expression), but now clearly MUSCULAR: a midpoint between the first reference and the second reference (her monster-level form). Use the third reference girl's muscle level as the target: broad shoulders, thick arms straining the shirt sleeves, a thick neck, a wide back, strong thighs filling out the trousers. Clearly more muscular than the first reference, clearly less than the second. Same face, same outfit, same neutral cool expression. " + GREEN),
+    ("furyo_stage1_angry", ["furyo_stage1_default.png"],
+     "Edit the reference image. Keep EVERYTHING identical to the reference: same character, same pose, same muscular body, same outfit, same size and position in the frame, same lighting and art style, same flat pure green (#00FF00) background. Change ONLY her facial expression to an angry glare: furrowed brows, narrowed eyes, teeth slightly gritted. Nothing else changes."),
+    ("furyo_stage1_blush", ["furyo_stage1_default.png"],
+     "Edit the reference image. Keep EVERYTHING identical to the reference: same character, same pose, same muscular body, same outfit, same size and position in the frame, same lighting and art style, same flat pure green (#00FF00) background. Change ONLY her facial expression to embarrassed: cheeks clearly blushing red, eyes looking away to the side, small pout. Nothing else changes."),
+    ("furyo_stage1_crying", ["furyo_stage1_default.png"],
+     "Edit the reference image. Keep EVERYTHING identical to the reference: same character, same pose, same muscular body, same outfit, same size and position in the frame, same lighting and art style, same flat pure green (#00FF00) background. Change ONLY her facial expression to crying: tears streaming down her cheeks, glistening eyes, trembling lips. Nothing else changes."),
+    ("furyo_stage1_flustered", ["furyo_stage1_default.png"],
+     "Edit the reference image. Keep EVERYTHING identical to the reference: same character, same pose, same muscular body, same outfit, same size and position in the frame, same lighting and art style, same flat pure green (#00FF00) background. Change ONLY her facial expression to flustered: wide eyes, face flushed red, mouth slightly open in panic, a small sweat drop. Nothing else changes."),
+    ("furyo_stage1_sad", ["furyo_stage1_default.png"],
+     "Edit the reference image. Keep EVERYTHING identical to the reference: same character, same pose, same muscular body, same outfit, same size and position in the frame, same lighting and art style, same flat pure green (#00FF00) background. Change ONLY her facial expression to sad: downcast eyes, eyebrows raised in sorrow, slight frown. Nothing else changes."),
+    ("furyo_stage1_smile", ["furyo_stage1_default.png"],
+     "Edit the reference image. Keep EVERYTHING identical to the reference: same character, same pose, same muscular body, same outfit, same size and position in the frame, same lighting and art style, same flat pure green (#00FF00) background. Change ONLY her facial expression to a soft gentle smile with relaxed eyes, a rare warm look. Nothing else changes."),
+    ("furyo_stage1_surprised", ["furyo_stage1_default.png"],
+     "Edit the reference image. Keep EVERYTHING identical to the reference: same character, same pose, same muscular body, same outfit, same size and position in the frame, same lighting and art style, same flat pure green (#00FF00) background. Change ONLY her facial expression to surprised: wide open eyes, raised eyebrows, mouth open. Nothing else changes."),
 ]
 
 HEADER = """Use your built-in image generation tool (not code, not ComfyUI) to create ONE image, then copy it as a PNG file to:
@@ -57,7 +73,7 @@ for name, refs, body in JOBS:
     (HERE / f"prompt_{name}.txt").write_text(prompt, encoding="utf-8")
     cmd = [CODEX, "exec", "--skip-git-repo-check", "-s", "workspace-write", "-C", str(HERE)]
     for r in refs:
-        cmd += ["-i", str(CH / f"{r}.webp")]
+        cmd += ["-i", str(HERE / r) if r.endswith(".png") else str(CH / f"{r}.webp")]
     cmd.append("-")
     with open(HERE / f"log_{name}.txt", "w", encoding="utf-8") as log:
         rc = subprocess.run(cmd, input=prompt.encode("utf-8"), stdout=log, stderr=subprocess.STDOUT).returncode
